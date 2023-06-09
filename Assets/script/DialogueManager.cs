@@ -71,7 +71,7 @@ public class DialogueManager : MonoBehaviour
     void EndDialogue()
     {
         Canvas_dia.SetActive(false);
-        Time.timeScale=1;
+        //Time.timeScale=1;
         Debug.Log("End of conversation");
         peopleEndTag_change.tag="Untagged";
         huaitagChange.tag="Untagged";

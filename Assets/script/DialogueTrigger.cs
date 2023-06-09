@@ -19,7 +19,7 @@ public class DialogueTrigger : MonoBehaviour
     public void TriggerDialogue()
     {
         FindObjectOfType<DialogueManager>().StartDialogue(dialogue);
-        Time.timeScale=0;
+        //Time.timeScale=0;
     }
 
     
