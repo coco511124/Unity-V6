@@ -6,8 +6,8 @@ using UnityEngine.SceneManagement;
 public class ChangeScene : MonoBehaviour
 {
     public GameObject panel1, panel2, panel3;
-   public void ChangeToChapterTwo(){
-    SceneManager.LoadScene("lesson2");
+   public void ChangeToHands(){
+    SceneManager.LoadScene("HandsDemoScene");
    }
 
    public void Panel1To2(){
