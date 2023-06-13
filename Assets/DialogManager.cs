@@ -9,8 +9,8 @@ using UnityEngine.InputSystem;
 
 public class DialogManager : MonoBehaviour
 {
-    public TMP_Text actorName;
-    public TMP_Text messageText;
+    public Text actorName;
+    public Text messageText;
     public RectTransform backgroundBox;
     public GameObject DB;
 
