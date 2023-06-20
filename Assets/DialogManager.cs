@@ -13,6 +13,7 @@ public class DialogManager : MonoBehaviour
     public Text messageText;
     public RectTransform backgroundBox;
     public GameObject DB;
+    public Text MissionOne;
 
     Message[] currentMessages;
     Actor[] currentActors;
@@ -43,6 +44,8 @@ public class DialogManager : MonoBehaviour
         }
         else {
             DB.SetActive(false);
+            MissionOne.text = "1.前往黃色驚嘆號 √";
+            MissionOne.color = Color.green;
         }
     }
 
