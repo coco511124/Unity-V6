@@ -12,8 +12,8 @@ public class DialogManager : MonoBehaviour
     public Text actorName;
     public Text messageText;
     public RectTransform backgroundBox;
-    public GameObject DB;
-    public Text MissionOne;
+    public GameObject DB, PL;
+    public Text Mission1, Mission3, Mission4, Mission5;
 
     Message[] currentMessages;
     Actor[] currentActors;
@@ -43,9 +43,16 @@ public class DialogManager : MonoBehaviour
             displayMessage();
         }
         else {
-            DB.SetActive(false);
-            MissionOne.text = "1.前往黃色驚嘆號 √";
-            MissionOne.color = Color.green;
+            if (PL.tag == "Player"){
+                Destroy(DB);
+                Mission1.text = "1.前往黃色驚嘆號 √";
+                Mission1.color = Color.green;
+            }
+            else if (PL.tag == "PlayerWithSugar"){
+                Destroy(DB);
+                Mission3.text = "3.找到荷蘭人並繳交甘蔗 √";
+                Mission3.color = Color.green;
+            }
         }
     }
 
