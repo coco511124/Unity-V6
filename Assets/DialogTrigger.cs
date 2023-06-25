@@ -14,7 +14,7 @@ public class DialogTrigger : MonoBehaviour
     }
 
     void StartDialogue2() {
-        FindObjectOfType<DialogManager>().openDialogue(messages2, actors);
+        FindObjectOfType<DialogManager>().openDialogue(messages2, actors);                
     }
 
     void OnTriggerEnter(Collider other) {
@@ -23,7 +23,7 @@ public class DialogTrigger : MonoBehaviour
             dialogueBox.SetActive(true);
             StartDialogue2();
         }
-        else if (other.gameObject.tag == "Player"){
+        if (other.gameObject.tag == "Player"){
             Debug.Log("no sugar");
             dialogueBox.SetActive(true);
             StartDialogue1();

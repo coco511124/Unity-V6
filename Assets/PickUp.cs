@@ -5,11 +5,11 @@ using UnityEngine;
 public class PickUp : MonoBehaviour
 {
     public GameObject PL, Objects;
-  void OnTriggerEnter(Collider other)
-  {
-    if (gameObject.tag == "Hand"){
-        Destroy(Objects);
-        PL.tag = "PlayerWithSugar";
+    void OnTriggerEnter(Collider other)
+    {
+        if (other.gameObject.tag == "Hand"){
+            Destroy(Objects);
+            PL.tag = "PlayerWithSugar";
+        }
     }
-  }
 }

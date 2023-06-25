@@ -7,6 +7,8 @@ TagManager:
   - thing
   - huai
   - people
+  - Hand
+  - PlayerWithSugar
   layers:
   - Default
   - TransparentFX

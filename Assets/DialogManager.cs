@@ -23,17 +23,21 @@ public class DialogManager : MonoBehaviour
         currentActors = actors;
         currentMessages = messages;
         activeMessage = 0;
+        Debug.Log(activeMessage);
 
         Debug.Log("started conversation! loaded messages: " +  messages.Length);
         displayMessage();
     }
     
     void displayMessage() {
+        Debug.Log("display message");
         Message messageToDisplay = currentMessages[activeMessage];
         messageText.text = messageToDisplay.meassage;
+        Debug.Log(messageText.text);
 
         Actor actorToDisplay = currentActors[messageToDisplay.actorId];
-        actorName.text = actorToDisplay.name;
+        actorName.text = "123";
+        Debug.Log(actorToDisplay.name);
 
     }
 
