@@ -2172,12 +2172,13 @@ MonoBehaviour:
   messageText: {fileID: 1960952677}
   backgroundBox: {fileID: 211262715}
   DB: {fileID: 1101011449}
-  PL: {fileID: 714469173}
+  PL: {fileID: 1028757472}
   Mission1: {fileID: 1784347000}
   Mission2: {fileID: 2090680015}
   Mission3: {fileID: 1269761751}
   Mission4: {fileID: 273034764}
   Mission5: {fileID: 1985741238}
+  PlayerTagDontChange: 0
 --- !u!114 &211262718
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -2450,6 +2451,7 @@ MonoBehaviour:
   Mission3: {fileID: 1269761751}
   Mission4: {fileID: 273034764}
   Mission5: {fileID: 1985741238}
+  PlayerTagDontChange: 0
 --- !u!114 &284690531
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -2825,6 +2827,7 @@ MonoBehaviour:
   Mission3: {fileID: 1269761751}
   Mission4: {fileID: 273034764}
   Mission5: {fileID: 1985741238}
+  PlayerTagDontChange: 0
 --- !u!114 &352643043
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -3676,7 +3679,7 @@ GameObject:
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
-  m_IsActive: 1
+  m_IsActive: 0
 --- !u!224 &428852065
 RectTransform:
   m_ObjectHideFlags: 0
@@ -4088,8 +4091,9 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 6f0f11e1d39a1c142bf3d649a818a0bf, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  PL: {fileID: 714469173}
+  PL: {fileID: 1028757472}
   Objects: {fileID: 458353336}
+  Mission2: {fileID: 2090680015}
 --- !u!1001 &471599939
 PrefabInstance:
   m_ObjectHideFlags: 0
@@ -5953,11 +5957,6 @@ PrefabInstance:
     m_RemovedComponents:
     - {fileID: 7406353034217725491, guid: 4b40afcc4bec40948a261b01caaf99ce, type: 3}
   m_SourcePrefab: {fileID: 100100000, guid: 4b40afcc4bec40948a261b01caaf99ce, type: 3}
---- !u!1 &714469173 stripped
-GameObject:
-  m_CorrespondingSourceObject: {fileID: 4272438123421458691, guid: 4b40afcc4bec40948a261b01caaf99ce, type: 3}
-  m_PrefabInstance: {fileID: 714469172}
-  m_PrefabAsset: {fileID: 0}
 --- !u!1 &719060040
 GameObject:
   m_ObjectHideFlags: 0
@@ -9168,7 +9167,7 @@ GameObject:
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
-  m_IsActive: 1
+  m_IsActive: 0
 --- !u!224 &1101011450
 RectTransform:
   m_ObjectHideFlags: 0
@@ -9747,7 +9746,7 @@ PrefabInstance:
       objectReference: {fileID: 0}
     - target: {fileID: 919132149155446097, guid: d07d04dc0a370284385cd3b52d994886, type: 3}
       propertyPath: m_TagString
-      value: people
+      value: People_Blue
       objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: d07d04dc0a370284385cd3b52d994886, type: 3}
@@ -11510,6 +11509,10 @@ PrefabInstance:
       propertyPath: m_Name
       value: diaplace2_1
       objectReference: {fileID: 0}
+    - target: {fileID: 919132149155446097, guid: bc6691fe22a92ef4a92b07cce8b3c819, type: 3}
+      propertyPath: m_TagString
+      value: thing
+      objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: bc6691fe22a92ef4a92b07cce8b3c819, type: 3}
 --- !u!1 &1373737266 stripped
@@ -11562,7 +11565,21 @@ MonoBehaviour:
     meassage: "\u8EAB\u70BA\u4F7F\u7BC0\u7684\u4F60\uFF0C\u5148\u53BB\u5C0B\u627E\u500B\u8517\u7CD6! "
   - actorId: 0
     meassage: " \u62FF\u5230\u8517\u7CD6\u5F8C\uFF0C\u518D\u628A\u8517\u7CD6\u62FF\u53BB\u4EA4\u7D66\u8377\u862D\u4EBA\u5427! "
-  messages_2: []
+  messages_2:
+  - actorId: 0
+    meassage: "\u8377\u862D\u4EBA\u70BA\u4E86\u5EFA\u7ACB\u80FD\u8207\u660E\u671D\u548C\u65E5\u672C\u4EA4\u6613\u7684\u64DA\u9EDE\uFF0C\u57281624\u5E74\u5360\u9818\u5357\u53F0\u7063\u3002"
+  - actorId: 0
+    meassage: "\u5728\u4ED6\u5011\u7684\u6CBB\u7406\u4E0B\u53F0\u7063\u4E00\u76F4\u5728\u9032\u6B65\u3002 "
+  - actorId: 0
+    meassage: "\u800C\u5728\u8377\u862D\u6B96\u6C11\u53F0\u7063\u521D\u671F\uFF0C\u8FEB\u5207\u9700\u8981\u8FB2\u8015\u7684\u52DE\u52D5\u529B\u3002"
+  - actorId: 0
+    meassage: "\u6240\u4EE5\u8377\u862D\u4EBA\u5230\u4E2D\u570B\u95A9\u5357\u6CBF\u6D77\u4E00\u5E36\u62DB\u52DF\u6F22\u4EBA\u4F86\u53F0\u958B\u58BE\u3002"
+  - actorId: 0
+    meassage: "\u76F4\u52301640\u5E74\u81FA\u7063\u5357\u90E8\u6CBF\u6D77\u6B96\u6C11\u5730\u7684\u884C\u653F\u652F\u51FA\u4E0D\u65B7\u7684\u66B4\u6F32\u3002"
+  - actorId: 0
+    meassage: "\u8EAB\u70BA\u4F7F\u7BC0\u7684\u4F60\uFF0C\u5148\u53BB\u5C0B\u627E\u500B\u8517\u7CD6! "
+  - actorId: 0
+    meassage: " \u62FF\u5230\u8517\u7CD6\u5F8C\uFF0C\u518D\u628A\u8517\u7CD6\u62FF\u53BB\u4EA4\u7D66\u8377\u862D\u4EBA\u5427! "
   actors:
   - name: "\u7CFB\u7D71"
   dialogueBox: {fileID: 211262711}
@@ -12525,7 +12542,7 @@ GameObject:
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
-  m_IsActive: 1
+  m_IsActive: 0
 --- !u!224 &1509562551
 RectTransform:
   m_ObjectHideFlags: 0
@@ -13339,7 +13356,7 @@ PrefabInstance:
       objectReference: {fileID: 0}
     - target: {fileID: -8679921383154817045, guid: 8c740f5392beeac4d84b2386e4548763, type: 3}
       propertyPath: m_LocalPosition.x
-      value: -8.54
+      value: -9.34
       objectReference: {fileID: 0}
     - target: {fileID: -8679921383154817045, guid: 8c740f5392beeac4d84b2386e4548763, type: 3}
       propertyPath: m_LocalPosition.y
@@ -13347,7 +13364,7 @@ PrefabInstance:
       objectReference: {fileID: 0}
     - target: {fileID: -8679921383154817045, guid: 8c740f5392beeac4d84b2386e4548763, type: 3}
       propertyPath: m_LocalPosition.z
-      value: -2.46
+      value: -2.74
       objectReference: {fileID: 0}
     - target: {fileID: -8679921383154817045, guid: 8c740f5392beeac4d84b2386e4548763, type: 3}
       propertyPath: m_LocalRotation.w
@@ -13412,24 +13429,6 @@ MonoBehaviour:
   ShowObj: {fileID: 1722593056}
   hand_paper_active: {fileID: 0}
   people_colli: {fileID: 1610080811}
---- !u!114 &1610080810
-MonoBehaviour:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 1205216344}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: a5620d1f7e4b4f643bf0d9d6cd7edc58, type: 3}
-  m_Name: 
-  m_EditorClassIdentifier: 
-  dialogue:
-    name: "\u90ED\u61F7\u4E00"
-    sentences:
-    - "\u554F\u6211\u70BA\u751A\u9EBC\u555F\u793A?"
-    - "\u4F60\u6C92\u770B\u898B\u8377\u862D\u58EB\u5175\u90A3\u4E9B\u60E1\u52A3\u7684\u884C\u70BA\u55CE?\u8FB2\u6C11\u88AB\u6536\u4E86\u4E00\u5806\u7A05\uFF0C\u9084\u8981\u4E0D\u8981\u751F\u6D3B\u554A?\u800C\u4E14\u751A\u81F3\u9084\u6436\u4EBA\u5BB6\u7684\u5BB6\u7576\uFF0C\u4F60\u8A8D\u70BA\u6211\u5011\u8981\u5FCD\u53D7\u55CE?"
-    - "\u6211\u4E0D\u5FCD\u62C9"
 --- !u!65 &1610080811
 BoxCollider:
   m_ObjectHideFlags: 0
@@ -13481,8 +13480,6 @@ MonoBehaviour:
     meassage: "\u9084\u6307\u5B9A\u8D64\u5D01\u5340\u4E00\u5927\u7247\u7530\u5730\u7D66\u6211\u4F86\u958B\u58BE\uFF0C\u4E26\u4EFB\u547D\u6211\u70BA\u5927\u7D50\u9996\u3002"
   - actorId: 0
     meassage: "\u9047\u5230\u4E00\u4E9B\u6751\u6C11\u6B20\u4E86\u7A05\uFF0C\u6211\u6703\u4EE3\u66FF\u6E05\u511F\uFF0C\u53EA\u5E0C\u671B\u80FD\u6E1B\u5C11\u4EBA\u6C11\u4E00\u4E9B\u8CA0\u64D4\u3002 "
-  - actorId: 0
-    meassage: "\u7576\u6642\u4EBA\u5011\u6642\u4E0D\u6642\u5730\u7A31\u547C\u6211\u70BA\u300C\u7532\u5FC5\u4E39\u300D(Captain)\uFF0C\u4F46\u6211\u53EA\u662F\u505A\u6211\u89BA\u5F97\u6B63\u78BA\u7684\u4E8B\u800C\u5DF2\u3002 "
   - actorId: 0
     meassage: "\u7576\u6642\u4EBA\u5011\u6642\u4E0D\u6642\u5730\u7A31\u547C\u6211\u70BA\u300C\u7532\u5FC5\u4E39\u300D(Captain)\uFF0C\u4F46\u6211\u53EA\u662F\u505A\u6211\u89BA\u5F97\u6B63\u78BA\u7684\u4E8B\u800C\u5DF2\u3002 "
   - actorId: 0
@@ -14333,12 +14330,13 @@ MonoBehaviour:
   messageText: {fileID: 1750882825}
   backgroundBox: {fileID: 1652505483}
   DB: {fileID: 2069179471}
-  PL: {fileID: 714469173}
+  PL: {fileID: 1028757472}
   Mission1: {fileID: 1784347000}
   Mission2: {fileID: 2090680015}
   Mission3: {fileID: 1269761751}
   Mission4: {fileID: 273034764}
   Mission5: {fileID: 1985741238}
+  PlayerTagDontChange: 0
 --- !u!114 &1652505485
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -18127,7 +18125,7 @@ GameObject:
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
-  m_IsActive: 1
+  m_IsActive: 0
 --- !u!224 &2069179472
 RectTransform:
   m_ObjectHideFlags: 0
