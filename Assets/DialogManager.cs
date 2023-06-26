@@ -13,7 +13,7 @@ public class DialogManager : MonoBehaviour
     public Text messageText;
     public RectTransform backgroundBox;
     public GameObject DB, PL;
-    public Text Mission1, Mission3, Mission4, Mission5;
+    public Text Mission1, Mission2, Mission3, Mission4, Mission5;
 
     Message[] currentMessages;
     Actor[] currentActors;
@@ -23,7 +23,7 @@ public class DialogManager : MonoBehaviour
         currentActors = actors;
         currentMessages = messages;
         activeMessage = 0;
-        Debug.Log(activeMessage);
+        //Debug.Log(activeMessage);
 
         Debug.Log("started conversation! loaded messages: " +  messages.Length);
         displayMessage();
@@ -33,11 +33,11 @@ public class DialogManager : MonoBehaviour
         Debug.Log("display message");
         Message messageToDisplay = currentMessages[activeMessage];
         messageText.text = messageToDisplay.meassage;
-        Debug.Log(messageText.text);
+        //Debug.Log(messageText.text);
 
         Actor actorToDisplay = currentActors[messageToDisplay.actorId];
-        actorName.text = "123";
-        Debug.Log(actorToDisplay.name);
+        actorName.text = actorToDisplay.name;
+        //Debug.Log(actorToDisplay.name);
 
     }
 

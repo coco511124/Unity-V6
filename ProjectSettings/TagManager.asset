@@ -9,6 +9,8 @@ TagManager:
   - people
   - Hand
   - PlayerWithSugar
+  - PlayerWithNerthland_A
+  - PlayerWithGou
   layers:
   - Default
   - TransparentFX
