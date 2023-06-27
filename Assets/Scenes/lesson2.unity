@@ -1020,42 +1020,6 @@ MeshCollider:
   m_Convex: 0
   m_CookingOptions: 30
   m_Mesh: {fileID: 7967724066638226175, guid: de324fbcbd3ade64fb6b04de0f4c377a, type: 3}
---- !u!21 &93051668
-Material:
-  serializedVersion: 8
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_Name: Hidden/FMDesktopMask
-  m_Shader: {fileID: 4800000, guid: 3f3411c65647b4a39844b0c92562d822, type: 3}
-  m_ValidKeywords: []
-  m_InvalidKeywords: []
-  m_LightmapFlags: 4
-  m_EnableInstancingVariants: 0
-  m_DoubleSidedGI: 0
-  m_CustomRenderQueue: -1
-  stringTagMap: {}
-  disabledShaderPasses: []
-  m_SavedProperties:
-    serializedVersion: 3
-    m_TexEnvs:
-    - _MainTex:
-        m_Texture: {fileID: 0}
-        m_Scale: {x: 1, y: 1}
-        m_Offset: {x: 0, y: 0}
-    m_Ints: []
-    m_Floats:
-    - _Brightness: 1
-    - _FlipX: 0
-    - _FlipY: 0
-    - _OffsetX: 1
-    - _OffsetY: 1
-    - _RangeX: 1
-    - _RangeY: 1
-    - _RotationAngle: 1
-    m_Colors: []
-  m_BuildTextureStacks: []
 --- !u!1 &101472864
 GameObject:
   m_ObjectHideFlags: 0
@@ -3361,34 +3325,6 @@ MonoBehaviour:
   m_FlexibleWidth: -1
   m_FlexibleHeight: -1
   m_LayoutPriority: 1
---- !u!21 &326040022
-Material:
-  serializedVersion: 8
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_Name: Unlit/Texture
-  m_Shader: {fileID: 10752, guid: 0000000000000000f000000000000000, type: 0}
-  m_ValidKeywords: []
-  m_InvalidKeywords: []
-  m_LightmapFlags: 4
-  m_EnableInstancingVariants: 0
-  m_DoubleSidedGI: 0
-  m_CustomRenderQueue: -1
-  stringTagMap: {}
-  disabledShaderPasses: []
-  m_SavedProperties:
-    serializedVersion: 3
-    m_TexEnvs:
-    - _MainTex:
-        m_Texture: {fileID: 0}
-        m_Scale: {x: 1, y: 1}
-        m_Offset: {x: 0, y: 0}
-    m_Ints: []
-    m_Floats: []
-    m_Colors: []
-  m_BuildTextureStacks: []
 --- !u!4 &330774302 stripped
 Transform:
   m_CorrespondingSourceObject: {fileID: 812727893225556059, guid: 3001618aab909ea42b0a0ab4b6f92bca, type: 3}
@@ -4744,101 +4680,6 @@ CanvasRenderer:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 428852064}
   m_CullTransparentMesh: 1
---- !u!1 &443206053
-GameObject:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  serializedVersion: 6
-  m_Component:
-  - component: {fileID: 443206055}
-  - component: {fileID: 443206054}
-  m_Layer: 0
-  m_Name: GameViewEncoder
-  m_TagString: Untagged
-  m_Icon: {fileID: 0}
-  m_NavMeshLayer: 0
-  m_StaticEditorFlags: 0
-  m_IsActive: 1
---- !u!114 &443206054
-MonoBehaviour:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 443206053}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: 5a9483c7a45cc456b85c2f3db18182e4, type: 3}
-  m_Name: 
-  m_EditorClassIdentifier: 
-  CaptureMode: 0
-  Resize: 2
-  MainCam: {fileID: 0}
-  RenderCam: {fileID: 1336625843}
-  Resolution: {x: 512, y: 288}
-  MatchScreenAspect: 1
-  FastMode: 1
-  AsyncMode: 0
-  GZipMode: 0
-  PanoramaMode: 0
-  Quality: 40
-  ChromaSubsampling: 2
-  StreamFPS: 20
-  ignoreSimilarTexture: 1
-  similarByteSizeThreshold: 8
-  EnableAsyncGPUReadback: 1
-  CapturedTexture: {fileID: 0}
-  MatPano: {fileID: 1239420385}
-  MatFMDesktop: {fileID: 93051668}
-  MatColorAdjustment: {fileID: 1418601156}
-  ColorReductionLevel: 0
-  mat_source: {fileID: 326040022}
-  CubemapResolution: 1024
-  FMDesktopRotation: 0
-  FMDesktopResolution: {x: 0, y: 0}
-  FMDesktopFlipX: 0
-  FMDesktopFlipY: 0
-  FMDesktopRangeX: 1
-  FMDesktopRangeY: 1
-  FMDesktopOffsetX: 0
-  FMDesktopOffsetY: 0
-  FMDesktopMonitorID: 0
-  FMDesktopMonitorCount: 0
-  FMDesktopCorrectRotation: 1
-  OnDataByteReadyEvent:
-    m_PersistentCalls:
-      m_Calls:
-      - m_Target: {fileID: 1432557895}
-        m_TargetAssemblyTypeName: FMNetworkManager, Assembly-CSharp
-        m_MethodName: SendToServer
-        m_Mode: 5
-        m_Arguments:
-          m_ObjectArgument: {fileID: 0}
-          m_ObjectArgumentAssemblyTypeName: UnityEngine.Object, UnityEngine
-          m_IntArgument: 0
-          m_FloatArgument: 0
-          m_StringArgument: 
-          m_BoolArgument: 0
-        m_CallState: 2
-  label: 1001
-  dataLength: 0
---- !u!4 &443206055
-Transform:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 443206053}
-  m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
-  m_LocalPosition: {x: -1.7221111, y: 3.3855767, z: -4.1662736}
-  m_LocalScale: {x: 1, y: 1, z: 1}
-  m_ConstrainProportionsScale: 0
-  m_Children: []
-  m_Father: {fileID: 0}
-  m_RootOrder: 14
-  m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
 --- !u!1 &450429997
 GameObject:
   m_ObjectHideFlags: 0
@@ -6247,17 +6088,6 @@ Transform:
   m_Father: {fileID: 0}
   m_RootOrder: 10
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
---- !u!114 &600351803 stripped
-MonoBehaviour:
-  m_CorrespondingSourceObject: {fileID: 7446376976537536247, guid: 4b40afcc4bec40948a261b01caaf99ce, type: 3}
-  m_PrefabInstance: {fileID: 714469172}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 0}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: ccff86f64aa28134398e2d24ac092620, type: 3}
-  m_Name: 
-  m_EditorClassIdentifier: 
 --- !u!1 &605311522
 GameObject:
   m_ObjectHideFlags: 0
@@ -7254,21 +7084,9 @@ PrefabInstance:
       propertyPath: m_LocalEulerAnglesHint.y
       value: 0
       objectReference: {fileID: 0}
-    - target: {fileID: 7446376976165480297, guid: 4b40afcc4bec40948a261b01caaf99ce, type: 3}
-      propertyPath: m_FontData.m_Alignment
-      value: 3
-      objectReference: {fileID: 0}
-    - target: {fileID: 7446376976165480303, guid: 4b40afcc4bec40948a261b01caaf99ce, type: 3}
-      propertyPath: m_Name
-      value: StudentIP
-      objectReference: {fileID: 0}
     - target: {fileID: 7446376976537536232, guid: 4b40afcc4bec40948a261b01caaf99ce, type: 3}
       propertyPath: m_IsActive
-      value: 1
-      objectReference: {fileID: 0}
-    - target: {fileID: 7446376976935748563, guid: 4b40afcc4bec40948a261b01caaf99ce, type: 3}
-      propertyPath: m_Name
-      value: WarningImage
+      value: 0
       objectReference: {fileID: 0}
     - target: {fileID: 7446376976935748563, guid: 4b40afcc4bec40948a261b01caaf99ce, type: 3}
       propertyPath: m_IsActive
@@ -12581,35 +12399,6 @@ RectTransform:
   m_AnchoredPosition: {x: -83.57095, y: 34.11754}
   m_SizeDelta: {x: -267.3812, y: -112.359}
   m_Pivot: {x: 0.5, y: 0.5}
---- !u!21 &1239420385
-Material:
-  serializedVersion: 8
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_Name: Hidden/FMCubemapToEquirect
-  m_Shader: {fileID: 4800000, guid: d9cdde4a4997d467b99c1360420f5ce1, type: 3}
-  m_ValidKeywords: []
-  m_InvalidKeywords: []
-  m_LightmapFlags: 4
-  m_EnableInstancingVariants: 0
-  m_DoubleSidedGI: 0
-  m_CustomRenderQueue: -1
-  stringTagMap: {}
-  disabledShaderPasses: []
-  m_SavedProperties:
-    serializedVersion: 3
-    m_TexEnvs:
-    - _MainTex:
-        m_Texture: {fileID: 0}
-        m_Scale: {x: 1, y: 1}
-        m_Offset: {x: 0, y: 0}
-    m_Ints: []
-    m_Floats:
-    - _Brightness: 1
-    m_Colors: []
-  m_BuildTextureStacks: []
 --- !u!1001 &1240645438
 PrefabInstance:
   m_ObjectHideFlags: 0
@@ -13788,11 +13577,6 @@ MonoBehaviour:
   m_FlexibleWidth: 200
   m_FlexibleHeight: -1
   m_LayoutPriority: 1
---- !u!20 &1336625843 stripped
-Camera:
-  m_CorrespondingSourceObject: {fileID: 7446376976661373383, guid: 4b40afcc4bec40948a261b01caaf99ce, type: 3}
-  m_PrefabInstance: {fileID: 714469172}
-  m_PrefabAsset: {fileID: 0}
 --- !u!1 &1345320546
 GameObject:
   m_ObjectHideFlags: 0
@@ -14853,35 +14637,6 @@ MeshCollider:
   m_Convex: 0
   m_CookingOptions: 30
   m_Mesh: {fileID: 2508140993432380115, guid: d313618ac01d17245836b54f85faf0eb, type: 3}
---- !u!21 &1418601156
-Material:
-  serializedVersion: 8
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_Name: Hidden/FMETPColorAdjustment
-  m_Shader: {fileID: 4800000, guid: 8efd175de28eb49ddbf9cbf8155d61ba, type: 3}
-  m_ValidKeywords: []
-  m_InvalidKeywords: []
-  m_LightmapFlags: 4
-  m_EnableInstancingVariants: 0
-  m_DoubleSidedGI: 0
-  m_CustomRenderQueue: -1
-  stringTagMap: {}
-  disabledShaderPasses: []
-  m_SavedProperties:
-    serializedVersion: 3
-    m_TexEnvs:
-    - _MainTex:
-        m_Texture: {fileID: 0}
-        m_Scale: {x: 1, y: 1}
-        m_Offset: {x: 0, y: 0}
-    m_Ints: []
-    m_Floats:
-    - _Brightness: 1
-    m_Colors: []
-  m_BuildTextureStacks: []
 --- !u!1 &1420569547
 GameObject:
   m_ObjectHideFlags: 0
@@ -14928,93 +14683,6 @@ MeshCollider:
   m_Convex: 0
   m_CookingOptions: 30
   m_Mesh: {fileID: 7967724066638226175, guid: de324fbcbd3ade64fb6b04de0f4c377a, type: 3}
---- !u!1 &1432557894
-GameObject:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  serializedVersion: 6
-  m_Component:
-  - component: {fileID: 1432557896}
-  - component: {fileID: 1432557895}
-  m_Layer: 0
-  m_Name: NetworkManager
-  m_TagString: Untagged
-  m_Icon: {fileID: 0}
-  m_NavMeshLayer: 0
-  m_StaticEditorFlags: 0
-  m_IsActive: 1
---- !u!114 &1432557895
-MonoBehaviour:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 1432557894}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: 2f68ecff929c04b31832e383f4dfe4fd, type: 3}
-  m_Name: 
-  m_EditorClassIdentifier: 
-  AutoInit: 1
-  Initialised: 0
-  NetworkType: 1
-  Server: {fileID: 0}
-  Client: {fileID: 0}
-  ServerSettings:
-    ServerListenPort: 3333
-    UseAsyncListener: 0
-    UseMainThreadSender: 1
-    ConnectionCount: 0
-  ClientSettings:
-    ClientListenPort: 3334
-    UseMainThreadSender: 0
-    AutoNetworkDiscovery: 1
-    ServerIP: 
-    IsConnected: 0
-  DebugStatus: 1
-  ShowLog: 1
-  Status: 
-  UIStatus: {fileID: 0}
-  OnReceivedByteDataEvent:
-    m_PersistentCalls:
-      m_Calls: []
-  OnReceivedStringDataEvent:
-    m_PersistentCalls:
-      m_Calls:
-      - m_Target: {fileID: 600351803}
-        m_TargetAssemblyTypeName: react, Assembly-CSharp
-        m_MethodName: Action_ProcessStringData
-        m_Mode: 0
-        m_Arguments:
-          m_ObjectArgument: {fileID: 0}
-          m_ObjectArgumentAssemblyTypeName: UnityEngine.Object, UnityEngine
-          m_IntArgument: 0
-          m_FloatArgument: 0
-          m_StringArgument: 
-          m_BoolArgument: 0
-        m_CallState: 2
-  GetRawReceivedData:
-    m_PersistentCalls:
-      m_Calls: []
-  NetworkObjects: []
-  SyncFPS: 20
---- !u!4 &1432557896
-Transform:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 1432557894}
-  m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
-  m_LocalPosition: {x: -1.7221111, y: 3.3855767, z: -4.1662736}
-  m_LocalScale: {x: 1, y: 1, z: 1}
-  m_ConstrainProportionsScale: 0
-  m_Children: []
-  m_Father: {fileID: 0}
-  m_RootOrder: 13
-  m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
 --- !u!1001 &1453825527
 PrefabInstance:
   m_ObjectHideFlags: 0
@@ -32043,19 +31711,19 @@ PrefabInstance:
       objectReference: {fileID: 0}
     - target: {fileID: 1115837075866977023, guid: 31e1b3d6ca3ec0342b4c47f394065d47, type: 3}
       propertyPath: m_AnchorMax.y
-      value: 0
+      value: 1
       objectReference: {fileID: 0}
     - target: {fileID: 1115837075866977023, guid: 31e1b3d6ca3ec0342b4c47f394065d47, type: 3}
       propertyPath: m_AnchorMin.y
-      value: 0
+      value: 1
       objectReference: {fileID: 0}
     - target: {fileID: 1115837075866977023, guid: 31e1b3d6ca3ec0342b4c47f394065d47, type: 3}
       propertyPath: m_AnchoredPosition.x
-      value: 0
+      value: 10.29895
       objectReference: {fileID: 0}
     - target: {fileID: 1115837075866977023, guid: 31e1b3d6ca3ec0342b4c47f394065d47, type: 3}
       propertyPath: m_AnchoredPosition.y
-      value: 0
+      value: -9.2187
       objectReference: {fileID: 0}
     - target: {fileID: 7118575910639329818, guid: 31e1b3d6ca3ec0342b4c47f394065d47, type: 3}
       propertyPath: m_Pivot.x
