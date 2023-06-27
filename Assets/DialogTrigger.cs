@@ -57,6 +57,10 @@ public class DialogTrigger : MonoBehaviour
             dialogueBox.SetActive(true);
             StartDialogue1();
         }
+        else if (other.gameObject.tag != "PlayerWithGou" && other.gameObject.tag != "PlayerWithNerthland_A" && other.gameObject.tag != "Player" && other.gameObject.tag != "PlayerWithSugar")
+        {
+            Debug.Log("不是玩家");
+        }
         else
         {
             Debug.Log("情況二");
