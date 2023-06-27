@@ -9,12 +9,13 @@ public class DialogueManager : MonoBehaviour
     public Text dialogueText;
     private Queue<string> sentences;
     public GameObject Canvas_dia;
-    public GameObject peopleEndTag_change;
-    public GameObject huaitagChange;
-    public BoxCollider coli_false;
-    public BoxCollider people_colli_false_netherland;
-    public BoxCollider people_colli_false_huai;
-    public BoxCollider people_colli_false_netSir;
+    // public GameObject peopleEndTag_change;
+    // public GameObject huaitagChange;
+    // public BoxCollider coli_false;
+    // public BoxCollider people_colli_false_netherland;
+    // public BoxCollider people_colli_false_huai;
+    // public BoxCollider people_colli_false_netSir;
+
     // Start is called before the first frame update
     void Start()
     {
@@ -23,7 +24,7 @@ public class DialogueManager : MonoBehaviour
         void Update()
     {
         //enter繼續對話
-        if(Input.GetKeyDown(KeyCode.Return))
+        if(Input.GetKeyDown(KeyCode.E))//enter(KeyCode.Return)
         {
             DisplayNextSentence();
         }
@@ -71,15 +72,17 @@ public class DialogueManager : MonoBehaviour
     void EndDialogue()
     {
         Canvas_dia.SetActive(false);
-        //Time.timeScale=1;
+        Time.timeScale=1;
         Debug.Log("End of conversation");
-        peopleEndTag_change.tag="Untagged";
-        huaitagChange.tag="Untagged";
-        coli_false.enabled=false;
+        // peopleEndTag_change.tag="Untagged";
+        // huaitagChange.tag="Untagged";
+        // coli_false.enabled=false;
         //-------------把coli關掉=不觸發對話
-        people_colli_false_netherland.enabled=false;
-        people_colli_false_huai.enabled=false;
-        people_colli_false_netSir.enabled=false;
+        // people_colli_false_netherland.enabled=false;
+        // people_colli_false_huai.enabled=false;
+        // people_colli_false_netSir.enabled=false;
+
     }
+
 
 }

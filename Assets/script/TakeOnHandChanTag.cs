@@ -27,13 +27,11 @@ public class TakeOnHandChanTag : MonoBehaviour
         if(sugar.activeSelf)
         {
             people.tag="people";
-            quest_manager.peopleDiaCountChangeTag = 1;
         }
         
         if(papar.activeSelf)
         {
-            huai.tag="huai2";
-            netSir.tag="people2";
+            netSir.tag="blueafter";
             quest_manager.huaicount=1;
         }
 

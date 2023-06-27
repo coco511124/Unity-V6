@@ -7,11 +7,12 @@ public class behitten : MonoBehaviour
     public GameObject HideObj;
     public GameObject ShowObj;
     public GameObject hand_paper_active;
-    public BoxCollider people_colli;
+    public GameObject colli_after;
+    public GameObject colli_before;
+    public GameObject hidepeprlookCanvas;
 
     void Start()
     {
-        GetComponent<Itembox>();
     }
 
     // Update is called once per frame
@@ -28,20 +29,82 @@ public class behitten : MonoBehaviour
             if(tag=="people")
             {
             // FindObjectOfType<DialogueTrigger>().TriggerDialogue();
-            people_colli.enabled=true;//把人物boxcollider 有is trigger 的打勾
+            // people_colli.enabled=true;//把人物boxcollider 有is trigger 的打勾
+            colli_after.SetActive(true);
+            colli_before.SetActive(false);
+            Invoke("after_1sec_close",0.1f);
             }
-            if(tag=="people2")
+            if(tag=="people_sugarbefore")
             {
-            // FindObjectOfType<DialogueTrigger>().TriggerDialogue();
-            people_colli.enabled=true;
-            quest_manager.Netsircount=1;
+            colli_after.SetActive(false);
+            colli_before.SetActive(true);
+            Invoke("before_1sec_close",0.1f);
             }
             if(tag=="huai")
             {
             // FindObjectOfType<DialogueTrigger>().TriggerDialogue();
-            people_colli.enabled=true;
+            // people_colli.enabled=true;
+            colli_after.SetActive(false);
+            colli_before.SetActive(true);
+            Invoke("before_1sec_close",0.1f);
+            }
+            if(tag=="huai_after")
+            {
             hand_paper_active.SetActive(true);
+            colli_after.SetActive(true);
+            colli_before.SetActive(false);
+            Invoke("after_1sec_close",0.1f);
+            }
+            if(tag=="bluebefore")
+            {
+            colli_after.SetActive(false);
+            colli_before.SetActive(true);
+            Invoke("before_1sec_close",0.1f);
+            }
+
+            if(tag=="blueafter")
+            {
+            // FindObjectOfType<DialogueTrigger>().TriggerDialogue();
+            // people_colli.enabled=true;
+            colli_after.SetActive(true);
+            colli_before.SetActive(false);
+            Invoke("after_1sec_close",0.1f);
+            quest_manager.Netsircount=1;
+            hidepeprlookCanvas.SetActive(false);
+            }
+            if(tag=="blue_stranger")
+            {
+            colli_after.SetActive(true);
+            colli_before.SetActive(false);
+            Invoke("after_1sec_close",0.1f);
+            }
+            if(tag=="green_stranger")
+            {
+            colli_after.SetActive(true);
+            colli_before.SetActive(false);
+            Invoke("after_1sec_close",0.1f);
+            }
+            if(tag=="pink_stranger")
+            {
+            colli_after.SetActive(true);
+            colli_before.SetActive(false);
+            Invoke("after_1sec_close",0.1f);
+            }
+            if(tag=="red_stranger")
+            {
+            colli_after.SetActive(true);
+            colli_before.SetActive(false);
+            Invoke("after_1sec_close",0.1f);
             }
         }
+    }
+
+    void before_1sec_close()
+    {
+        colli_before.SetActive(false);
+    }
+    void after_1sec_close()
+    {
+        colli_after.SetActive(false);
     }
 }

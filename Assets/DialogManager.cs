@@ -13,7 +13,8 @@ public class DialogManager : MonoBehaviour
     public Text messageText;
     public RectTransform backgroundBox;
     public GameObject DB, PL;
-    public Text Mission1, Mission2, Mission3, Mission4, Mission5;
+    public Text Mission1, Mission3, Mission4, Mission5;
+    // Mission2放在蔗糖trigger的script裡面
 
     Message[] currentMessages;
     Actor[] currentActors;
