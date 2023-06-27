@@ -11,13 +11,13 @@ public class DialogTrigger : MonoBehaviour
     [SerializeField] private GameObject ObjectTag;
     
 
-    void StartDialogue1() {
-        //FindObjectOfType<DialogManager>().openDialogue(messages, actors);
+    void StartDialogue1()
+    {   
         dialogueBox.GetComponent<DialogManager>().openDialogue(messages_1, actors);
     }
 
-    void StartDialogue2() {
-        //FindObjectOfType<DialogManager>().openDialogue(messages2, actors);
+    void StartDialogue2() 
+    {        
         dialogueBox.GetComponent<DialogManager>().openDialogue(messages_2, actors);
     }
 
@@ -39,7 +39,7 @@ public class DialogTrigger : MonoBehaviour
         //玩家的tag還在初始階段時
         else if (other.gameObject.tag == "Player")
         {
-            Debug.Log("沒拿蔗糖碰到荷蘭人");
+            Debug.Log("沒拿蔗糖碰到荷蘭人、或是碰到路人");
             dialogueBox.SetActive(true);
             StartDialogue2();
         }
@@ -59,11 +59,11 @@ public class DialogTrigger : MonoBehaviour
         }
         else if (other.gameObject.tag != "PlayerWithGou" && other.gameObject.tag != "PlayerWithNerthland_A" && other.gameObject.tag != "Player" && other.gameObject.tag != "PlayerWithSugar")
         {
-            Debug.Log("不是玩家");
+            Debug.Log("不是玩家，別展開對話窗");
         }
         else
         {
-            Debug.Log("情況二");
+            Debug.Log("碰到路人");
             dialogueBox.GetComponent<DialogManager>().setPlayerTagDontChangeBool();
             dialogueBox.SetActive(true);
             StartDialogue2();
