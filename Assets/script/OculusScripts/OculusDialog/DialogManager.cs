@@ -6,6 +6,7 @@ using TMPro;
 using UnityEngine.XR.Interaction.Toolkit;
 using UnityEngine.EventSystems;
 using UnityEngine.InputSystem;
+using UnityEngine.XR.Interaction.Toolkit.UI;
 
 public class DialogManager : MonoBehaviour
 {
@@ -99,12 +100,19 @@ public class DialogManager : MonoBehaviour
             {
                 DB.SetActive(false);
                 Mission5.text = "<color=green>5.尋找荷蘭人繳回紙本 ✓</color>";
-                Invoke("ShowEndCanvas", 2);
+                Invoke("ShowEndCanvas", 2);//在此script的106行
             }
         }
     }
     void ShowEndCanvas()
     {
+        Vector3 forward = PL.transform.forward;
+        forward.y = 1;
+        Vector3 x = PL.transform.forward;
+        x.y = 0;
+        endPanel.transform.position = PL.transform.position + forward * 3;
+        endPanel.transform.rotation = Quaternion.LookRotation(x,Vector3.up);
+
         endPanel.SetActive(true);
     }
 
