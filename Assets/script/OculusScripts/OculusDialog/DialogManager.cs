@@ -12,7 +12,7 @@ public class DialogManager : MonoBehaviour
     public Text actorName;
     public Text messageText;
     public RectTransform backgroundBox;
-    public GameObject DB, PL;
+    public GameObject DB, PL, endPanel;
     public Text Mission1, Mission3, Mission4, Mission5;
     // Mission2放在蔗糖trigger的script裡面
 
@@ -99,8 +99,13 @@ public class DialogManager : MonoBehaviour
             {
                 DB.SetActive(false);
                 Mission5.text = "<color=green>5.尋找荷蘭人繳回紙本 ✓</color>";
+                Invoke("ShowEndCanvas", 2);
             }
         }
+    }
+    void ShowEndCanvas()
+    {
+        endPanel.SetActive(true);
     }
 
     public void ClickNextMessage(){
@@ -127,5 +132,14 @@ public class DialogManager : MonoBehaviour
         //        spawnBool = false;
         //    }
         //}
+
+        //測試用
+        if (Input.GetKeyUp(KeyCode.R)) {
+            Invoke("ShowEndCanvas", 2);
+        }
+        if (Input.GetKeyDown (KeyCode.S))
+        {
+            PL.tag = "PlayerWithGou";
+        }
     }
 }
