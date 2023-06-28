@@ -17,7 +17,7 @@ public class PickUp : MonoBehaviour
     //}
 
     public void changeOblectTag()
-    {
+    {      
         PL.tag = "PlayerWithSugar";
         Mission2.text = "<color=green>2.尋找甘蔗</color>";
         BackColor();

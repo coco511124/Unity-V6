@@ -2626,7 +2626,7 @@ MonoBehaviour:
   Mission3: {fileID: 1269761751}
   Mission4: {fileID: 273034764}
   Mission5: {fileID: 1985741238}
-  CallObjectAnimator: {fileID: 0}
+  CallObjectAnimator: {fileID: 1373737266}
 --- !u!114 &211262718
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -14348,6 +14348,39 @@ SphereCollider:
   serializedVersion: 2
   m_Radius: 0.34
   m_Center: {x: -0.00000003585592, y: -0.000000014901161, z: 0}
+--- !u!95 &1373737290
+Animator:
+  serializedVersion: 5
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1373737266}
+  m_Enabled: 1
+  m_Avatar: {fileID: 0}
+  m_Controller: {fileID: 0}
+  m_CullingMode: 0
+  m_UpdateMode: 0
+  m_ApplyRootMotion: 0
+  m_LinearVelocityBlending: 0
+  m_StabilizeFeet: 0
+  m_WarningMessage: 
+  m_HasTransformHierarchy: 1
+  m_AllowConstantClipSamplingOptimization: 1
+  m_KeepAnimatorStateOnDisable: 0
+  m_WriteDefaultValuesOnDisable: 0
+--- !u!114 &1373737291
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1373737266}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: a8f6df98ca9c4654296f349dbfa76781, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
 --- !u!1001 &1380802625
 PrefabInstance:
   m_ObjectHideFlags: 0
@@ -34469,7 +34502,7 @@ GameObject:
   - component: {fileID: 9010940030217753752}
   m_Layer: 0
   m_Name: neher_blue_idle
-  m_TagString: Untagged
+  m_TagString: People_Blue
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
