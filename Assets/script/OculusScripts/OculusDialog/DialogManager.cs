@@ -24,7 +24,7 @@ public class DialogManager : MonoBehaviour
     //[SerializeField] private float spawnDialogBoxTimer;
     //[SerializeField] private float spawnDialogBoxTimerMax = 3f;
     //[SerializeField] bool spawnBool;
-    [SerializeField] private GameObject CallObjectAnimator;
+    [SerializeField] private GameObject CallObjectAnimatorOrCallMethodOrCheckTag;
     bool PlayerTagDontChange ;
 
     
@@ -35,7 +35,7 @@ public class DialogManager : MonoBehaviour
     }
 
     public void openDialogue(Message[] messages, Actor[] actors) {
-        CallObjectAnimator.GetComponent<NPC_animate>().ChangeAnimate(); //呼叫指定物件改成對話中動畫的方法
+        CallObjectAnimatorOrCallMethodOrCheckTag.GetComponent<NPC_animate>().ChangeAnimate(); //呼叫指定物件改成對話中動畫的方法
         currentActors = actors;
         currentMessages = messages;
         activeMessage = 0;
@@ -65,7 +65,7 @@ public class DialogManager : MonoBehaviour
         }
         //任務2完成訊息，執行在掛載在甘蔗上的PickUp腳本
         else {
-            CallObjectAnimator.GetComponent<NPC_animate>().BackAnimate(); //呼叫指定物件改回待機動畫的方法
+            CallObjectAnimatorOrCallMethodOrCheckTag.GetComponent<NPC_animate>().BackAnimate(); //呼叫指定物件改回待機動畫的方法
             if (PL.tag == "Player")
             {
                 DB.SetActive(false);
@@ -93,7 +93,8 @@ public class DialogManager : MonoBehaviour
                     //拿完文件對話完才能tag為PlayerWithGou
                     DB.SetActive(false);
                     PL.tag = "PlayerWithGou";
-                    Mission4.text = "<color=green>4.找到郭懷一對話獲取文件 ✓</color>";                    
+                    Mission4.text = "<color=green>4.找到郭懷一對話獲取文件 ✓</color>";
+                    CallObjectAnimatorOrCallMethodOrCheckTag.GetComponent<HuaiGivePaper>().SetPaperActive();
                 }
             }
             else if (PL.tag == "PlayerWithGou")
