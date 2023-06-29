@@ -7,14 +7,7 @@ public class PickUp : MonoBehaviour
 {
     public GameObject PL, Objects;
     [SerializeField] private Text Mission2;
-    //void OnTriggerEnter(Collider other)
-    //{
-    //    if (other.gameObject.tag == "Hand"){
-    //        //Objects.SetActive(false);
-    //        PL.tag = "PlayerWithSugar";
-    //        Mission2.text = "<color=green>2.尋找甘蔗</color>";
-    //    }
-    //}
+    
 
     public void changeOblectTag()
     {      

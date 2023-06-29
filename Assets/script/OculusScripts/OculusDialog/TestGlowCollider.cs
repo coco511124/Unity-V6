@@ -10,22 +10,22 @@ public class TestGlowCollider : MonoBehaviour
 
     public Text MissionTwo;
 
-    void OnTriggerEnter(Collider other)
-    {
-        if(other.gameObject.tag == "Player"){
-            Grabbles.GetComponent<MeshRenderer>().material = Material_Change;
-            //MissionTwo.text = "2.尋找甘蔗 √";
-            //MissionTwo.color = Color.green;
-            //Debug.Log("enter!!!");
-        }
-    }
-    void OnTriggerExit(Collider other)
-    {
-        if(other.gameObject.tag == "Player"){
-            Grabbles.GetComponent<MeshRenderer>().material = Material_Origin;
-            //Debug.Log("exit!!!");
-        }
-    }
+    //void OnTriggerEnter(Collider other)
+    //{
+    //    if(other.gameObject.tag == "Player"){
+    //        Grabbles.GetComponent<MeshRenderer>().material = Material_Change;
+    //        //MissionTwo.text = "2.尋找甘蔗 √";
+    //        //MissionTwo.color = Color.green;
+    //        //Debug.Log("enter!!!");
+    //    }
+    //}
+    //void OnTriggerExit(Collider other)
+    //{
+    //    if(other.gameObject.tag == "Player"){
+    //        Grabbles.GetComponent<MeshRenderer>().material = Material_Origin;
+    //        //Debug.Log("exit!!!");
+    //    }
+    //}
     public void setMaterialOrigin()
     {
         Grabbles.GetComponent<MeshRenderer>().material = Material_Origin;
