@@ -29,28 +29,28 @@ public class DialogTrigger : MonoBehaviour
             dialogueBox.SetActive(true);
             StartDialogue1();
         }
-        //拿到蔗糖後
+        //拿到蔗糖後，跟荷蘭人A對襪
         else if (other.gameObject.tag == "PlayerWithSugar"  && ObjectTag.tag == "people")
         {
             Debug.Log("拿到蔗糖碰到荷蘭人A");
             dialogueBox.SetActive(true);
             StartDialogue1();
         }
-        //玩家的tag還在初始階段時
+        //玩家的tag還在初始階段時，碰到各個角色時
         else if (other.gameObject.tag == "Player")
         {
             Debug.Log("沒拿蔗糖碰到荷蘭人、或是碰到路人");
             dialogueBox.SetActive(true);
             StartDialogue2();
         }
-        //跟荷蘭人A對話完後
+        //跟荷蘭人A對話完後，跟郭懷一對話
         else if (other.gameObject.tag == "PlayerWithNerthland_A" && ObjectTag.tag == "huai")
         {
             Debug.Log("跟荷蘭人A聊過了");
             dialogueBox.SetActive(true);
             StartDialogue1();
         }
-        //跟郭懷一對話完後
+        //跟郭懷一對話完後，跟荷蘭人B對話
         else if (other.gameObject.tag == "PlayerWithGou" && ObjectTag.tag == "People_Blue") 
         {
             Debug.Log("跟郭懷一聊過了");
@@ -63,8 +63,7 @@ public class DialogTrigger : MonoBehaviour
         }
         else
         {
-            Debug.Log("碰到路人");
-            dialogueBox.GetComponent<DialogManager>().setPlayerTagDontChangeBool();
+            Debug.Log("碰到路人");           
             dialogueBox.SetActive(true);
             StartDialogue2();
         }
