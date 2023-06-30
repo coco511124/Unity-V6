@@ -711,8 +711,9 @@ GameObject:
   - component: {fileID: 77055393}
   - component: {fileID: 77055392}
   - component: {fileID: 77055396}
+  - component: {fileID: 77055397}
   m_Layer: 0
-  m_Name: Table
+  m_Name: SugarTable
   m_TagString: Untagged
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
@@ -729,9 +730,11 @@ Transform:
   m_LocalPosition: {x: -50.372, y: -1.222, z: 91.87}
   m_LocalScale: {x: 1, y: 1, z: 1}
   m_ConstrainProportionsScale: 0
-  m_Children: []
+  m_Children:
+  - {fileID: 458353339}
+  - {fileID: 1444952001}
   m_Father: {fileID: 1145515591}
-  m_RootOrder: 3
+  m_RootOrder: 1
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
 --- !u!65 &77055392
 BoxCollider:
@@ -812,6 +815,47 @@ Rigidbody:
   m_Interpolate: 0
   m_Constraints: 0
   m_CollisionDetection: 0
+--- !u!114 &77055397
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 77055390}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 43c86fedc8163124dac797d3d6ba3d22, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  changeTagOrMissionText:
+    m_PersistentCalls:
+      m_Calls:
+      - m_Target: {fileID: 8453822172156957517}
+        m_TargetAssemblyTypeName: ChangeTextColorOrTag, Assembly-CSharp
+        m_MethodName: changePlayerTag
+        m_Mode: 1
+        m_Arguments:
+          m_ObjectArgument: {fileID: 0}
+          m_ObjectArgumentAssemblyTypeName: UnityEngine.Object, UnityEngine
+          m_IntArgument: 0
+          m_FloatArgument: 0
+          m_StringArgument: 
+          m_BoolArgument: 0
+        m_CallState: 2
+      - m_Target: {fileID: 2090680017}
+        m_TargetAssemblyTypeName: ChangeTextColorOrTag, Assembly-CSharp
+        m_MethodName: changeColor
+        m_Mode: 1
+        m_Arguments:
+          m_ObjectArgument: {fileID: 0}
+          m_ObjectArgumentAssemblyTypeName: UnityEngine.Object, UnityEngine
+          m_IntArgument: 0
+          m_FloatArgument: 0
+          m_StringArgument: 
+          m_BoolArgument: 0
+        m_CallState: 2
+  tableTopPoint: {fileID: 1444952001}
+  sugarPrefab: {fileID: 3920387591681386305, guid: 5822a8a2b8b0dd14faa2031a5cd805cc, type: 3}
 --- !u!1001 &77913450
 PrefabInstance:
   m_ObjectHideFlags: 0
@@ -5628,9 +5672,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 6f0f11e1d39a1c142bf3d649a818a0bf, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  PL: {fileID: 3817447267444838896}
   Objects: {fileID: 1776298432}
-  Mission2: {fileID: 2090680015}
 --- !u!65 &458353350
 BoxCollider:
   m_ObjectHideFlags: 0
@@ -5802,11 +5844,11 @@ PrefabInstance:
   m_ObjectHideFlags: 0
   serializedVersion: 2
   m_Modification:
-    m_TransformParent: {fileID: 1145515591}
+    m_TransformParent: {fileID: 77055391}
     m_Modifications:
     - target: {fileID: -8679921383154817045, guid: 5d7c5f62756743843a816bd3e0701866, type: 3}
       propertyPath: m_RootOrder
-      value: 1
+      value: 0
       objectReference: {fileID: 0}
     - target: {fileID: -8679921383154817045, guid: 5d7c5f62756743843a816bd3e0701866, type: 3}
       propertyPath: m_LocalScale.x
@@ -5818,19 +5860,19 @@ PrefabInstance:
       objectReference: {fileID: 0}
     - target: {fileID: -8679921383154817045, guid: 5d7c5f62756743843a816bd3e0701866, type: 3}
       propertyPath: m_LocalScale.z
-      value: 14.475249
+      value: 14.475248
       objectReference: {fileID: 0}
     - target: {fileID: -8679921383154817045, guid: 5d7c5f62756743843a816bd3e0701866, type: 3}
       propertyPath: m_LocalPosition.x
-      value: -50.36
+      value: 0.012001038
       objectReference: {fileID: 0}
     - target: {fileID: -8679921383154817045, guid: 5d7c5f62756743843a816bd3e0701866, type: 3}
       propertyPath: m_LocalPosition.y
-      value: -0.02
+      value: 1.202
       objectReference: {fileID: 0}
     - target: {fileID: -8679921383154817045, guid: 5d7c5f62756743843a816bd3e0701866, type: 3}
       propertyPath: m_LocalPosition.z
-      value: 91.98
+      value: 0.11000061
       objectReference: {fileID: 0}
     - target: {fileID: -8679921383154817045, guid: 5d7c5f62756743843a816bd3e0701866, type: 3}
       propertyPath: m_LocalRotation.w
@@ -5863,6 +5905,10 @@ PrefabInstance:
     - target: {fileID: 919132149155446097, guid: 5d7c5f62756743843a816bd3e0701866, type: 3}
       propertyPath: m_Name
       value: sugarTAKE_ground
+      objectReference: {fileID: 0}
+    - target: {fileID: 919132149155446097, guid: 5d7c5f62756743843a816bd3e0701866, type: 3}
+      propertyPath: m_IsActive
+      value: 0
       objectReference: {fileID: 0}
     - target: {fileID: 919132149155446097, guid: 5d7c5f62756743843a816bd3e0701866, type: 3}
       propertyPath: m_TagString
@@ -7398,7 +7444,7 @@ Transform:
   m_ConstrainProportionsScale: 0
   m_Children: []
   m_Father: {fileID: 1145515591}
-  m_RootOrder: 4
+  m_RootOrder: 3
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
 --- !u!65 &682300940
 BoxCollider:
@@ -7753,7 +7799,7 @@ Transform:
   m_Children:
   - {fileID: 601071256}
   m_Father: {fileID: 1145515591}
-  m_RootOrder: 5
+  m_RootOrder: 4
   m_LocalEulerAnglesHint: {x: 0, y: -90, z: 0}
 --- !u!114 &705618424
 MonoBehaviour:
@@ -12692,9 +12738,8 @@ Transform:
   m_ConstrainProportionsScale: 0
   m_Children:
   - {fileID: 1373737280}
-  - {fileID: 458353339}
-  - {fileID: 1437304347}
   - {fileID: 77055391}
+  - {fileID: 1437304347}
   - {fileID: 682300939}
   - {fileID: 705618423}
   m_Father: {fileID: 0}
@@ -16330,6 +16375,52 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: dbcad40005b9fb5409ce423c37d7b969, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
+  queueChange:
+    m_PersistentCalls:
+      m_Calls:
+      - m_Target: {fileID: 77055397}
+        m_TargetAssemblyTypeName: SugarSpawnSpot, Assembly-CSharp
+        m_MethodName: minusQueue
+        m_Mode: 1
+        m_Arguments:
+          m_ObjectArgument: {fileID: 0}
+          m_ObjectArgumentAssemblyTypeName: UnityEngine.Object, UnityEngine
+          m_IntArgument: 0
+          m_FloatArgument: 0
+          m_StringArgument: 
+          m_BoolArgument: 0
+        m_CallState: 2
+--- !u!1 &1444952000
+GameObject:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  serializedVersion: 6
+  m_Component:
+  - component: {fileID: 1444952001}
+  m_Layer: 0
+  m_Name: tableTopPoint
+  m_TagString: Untagged
+  m_Icon: {fileID: 0}
+  m_NavMeshLayer: 0
+  m_StaticEditorFlags: 0
+  m_IsActive: 1
+--- !u!4 &1444952001
+Transform:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1444952000}
+  m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
+  m_LocalPosition: {x: 0, y: 0.597, z: 0}
+  m_LocalScale: {x: 1, y: 1, z: 1}
+  m_ConstrainProportionsScale: 0
+  m_Children: []
+  m_Father: {fileID: 77055391}
+  m_RootOrder: 1
+  m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
 --- !u!1001 &1453825527
 PrefabInstance:
   m_ObjectHideFlags: 0
@@ -23438,6 +23529,7 @@ GameObject:
   - component: {fileID: 2090680016}
   - component: {fileID: 2090680015}
   - component: {fileID: 2090680014}
+  - component: {fileID: 2090680017}
   m_Layer: 5
   m_Name: quest_2
   m_TagString: Untagged
@@ -23522,6 +23614,18 @@ CanvasRenderer:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 2090680012}
   m_CullTransparentMesh: 1
+--- !u!114 &2090680017
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 2090680012}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 7ca78dd7bf65b2840947b04574eda92b, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
 --- !u!224 &2093732004 stripped
 RectTransform:
   m_CorrespondingSourceObject: {fileID: 7118575910639329818, guid: 31e1b3d6ca3ec0342b4c47f394065d47, type: 3}
@@ -30386,6 +30490,7 @@ GameObject:
   - component: {fileID: 8453822172156957506}
   - component: {fileID: 8453822172156957514}
   - component: {fileID: 8453822172156957516}
+  - component: {fileID: 8453822172156957517}
   m_Layer: 2
   m_Name: XR Origin
   m_TagString: Player
@@ -37525,6 +37630,18 @@ MonoBehaviour:
       m_Flags: 0
     m_Reference: {fileID: -6986039836983411974, guid: c348712bda248c246b8c49b3db54643f, type: 3}
   RightGrabRay: {fileID: 2146441184}
+--- !u!114 &8453822172156957517
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 3817447267444838896}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 7ca78dd7bf65b2840947b04574eda92b, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
 --- !u!114 &8453822172156957518
 MonoBehaviour:
   m_ObjectHideFlags: 0
