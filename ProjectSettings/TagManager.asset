@@ -12,6 +12,11 @@ TagManager:
   - PlayerWithNerthland_A
   - PlayerWithGou
   - People_Blue
+  - blue_stranger
+  - green_stranger
+  - pink_stranger
+  - red_stranger
+  - Sugar
   layers:
   - Default
   - TransparentFX
