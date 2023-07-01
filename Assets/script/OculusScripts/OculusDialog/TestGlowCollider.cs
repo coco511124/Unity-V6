@@ -8,7 +8,7 @@ public class TestGlowCollider : MonoBehaviour
     public Material Material_Change, Material_Origin;
     public GameObject Grabbles;
 
-    public Text MissionTwo;
+    //public Text MissionTwo;
 
     //void OnTriggerEnter(Collider other)
     //{
