@@ -2,6 +2,7 @@ using System.Collections;
 using System.Collections.Generic;
 using UnityEngine;
 using TMPro;
+using UnityEngine.AI;
 
 public class DialogTrigger : MonoBehaviour
 {
@@ -9,6 +10,7 @@ public class DialogTrigger : MonoBehaviour
     public Actor[] actors;
     public GameObject dialogueBox;
     [SerializeField] private GameObject ObjectTag;
+
     
 
     void StartDialogue1()
@@ -35,6 +37,7 @@ public class DialogTrigger : MonoBehaviour
             Debug.Log("拿到蔗糖碰到荷蘭人A");
             dialogueBox.SetActive(true);
             StartDialogue1();
+            ObjectTag.GetComponent<RandomPathTrolling>().SetWalkFalse(); //呼叫RandomPathTrolling腳本的方法，停止NPC移動
         }
         //玩家的tag還在初始階段時，碰到各個角色時
         else if (other.gameObject.tag == "Player")
@@ -42,6 +45,7 @@ public class DialogTrigger : MonoBehaviour
             Debug.Log("沒拿蔗糖碰到荷蘭人、或是碰到路人");
             dialogueBox.SetActive(true);
             StartDialogue2();
+            ObjectTag.GetComponent<RandomPathTrolling>().SetWalkFalse(); //呼叫RandomPathTrolling腳本的方法，停止NPC移動
         }
         //跟荷蘭人A對話完後，跟郭懷一對話
         else if (other.gameObject.tag == "PlayerWithNerthland_A" && ObjectTag.tag == "huai")
@@ -49,6 +53,7 @@ public class DialogTrigger : MonoBehaviour
             Debug.Log("跟荷蘭人A聊過了");
             dialogueBox.SetActive(true);
             StartDialogue1();
+            ObjectTag.GetComponent<RandomPathTrolling>().SetWalkFalse(); //呼叫RandomPathTrolling腳本的方法，停止NPC移動
         }
         //跟郭懷一對話完後，跟荷蘭人B對話
         else if (other.gameObject.tag == "PlayerWithGou" && ObjectTag.tag == "People_Blue") 
@@ -56,6 +61,7 @@ public class DialogTrigger : MonoBehaviour
             Debug.Log("跟郭懷一聊過了");
             dialogueBox.SetActive(true);
             StartDialogue1();
+            ObjectTag.GetComponent<RandomPathTrolling>().SetWalkFalse(); //呼叫RandomPathTrolling腳本的方法，停止NPC移動
         }
         else if (other.gameObject.tag != "PlayerWithGou" && other.gameObject.tag != "PlayerWithNerthland_A" && other.gameObject.tag != "Player" && other.gameObject.tag != "PlayerWithSugar")
         {
@@ -66,6 +72,7 @@ public class DialogTrigger : MonoBehaviour
             Debug.Log("碰到路人");           
             dialogueBox.SetActive(true);
             StartDialogue2();
+            ObjectTag.GetComponent<RandomPathTrolling>().SetWalkFalse(); //呼叫RandomPathTrolling腳本的方法，停止NPC移動
         }
     }
 }

@@ -57,6 +57,7 @@ public class DialogManager : MonoBehaviour
         //任務2完成訊息，執行在掛載在甘蔗上的PickUp腳本
         else {
             CallObjectAnimatorOrCallMethodOrCheckTag.GetComponent<NPC_animate>().BackAnimate(); //呼叫指定物件改回待機動畫的方法
+            CallObjectAnimatorOrCallMethodOrCheckTag.GetComponent<RandomPathTrolling>().SetWalkTrue(); //呼叫RandomPathTrolling腳本的方法，允許NPC移動
             if (PL.tag == "Player")
             {
                 DB.SetActive(false);
