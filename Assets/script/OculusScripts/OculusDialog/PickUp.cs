@@ -11,6 +11,8 @@ public class PickUp : MonoBehaviour
     //public GameObject PL;
     //[SerializeField] private Text Mission2;
     public GameObject Objects;
+    //public static SaveSystem SaveSystem;
+    
 
     public void changeOblectTag()
     {
@@ -30,4 +32,5 @@ public class PickUp : MonoBehaviour
     {
         Objects.GetComponent<TestGlowCollider>().setMaterialOrigin();
     }
+
 }

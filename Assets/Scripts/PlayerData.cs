@@ -9,12 +9,14 @@ public class PlayerData
     [SerializeField] public string playerName;
     [SerializeField] public string playerTime;
     [SerializeField] public string playerActionType;
+    [SerializeField] public int playerPickSugar;
 
 
-    public PlayerData(string name, string time, string actiontype) {
+    public PlayerData(string name, string time, string actiontype, int times) {
         
         playerName = name;
         playerTime = time;
         playerActionType = actiontype;
+        playerPickSugar = times;
     }
 }
