@@ -827,7 +827,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   tableTopPoint: {fileID: 1444952001}
-  sugarPrefab: {fileID: 3920387591681386305, guid: 5822a8a2b8b0dd14faa2031a5cd805cc, type: 3}
+  sugarPrefab: {fileID: 0}
 --- !u!1001 &77913450
 PrefabInstance:
   m_ObjectHideFlags: 0
@@ -8727,6 +8727,19 @@ Transform:
   m_CorrespondingSourceObject: {fileID: 4835949990771901208, guid: 000f0b031c5a5cf4d8c94c697c9b60bd, type: 3}
   m_PrefabInstance: {fileID: 4835949991410115311}
   m_PrefabAsset: {fileID: 0}
+--- !u!135 &705618426
+SphereCollider:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 705618422}
+  m_Material: {fileID: 0}
+  m_IsTrigger: 1
+  m_Enabled: 1
+  serializedVersion: 2
+  m_Radius: 0.5
+  m_Center: {x: 0, y: 0, z: 0}
 --- !u!1 &719060040
 GameObject:
   m_ObjectHideFlags: 0
@@ -34672,6 +34685,7 @@ GameObject:
   - component: {fileID: 8453822172156957514}
   - component: {fileID: 8453822172156957516}
   - component: {fileID: 8453822172156957517}
+  - component: {fileID: 8453822172156957519}
   m_Layer: 2
   m_Name: XR Origin
   m_TagString: Player
@@ -36004,6 +36018,34 @@ PrefabInstance:
       propertyPath: m_InteractionManager
       value: 
       objectReference: {fileID: 8453822172605002800}
+    - target: {fileID: 4835949990771901207, guid: 000f0b031c5a5cf4d8c94c697c9b60bd, type: 3}
+      propertyPath: m_SelectExited.m_PersistentCalls.m_Calls.Array.size
+      value: 2
+      objectReference: {fileID: 0}
+    - target: {fileID: 4835949990771901207, guid: 000f0b031c5a5cf4d8c94c697c9b60bd, type: 3}
+      propertyPath: m_SelectExited.m_PersistentCalls.m_Calls.Array.data[1].m_Mode
+      value: 1
+      objectReference: {fileID: 0}
+    - target: {fileID: 4835949990771901207, guid: 000f0b031c5a5cf4d8c94c697c9b60bd, type: 3}
+      propertyPath: m_SelectExited.m_PersistentCalls.m_Calls.Array.data[1].m_Target
+      value: 
+      objectReference: {fileID: 8453822172156957519}
+    - target: {fileID: 4835949990771901207, guid: 000f0b031c5a5cf4d8c94c697c9b60bd, type: 3}
+      propertyPath: m_SelectExited.m_PersistentCalls.m_Calls.Array.data[1].m_CallState
+      value: 2
+      objectReference: {fileID: 0}
+    - target: {fileID: 4835949990771901207, guid: 000f0b031c5a5cf4d8c94c697c9b60bd, type: 3}
+      propertyPath: m_SelectExited.m_PersistentCalls.m_Calls.Array.data[1].m_MethodName
+      value: PaperSelect
+      objectReference: {fileID: 0}
+    - target: {fileID: 4835949990771901207, guid: 000f0b031c5a5cf4d8c94c697c9b60bd, type: 3}
+      propertyPath: m_SelectExited.m_PersistentCalls.m_Calls.Array.data[1].m_TargetAssemblyTypeName
+      value: SaveSystem, Assembly-CSharp
+      objectReference: {fileID: 0}
+    - target: {fileID: 4835949990771901207, guid: 000f0b031c5a5cf4d8c94c697c9b60bd, type: 3}
+      propertyPath: m_SelectExited.m_PersistentCalls.m_Calls.Array.data[1].m_Arguments.m_ObjectArgumentAssemblyTypeName
+      value: UnityEngine.Object, UnityEngine
+      objectReference: {fileID: 0}
     - target: {fileID: 4835949990771901208, guid: 000f0b031c5a5cf4d8c94c697c9b60bd, type: 3}
       propertyPath: m_RootOrder
       value: 0
@@ -36054,7 +36096,7 @@ PrefabInstance:
       objectReference: {fileID: 0}
     - target: {fileID: 4835949990771901209, guid: 000f0b031c5a5cf4d8c94c697c9b60bd, type: 3}
       propertyPath: m_IsActive
-      value: 0
+      value: 1
       objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: 000f0b031c5a5cf4d8c94c697c9b60bd, type: 3}
@@ -41991,6 +42033,26 @@ MonoBehaviour:
       m_Flags: 0
     m_Flags: 0
   m_HasMigratedActions: 1
+--- !u!114 &8453822172156957519
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 3817447267444838896}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 165b42d4535b70949b8af0a816519cff, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  pldata: []
+  playerName: 123
+  player:
+    playerName: 
+    playerTime: 
+    playerActionType: 
+  type: 
+  filename: playerdata.json
 --- !u!114 &8453822172605002800
 MonoBehaviour:
   m_ObjectHideFlags: 0
