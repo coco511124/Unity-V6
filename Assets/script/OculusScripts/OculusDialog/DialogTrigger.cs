@@ -75,6 +75,10 @@ public class DialogTrigger : MonoBehaviour
             ObjectTag.GetComponent<RandomPathTrolling>().SetWalkFalse(); //呼叫RandomPathTrolling腳本的方法，停止NPC移動
         }
     }
+    private void OnTriggerExit(Collider other)
+    {
+        dialogueBox.SetActive(false);
+    }
 }
 
 [System.Serializable]

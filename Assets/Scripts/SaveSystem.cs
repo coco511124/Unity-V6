@@ -15,7 +15,7 @@ public class SaveSystem : MonoBehaviour
     [SerializeField] public string playerName;
     [SerializeField] public PlayerData player;
     [SerializeField] string type;
-    [SerializeField] public static int pickupTimes = 0;
+    [SerializeField] public static int pickupTimes;
  
     [SerializeField] public string filename = "playerdata.json";
 
@@ -68,6 +68,13 @@ public class SaveSystem : MonoBehaviour
         else if (other.gameObject.tag == "red_stranger")
         {
             type = "和紅色陌生人說話";
+
+            pldata.Add(new PlayerData(playerName, DateTime.Now.ToString(), type, pickupTimes));
+            FileHandler.SaveToJSON<PlayerData>(pldata, filename);
+        }
+        else if (other.gameObject.tag == "thing")
+        {
+            type = "碰到驚嘆號";
 
             pldata.Add(new PlayerData(playerName, DateTime.Now.ToString(), type, pickupTimes));
             FileHandler.SaveToJSON<PlayerData>(pldata, filename);

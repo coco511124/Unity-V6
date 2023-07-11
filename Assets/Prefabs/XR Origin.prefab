@@ -295,6 +295,7 @@ MonoBehaviour:
     playerPickSugar: 0
   type: 
   filename: playerdata.json
+  numprivate: 0
 --- !u!1 &1564893807173882656
 GameObject:
   m_ObjectHideFlags: 0

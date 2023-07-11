@@ -1075,6 +1075,15 @@
                     "processors": "",
                     "interactions": "",
                     "initialStateCheck": false
+                },
+                {
+                    "name": "EnterDialogueButton",
+                    "type": "Button",
+                    "id": "6d8f1c98-9ae7-4fb8-9bfb-fd8f3b740713",
+                    "expectedControlType": "Button",
+                    "processors": "",
+                    "interactions": "",
+                    "initialStateCheck": false
                 }
             ],
             "bindings": [
@@ -1295,6 +1304,17 @@
                     "processors": "",
                     "groups": "Generic XR Controller",
                     "action": "PressAOpenCloseRayInteractor",
+                    "isComposite": false,
+                    "isPartOfComposite": false
+                },
+                {
+                    "name": "",
+                    "id": "9963ff1f-0dd7-4356-9595-fd0c3cca2b21",
+                    "path": "<OculusTouchController>{RightHand}/secondaryButton",
+                    "interactions": "",
+                    "processors": "",
+                    "groups": "Generic XR Controller",
+                    "action": "EnterDialogueButton",
                     "isComposite": false,
                     "isPartOfComposite": false
                 }
