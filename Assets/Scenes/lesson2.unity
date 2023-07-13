@@ -29751,7 +29751,7 @@ MonoBehaviour:
     meassage: " \u8ACB\u4F60\u518D\u627E\u4E00\u4E0B\u8517\u7CD6\uFF0C\u5E0C\u671B\u4E0B\u6B21\u80FD\u770B\u5230\u4F60\u7684\u8517\u7CD6\u3002 "
   actors:
   - name: "\u8377\u862D\u4EBAA"
-  dialogueBox: {fileID: 2069179471}
+  dialogueBox: {fileID: 1652505482}
   ObjectTag: {fileID: 1168264978215512586}
 --- !u!135 &1980829993258774706
 SphereCollider:

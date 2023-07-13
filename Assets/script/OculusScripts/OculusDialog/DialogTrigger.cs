@@ -78,6 +78,7 @@ public class DialogTrigger : MonoBehaviour
     private void OnTriggerExit(Collider other)
     {
         dialogueBox.SetActive(false);
+        ObjectTag.GetComponent<RandomPathTrolling>().SetWalkTrue();
     }
 }
 
