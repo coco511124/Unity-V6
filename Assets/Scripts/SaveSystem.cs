@@ -107,6 +107,7 @@ public class SaveSystem : MonoBehaviour
         if (change == true)   //要是被允許改變的話 。 可以直接寫if(change就可)，然後也不一定要用change，用可以清楚表達這個變數為哪個物件做事的命名就OK
         {
             numprivate = numstatic; //靜態變數的值，賦予給私有變數
+            pickupTimes = numprivate;
             SugarSelect();  //呼叫SugarSelect方法紀錄log
 
             //流程四

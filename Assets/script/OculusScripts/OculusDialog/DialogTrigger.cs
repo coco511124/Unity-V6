@@ -77,8 +77,11 @@ public class DialogTrigger : MonoBehaviour
     }
     private void OnTriggerExit(Collider other)
     {
+        //³]§PÂ_±ø¥ó
+        //©I¥sNPC_animate
         dialogueBox.SetActive(false);
         ObjectTag.GetComponent<RandomPathTrolling>().SetWalkTrue();
+        ObjectTag.GetComponent<NPC_animate>().BackAnimate();
     }
 }
 
