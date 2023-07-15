@@ -12710,7 +12710,7 @@ MonoBehaviour:
     meassage: "\u963F\u2026\u6C92\u4E8B\u5440\uFF0C\u6700\u8FD1\u4E16\u982D\u633A\u4E82\u7684\uFF0C\u5C0F\u5FC3\u9EDE\u5440\u3002 "
   actors:
   - name: "\u90ED\u61F7\u4E00"
-  dialogueBox: {fileID: 1509562550}
+  dialogueBox: {fileID: 284690528}
   ObjectTag: {fileID: 919132148881023238}
 --- !u!135 &935124059
 SphereCollider:
@@ -16961,7 +16961,7 @@ MonoBehaviour:
     meassage: "\u7E73\u7A05?\u6211\u5011\u662F\u96B8\u5C6C\u963F\u59C6\u65AF\u7279\u4E39\u8FB2\u5834\u7684\u5DE5\u4EBA\uFF0C\u4F46\u62DB\u5DE5\u7684\u4EBA\u6C92\u6709\u8AAA\u8981\u6211\u5011\u7E73\u7A05\u5440\uFF01\uFF1F"
   actors:
   - name: "\u8DEF\u4EBA\uFF21"
-  dialogueBox: {fileID: 422648349}
+  dialogueBox: {fileID: 238561052}
   ObjectTag: {fileID: 1259084991}
 --- !u!135 &1259084994
 SphereCollider:
@@ -21676,7 +21676,7 @@ MonoBehaviour:
     meassage: "\u6211\u5011\u9019\u908A\u4E5F\u4E0D\u904E\u53BB\u6CB3\u5DDD\u6355\u500B\u9B5A\uFF0C\u4E5F\u88AB\u8377\u862D\u4EBA\u6536\u4E86\u7A05\u3002"
   actors:
   - name: "\u8DEF\u4EBA\uFF23"
-  dialogueBox: {fileID: 285530766}
+  dialogueBox: {fileID: 1816338451}
   ObjectTag: {fileID: 1574305752}
 --- !u!135 &1574305755
 SphereCollider:
@@ -22370,7 +22370,7 @@ MonoBehaviour:
     meassage: "\u6211\u88AB\u8377\u862D\u58EB\u5175\u6AA2\u67E5\u4EBA\u982D\u7A05\uFF0C\u7D50\u679C\u4ED6\u5011\u9084\u52D2\u7D22\u6211\u7684\u8CA1\u7269\uFF01"
   actors:
   - name: "\u8DEF\u4EBAD"
-  dialogueBox: {fileID: 996192117}
+  dialogueBox: {fileID: 103293544}
   ObjectTag: {fileID: 1613357960}
 --- !u!135 &1613357963
 SphereCollider:
@@ -42195,7 +42195,7 @@ MonoBehaviour:
     meassage: "\u9084\u6C92\u6709\u55CE? \u90A3\u8ACB\u518D\u7E7C\u7E8C\u627E\u627E\u90ED\u61F7\u4E00\u5427\u3002 "
   actors:
   - name: "\u8377\u862D\u4EBAB"
-  dialogueBox: {fileID: 428852064}
+  dialogueBox: {fileID: 352643040}
   ObjectTag: {fileID: 9010940030217753751}
 --- !u!135 &9010940030217753754
 SphereCollider:
