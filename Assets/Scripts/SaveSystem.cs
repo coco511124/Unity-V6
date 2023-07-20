@@ -24,10 +24,6 @@ public class SaveSystem : MonoBehaviour
     [SerializeField] private int numprivate;
 
 
-    private void Start()
-    {
-        pldata = FileHandler.ReadFromJSON<PlayerData>(filename);
-    }
     private void OnTriggerEnter(Collider other)
     {
         if (other.gameObject.tag == "huai")

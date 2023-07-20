@@ -7,15 +7,20 @@ using UnityEngine.XR.Interaction.Toolkit;
 using UnityEngine.EventSystems;
 using UnityEngine.InputSystem;
 using UnityEngine.XR.Interaction.Toolkit.UI;
+using static System.Net.Mime.MediaTypeNames;
 
 public class DialogManager : MonoBehaviour
 {
-    public Text actorName;
-    public Text messageText;
+    public UnityEngine.UI.Text actorName;
+    public UnityEngine.UI.Text messageText;
     public RectTransform backgroundBox;
     public GameObject DB, PL, endPanel;
-    public Text Mission1, Mission3, Mission4, Mission5;
+    public UnityEngine.UI.Text Mission1, Mission3, Mission4, Mission5;
     // Mission2放在蔗糖trigger的script裡面
+
+    public List<PlayerData> pldata = new List<PlayerData>();
+    public string filename = "playerdata.json";
+    public UnityEngine.UI.Text logText;
 
     Message[] currentMessages;
     Actor[] currentActors;
@@ -121,6 +126,12 @@ public class DialogManager : MonoBehaviour
         x.y = 0;
         endPanel.transform.position = PL.transform.position + forward * 3;
         endPanel.transform.rotation = Quaternion.LookRotation(x,Vector3.up);
+
+        pldata = FileHandler.ReadFromJSON<PlayerData>(filename); //讀取json的內容
+        foreach (var item in pldata)
+        {
+            logText.text += item.playerName + " " + item.playerTime + " " + item.playerActionType + "\n"; //列出log紀錄
+        }
 
         endPanel.SetActive(true);
     }
