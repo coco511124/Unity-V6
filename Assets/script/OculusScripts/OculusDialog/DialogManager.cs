@@ -8,6 +8,7 @@ using UnityEngine.EventSystems;
 using UnityEngine.InputSystem;
 using UnityEngine.XR.Interaction.Toolkit.UI;
 using static System.Net.Mime.MediaTypeNames;
+using System;
 
 public class DialogManager : MonoBehaviour
 {
@@ -17,10 +18,6 @@ public class DialogManager : MonoBehaviour
     public GameObject DB, PL, endPanel;
     public UnityEngine.UI.Text Mission1, Mission3, Mission4, Mission5;
     // Mission2放在蔗糖trigger的script裡面
-
-    public List<PlayerData> pldata = new List<PlayerData>();
-    public string filename = "playerdata.json";
-    public UnityEngine.UI.Text logText;
 
     Message[] currentMessages;
     Actor[] currentActors;
@@ -112,62 +109,46 @@ public class DialogManager : MonoBehaviour
                     //碰到的人如果是荷蘭人B的話，對話窗關閉+更新任務清單+隔兩秒顯示出單元總結畫面
                     DB.SetActive(false);
                     Mission5.text = "<color=green>5.尋找荷蘭人繳回紙本 ✓</color>";
-                    Invoke("ShowEndCanvas", 2);//在此script的106行
+                    EndCanvasManager.EndCanvas();
                 }
                
             }
         }
     }
-    void ShowEndCanvas()
-    {
-        Vector3 forward = PL.transform.forward;
-        forward.y = 1;
-        Vector3 x = PL.transform.forward;
-        x.y = 0;
-        endPanel.transform.position = PL.transform.position + forward * 3;
-        endPanel.transform.rotation = Quaternion.LookRotation(x,Vector3.up);
+    //void ShowEndCanvas()
+    //{
+    //    Vector3 forward = PL.transform.forward;
+    //    forward.y = 1;
+    //    Vector3 x = PL.transform.forward;
+    //    x.y = 0;
+    //    endPanel.transform.position = PL.transform.position + forward * 3;
+    //    endPanel.transform.rotation = Quaternion.LookRotation(x,Vector3.up);
+        
+    //    pldata = FileHandler.ReadFromJSON<PlayerData>(filename); //讀取json的內容
+    //    //pldata10 = pldata.GetRange(pldata.Count - 10, 10);
+    //    Debug.Log(pldata10);
+    //    if (pldata.Count >= 10)
+    //    {
+    //        foreach (var item in pldata.GetRange(pldata.Count - 10, 10))
+    //        {
+    //            logText.text += item.playerName + " " + item.playerTime + " " + item.playerActionType + "\n"; //列出log紀錄
+    //        }
+    //    }
+    //    else
+    //    {
+    //        foreach (var item in pldata.GetRange(0, pldata.Count))
+    //        {
+    //            logText.text += item.playerName + " " + item.playerTime + " " + item.playerActionType + "\n"; //列出log紀錄
+    //        }
+    //    }
+        
+    //    Debug.Log(logText.text);
 
-        pldata = FileHandler.ReadFromJSON<PlayerData>(filename); //讀取json的內容
-        foreach (var item in pldata)
-        {
-            logText.text += item.playerName + " " + item.playerTime + " " + item.playerActionType + "\n"; //列出log紀錄
-        }
-
-        endPanel.SetActive(true);
-    }
+    //    endPanel.SetActive(true);
+    //}
 
     public void ClickNextMessage(){
         NextMessage();
     }
-    // Start is called before the first frame update
-    void Start()
-    {
-        
-    }
-
-    // Update is called once per frame
-    void Update()
-    {
-        if (Input.GetKeyDown(KeyCode.Space)){
-            NextMessage();
-        }
-        //if (spawnBool)
-        //{
-        //    spawnDialogBoxTimer += Time.deltaTime;
-        //    if (spawnDialogBoxTimer > spawnDialogBoxTimerMax)
-        //    {
-        //        DB.SetActive(true);
-        //        spawnBool = false;
-        //    }
-        //}
-
-        //測試用
-        if (Input.GetKeyUp(KeyCode.R)) {
-            Invoke("ShowEndCanvas", 2);
-        }
-        if (Input.GetKeyDown (KeyCode.S))
-        {
-            PL.tag = "PlayerWithGou";
-        }
-    }
+    
 }

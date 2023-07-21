@@ -507,9 +507,6 @@ MonoBehaviour:
   Mission3: {fileID: 1269761751}
   Mission4: {fileID: 273034764}
   Mission5: {fileID: 1985741238}
-  pldata: []
-  filename: playerdata.json
-  logText: {fileID: 1755505624}
   CallObjectAnimatorOrCallMethodOrCheckTag: {fileID: 871318846}
 --- !u!114 &30621175
 MonoBehaviour:
@@ -1583,9 +1580,6 @@ MonoBehaviour:
   Mission3: {fileID: 1269761751}
   Mission4: {fileID: 273034764}
   Mission5: {fileID: 1985741238}
-  pldata: []
-  filename: playerdata.json
-  logText: {fileID: 1755505624}
   CallObjectAnimatorOrCallMethodOrCheckTag: {fileID: 1613357960}
 --- !u!114 &103293547
 MonoBehaviour:
@@ -3096,9 +3090,6 @@ MonoBehaviour:
   Mission3: {fileID: 1269761751}
   Mission4: {fileID: 273034764}
   Mission5: {fileID: 1985741238}
-  pldata: []
-  filename: playerdata.json
-  logText: {fileID: 1755505624}
   CallObjectAnimatorOrCallMethodOrCheckTag: {fileID: 1373737266}
 --- !u!114 &211262718
 MonoBehaviour:
@@ -3266,9 +3257,6 @@ MonoBehaviour:
   Mission3: {fileID: 1269761751}
   Mission4: {fileID: 273034764}
   Mission5: {fileID: 1985741238}
-  pldata: []
-  filename: playerdata.json
-  logText: {fileID: 1755505624}
   CallObjectAnimatorOrCallMethodOrCheckTag: {fileID: 1259084991}
 --- !u!114 &238561055
 MonoBehaviour:
@@ -3632,9 +3620,6 @@ MonoBehaviour:
   Mission3: {fileID: 1269761751}
   Mission4: {fileID: 273034764}
   Mission5: {fileID: 1985741238}
-  pldata: []
-  filename: playerdata.json
-  logText: {fileID: 1755505624}
   CallObjectAnimatorOrCallMethodOrCheckTag: {fileID: 919132148881023238}
 --- !u!114 &284690531
 MonoBehaviour:
@@ -4388,9 +4373,6 @@ MonoBehaviour:
   Mission3: {fileID: 1269761751}
   Mission4: {fileID: 273034764}
   Mission5: {fileID: 1985741238}
-  pldata: []
-  filename: playerdata.json
-  logText: {fileID: 1755505624}
   CallObjectAnimatorOrCallMethodOrCheckTag: {fileID: 9010940030217753751}
 --- !u!114 &352643043
 MonoBehaviour:
@@ -14561,6 +14543,53 @@ Rigidbody:
   m_Interpolate: 0
   m_Constraints: 0
   m_CollisionDetection: 0
+--- !u!1 &1033193476
+GameObject:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  serializedVersion: 6
+  m_Component:
+  - component: {fileID: 1033193478}
+  - component: {fileID: 1033193477}
+  m_Layer: 0
+  m_Name: EndCanvas Manager
+  m_TagString: Untagged
+  m_Icon: {fileID: 0}
+  m_NavMeshLayer: 0
+  m_StaticEditorFlags: 0
+  m_IsActive: 1
+--- !u!114 &1033193477
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1033193476}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: b68cd4104bdcb2f4d999b937858ff6ec, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  PL: {fileID: 1704415944}
+  endPanel: {fileID: 961331399}
+  logText: {fileID: 1755505624}
+--- !u!4 &1033193478
+Transform:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1033193476}
+  m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
+  m_LocalPosition: {x: 38.33854, y: 3.1496954, z: -53.65145}
+  m_LocalScale: {x: 1, y: 1, z: 1}
+  m_ConstrainProportionsScale: 0
+  m_Children: []
+  m_Father: {fileID: 0}
+  m_RootOrder: 16
+  m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
 --- !u!1 &1047335349
 GameObject:
   m_ObjectHideFlags: 0
@@ -23611,9 +23640,6 @@ MonoBehaviour:
   Mission3: {fileID: 1269761751}
   Mission4: {fileID: 273034764}
   Mission5: {fileID: 1985741238}
-  pldata: []
-  filename: playerdata.json
-  logText: {fileID: 1755505624}
   CallObjectAnimatorOrCallMethodOrCheckTag: {fileID: 1168264978215512586}
 --- !u!114 &1652505485
 MonoBehaviour:
@@ -24424,6 +24450,11 @@ PrefabInstance:
 Transform:
   m_CorrespondingSourceObject: {fileID: -8679921383154817045, guid: 9bb5a5e95f62df84bae4fe5d7f0f4bb7, type: 3}
   m_PrefabInstance: {fileID: 1693610885}
+  m_PrefabAsset: {fileID: 0}
+--- !u!1 &1704415944 stripped
+GameObject:
+  m_CorrespondingSourceObject: {fileID: 1675249711676077610, guid: 04d3b91eea2566144aa8397c4e287e25, type: 3}
+  m_PrefabInstance: {fileID: 3752206844681961094}
   m_PrefabAsset: {fileID: 0}
 --- !u!1 &1706561865
 GameObject:
@@ -26840,9 +26871,6 @@ MonoBehaviour:
   Mission3: {fileID: 1269761751}
   Mission4: {fileID: 273034764}
   Mission5: {fileID: 1985741238}
-  pldata: []
-  filename: playerdata.json
-  logText: {fileID: 1755505624}
   CallObjectAnimatorOrCallMethodOrCheckTag: {fileID: 1574305752}
 --- !u!114 &1816338454
 MonoBehaviour:
@@ -28124,6 +28152,86 @@ Transform:
   m_CorrespondingSourceObject: {fileID: -8679921383154817045, guid: e5bc757812e018941be7457b4a59cf53, type: 3}
   m_PrefabInstance: {fileID: 1933372813}
   m_PrefabAsset: {fileID: 0}
+--- !u!1 &1952630528
+GameObject:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  serializedVersion: 6
+  m_Component:
+  - component: {fileID: 1952630531}
+  - component: {fileID: 1952630530}
+  - component: {fileID: 1952630529}
+  m_Layer: 5
+  m_Name: Text (Legacy)
+  m_TagString: Untagged
+  m_Icon: {fileID: 0}
+  m_NavMeshLayer: 0
+  m_StaticEditorFlags: 0
+  m_IsActive: 0
+--- !u!114 &1952630529
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1952630528}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 5f7201a12d95ffc409449d95f23cf332, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  m_Material: {fileID: 0}
+  m_Color: {r: 0.19607843, g: 0.19607843, b: 0.19607843, a: 1}
+  m_RaycastTarget: 1
+  m_RaycastPadding: {x: 0, y: 0, z: 0, w: 0}
+  m_Maskable: 1
+  m_OnCullStateChanged:
+    m_PersistentCalls:
+      m_Calls: []
+  m_FontData:
+    m_Font: {fileID: 10102, guid: 0000000000000000e000000000000000, type: 0}
+    m_FontSize: 14
+    m_FontStyle: 0
+    m_BestFit: 0
+    m_MinSize: 10
+    m_MaxSize: 40
+    m_Alignment: 0
+    m_AlignByGeometry: 0
+    m_RichText: 1
+    m_HorizontalOverflow: 0
+    m_VerticalOverflow: 0
+    m_LineSpacing: 1
+  m_Text: New Text
+--- !u!222 &1952630530
+CanvasRenderer:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1952630528}
+  m_CullTransparentMesh: 1
+--- !u!224 &1952630531
+RectTransform:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1952630528}
+  m_LocalRotation: {x: -0, y: 1, z: -0, w: 0}
+  m_LocalPosition: {x: 0, y: 0, z: -62.241}
+  m_LocalScale: {x: 0.005, y: 0.005, z: 0.005}
+  m_ConstrainProportionsScale: 0
+  m_Children: []
+  m_Father: {fileID: 0}
+  m_RootOrder: 17
+  m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
+  m_AnchorMin: {x: 0.5, y: 0.5}
+  m_AnchorMax: {x: 0.5, y: 0.5}
+  m_AnchoredPosition: {x: -142589.11, y: -63620.67}
+  m_SizeDelta: {x: 160, y: 30}
+  m_Pivot: {x: 0.5, y: 0.5}
 --- !u!1 &1960952675
 GameObject:
   m_ObjectHideFlags: 0
