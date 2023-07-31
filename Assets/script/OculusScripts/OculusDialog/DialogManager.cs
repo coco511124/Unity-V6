@@ -19,6 +19,8 @@ public class DialogManager : MonoBehaviour
     public UnityEngine.UI.Text Mission1, Mission3, Mission4, Mission5;
     // Mission2放在蔗糖trigger的script裡面
 
+    public AudioSource typingSound;
+
     Message[] currentMessages;
     Actor[] currentActors;
     int activeMessage = 0;
@@ -28,6 +30,7 @@ public class DialogManager : MonoBehaviour
     
     
     public void openDialogue(Message[] messages, Actor[] actors) {
+        typingSound.Play();
         CallObjectAnimatorOrCallMethodOrCheckTag.GetComponent<NPC_animate>().ChangeAnimate(); //呼叫指定物件改成對話中動畫的方法
         currentActors = actors;
         currentMessages = messages;
@@ -55,6 +58,8 @@ public class DialogManager : MonoBehaviour
         activeMessage++;
         if (activeMessage < currentMessages.Length){
             displayMessage();
+            typingSound.Play();
+
         }
         //任務2完成訊息，執行在掛載在甘蔗上的PickUp腳本
         else {

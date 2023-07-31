@@ -9,6 +9,8 @@ public class DialogTrigger : MonoBehaviour
     public Message[] messages_1, messages_2;
     public Actor[] actors;
     public GameObject dialogueBox;
+    public AudioSource typingSound;
+
     [SerializeField] private GameObject ObjectTag;
 
     
