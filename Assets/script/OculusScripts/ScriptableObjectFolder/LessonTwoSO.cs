@@ -10,4 +10,5 @@ public class LessonTwoSO : ScriptableObject
     public Sprite artWork;
     public string title;
     public string description;
+    public GameObject prefab;
 }
