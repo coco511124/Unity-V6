@@ -20,6 +20,9 @@ public class VRBoatController : MonoBehaviour
     public Rigidbody boatRigidbody;
     public Quaternion StartRotation;
 
+    public InputActionProperty SpeedTrigger;
+    public InputActionProperty BreakTrigger;
+
     private void Awake()
     {
         boatRigidbody = GetComponent<Rigidbody>();
@@ -28,22 +31,22 @@ public class VRBoatController : MonoBehaviour
 
     private void FixedUpdate()
     {
-        //float h = Mathf.Clamp(steeringWheel.angle/maxTurnAngle, -1, 1);
+        float h = Mathf.Clamp(steeringWheel.angle/maxTurnAngle, -1, 1);
         //Debug.Log(h);
 
         var forceDirection = transform.forward;
         var steer = 0;
 
-        //steer direction [-1,0,1]
-        if (Input.GetKey(KeyCode.A))
+        ////steer direction [-1,0,1]
+        if (Input.GetKey(KeyCode.A) || h > 0.5)
         {
             steer = 1;
-        }            
-        if (Input.GetKey(KeyCode.D))
+        }
+        if (Input.GetKey(KeyCode.D) || h < -0.5)
         {
             steer = -1;
         }
-           
+
 
         //Rotational Force
         boatRigidbody.AddForceAtPosition(steer * transform.right * SteerPower / 100f, Motor.position);
@@ -52,14 +55,19 @@ public class VRBoatController : MonoBehaviour
         var forward = Vector3.Scale(new Vector3(1, 0, 1), transform.forward);
         var targetVel = Vector3.zero;
 
+
+
         //forward/backward poewr
-        if (Input.GetKey(KeyCode.W))
+        float speedValue = SpeedTrigger.action.ReadValue<float>();
+        float breakValue = BreakTrigger.action.ReadValue<float>();
+
+        if (Input.GetKey(KeyCode.W) || speedValue > 0.3)
         {
             PhysicsHelper.ApplyForceToReachVelocity(boatRigidbody, forward * MaxSpeed, Power);
             Debug.Log("«e¶i");
         }           
         
-        if (Input.GetKey(KeyCode.S))
+        if (Input.GetKey(KeyCode.S) || breakValue > 0.3)
         {
             PhysicsHelper.ApplyForceToReachVelocity(boatRigidbody, forward * -MaxSpeed, Power);
         }
