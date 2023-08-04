@@ -28,6 +28,7 @@ public class BoatEnter : MonoBehaviour
 
         if(playerIsInTheCube == true && B_Button.action.WasPerformedThisFrame())
         {
+           
             playerController.transform.position = seatPosition; //  set position of player
             playerController.transform.rotation = seatRotation; //  set rotation of the player 
 
@@ -40,6 +41,9 @@ public class BoatEnter : MonoBehaviour
             playerController.GetComponent<TeleportationProvider>().enabled = false; //  disable CapsuleCollider
 
             playerController.transform.parent = boat.transform; //set player contoller parent from XRrig to the vehicle
+
+            boat.GetComponentInChildren<BoatExit>().intheCar = true; // set bool on CarExit script to true
+            boat.GetComponent<VRBoatController>().CanControll = true; // set bool let player allow to controll boat
 
             gameObject.SetActive(false); //  disable the enter cube            
         }
