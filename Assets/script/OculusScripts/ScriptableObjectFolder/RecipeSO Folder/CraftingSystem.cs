@@ -9,14 +9,29 @@ public class CraftingSystem : MonoBehaviour
     [SerializeField] private Transform itemSpawnPoint;
     //[SerializeField] private Transform vfxSpawnItem;這個是特效
 
-    [SerializeField] private CraftingRecipeSO craftingRecipeSO;
+    private CraftingRecipeSO craftingRecipeSO;
 
+    private void Awake()
+    {
+        NextRecipe();
+    }
+    public void NextRecipe()
+    {
+        if (craftingRecipeSOList == null)
+        {
+            craftingRecipeSO = craftingRecipeSOList[0]; //List從頭開始
+            Debug.Log("Restart recipe list");
+        }
+        else
+        {
+            int index = craftingRecipeSOList.IndexOf(craftingRecipeSO); //取得目前list的index
+            index = (index + 1) % craftingRecipeSOList.Count;
+            craftingRecipeSO = craftingRecipeSOList[index];
+            Debug.Log("Next recipe");
+        }
+    }
     public void Craft()
     {
-        //CraftingRecipeSO
-        //itemSOHolder = _SOHolder
-        //ItemSO = LessonTwoSO
-        //itenSO = SOinfo;
         Debug.Log("craft");
         Collider[] colliderArray = Physics.OverlapBox(transform.position + placeItemsAreaBoxCollider.center, placeItemsAreaBoxCollider.size, placeItemsAreaBoxCollider.transform.rotation);
 
@@ -55,6 +70,10 @@ public class CraftingSystem : MonoBehaviour
         if (Input.GetKeyDown(KeyCode.E))
         {
             Craft();
+        }
+        if (Input.GetKeyDown(KeyCode.N))
+        {
+            NextRecipe();
         }
     }
 }

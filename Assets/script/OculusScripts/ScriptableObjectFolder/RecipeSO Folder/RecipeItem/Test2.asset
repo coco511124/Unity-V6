@@ -10,8 +10,9 @@ MonoBehaviour:
   m_Enabled: 1
   m_EditorHideFlags: 0
   m_Script: {fileID: 11500000, guid: 8b271a778d0b92f498d53bdafb0bb898, type: 3}
-  m_Name: New Crafting Recipe SO
+  m_Name: Test2
   m_EditorClassIdentifier: 
   inputItemSOList:
-  - {fileID: 11400000, guid: b8f4d66c46c651f4381dffdd0c49322c, type: 2}
-  outputItemSO: {fileID: 11400000, guid: 236acba87505b6d4fb5ce82ba258ea07, type: 2}
+  - {fileID: 11400000, guid: 5e71eca96f0041f4298e57d8e0bb8a05, type: 2}
+  - {fileID: 11400000, guid: 017549e1b0f27144fba190b5c67cd834, type: 2}
+  outputItemSO: {fileID: 11400000, guid: e4608ae34100f2b449e5541ded655d4a, type: 2}
