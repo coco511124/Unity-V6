@@ -32,8 +32,8 @@ public class CraftingSystem : MonoBehaviour
     }
     public void Craft()
     {
-        Debug.Log("craft");
-        Collider[] colliderArray = Physics.OverlapBox(transform.position + placeItemsAreaBoxCollider.center, placeItemsAreaBoxCollider.size, placeItemsAreaBoxCollider.transform.rotation);
+        //Debug.Log("craft");
+        Collider[] colliderArray = Physics.OverlapBox(transform.position + placeItemsAreaBoxCollider.center, placeItemsAreaBoxCollider.size*10, placeItemsAreaBoxCollider.transform.rotation);
 
         List<ItemSO> inputItemList = new List<ItemSO>(craftingRecipeSO.inputItemSOList);
         List<GameObject> consumeItemGameObjectList = new List<GameObject>();
@@ -43,10 +43,10 @@ public class CraftingSystem : MonoBehaviour
             Debug.Log(collider);
             if (collider.TryGetComponent(out RecipeSOHolder recipeSOHolder))
             {
-                Debug.Log(recipeSOHolder);
+                //Debug.Log(recipeSOHolder);
                 if (inputItemList.Contains(recipeSOHolder.SOinfo))
                 {
-                    Debug.Log(inputItemList);
+                    //Debug.Log(inputItemList);
                     inputItemList.Remove(recipeSOHolder.SOinfo);
                     consumeItemGameObjectList.Add(collider.gameObject);
                 }

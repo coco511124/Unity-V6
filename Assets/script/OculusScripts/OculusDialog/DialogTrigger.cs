@@ -6,14 +6,19 @@ using UnityEngine.AI;
 
 public class DialogTrigger : MonoBehaviour
 {
-    public Message[] messages_1, messages_2;
-    public Actor[] actors;
+    public Message2_2[] messages_1, messages_2;
+    public Actor2_2[] actors;
     public GameObject dialogueBox;
     public AudioSource typingSound;
 
-    [SerializeField] private GameObject ObjectTag;
 
     
+    [SerializeField] private GameObject ObjectTag;
+
+    private void Start()
+    {
+        
+    }
 
     void StartDialogue1()
     {   
@@ -26,6 +31,8 @@ public class DialogTrigger : MonoBehaviour
     }
 
     void OnTriggerEnter(Collider other) {
+
+
         //初始狀態碰到驚嘆號
         if (other.gameObject.tag == "Player" && ObjectTag.tag == "thing")
         {
@@ -34,7 +41,7 @@ public class DialogTrigger : MonoBehaviour
             StartDialogue1();
         }
         //拿到蔗糖後，跟荷蘭人A對襪
-        else if (other.gameObject.tag == "PlayerWithSugar"  && ObjectTag.tag == "people")
+        else if (other.gameObject.tag == "PlayerWithSugar" && ObjectTag.tag == "people")
         {
             Debug.Log("拿到蔗糖碰到荷蘭人A");
             dialogueBox.SetActive(true);
@@ -58,7 +65,7 @@ public class DialogTrigger : MonoBehaviour
             ObjectTag.GetComponent<RandomPathTrolling>().SetWalkFalse(); //呼叫RandomPathTrolling腳本的方法，停止NPC移動
         }
         //跟郭懷一對話完後，跟荷蘭人B對話
-        else if (other.gameObject.tag == "PlayerWithGou" && ObjectTag.tag == "People_Blue") 
+        else if (other.gameObject.tag == "PlayerWithGou" && ObjectTag.tag == "People_Blue")
         {
             Debug.Log("跟郭懷一聊過了");
             dialogueBox.SetActive(true);
@@ -71,11 +78,13 @@ public class DialogTrigger : MonoBehaviour
         }
         else
         {
-            Debug.Log("碰到路人");           
+            Debug.Log("碰到路人");
             dialogueBox.SetActive(true);
             StartDialogue2();
             ObjectTag.GetComponent<RandomPathTrolling>().SetWalkFalse(); //呼叫RandomPathTrolling腳本的方法，停止NPC移動
         }
+        
+        
     }
     private void OnTriggerExit(Collider other)
     {
@@ -88,7 +97,7 @@ public class DialogTrigger : MonoBehaviour
 }
 
 [System.Serializable]
-public class Message {
+public class Message2_2 {
     public int actorId;
     public string meassage;
 }
@@ -96,6 +105,6 @@ public class Message {
 
 
 [System.Serializable]
-public class Actor {
+public class Actor2_2 {
     public string name;
 }

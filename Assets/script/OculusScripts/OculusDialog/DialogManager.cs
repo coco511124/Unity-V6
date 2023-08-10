@@ -3,12 +3,6 @@ using System.Collections.Generic;
 using UnityEngine;
 using UnityEngine.UI;
 using TMPro;
-using UnityEngine.XR.Interaction.Toolkit;
-using UnityEngine.EventSystems;
-using UnityEngine.InputSystem;
-using UnityEngine.XR.Interaction.Toolkit.UI;
-using static System.Net.Mime.MediaTypeNames;
-using System;
 
 public class DialogManager : MonoBehaviour
 {
@@ -19,17 +13,18 @@ public class DialogManager : MonoBehaviour
     public UnityEngine.UI.Text Mission1, Mission3, Mission4, Mission5;
     // Mission2放在蔗糖trigger的script裡面
 
+    
     public AudioSource typingSound;
 
-    Message[] currentMessages;
-    Actor[] currentActors;
+    Message2_2[] currentMessages;
+    Actor2_2[] currentActors;
     int activeMessage = 0;
 
     
     [SerializeField] private GameObject CallObjectAnimatorOrCallMethodOrCheckTag;
     
     
-    public void openDialogue(Message[] messages, Actor[] actors) {
+    public void openDialogue(Message2_2[] messages, Actor2_2[] actors) {
         typingSound.Play();
         CallObjectAnimatorOrCallMethodOrCheckTag.GetComponent<NPC_animate>().ChangeAnimate(); //呼叫指定物件改成對話中動畫的方法
         currentActors = actors;
@@ -43,11 +38,11 @@ public class DialogManager : MonoBehaviour
     
     void displayMessage() {
         Debug.Log("display message");
-        Message messageToDisplay = currentMessages[activeMessage];
+        Message2_2 messageToDisplay = currentMessages[activeMessage];
         messageText.text = messageToDisplay.meassage;
         //Debug.Log(messageText.text);
 
-        Actor actorToDisplay = currentActors[messageToDisplay.actorId];
+        Actor2_2 actorToDisplay = currentActors[messageToDisplay.actorId];
         actorName.text = actorToDisplay.name;
         //Debug.Log(actorToDisplay.name);
         DB.SetActive(true);
@@ -65,6 +60,7 @@ public class DialogManager : MonoBehaviour
         else {
             CallObjectAnimatorOrCallMethodOrCheckTag.GetComponent<NPC_animate>().BackAnimate(); //呼叫指定物件改回待機動畫的方法
             CallObjectAnimatorOrCallMethodOrCheckTag.GetComponent<RandomPathTrolling>().SetWalkTrue(); //呼叫RandomPathTrolling腳本的方法，允許NPC移動
+
             if (PL.tag == "Player")
             {
                 DB.SetActive(false);
@@ -83,7 +79,7 @@ public class DialogManager : MonoBehaviour
                     DB.SetActive(false);
                     PL.tag = "PlayerWithNerthland_A";
                     Mission3.text = "<color=green>3.找到荷蘭人並繳交甘蔗 ✓</color>";
-                }                
+                }
             }
             else if (PL.tag == "PlayerWithNerthland_A")
             {
@@ -116,7 +112,6 @@ public class DialogManager : MonoBehaviour
                     Mission5.text = "<color=green>5.尋找荷蘭人繳回紙本 ✓</color>";
                     EndCanvasManager.EndCanvas();
                 }
-               
             }
         }
     }

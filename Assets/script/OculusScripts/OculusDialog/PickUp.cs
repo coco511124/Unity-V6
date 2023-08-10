@@ -21,7 +21,7 @@ public class PickUp : MonoBehaviour
         //sugarHover?.Invoke(this, EventArgs.Empty);
         Debug.Log("要傳過去了哦");
         //PL.tag = "PlayerWithSugar";
-        //Mission2.text = "<color=green>2.尋找甘蔗</color>";
+        //Mission2.text = "<color=green>2.尋找甘蔗 ✓</color>";
         BackColor();
     }
     public void ChangeColor()
