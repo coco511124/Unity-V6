@@ -15,4 +15,10 @@ public class AllSceneManager : MonoBehaviour
     {
         SceneManager.LoadScene(SceneManager.GetActiveScene().buildIndex);
     }
+
+
+    public void GotoCh3Ship()
+    {
+        SceneManager.LoadScene("Chapter3_Zeelandia_Scene");
+    }
 }

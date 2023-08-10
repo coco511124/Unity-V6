@@ -2187,7 +2187,19 @@ MonoBehaviour:
   m_TargetGraphic: {fileID: 821247326}
   m_OnClick:
     m_PersistentCalls:
-      m_Calls: []
+      m_Calls:
+      - m_Target: {fileID: 1487281900}
+        m_TargetAssemblyTypeName: ChangeScene, Assembly-CSharp
+        m_MethodName: ChangeToChapterThree
+        m_Mode: 1
+        m_Arguments:
+          m_ObjectArgument: {fileID: 0}
+          m_ObjectArgumentAssemblyTypeName: UnityEngine.Object, UnityEngine
+          m_IntArgument: 0
+          m_FloatArgument: 0
+          m_StringArgument: 
+          m_BoolArgument: 0
+        m_CallState: 2
 --- !u!114 &821247326
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -3570,7 +3582,7 @@ MonoBehaviour:
   m_OnCullStateChanged:
     m_PersistentCalls:
       m_Calls: []
-  m_Sprite: {fileID: 21300000, guid: 33cfdedd4b7253747ae1062b92a48ba0, type: 3}
+  m_Sprite: {fileID: 21300000, guid: 80d80c3f5dd88284f9d4469a7285f877, type: 3}
   m_Type: 0
   m_PreserveAspect: 0
   m_FillCenter: 1

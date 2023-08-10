@@ -34,7 +34,7 @@ public class VRBoatController : MonoBehaviour
 
     private void FixedUpdate()
     {
-        float h = Mathf.Clamp(steeringWheel.angle/maxTurnAngle, -1, 1);
+        float h = Mathf.Clamp(steeringWheel.angle / maxTurnAngle, -1, 1);
         //Debug.Log(h);
 
         var forceDirection = transform.forward;
@@ -59,10 +59,13 @@ public class VRBoatController : MonoBehaviour
         float speedValue = SpeedTrigger.action.ReadValue<float>();
         float breakValue = BreakTrigger.action.ReadValue<float>();
 
-        if(CanControll == true)
+        if (CanControll == true)
         {
-            //Rotational Force
-            boatRigidbody.AddForceAtPosition(steer * transform.right * SteerPower / 100f, Motor.position);
+           //Rotational Force
+           boatRigidbody.AddForceAtPosition(steer * transform.right * SteerPower / 100f, Motor.position);
+           
+            
+            
 
 
             if (Input.GetKey(KeyCode.W) || speedValue > 0.3)

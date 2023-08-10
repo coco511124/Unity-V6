@@ -20,6 +20,12 @@ TagManager:
   - huaiPaper
   - hauiPaper
   - TalkedToA
+  - people_sugarbefore
+  - shougun
+  - zenhe
+  - PlayerWithZen
+  - PlayerWithShou
+  - PlayerWithZenTwice
   layers:
   - Default
   - TransparentFX

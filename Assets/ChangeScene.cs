@@ -9,12 +9,15 @@ public class ChangeScene : MonoBehaviour
    public void ChangeToChapterOne(){
     SceneManager.LoadScene("lesson2");
    }
-   public void ChangeToChapterTwo()
+    public void ChangeToChapterTwo()
     {
         SceneManager.LoadScene("2-1");
     }
-    
-   public void Panel1To2(){
+    public void ChangeToChapterThree()
+    {
+        SceneManager.LoadScene("Chapter3_ChooseArea_Scene");
+    }
+    public void Panel1To2(){
     panel1.SetActive(false);
     panel2.SetActive(true);
    }
