@@ -1,6 +1,8 @@
 using System.Collections;
 using System.Collections.Generic;
+using TMPro;
 using UnityEngine;
+using UnityEngine.UI;
 
 public class CraftingSystem : MonoBehaviour
 {
@@ -11,6 +13,9 @@ public class CraftingSystem : MonoBehaviour
 
     private CraftingRecipeSO craftingRecipeSO;
 
+    public List<string> recipeContent;
+    public TMP_Text recipeContentText;
+
     private void Awake()
     {
         NextRecipe();
@@ -20,6 +25,7 @@ public class CraftingSystem : MonoBehaviour
         if (craftingRecipeSOList == null)
         {
             craftingRecipeSO = craftingRecipeSOList[0]; //List從頭開始
+            recipeContentText.text = recipeContent[0].ToString();//將list的內容轉換為string，再傳到canvas上的recipecontentText
             Debug.Log("Restart recipe list");
         }
         else
@@ -27,6 +33,7 @@ public class CraftingSystem : MonoBehaviour
             int index = craftingRecipeSOList.IndexOf(craftingRecipeSO); //取得目前list的index
             index = (index + 1) % craftingRecipeSOList.Count;
             craftingRecipeSO = craftingRecipeSOList[index];
+            recipeContentText.text = recipeContent[index].ToString();
             Debug.Log("Next recipe");
         }
     }
@@ -76,4 +83,5 @@ public class CraftingSystem : MonoBehaviour
             NextRecipe();
         }
     }
+   
 }

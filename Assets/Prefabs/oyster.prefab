@@ -11,9 +11,9 @@ GameObject:
   - component: {fileID: 890545572220824385}
   - component: {fileID: 4320080070955492580}
   - component: {fileID: 2022387427202240558}
-  - component: {fileID: 1590457489706525918}
   - component: {fileID: 851570690097804154}
   - component: {fileID: 851570690097804155}
+  - component: {fileID: 5781411729327344234}
   m_Layer: 0
   m_Name: oyster
   m_TagString: Untagged
@@ -87,19 +87,6 @@ MeshRenderer:
   m_SortingLayer: 0
   m_SortingOrder: 0
   m_AdditionalVertexStreams: {fileID: 0}
---- !u!65 &1590457489706525918
-BoxCollider:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 508918673511330299}
-  m_Material: {fileID: 0}
-  m_IsTrigger: 0
-  m_Enabled: 1
-  serializedVersion: 2
-  m_Size: {x: 0.032478355, y: 0.012030936, z: 0.032604568}
-  m_Center: {x: 0.000040414743, y: 0.003048536, z: -0.00002436433}
 --- !u!54 &851570690097804154
 Rigidbody:
   m_ObjectHideFlags: 0
@@ -129,3 +116,17 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   SOinfo: {fileID: 11400000, guid: 30c840fd08c386e48ae0c64da14327c8, type: 2}
+--- !u!64 &5781411729327344234
+MeshCollider:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 508918673511330299}
+  m_Material: {fileID: 0}
+  m_IsTrigger: 0
+  m_Enabled: 1
+  serializedVersion: 4
+  m_Convex: 1
+  m_CookingOptions: 30
+  m_Mesh: {fileID: 7629811779324647873, guid: f5035180af500ea45aa01b257a49cd8a, type: 3}
