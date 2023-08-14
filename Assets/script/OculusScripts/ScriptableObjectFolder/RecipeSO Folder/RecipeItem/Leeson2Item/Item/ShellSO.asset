@@ -10,6 +10,6 @@ MonoBehaviour:
   m_Enabled: 1
   m_EditorHideFlags: 0
   m_Script: {fileID: 11500000, guid: 99a5a70a7c1333346bb3d84824436080, type: 3}
-  m_Name: OysterSO
+  m_Name: ShellSO
   m_EditorClassIdentifier: 
-  prefab: {fileID: 508918673511330299, guid: ceb240707856db64b9087d7914c2e23e, type: 3}
+  prefab: {fileID: 4019036449866700878, guid: 428dcbbd6c163e5428c3be3a4e28e7bd, type: 3}

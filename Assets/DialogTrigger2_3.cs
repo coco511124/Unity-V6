@@ -8,13 +8,20 @@ public class DialogTrigger2_3 : MonoBehaviour
     
     public Message2_3[] message2_3;
     public Actor2_3[] actor2_3;
-    public GameObject dialogBox;
+    public GameObject dialog;
 
-    public void StratDialog1()
+    private void StartDialog1()
     {
-        //dialogBox.GetComponent<Dia>
+        dialog.GetComponent<DialogManager2_3>().openDialogue(message2_3, actor2_3);
     }
-    
+    private void OnTriggerEnter(Collider other)
+    {
+        if(other.gameObject.tag == "Player")
+        {
+            dialog.SetActive(true);
+            StartDialog1();
+        }
+    }
 }
 [System.Serializable]
 public class Message2_3

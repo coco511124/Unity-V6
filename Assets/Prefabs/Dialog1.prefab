@@ -299,7 +299,7 @@ MonoBehaviour:
   m_OnClick:
     m_PersistentCalls:
       m_Calls:
-      - m_Target: {fileID: 3935138643908805453}
+      - m_Target: {fileID: 0}
         m_TargetAssemblyTypeName: DialogManager, Assembly-CSharp
         m_MethodName: ClickNextMessage
         m_Mode: 1
@@ -681,8 +681,6 @@ MonoBehaviour:
   Mission3: {fileID: 0}
   Mission4: {fileID: 0}
   Mission5: {fileID: 0}
-  porTal: {fileID: 0}
-  sceneName: 1-1
   typingSound: {fileID: 0}
   CallObjectAnimatorOrCallMethodOrCheckTag: {fileID: 0}
 --- !u!114 &3935138643908805454
