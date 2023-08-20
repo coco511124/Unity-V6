@@ -64,6 +64,13 @@ public class HideObjectInInvantory : MonoBehaviour
         }
     }
 
+    private void OnTriggerExit(Collider other)
+    {
+        if (other.gameObject.tag == "Sugar" || other.gameObject.tag == "huaiPaper")
+        {
+            setGameObject = null;
+        }
+    }
 
     private void OnTriggerEnter(Collider other)
     {
