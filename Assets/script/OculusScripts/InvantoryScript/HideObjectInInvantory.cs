@@ -38,14 +38,14 @@ public class HideObjectInInvantory : MonoBehaviour
 
     private void CallClose_callCloseMeshRenderer(object sender, System.EventArgs e)
     {
-        if (setGameObject == null)
+        if (setGameObject != null)
         {
-            Debug.Log("關閉時setGameObject是空值");
-            return;
+            setGameObject.GetComponentInChildren<MeshRenderer>().enabled = false;
         }
         else
         {
-            setGameObject.GetComponentInChildren<MeshRenderer>().enabled = false;
+            Debug.Log("關閉時setGameObject是空值");
+            return;
         }
     }
 

@@ -4,18 +4,6 @@ using UnityEngine;
 
 public class TopButtonCollierCanvas : MonoBehaviour
 {
-    // Start is called before the first frame update
-    void Start()
-    {
-
-    }
-
-    // Update is called once per frame
-    void Update()
-    {
-
-    }
-
     private void OnTriggerEnter(Collider other)
     {
         if (other.gameObject.tag == "Sugar" || other.gameObject.tag == "huaiPaper")   //如果物體碰到collider的話，就讓物體的MeshRenderer關掉
