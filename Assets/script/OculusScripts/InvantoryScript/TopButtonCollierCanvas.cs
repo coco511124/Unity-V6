@@ -9,6 +9,11 @@ public class TopButtonCollierCanvas : MonoBehaviour
         if (other.gameObject.tag == "Sugar" || other.gameObject.tag == "huaiPaper")   //如果物體碰到collider的話，就讓物體的MeshRenderer關掉
         {
             HuaiPaperCanvas.ShowCanvas = false;
+            if (other.gameObject.GetComponent<DetectObject>() == true)
+            {
+                other.gameObject.GetComponent<DetectObject>().inCollider = true;
+            }
+            
             if (other.gameObject.GetComponent<MeshRenderer>() == true)
             {
                 other.gameObject.GetComponent<MeshRenderer>().enabled = false;
@@ -43,6 +48,10 @@ public class TopButtonCollierCanvas : MonoBehaviour
         if (other.gameObject.tag == "Sugar" || other.gameObject.tag == "huaiPaper")   //如果物體離開collider的話，就讓物體的MeshRenderer開啟
         {
             HuaiPaperCanvas.ShowCanvas = true;
+            if (other.gameObject.GetComponent<DetectObject>() == true)
+            {
+                other.gameObject.GetComponent<DetectObject>().inCollider = false;
+            }
             if (other.gameObject.GetComponent<MeshRenderer>() == true)
             {
                 other.gameObject.GetComponent<MeshRenderer>().enabled = true;

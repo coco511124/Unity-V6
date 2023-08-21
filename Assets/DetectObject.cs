@@ -6,9 +6,13 @@ using UnityEngine.XR.Interaction.Toolkit;
 public class DetectObject : MonoBehaviour
 {
     private XRGrabInteractable GameObject;
+
+
+    public bool inCollider;
     private void Start()
     {
         GameObject = GetComponent<XRGrabInteractable>();
+        inCollider = false;
     }
     private void OnTriggerEnter(Collider other)
     {

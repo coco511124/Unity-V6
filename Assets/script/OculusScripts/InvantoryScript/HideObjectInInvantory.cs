@@ -40,7 +40,19 @@ public class HideObjectInInvantory : MonoBehaviour
     {
         if (setGameObject != null)
         {
-            setGameObject.GetComponentInChildren<MeshRenderer>().enabled = false;
+            //setGameObject.GetComponentInChildren<MeshRenderer>().enabled = false;
+            List<Transform> children = GetChildren(setGameObject.transform, true);
+            foreach (Transform child in children)
+            {
+                if (child.GetComponent<MeshRenderer>() == true)
+                {
+                    child.GetComponent<MeshRenderer>().enabled = false;
+                }
+                else
+                {
+                    continue;
+                }
+            }
         }
         else
         {
@@ -51,7 +63,7 @@ public class HideObjectInInvantory : MonoBehaviour
 
     private void CallOpen_callOpenMeshRenderer(object sender, System.EventArgs e)
     {
-        if (setGameObject == null)
+        if (setGameObject == null || setGameObject.GetComponent<DetectObject>().inCollider == true)
         {
             Debug.Log("開啟時setGameObject是空值");
             return;
@@ -59,7 +71,19 @@ public class HideObjectInInvantory : MonoBehaviour
         else
         {
             //GetComponentInChildren
-            setGameObject.GetComponentInChildren<MeshRenderer>().enabled = true;
+            //setGameObject.GetComponentInChildren<MeshRenderer>().enabled = true;
+            List<Transform> children = GetChildren(setGameObject.transform, true);
+            foreach (Transform child in children)
+            {
+                if (child.GetComponent<MeshRenderer>() == true)
+                {
+                    child.GetComponent<MeshRenderer>().enabled = true;
+                }
+                else
+                {
+                    continue;
+                }
+            }
             Debug.Log("渲染開起來了");
         }
     }
@@ -112,5 +136,17 @@ public class HideObjectInInvantory : MonoBehaviour
         titleText.text = titleText_Cache;
         descriptionText.text = descriptionText_Cache;
     }
-
+    List<Transform> GetChildren(Transform parent, bool recursive)
+    {
+        List<Transform> children = new List<Transform>();
+        foreach (Transform child in parent)
+        {
+            children.Add(child);
+            if (recursive)
+            {
+                children.AddRange(GetChildren(child, true));
+            }
+        }
+        return children;
+    }
 }
