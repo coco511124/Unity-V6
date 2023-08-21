@@ -69,6 +69,9 @@ public class HideObjectInInvantory : MonoBehaviour
         if (other.gameObject.tag == "Sugar" || other.gameObject.tag == "huaiPaper")
         {
             setGameObject = null;
+            artStuff_Cache = null;
+            titleText_Cache = null;
+            descriptionText_Cache = null;
         }
     }
 
