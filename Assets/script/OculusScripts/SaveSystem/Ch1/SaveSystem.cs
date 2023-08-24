@@ -11,18 +11,22 @@ using UnityEngine.XR;
 [System.Serializable]
 public class SaveSystem : MonoBehaviour
 {
-    public List<PlayerData> pldata = new List<PlayerData>();
+    public List<PlayerData> pldata; //= new List<PlayerData>();
     [SerializeField] public string playerName;
     [SerializeField] public PlayerData player;
     [SerializeField] string type;
     [SerializeField] public static int pickupTimes;
  
-    [SerializeField] public string filename = "playerdata.json";
+    [SerializeField] public string filename;
 
     public static bool change;
     [SerializeField] public static int numstatic;
     [SerializeField] private int numprivate;
 
+    private void Start()
+    {
+        pldata = FileHandler.ReadFromJSON<PlayerData>(filename);
+    }
 
     private void OnTriggerEnter(Collider other)
     {

@@ -3,7 +3,9 @@ using System.Collections.Generic;
 using TMPro;
 using UnityEngine;
 using UnityEngine.UI;
+using System;
 
+[System.Serializable]
 public class CraftingSystem : MonoBehaviour
 {
     [SerializeField] private BoxCollider placeItemsAreaBoxCollider;
@@ -15,6 +17,10 @@ public class CraftingSystem : MonoBehaviour
 
     public List<string> recipeContent;
     public TMP_Text recipeContentText;
+
+    [SerializeField] string type;
+    public GameObject table;
+    
 
     private void Awake()
     {
@@ -40,7 +46,7 @@ public class CraftingSystem : MonoBehaviour
     public void Craft()
     {
         //Debug.Log("craft");
-        Collider[] colliderArray = Physics.OverlapBox(transform.position + placeItemsAreaBoxCollider.center, placeItemsAreaBoxCollider.size*10, placeItemsAreaBoxCollider.transform.rotation);
+        Collider[] colliderArray = Physics.OverlapBox(transform.position + placeItemsAreaBoxCollider.center, placeItemsAreaBoxCollider.size, placeItemsAreaBoxCollider.transform.rotation);
 
         List<ItemSO> inputItemList = new List<ItemSO>(craftingRecipeSO.inputItemSOList);
         List<GameObject> consumeItemGameObjectList = new List<GameObject>();
@@ -63,6 +69,7 @@ public class CraftingSystem : MonoBehaviour
 
         if (inputItemList.Count == 0)
         {
+            type = "合成成功";
             Debug.Log("yes");
             Transform spawnedItemTransform = Instantiate(craftingRecipeSO.outputItemSO.prefab.transform, itemSpawnPoint.position, itemSpawnPoint.rotation);
 
@@ -70,11 +77,18 @@ public class CraftingSystem : MonoBehaviour
             {
                 Destroy(consumeItemGameObject);
             }
+            table.GetComponent<SaveSystemCh2>().type = "合成成功";
+            table.GetComponent<SaveSystemCh2>().Save();
+        }
+        else
+        {
+            table.GetComponent<SaveSystemCh2>().type = "合成失敗";
+            table.GetComponent<SaveSystemCh2>().Save();
         }
     }
     private void Update()
     {
-        if (Input.GetKeyDown(KeyCode.E))
+        if (Input.GetKeyDown(KeyCode.C))//測試用
         {
             Craft();
         }
