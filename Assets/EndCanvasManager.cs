@@ -8,7 +8,6 @@ public class EndCanvasManager : MonoBehaviour
 {
     public GameObject PL, endPanel;
     List<PlayerData> pldata = new List<PlayerData>();
-    List<PlayerData> pldata10 = new List<PlayerData>();
     public Text logText;
     static bool checkOpen;
 
@@ -41,7 +40,6 @@ public class EndCanvasManager : MonoBehaviour
 
         pldata = FileHandler.ReadFromJSON<PlayerData>(filename); //讀取json的內容
 
-        Debug.Log(pldata10);
         if (pldata.Count >= 10)
         {
             foreach (var item in pldata.GetRange(pldata.Count - 10, 10))
