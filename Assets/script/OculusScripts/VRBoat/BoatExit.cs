@@ -34,23 +34,28 @@ public class BoatExit : MonoBehaviour
     {
         if(intheCar == true && B_Button.action.WasPerformedThisFrame())
         {
-            playerController.transform.position = ExitDestination.transform.position; //transport player out of the car
-
-            playerController.transform.parent = xrRig.transform; // set parent to XRrig
-
-            playerController.GetComponent<CharacterController>().enabled = true; //  enable character contoller
-            playerController.GetComponent<LocomotionSystem>().enabled = true; //  enable LocomotionSystem
-            playerController.GetComponent<DynamicMoveProvider>().enabled = true; //  enable DynamicMoveProvider
-            playerController.GetComponent<CapsuleCollider>().enabled = true; //  enable CapsuleCollider
-            playerController.GetComponent<ContinuousTurnProviderBase>().enabled = true; //  enable ContinuousTurnProviderBase
-            playerController.GetComponent<CharacterControllerDriver>().enabled = true; //  enable CharacterControllerDriver
-            playerController.GetComponent<TeleportationProvider>().enabled = true; //  enable TeleportationProvider
-
-            boat.GetComponent<VRBoatController>().CanControll = false; // set bool let player allow to controll boat
-
-            intheCar = false;
-
-            boatEnter.SetActive(true); //enable the enter cube 
+            BackPosition();
         }
+    }
+
+    public void BackPosition()
+    {
+        playerController.transform.position = ExitDestination.transform.position; //transport player out of the car
+
+        playerController.transform.parent = xrRig.transform; // set parent to XRrig
+
+        playerController.GetComponent<CharacterController>().enabled = true; //  enable character contoller
+        playerController.GetComponent<LocomotionSystem>().enabled = true; //  enable LocomotionSystem
+        playerController.GetComponent<DynamicMoveProvider>().enabled = true; //  enable DynamicMoveProvider
+        playerController.GetComponent<CapsuleCollider>().enabled = true; //  enable CapsuleCollider
+        playerController.GetComponent<ContinuousTurnProviderBase>().enabled = true; //  enable ContinuousTurnProviderBase
+        playerController.GetComponent<CharacterControllerDriver>().enabled = true; //  enable CharacterControllerDriver
+        playerController.GetComponent<TeleportationProvider>().enabled = true; //  enable TeleportationProvider
+
+        boat.GetComponent<VRBoatController>().CanControll = false; // set bool let player allow to controll boat
+
+        intheCar = false;
+
+        boatEnter.SetActive(true); //enable the enter cube 
     }
 }
