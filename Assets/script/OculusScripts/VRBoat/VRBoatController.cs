@@ -3,22 +3,33 @@ using System.Collections.Generic;
 using UnityEngine;
 using UnityEngine.InputSystem;
 using Ditzelgames;
+using Unity.VisualScripting;
+using System;
+using UnityEngine.UIElements;
 
 public class VRBoatController : MonoBehaviour
 {
+    [Header("Turn")]
     public HingeJoint steeringWheel;
-    public float maxTurnAngle = 180;
+    public float maxValue = 0.35f;
+    public float minValue = -0.35f;
+    public float turnThreshold = 0.2f;
 
+    [Header("Input")]
+    public float turnInput;    // STEP 5
+    public float steering = 80f;  //STEP 11
+    float rotate, currentRotate; //STEP 11
+
+
+
+    [Header("Power")]
     //visible Properties
-    public Transform Motor;
-    public float SteerPower = 500f;
     public float Power = 5f;
     public float MaxSpeed = 10f;
-    //public float Drag = 0.1f;
 
     //used Components
     public Rigidbody boatRigidbody;
-    public Quaternion StartRotation;
+    //public Quaternion StartRotation;
 
     public InputActionProperty SpeedTrigger;
     public InputActionProperty BreakTrigger;
@@ -29,31 +40,46 @@ public class VRBoatController : MonoBehaviour
     private void Awake()
     {
         boatRigidbody = GetComponent<Rigidbody>();
-        StartRotation = Motor.localRotation;
+    }
+
+    void Update()
+    {
+        float steeringNormal = Mathf.InverseLerp(minValue, maxValue, steeringWheel.transform.localRotation.y);  // STEP 1
+        float steeringRange = Mathf.Lerp(-1, 1, steeringNormal);            // STEP 2
+        if (Mathf.Abs(steeringRange) < turnThreshold) // STEP 3
+        {
+            steeringRange = 0;
+        }
+
+        if (steeringRange == 0)   // STEP 4
+        {
+            turnInput = Input.GetAxis("Horizontal");
+        }
+        else
+        {
+            turnInput = steeringRange;
+        }
+
+        //Steer
+        if (turnInput != 0)   // STEP 6
+        {
+            int dir = turnInput > 0 ? 1 : -1;        // STEP 7
+            float amount = Mathf.Abs((turnInput));        // STEP 8
+            Steer(dir, amount);    // STEP 9
+        }
+
+        currentRotate = rotate; rotate = 0;    //STEP 12
+    }
+
+    private void Steer(int direction, float amount) //10
+    {
+        rotate = (steering * direction) * amount;   // STEP 11
     }
 
     private void FixedUpdate()
     {
-        float h = Mathf.Clamp(steeringWheel.angle / maxTurnAngle, -1, 1);
-        //Debug.Log(h);
-
-        var forceDirection = transform.forward;
-        var steer = 0;
-
-        ////steer direction [-1,0,1]
-        if (Input.GetKey(KeyCode.A) || -0.5 > h)
-        {
-            steer = 1;
-        }
-        if (Input.GetKey(KeyCode.D) || 0.5 < h)
-        {
-            steer = -1;
-        }
         //compute vectors
         var forward = Vector3.Scale(new Vector3(1, 0, 1), transform.forward);
-        var targetVel = Vector3.zero;
-
-
 
         //forward/backward poewr
         float speedValue = SpeedTrigger.action.ReadValue<float>();
@@ -61,13 +87,9 @@ public class VRBoatController : MonoBehaviour
 
         if (CanControll == true)
         {
-           //Rotational Force
-           boatRigidbody.AddForceAtPosition(steer * transform.right * SteerPower / 100f, Motor.position);
-           
+            //Steering
+            transform.eulerAngles = Vector3.Lerp(transform.eulerAngles, new Vector3(0, transform.eulerAngles.y + currentRotate, 0), Time.deltaTime * 5f);    //STEP 13 finish
             
-            
-
-
             if (Input.GetKey(KeyCode.W) || speedValue > 0.3)
             {
                 PhysicsHelper.ApplyForceToReachVelocity(boatRigidbody, forward * MaxSpeed, Power);
