@@ -97,8 +97,8 @@ LightmapSettings:
     m_ExportTrainingData: 0
     m_TrainingDataDestination: TrainingData
     m_LightProbeSampleCountMultiplier: 4
-  m_LightingDataAsset: {fileID: 0}
-  m_LightingSettings: {fileID: 576088709}
+  m_LightingDataAsset: {fileID: 112000000, guid: eac6514f1f478c54bba4e520b9d84cbb, type: 2}
+  m_LightingSettings: {fileID: 4890085278179872738, guid: 4f062f8974b9765438715aa9d686a5ee, type: 2}
 --- !u!196 &4
 NavMeshSettings:
   serializedVersion: 2
@@ -220,7 +220,7 @@ GameObject:
   - component: {fileID: 4915374}
   - component: {fileID: 4915376}
   - component: {fileID: 4915375}
-  m_Layer: 9
+  m_Layer: 10
   m_Name: Junk_Ship_pCube62
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -303,7 +303,7 @@ GameObject:
   - component: {fileID: 4953199}
   - component: {fileID: 4953201}
   - component: {fileID: 4953200}
-  m_Layer: 9
+  m_Layer: 10
   m_Name: Junk_Ship_polySurface70
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -386,7 +386,7 @@ GameObject:
   - component: {fileID: 5435299}
   - component: {fileID: 5435301}
   - component: {fileID: 5435300}
-  m_Layer: 9
+  m_Layer: 10
   m_Name: Junk_Ship_pCylinder43
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -469,7 +469,7 @@ GameObject:
   - component: {fileID: 6393150}
   - component: {fileID: 6393152}
   - component: {fileID: 6393151}
-  m_Layer: 9
+  m_Layer: 10
   m_Name: Junk_Ship_pCube25
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -754,7 +754,7 @@ GameObject:
   - component: {fileID: 22055490}
   - component: {fileID: 22055492}
   - component: {fileID: 22055491}
-  m_Layer: 9
+  m_Layer: 10
   m_Name: Junk_Ship_pCube84
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -1533,7 +1533,7 @@ GameObject:
   - component: {fileID: 35343255}
   - component: {fileID: 35343257}
   - component: {fileID: 35343256}
-  m_Layer: 9
+  m_Layer: 10
   m_Name: Junk_Ship_pCube83
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -1702,7 +1702,7 @@ GameObject:
   - component: {fileID: 41913625}
   - component: {fileID: 41913627}
   - component: {fileID: 41913626}
-  m_Layer: 9
+  m_Layer: 10
   m_Name: Junk_Ship_polySurface21
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -3842,7 +3842,7 @@ GameObject:
   - component: {fileID: 87316030}
   - component: {fileID: 87316032}
   - component: {fileID: 87316031}
-  m_Layer: 9
+  m_Layer: 10
   m_Name: Junk_Ship_polySurface72
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -3928,7 +3928,7 @@ GameObject:
   serializedVersion: 6
   m_Component:
   - component: {fileID: 88876278}
-  m_Layer: 9
+  m_Layer: 10
   m_Name: Junk_Ship_polySurface19
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -4285,7 +4285,7 @@ GameObject:
   - component: {fileID: 109030920}
   - component: {fileID: 109030922}
   - component: {fileID: 109030921}
-  m_Layer: 9
+  m_Layer: 10
   m_Name: Junk_Ship_pCube43
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -4412,7 +4412,7 @@ GameObject:
   - component: {fileID: 127029418}
   - component: {fileID: 127029420}
   - component: {fileID: 127029419}
-  m_Layer: 9
+  m_Layer: 10
   m_Name: Junk_Ship_pCube123
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -4850,7 +4850,7 @@ GameObject:
   - component: {fileID: 135690538}
   - component: {fileID: 135690540}
   - component: {fileID: 135690539}
-  m_Layer: 9
+  m_Layer: 10
   m_Name: Junk_Ship_pCube111
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -4933,7 +4933,7 @@ GameObject:
   - component: {fileID: 140424692}
   - component: {fileID: 140424694}
   - component: {fileID: 140424693}
-  m_Layer: 9
+  m_Layer: 10
   m_Name: Junk_Ship_pCube132
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -5228,7 +5228,7 @@ GameObject:
   - component: {fileID: 149076353}
   - component: {fileID: 149076355}
   - component: {fileID: 149076354}
-  m_Layer: 9
+  m_Layer: 10
   m_Name: Junk_Ship_polySurface65
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -5346,7 +5346,7 @@ GameObject:
   serializedVersion: 6
   m_Component:
   - component: {fileID: 154295625}
-  m_Layer: 9
+  m_Layer: 10
   m_Name: Junk_Ship_polySurface18
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -5474,7 +5474,7 @@ GameObject:
   serializedVersion: 6
   m_Component:
   - component: {fileID: 159816617}
-  m_Layer: 9
+  m_Layer: 10
   m_Name: Junk_Ship_transform16
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -5507,7 +5507,7 @@ GameObject:
   - component: {fileID: 160880190}
   - component: {fileID: 160880192}
   - component: {fileID: 160880191}
-  m_Layer: 9
+  m_Layer: 10
   m_Name: Junk_Ship_polySurface36
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -5798,7 +5798,7 @@ GameObject:
   - component: {fileID: 174358260}
   - component: {fileID: 174358262}
   - component: {fileID: 174358261}
-  m_Layer: 9
+  m_Layer: 10
   m_Name: Junk_Ship_pCube47
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -5881,7 +5881,7 @@ GameObject:
   - component: {fileID: 177023807}
   - component: {fileID: 177023809}
   - component: {fileID: 177023808}
-  m_Layer: 9
+  m_Layer: 10
   m_Name: Junk_Ship_polySurface119
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -5964,7 +5964,7 @@ GameObject:
   - component: {fileID: 180731574}
   - component: {fileID: 180731576}
   - component: {fileID: 180731575}
-  m_Layer: 9
+  m_Layer: 10
   m_Name: Junk_Ship_pCube120
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -6388,7 +6388,7 @@ GameObject:
   - component: {fileID: 187972433}
   - component: {fileID: 187972435}
   - component: {fileID: 187972434}
-  m_Layer: 9
+  m_Layer: 10
   m_Name: Junk_Ship_pCube28
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -6812,7 +6812,7 @@ GameObject:
   - component: {fileID: 196142987}
   - component: {fileID: 196142989}
   - component: {fileID: 196142988}
-  m_Layer: 9
+  m_Layer: 10
   m_Name: Junk_Ship_polySurface133
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -6895,7 +6895,7 @@ GameObject:
   - component: {fileID: 197956191}
   - component: {fileID: 197956193}
   - component: {fileID: 197956192}
-  m_Layer: 9
+  m_Layer: 10
   m_Name: Junk_Ship_pCube49
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -7012,7 +7012,7 @@ GameObject:
   serializedVersion: 6
   m_Component:
   - component: {fileID: 200363987}
-  m_Layer: 9
+  m_Layer: 10
   m_Name: Junk_Ship_pCube101
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -7046,7 +7046,7 @@ GameObject:
   - component: {fileID: 201930270}
   - component: {fileID: 201930272}
   - component: {fileID: 201930271}
-  m_Layer: 9
+  m_Layer: 10
   m_Name: Junk_Ship_polySurface37
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -7129,7 +7129,7 @@ GameObject:
   - component: {fileID: 203301951}
   - component: {fileID: 203301953}
   - component: {fileID: 203301952}
-  m_Layer: 9
+  m_Layer: 10
   m_Name: Junk_Ship_polySurface68
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -7379,7 +7379,7 @@ GameObject:
   serializedVersion: 6
   m_Component:
   - component: {fileID: 217492710}
-  m_Layer: 9
+  m_Layer: 10
   m_Name: Junk_Ship_transform19
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -7822,7 +7822,7 @@ GameObject:
   - component: {fileID: 252709261}
   - component: {fileID: 252709263}
   - component: {fileID: 252709262}
-  m_Layer: 9
+  m_Layer: 10
   m_Name: Junk_Ship_pCube125
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -8076,7 +8076,7 @@ GameObject:
   - component: {fileID: 265082812}
   - component: {fileID: 265082814}
   - component: {fileID: 265082813}
-  m_Layer: 9
+  m_Layer: 10
   m_Name: Junk_Ship_pCube54
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -8159,7 +8159,7 @@ GameObject:
   - component: {fileID: 272556739}
   - component: {fileID: 272556741}
   - component: {fileID: 272556740}
-  m_Layer: 9
+  m_Layer: 10
   m_Name: Junk_Ship_pCube143
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -8778,7 +8778,7 @@ GameObject:
   - component: {fileID: 297444116}
   - component: {fileID: 297444118}
   - component: {fileID: 297444117}
-  m_Layer: 9
+  m_Layer: 10
   m_Name: Junk_Ship_polySurface38
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -8861,7 +8861,7 @@ GameObject:
   - component: {fileID: 300259582}
   - component: {fileID: 300259584}
   - component: {fileID: 300259583}
-  m_Layer: 9
+  m_Layer: 10
   m_Name: Junk_Ship_pCube31
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -8988,7 +8988,7 @@ GameObject:
   - component: {fileID: 316745136}
   - component: {fileID: 316745138}
   - component: {fileID: 316745137}
-  m_Layer: 9
+  m_Layer: 10
   m_Name: Junk_Ship_pCube17
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -9238,7 +9238,7 @@ GameObject:
   - component: {fileID: 333372120}
   - component: {fileID: 333372122}
   - component: {fileID: 333372121}
-  m_Layer: 9
+  m_Layer: 10
   m_Name: Junk_Ship_polySurface138
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -9490,7 +9490,7 @@ GameObject:
   - component: {fileID: 337282750}
   - component: {fileID: 337282752}
   - component: {fileID: 337282751}
-  m_Layer: 9
+  m_Layer: 10
   m_Name: Junk_Ship_pCube96
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -9818,7 +9818,7 @@ GameObject:
   serializedVersion: 6
   m_Component:
   - component: {fileID: 359276555}
-  m_Layer: 9
+  m_Layer: 10
   m_Name: Junk_Ship_transform20
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -10035,6 +10035,11 @@ Transform:
   m_Father: {fileID: 388843850}
   m_RootOrder: 2
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
+--- !u!4 &366341470 stripped
+Transform:
+  m_CorrespondingSourceObject: {fileID: -8679921383154817045, guid: 57cc248691864184a9f22622595a4399, type: 3}
+  m_PrefabInstance: {fileID: 1776798681}
+  m_PrefabAsset: {fileID: 0}
 --- !u!1 &373873039
 GameObject:
   m_ObjectHideFlags: 0
@@ -10046,7 +10051,7 @@ GameObject:
   - component: {fileID: 373873040}
   - component: {fileID: 373873042}
   - component: {fileID: 373873041}
-  m_Layer: 9
+  m_Layer: 10
   m_Name: Junk_Ship_pCube134
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -10129,7 +10134,7 @@ GameObject:
   - component: {fileID: 378357019}
   - component: {fileID: 378357021}
   - component: {fileID: 378357020}
-  m_Layer: 9
+  m_Layer: 10
   m_Name: Junk_Ship_pCube141
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -10600,7 +10605,7 @@ GameObject:
   - component: {fileID: 394612012}
   - component: {fileID: 394612014}
   - component: {fileID: 394612013}
-  m_Layer: 9
+  m_Layer: 10
   m_Name: Junk_Ship_pCube57
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -11190,7 +11195,7 @@ GameObject:
   - component: {fileID: 411757771}
   - component: {fileID: 411757773}
   - component: {fileID: 411757772}
-  m_Layer: 9
+  m_Layer: 10
   m_Name: Junk_Ship_pCube72
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -11273,7 +11278,7 @@ GameObject:
   - component: {fileID: 414374058}
   - component: {fileID: 414374060}
   - component: {fileID: 414374059}
-  m_Layer: 9
+  m_Layer: 10
   m_Name: Junk_Ship_pCube139
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -11435,7 +11440,7 @@ GameObject:
   serializedVersion: 6
   m_Component:
   - component: {fileID: 416302768}
-  m_Layer: 9
+  m_Layer: 10
   m_Name: Junk_Ship_group32
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -12080,7 +12085,7 @@ GameObject:
   - component: {fileID: 442308432}
   - component: {fileID: 442308434}
   - component: {fileID: 442308433}
-  m_Layer: 9
+  m_Layer: 10
   m_Name: Junk_Ship_pCube39
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -12244,7 +12249,7 @@ GameObject:
   - component: {fileID: 446293321}
   - component: {fileID: 446293323}
   - component: {fileID: 446293322}
-  m_Layer: 9
+  m_Layer: 10
   m_Name: Junk_Ship_polySurface71
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -12835,7 +12840,7 @@ GameObject:
   - component: {fileID: 454114046}
   - component: {fileID: 454114048}
   - component: {fileID: 454114047}
-  m_Layer: 9
+  m_Layer: 10
   m_Name: Junk_Ship_pCylinder8
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -13133,7 +13138,7 @@ MeshRenderer:
   m_PrefabInstance: {fileID: 0}
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 458664663}
-  m_Enabled: 1
+  m_Enabled: 0
   m_CastShadows: 1
   m_ReceiveShadows: 1
   m_DynamicOccludee: 1
@@ -15667,7 +15672,7 @@ GameObject:
   - component: {fileID: 482986796}
   - component: {fileID: 482986798}
   - component: {fileID: 482986797}
-  m_Layer: 9
+  m_Layer: 10
   m_Name: Junk_Ship_pCube68
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -15828,7 +15833,7 @@ GameObject:
   - component: {fileID: 494786110}
   - component: {fileID: 494786112}
   - component: {fileID: 494786111}
-  m_Layer: 9
+  m_Layer: 10
   m_Name: Junk_Ship_polySurface76
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -15916,7 +15921,7 @@ GameObject:
   - component: {fileID: 495812377}
   - component: {fileID: 495812379}
   - component: {fileID: 495812378}
-  m_Layer: 9
+  m_Layer: 10
   m_Name: Junk_Ship_pCube71
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -16038,7 +16043,7 @@ GameObject:
   - component: {fileID: 501121951}
   - component: {fileID: 501121953}
   - component: {fileID: 501121952}
-  m_Layer: 9
+  m_Layer: 10
   m_Name: Junk_Ship_polySurface47
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -16292,7 +16297,7 @@ GameObject:
   - component: {fileID: 511949157}
   - component: {fileID: 511949159}
   - component: {fileID: 511949158}
-  m_Layer: 9
+  m_Layer: 10
   m_Name: Junk_Ship_pCube90
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -16500,7 +16505,7 @@ GameObject:
   serializedVersion: 6
   m_Component:
   - component: {fileID: 513972500}
-  m_Layer: 9
+  m_Layer: 10
   m_Name: Junk_Ship_transform12
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -16871,7 +16876,7 @@ GameObject:
   serializedVersion: 6
   m_Component:
   - component: {fileID: 533180509}
-  m_Layer: 9
+  m_Layer: 10
   m_Name: Junk_Ship_transform15
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -17319,68 +17324,6 @@ MeshFilter:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 575283116}
   m_Mesh: {fileID: 4300006, guid: 80fe45ba761e9f74eb9efd35f374e21d, type: 3}
---- !u!850595691 &576088709
-LightingSettings:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_Name: 
-  serializedVersion: 4
-  m_GIWorkflowMode: 1
-  m_EnableBakedLightmaps: 1
-  m_EnableRealtimeLightmaps: 0
-  m_RealtimeEnvironmentLighting: 1
-  m_BounceScale: 1
-  m_AlbedoBoost: 1
-  m_IndirectOutputScale: 1
-  m_UsingShadowmask: 1
-  m_BakeBackend: 1
-  m_LightmapMaxSize: 1024
-  m_BakeResolution: 40
-  m_Padding: 2
-  m_LightmapCompression: 3
-  m_AO: 0
-  m_AOMaxDistance: 1
-  m_CompAOExponent: 1
-  m_CompAOExponentDirect: 0
-  m_ExtractAO: 0
-  m_MixedBakeMode: 2
-  m_LightmapsBakeMode: 1
-  m_FilterMode: 1
-  m_LightmapParameters: {fileID: 15204, guid: 0000000000000000f000000000000000, type: 0}
-  m_ExportTrainingData: 0
-  m_TrainingDataDestination: TrainingData
-  m_RealtimeResolution: 2
-  m_ForceWhiteAlbedo: 0
-  m_ForceUpdates: 0
-  m_FinalGather: 0
-  m_FinalGatherRayCount: 256
-  m_FinalGatherFiltering: 1
-  m_PVRCulling: 1
-  m_PVRSampling: 1
-  m_PVRDirectSampleCount: 32
-  m_PVRSampleCount: 512
-  m_PVREnvironmentSampleCount: 256
-  m_PVREnvironmentReferencePointCount: 2048
-  m_LightProbeSampleCountMultiplier: 4
-  m_PVRBounces: 2
-  m_PVRMinBounces: 2
-  m_PVREnvironmentMIS: 1
-  m_PVRFilteringMode: 1
-  m_PVRDenoiserTypeDirect: 1
-  m_PVRDenoiserTypeIndirect: 1
-  m_PVRDenoiserTypeAO: 1
-  m_PVRFilterTypeDirect: 0
-  m_PVRFilterTypeIndirect: 0
-  m_PVRFilterTypeAO: 0
-  m_PVRFilteringGaussRadiusDirect: 1
-  m_PVRFilteringGaussRadiusIndirect: 5
-  m_PVRFilteringGaussRadiusAO: 2
-  m_PVRFilteringAtrousPositionSigmaDirect: 0.5
-  m_PVRFilteringAtrousPositionSigmaIndirect: 2
-  m_PVRFilteringAtrousPositionSigmaAO: 1
-  m_PVRTiledBaking: 0
 --- !u!1 &579093852
 GameObject:
   m_ObjectHideFlags: 0
@@ -17509,7 +17452,7 @@ GameObject:
   - component: {fileID: 588821413}
   - component: {fileID: 588821415}
   - component: {fileID: 588821414}
-  m_Layer: 9
+  m_Layer: 10
   m_Name: Junk_Ship_polySurface136
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -17756,7 +17699,7 @@ GameObject:
   - component: {fileID: 608451531}
   - component: {fileID: 608451533}
   - component: {fileID: 608451532}
-  m_Layer: 9
+  m_Layer: 10
   m_Name: Junk_Ship_polySurface64
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -17839,7 +17782,7 @@ GameObject:
   - component: {fileID: 610005966}
   - component: {fileID: 610005968}
   - component: {fileID: 610005967}
-  m_Layer: 9
+  m_Layer: 10
   m_Name: Junk_Ship_polySurface34
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -18304,7 +18247,7 @@ GameObject:
   - component: {fileID: 614620566}
   - component: {fileID: 614620568}
   - component: {fileID: 614620567}
-  m_Layer: 9
+  m_Layer: 10
   m_Name: Junk_Ship_pCube121
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -18518,7 +18461,7 @@ MeshRenderer:
   m_PrefabInstance: {fileID: 0}
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 625636547}
-  m_Enabled: 1
+  m_Enabled: 0
   m_CastShadows: 1
   m_ReceiveShadows: 1
   m_DynamicOccludee: 1
@@ -18601,7 +18544,7 @@ GameObject:
   - component: {fileID: 627265247}
   - component: {fileID: 627265249}
   - component: {fileID: 627265248}
-  m_Layer: 9
+  m_Layer: 10
   m_Name: Junk_Ship_polySurface124
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -19062,7 +19005,7 @@ GameObject:
   - component: {fileID: 656267057}
   - component: {fileID: 656267059}
   - component: {fileID: 656267058}
-  m_Layer: 9
+  m_Layer: 10
   m_Name: Junk_Ship_pCube92
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -19145,7 +19088,7 @@ GameObject:
   - component: {fileID: 658229591}
   - component: {fileID: 658229593}
   - component: {fileID: 658229592}
-  m_Layer: 9
+  m_Layer: 10
   m_Name: Junk_Ship_polySurface123
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -19906,7 +19849,7 @@ GameObject:
   - component: {fileID: 688713143}
   - component: {fileID: 688713145}
   - component: {fileID: 688713144}
-  m_Layer: 9
+  m_Layer: 10
   m_Name: Junk_Ship_polySurface140
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -20288,12 +20231,12 @@ GameObject:
   - component: {fileID: 705507994}
   - component: {fileID: 705507996}
   m_Layer: 0
-  m_Name: Directional Light
+  m_Name: Directional Light Bake
   m_TagString: Untagged
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
-  m_IsActive: 1
+  m_IsActive: 0
 --- !u!108 &705507994
 Light:
   m_ObjectHideFlags: 0
@@ -20345,7 +20288,7 @@ Light:
     serializedVersion: 2
     m_Bits: 4294967295
   m_RenderingLayerMask: 1
-  m_Lightmapping: 1
+  m_Lightmapping: 2
   m_LightShadowCasterMode: 0
   m_AreaSize: {x: 1, y: 1}
   m_BounceIntensity: 1
@@ -20364,11 +20307,11 @@ Transform:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 705507993}
   m_LocalRotation: {x: 0.40821788, y: -0.23456968, z: 0.10938163, w: 0.8754261}
-  m_LocalPosition: {x: 0, y: 3, z: 0}
+  m_LocalPosition: {x: 0, y: 0, z: 0}
   m_LocalScale: {x: 1, y: 1, z: 1}
   m_ConstrainProportionsScale: 0
   m_Children: []
-  m_Father: {fileID: 0}
+  m_Father: {fileID: 1951092432}
   m_RootOrder: 0
   m_LocalEulerAnglesHint: {x: 50, y: -30, z: 0}
 --- !u!114 &705507996
@@ -20424,7 +20367,7 @@ Transform:
   - {fileID: 458664664}
   - {fileID: 625636548}
   m_Father: {fileID: 0}
-  m_RootOrder: 4
+  m_RootOrder: 3
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
 --- !u!1 &707119322
 GameObject:
@@ -20437,7 +20380,7 @@ GameObject:
   - component: {fileID: 707119323}
   - component: {fileID: 707119325}
   - component: {fileID: 707119324}
-  m_Layer: 9
+  m_Layer: 10
   m_Name: Junk_Ship_pCube24
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -21068,7 +21011,7 @@ GameObject:
   - component: {fileID: 725359323}
   - component: {fileID: 725359325}
   - component: {fileID: 725359324}
-  m_Layer: 9
+  m_Layer: 10
   m_Name: Junk_Ship_polySurface69
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -21151,7 +21094,7 @@ GameObject:
   - component: {fileID: 728853791}
   - component: {fileID: 728853793}
   - component: {fileID: 728853792}
-  m_Layer: 9
+  m_Layer: 10
   m_Name: Junk_Ship_pCube122
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -21418,7 +21361,7 @@ GameObject:
   - component: {fileID: 735392254}
   - component: {fileID: 735392256}
   - component: {fileID: 735392255}
-  m_Layer: 9
+  m_Layer: 10
   m_Name: Junk_Ship_polySurface127
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -21532,7 +21475,7 @@ GameObject:
   - component: {fileID: 737601219}
   - component: {fileID: 737601221}
   - component: {fileID: 737601220}
-  m_Layer: 9
+  m_Layer: 10
   m_Name: Junk_Ship_pCylinder7
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -21615,7 +21558,7 @@ GameObject:
   - component: {fileID: 738151632}
   - component: {fileID: 738151634}
   - component: {fileID: 738151633}
-  m_Layer: 9
+  m_Layer: 10
   m_Name: Junk_Ship_pCube103
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -22195,7 +22138,7 @@ GameObject:
   - component: {fileID: 764559848}
   - component: {fileID: 764559850}
   - component: {fileID: 764559849}
-  m_Layer: 9
+  m_Layer: 10
   m_Name: Junk_Ship_pCube15
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -22278,7 +22221,7 @@ GameObject:
   - component: {fileID: 767164886}
   - component: {fileID: 767164888}
   - component: {fileID: 767164887}
-  m_Layer: 9
+  m_Layer: 10
   m_Name: Junk_Ship_pCube109
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -22486,7 +22429,7 @@ GameObject:
   - component: {fileID: 780150273}
   - component: {fileID: 780150275}
   - component: {fileID: 780150274}
-  m_Layer: 9
+  m_Layer: 10
   m_Name: Junk_Ship_polySurface29
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -22648,7 +22591,7 @@ GameObject:
   serializedVersion: 6
   m_Component:
   - component: {fileID: 781302844}
-  m_Layer: 9
+  m_Layer: 10
   m_Name: Junk_Ship_pCube118
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -22794,7 +22737,7 @@ GameObject:
   - component: {fileID: 793667243}
   - component: {fileID: 793667245}
   - component: {fileID: 793667244}
-  m_Layer: 9
+  m_Layer: 10
   m_Name: Junk_Ship_pCube138
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -22877,7 +22820,7 @@ GameObject:
   - component: {fileID: 797080665}
   - component: {fileID: 797080667}
   - component: {fileID: 797080666}
-  m_Layer: 9
+  m_Layer: 10
   m_Name: Junk_Ship_pCube170
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -23074,7 +23017,7 @@ GameObject:
   - component: {fileID: 799844710}
   - component: {fileID: 799844712}
   - component: {fileID: 799844711}
-  m_Layer: 9
+  m_Layer: 10
   m_Name: Junk_Ship_pCube128
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -23157,7 +23100,7 @@ GameObject:
   - component: {fileID: 801496811}
   - component: {fileID: 801496813}
   - component: {fileID: 801496812}
-  m_Layer: 9
+  m_Layer: 10
   m_Name: Junk_Ship_pCube44
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -23528,7 +23471,7 @@ GameObject:
   - component: {fileID: 821205607}
   - component: {fileID: 821205609}
   - component: {fileID: 821205608}
-  m_Layer: 9
+  m_Layer: 10
   m_Name: Junk_Ship_pCube150
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -23700,7 +23643,7 @@ GameObject:
   serializedVersion: 6
   m_Component:
   - component: {fileID: 829928430}
-  m_Layer: 9
+  m_Layer: 10
   m_Name: Junk_Ship_polySurface159
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -23734,7 +23677,7 @@ GameObject:
   - component: {fileID: 830143396}
   - component: {fileID: 830143398}
   - component: {fileID: 830143397}
-  m_Layer: 9
+  m_Layer: 10
   m_Name: Junk_Ship_polySurface131
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -24136,7 +24079,7 @@ GameObject:
   - component: {fileID: 849166205}
   - component: {fileID: 849166207}
   - component: {fileID: 849166206}
-  m_Layer: 9
+  m_Layer: 10
   m_Name: Junk_Ship_pCube53
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -24219,7 +24162,7 @@ GameObject:
   - component: {fileID: 849529070}
   - component: {fileID: 849529072}
   - component: {fileID: 849529071}
-  m_Layer: 9
+  m_Layer: 10
   m_Name: Junk_Ship_pCube23
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -24385,7 +24328,7 @@ GameObject:
   - component: {fileID: 854339742}
   - component: {fileID: 854339744}
   - component: {fileID: 854339743}
-  m_Layer: 9
+  m_Layer: 10
   m_Name: Junk_Ship_pCube112
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -24641,7 +24584,7 @@ GameObject:
   - component: {fileID: 858781292}
   - component: {fileID: 858781294}
   - component: {fileID: 858781293}
-  m_Layer: 9
+  m_Layer: 10
   m_Name: Junk_Ship_polySurface128
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -25554,7 +25497,7 @@ Transform:
   - {fileID: 1557797019}
   - {fileID: 1954836997}
   m_Father: {fileID: 0}
-  m_RootOrder: 2
+  m_RootOrder: 1
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
 --- !u!4 &908641443 stripped
 Transform:
@@ -25919,7 +25862,7 @@ GameObject:
   - component: {fileID: 931727837}
   - component: {fileID: 931727839}
   - component: {fileID: 931727838}
-  m_Layer: 9
+  m_Layer: 10
   m_Name: Junk_Ship_pCube105
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -26214,7 +26157,7 @@ GameObject:
   - component: {fileID: 949568323}
   - component: {fileID: 949568325}
   - component: {fileID: 949568324}
-  m_Layer: 9
+  m_Layer: 10
   m_Name: Junk_Ship_pCube52
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -26615,7 +26558,7 @@ GameObject:
   - component: {fileID: 957217641}
   - component: {fileID: 957217643}
   - component: {fileID: 957217642}
-  m_Layer: 9
+  m_Layer: 10
   m_Name: Junk_Ship_pCube66
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -26706,7 +26649,7 @@ GameObject:
   serializedVersion: 6
   m_Component:
   - component: {fileID: 961618134}
-  m_Layer: 9
+  m_Layer: 10
   m_Name: Junk_Ship_transform3
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -26979,6 +26922,51 @@ PrefabInstance:
       objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: 4c1909695f170254cb55f5f5e9e2f346, type: 3}
+--- !u!1 &969033216
+GameObject:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  serializedVersion: 6
+  m_Component:
+  - component: {fileID: 969033217}
+  - component: {fileID: 969033218}
+  m_Layer: 0
+  m_Name: body
+  m_TagString: Untagged
+  m_Icon: {fileID: 0}
+  m_NavMeshLayer: 0
+  m_StaticEditorFlags: 0
+  m_IsActive: 1
+--- !u!4 &969033217
+Transform:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 969033216}
+  m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
+  m_LocalPosition: {x: 0, y: 0, z: 0}
+  m_LocalScale: {x: 1, y: 1, z: 1}
+  m_ConstrainProportionsScale: 0
+  m_Children: []
+  m_Father: {fileID: 366341470}
+  m_RootOrder: 4
+  m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
+--- !u!65 &969033218
+BoxCollider:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 969033216}
+  m_Material: {fileID: 0}
+  m_IsTrigger: 0
+  m_Enabled: 1
+  serializedVersion: 2
+  m_Size: {x: 0.08558775, y: 0.047139607, z: 0.34971502}
+  m_Center: {x: -0.0025079278, y: 0.03176209, z: -0.01755275}
 --- !u!1 &969122451
 GameObject:
   m_ObjectHideFlags: 0
@@ -27010,7 +26998,7 @@ Transform:
   - {fileID: 2077015887}
   - {fileID: 1603946882}
   m_Father: {fileID: 0}
-  m_RootOrder: 6
+  m_RootOrder: 5
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
 --- !u!1 &970121144
 GameObject:
@@ -27193,7 +27181,7 @@ GameObject:
   - component: {fileID: 971589755}
   - component: {fileID: 971589757}
   - component: {fileID: 971589756}
-  m_Layer: 9
+  m_Layer: 10
   m_Name: Junk_Ship_pCube51
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -27909,7 +27897,7 @@ GameObject:
   - component: {fileID: 991276914}
   - component: {fileID: 991276916}
   - component: {fileID: 991276915}
-  m_Layer: 9
+  m_Layer: 10
   m_Name: Junk_Ship_pCube82
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -28348,7 +28336,7 @@ GameObject:
   serializedVersion: 6
   m_Component:
   - component: {fileID: 992692491}
-  m_Layer: 9
+  m_Layer: 10
   m_Name: Junk_Ship_pCube113
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -30306,7 +30294,7 @@ GameObject:
   - component: {fileID: 1014144690}
   - component: {fileID: 1014144692}
   - component: {fileID: 1014144691}
-  m_Layer: 9
+  m_Layer: 10
   m_Name: Junk_Ship_pCube45
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -30553,7 +30541,7 @@ GameObject:
   - component: {fileID: 1031718944}
   - component: {fileID: 1031718946}
   - component: {fileID: 1031718945}
-  m_Layer: 9
+  m_Layer: 10
   m_Name: Junk_Ship_pCube26
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -31104,7 +31092,7 @@ GameObject:
   - component: {fileID: 1047105257}
   - component: {fileID: 1047105259}
   - component: {fileID: 1047105258}
-  m_Layer: 9
+  m_Layer: 10
   m_Name: Junk_Ship_pCube65
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -31228,7 +31216,7 @@ GameObject:
   - component: {fileID: 1055374205}
   - component: {fileID: 1055374207}
   - component: {fileID: 1055374206}
-  m_Layer: 9
+  m_Layer: 10
   m_Name: Junk_Ship_polySurface122
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -31311,7 +31299,7 @@ GameObject:
   - component: {fileID: 1055775964}
   - component: {fileID: 1055775966}
   - component: {fileID: 1055775965}
-  m_Layer: 9
+  m_Layer: 10
   m_Name: Junk_Ship_pCube131
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -31540,7 +31528,7 @@ GameObject:
   - component: {fileID: 1059879730}
   - component: {fileID: 1059879732}
   - component: {fileID: 1059879731}
-  m_Layer: 9
+  m_Layer: 10
   m_Name: Junk_Ship_polySurface135
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -31785,7 +31773,7 @@ GameObject:
   serializedVersion: 6
   m_Component:
   - component: {fileID: 1065236264}
-  m_Layer: 9
+  m_Layer: 10
   m_Name: Junk_Ship_pCube119
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -34587,7 +34575,7 @@ GameObject:
   serializedVersion: 6
   m_Component:
   - component: {fileID: 1115645268}
-  m_Layer: 9
+  m_Layer: 10
   m_Name: Junk_Ship_pCube117
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -34702,7 +34690,7 @@ GameObject:
   - component: {fileID: 1122517818}
   - component: {fileID: 1122517820}
   - component: {fileID: 1122517819}
-  m_Layer: 9
+  m_Layer: 10
   m_Name: Junk_Ship_pCube59
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -35400,7 +35388,7 @@ GameObject:
   - component: {fileID: 1142321894}
   - component: {fileID: 1142321896}
   - component: {fileID: 1142321895}
-  m_Layer: 9
+  m_Layer: 10
   m_Name: Junk_Ship_pCube136
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -35488,7 +35476,7 @@ GameObject:
   - component: {fileID: 1155150743}
   - component: {fileID: 1155150745}
   - component: {fileID: 1155150744}
-  m_Layer: 9
+  m_Layer: 10
   m_Name: Junk_Ship_pCube104
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -35686,7 +35674,7 @@ GameObject:
   - component: {fileID: 1157964060}
   - component: {fileID: 1157964062}
   - component: {fileID: 1157964061}
-  m_Layer: 9
+  m_Layer: 10
   m_Name: Junk_Ship_pCube6
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -36014,7 +36002,7 @@ GameObject:
   - component: {fileID: 1167249605}
   - component: {fileID: 1167249607}
   - component: {fileID: 1167249606}
-  m_Layer: 9
+  m_Layer: 10
   m_Name: Junk_Ship_pCube70
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -36086,6 +36074,121 @@ MeshFilter:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 1167249604}
   m_Mesh: {fileID: 7327877062361150087, guid: f98f0e6ad324a5a4cabdf3909a72351d, type: 3}
+--- !u!1 &1167335702
+GameObject:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  serializedVersion: 6
+  m_Component:
+  - component: {fileID: 1167335703}
+  - component: {fileID: 1167335705}
+  - component: {fileID: 1167335704}
+  m_Layer: 0
+  m_Name: Directional Light non_Static
+  m_TagString: Untagged
+  m_Icon: {fileID: 0}
+  m_NavMeshLayer: 0
+  m_StaticEditorFlags: 0
+  m_IsActive: 1
+--- !u!4 &1167335703
+Transform:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1167335702}
+  m_LocalRotation: {x: 0.40821788, y: -0.23456968, z: 0.10938163, w: 0.8754261}
+  m_LocalPosition: {x: 0, y: 0, z: 0}
+  m_LocalScale: {x: 1, y: 1, z: 1}
+  m_ConstrainProportionsScale: 0
+  m_Children: []
+  m_Father: {fileID: 1951092432}
+  m_RootOrder: 1
+  m_LocalEulerAnglesHint: {x: 50, y: -30, z: 0}
+--- !u!114 &1167335704
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1167335702}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 474bcb49853aa07438625e644c072ee6, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  m_Version: 1
+  m_UsePipelineSettings: 1
+  m_AdditionalLightsShadowResolutionTier: 2
+  m_LightLayerMask: 1
+  m_CustomShadowLayers: 0
+  m_ShadowLayerMask: 1
+  m_LightCookieSize: {x: 1, y: 1}
+  m_LightCookieOffset: {x: 0, y: 0}
+--- !u!108 &1167335705
+Light:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1167335702}
+  m_Enabled: 1
+  serializedVersion: 10
+  m_Type: 1
+  m_Shape: 0
+  m_Color: {r: 1, g: 0.95686275, b: 0.8392157, a: 1}
+  m_Intensity: 1
+  m_Range: 10
+  m_SpotAngle: 30
+  m_InnerSpotAngle: 21.80208
+  m_CookieSize: 10
+  m_Shadows:
+    m_Type: 2
+    m_Resolution: -1
+    m_CustomResolution: -1
+    m_Strength: 1
+    m_Bias: 0.05
+    m_NormalBias: 0.4
+    m_NearPlane: 0.2
+    m_CullingMatrixOverride:
+      e00: 1
+      e01: 0
+      e02: 0
+      e03: 0
+      e10: 0
+      e11: 1
+      e12: 0
+      e13: 0
+      e20: 0
+      e21: 0
+      e22: 1
+      e23: 0
+      e30: 0
+      e31: 0
+      e32: 0
+      e33: 1
+    m_UseCullingMatrixOverride: 0
+  m_Cookie: {fileID: 0}
+  m_DrawHalo: 0
+  m_Flare: {fileID: 0}
+  m_RenderMode: 0
+  m_CullingMask:
+    serializedVersion: 2
+    m_Bits: 1025
+  m_RenderingLayerMask: 1
+  m_Lightmapping: 4
+  m_LightShadowCasterMode: 0
+  m_AreaSize: {x: 1, y: 1}
+  m_BounceIntensity: 1
+  m_ColorTemperature: 6570
+  m_UseColorTemperature: 0
+  m_BoundingSphereOverride: {x: 0, y: 0, z: 0, w: 0}
+  m_UseBoundingSphereOverride: 0
+  m_UseViewFrustumForShadowCasterCull: 1
+  m_ShadowRadius: 0
+  m_ShadowAngle: 0
 --- !u!1 &1170042506
 GameObject:
   m_ObjectHideFlags: 0
@@ -36097,7 +36200,7 @@ GameObject:
   - component: {fileID: 1170042507}
   - component: {fileID: 1170042509}
   - component: {fileID: 1170042508}
-  m_Layer: 9
+  m_Layer: 10
   m_Name: Junk_Ship_pCube124
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -36263,7 +36366,7 @@ GameObject:
   - component: {fileID: 1172657648}
   - component: {fileID: 1172657650}
   - component: {fileID: 1172657649}
-  m_Layer: 9
+  m_Layer: 10
   m_Name: Junk_Ship_pCube107
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -36626,7 +36729,7 @@ GameObject:
   - component: {fileID: 1181970276}
   - component: {fileID: 1181970278}
   - component: {fileID: 1181970277}
-  m_Layer: 9
+  m_Layer: 10
   m_Name: Junk_Ship_pCube9
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -37408,7 +37511,7 @@ GameObject:
   - component: {fileID: 1213874768}
   - component: {fileID: 1213874770}
   - component: {fileID: 1213874769}
-  m_Layer: 9
+  m_Layer: 10
   m_Name: Junk_Ship_polySurface74
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -37733,7 +37836,7 @@ GameObject:
   - component: {fileID: 1219869230}
   - component: {fileID: 1219869232}
   - component: {fileID: 1219869231}
-  m_Layer: 9
+  m_Layer: 10
   m_Name: Junk_Ship_pCube42
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -37816,7 +37919,7 @@ GameObject:
   - component: {fileID: 1220370482}
   - component: {fileID: 1220370484}
   - component: {fileID: 1220370483}
-  m_Layer: 9
+  m_Layer: 10
   m_Name: Junk_Ship_pCube85
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -38117,7 +38220,7 @@ GameObject:
   - component: {fileID: 1245715945}
   - component: {fileID: 1245715947}
   - component: {fileID: 1245715946}
-  m_Layer: 9
+  m_Layer: 10
   m_Name: Junk_Ship_pCube106
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -38412,7 +38515,7 @@ GameObject:
   - component: {fileID: 1248824671}
   - component: {fileID: 1248824673}
   - component: {fileID: 1248824672}
-  m_Layer: 9
+  m_Layer: 10
   m_Name: Junk_Ship_pCube135
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -38589,7 +38692,7 @@ GameObject:
   - component: {fileID: 1265009556}
   - component: {fileID: 1265009558}
   - component: {fileID: 1265009557}
-  m_Layer: 9
+  m_Layer: 10
   m_Name: Junk_Ship_pCube8
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -38921,7 +39024,7 @@ GameObject:
   - component: {fileID: 1278185365}
   - component: {fileID: 1278185367}
   - component: {fileID: 1278185366}
-  m_Layer: 9
+  m_Layer: 10
   m_Name: Junk_Ship_polySurface121
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -39168,7 +39271,7 @@ GameObject:
   - component: {fileID: 1287152210}
   - component: {fileID: 1287152212}
   - component: {fileID: 1287152211}
-  m_Layer: 9
+  m_Layer: 10
   m_Name: Junk_Ship_pCube110
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -39514,7 +39617,7 @@ GameObject:
   - component: {fileID: 1300314367}
   - component: {fileID: 1300314369}
   - component: {fileID: 1300314368}
-  m_Layer: 9
+  m_Layer: 10
   m_Name: Junk_Ship_pCube146
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -39912,7 +40015,7 @@ Transform:
   m_Children:
   - {fileID: 1805617716}
   m_Father: {fileID: 0}
-  m_RootOrder: 3
+  m_RootOrder: 2
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
 --- !u!1 &1315771468
 GameObject:
@@ -39925,7 +40028,7 @@ GameObject:
   - component: {fileID: 1315771469}
   - component: {fileID: 1315771471}
   - component: {fileID: 1315771470}
-  m_Layer: 9
+  m_Layer: 10
   m_Name: Junk_Ship_polySurface129
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -40215,7 +40318,7 @@ GameObject:
   - component: {fileID: 1323528543}
   - component: {fileID: 1323528545}
   - component: {fileID: 1323528544}
-  m_Layer: 9
+  m_Layer: 10
   m_Name: Junk_Ship_pCube35
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -40532,7 +40635,7 @@ GameObject:
   - component: {fileID: 1328474604}
   - component: {fileID: 1328474606}
   - component: {fileID: 1328474605}
-  m_Layer: 9
+  m_Layer: 10
   m_Name: Junk_Ship_pCube13
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -40693,7 +40796,7 @@ GameObject:
   - component: {fileID: 1331348479}
   - component: {fileID: 1331348481}
   - component: {fileID: 1331348480}
-  m_Layer: 9
+  m_Layer: 10
   m_Name: Junk_Ship_polySurface126
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -40776,7 +40879,7 @@ GameObject:
   - component: {fileID: 1335063069}
   - component: {fileID: 1335063071}
   - component: {fileID: 1335063070}
-  m_Layer: 9
+  m_Layer: 10
   m_Name: Junk_Ship_pCube58
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -41208,7 +41311,7 @@ GameObject:
   - component: {fileID: 1349591540}
   - component: {fileID: 1349591542}
   - component: {fileID: 1349591541}
-  m_Layer: 9
+  m_Layer: 10
   m_Name: Junk_Ship_pCube50
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -41492,7 +41595,7 @@ GameObject:
   - component: {fileID: 1364079030}
   - component: {fileID: 1364079032}
   - component: {fileID: 1364079031}
-  m_Layer: 9
+  m_Layer: 10
   m_Name: Junk_Ship_polySurface27
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -41742,7 +41845,7 @@ GameObject:
   - component: {fileID: 1377861632}
   - component: {fileID: 1377861634}
   - component: {fileID: 1377861633}
-  m_Layer: 9
+  m_Layer: 10
   m_Name: Junk_Ship_pCube129
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -42074,7 +42177,7 @@ GameObject:
   - component: {fileID: 1383081918}
   - component: {fileID: 1383081920}
   - component: {fileID: 1383081919}
-  m_Layer: 9
+  m_Layer: 10
   m_Name: Junk_Ship_pCube168
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -42193,7 +42296,7 @@ GameObject:
   - component: {fileID: 1394037709}
   - component: {fileID: 1394037711}
   - component: {fileID: 1394037710}
-  m_Layer: 9
+  m_Layer: 10
   m_Name: Junk_Ship_pCube137
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -42357,7 +42460,7 @@ GameObject:
   - component: {fileID: 1405335798}
   - component: {fileID: 1405335800}
   - component: {fileID: 1405335799}
-  m_Layer: 9
+  m_Layer: 10
   m_Name: Junk_Ship_pCube46
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -42440,7 +42543,7 @@ GameObject:
   - component: {fileID: 1407877409}
   - component: {fileID: 1407877411}
   - component: {fileID: 1407877410}
-  m_Layer: 9
+  m_Layer: 10
   m_Name: Junk_Ship_pCube69
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -42740,7 +42843,7 @@ GameObject:
   - component: {fileID: 1421639412}
   - component: {fileID: 1421639414}
   - component: {fileID: 1421639413}
-  m_Layer: 9
+  m_Layer: 10
   m_Name: Junk_Ship_pCube142
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -42823,7 +42926,7 @@ GameObject:
   - component: {fileID: 1425633927}
   - component: {fileID: 1425633929}
   - component: {fileID: 1425633928}
-  m_Layer: 9
+  m_Layer: 10
   m_Name: Junk_Ship_pCube14
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -43173,7 +43276,7 @@ GameObject:
   - component: {fileID: 1438540514}
   - component: {fileID: 1438540516}
   - component: {fileID: 1438540515}
-  m_Layer: 9
+  m_Layer: 10
   m_Name: Junk_Ship_polySurface30
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -43576,7 +43679,7 @@ GameObject:
   - component: {fileID: 1442159864}
   - component: {fileID: 1442159866}
   - component: {fileID: 1442159865}
-  m_Layer: 9
+  m_Layer: 10
   m_Name: Junk_Ship_pCube18
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -43772,7 +43875,7 @@ GameObject:
   - component: {fileID: 1447786424}
   - component: {fileID: 1447786426}
   - component: {fileID: 1447786425}
-  m_Layer: 9
+  m_Layer: 10
   m_Name: Junk_Ship_pCube63
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -44836,7 +44939,7 @@ GameObject:
   - component: {fileID: 1482580170}
   - component: {fileID: 1482580172}
   - component: {fileID: 1482580171}
-  m_Layer: 9
+  m_Layer: 10
   m_Name: Junk_Ship_polySurface25
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -44924,7 +45027,7 @@ GameObject:
   - component: {fileID: 1501045585}
   - component: {fileID: 1501045587}
   - component: {fileID: 1501045586}
-  m_Layer: 9
+  m_Layer: 10
   m_Name: Junk_Ship_polySurface67
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -45007,7 +45110,7 @@ GameObject:
   - component: {fileID: 1502323500}
   - component: {fileID: 1502323502}
   - component: {fileID: 1502323501}
-  m_Layer: 9
+  m_Layer: 10
   m_Name: Junk_Ship_pCube169
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -45179,7 +45282,7 @@ GameObject:
   serializedVersion: 6
   m_Component:
   - component: {fileID: 1513747288}
-  m_Layer: 9
+  m_Layer: 10
   m_Name: Junk_Ship_transform11
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -45212,7 +45315,7 @@ GameObject:
   - component: {fileID: 1516573312}
   - component: {fileID: 1516573314}
   - component: {fileID: 1516573313}
-  m_Layer: 9
+  m_Layer: 10
   m_Name: Junk_Ship_polySurface24
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -45532,7 +45635,7 @@ GameObject:
   - component: {fileID: 1522599522}
   - component: {fileID: 1522599524}
   - component: {fileID: 1522599523}
-  m_Layer: 9
+  m_Layer: 10
   m_Name: Junk_Ship_polySurface134
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -45615,7 +45718,7 @@ GameObject:
   - component: {fileID: 1527309315}
   - component: {fileID: 1527309317}
   - component: {fileID: 1527309316}
-  m_Layer: 9
+  m_Layer: 10
   m_Name: Junk_Ship_polySurface139
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -45698,7 +45801,7 @@ GameObject:
   - component: {fileID: 1529263831}
   - component: {fileID: 1529263833}
   - component: {fileID: 1529263832}
-  m_Layer: 9
+  m_Layer: 10
   m_Name: Junk_Ship_pCube167
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -45781,7 +45884,7 @@ GameObject:
   - component: {fileID: 1533688986}
   - component: {fileID: 1533688988}
   - component: {fileID: 1533688987}
-  m_Layer: 9
+  m_Layer: 10
   m_Name: Junk_Ship_pCube56
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -45864,7 +45967,7 @@ GameObject:
   - component: {fileID: 1534703581}
   - component: {fileID: 1534703583}
   - component: {fileID: 1534703582}
-  m_Layer: 9
+  m_Layer: 10
   m_Name: Junk_Ship_pCube93
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -45952,7 +46055,7 @@ GameObject:
   - component: {fileID: 1536908615}
   - component: {fileID: 1536908617}
   - component: {fileID: 1536908616}
-  m_Layer: 9
+  m_Layer: 10
   m_Name: Junk_Ship_pCube55
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -46121,7 +46224,7 @@ GameObject:
   - component: {fileID: 1543939071}
   - component: {fileID: 1543939073}
   - component: {fileID: 1543939072}
-  m_Layer: 9
+  m_Layer: 10
   m_Name: Junk_Ship_pCube144
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -46202,7 +46305,7 @@ GameObject:
   serializedVersion: 6
   m_Component:
   - component: {fileID: 1544444986}
-  m_Layer: 9
+  m_Layer: 10
   m_Name: Junk_Ship_pCube115
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -46320,7 +46423,7 @@ GameObject:
   serializedVersion: 6
   m_Component:
   - component: {fileID: 1556805332}
-  m_Layer: 9
+  m_Layer: 10
   m_Name: Junk_Ship_pCube116
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -46696,7 +46799,7 @@ GameObject:
   - component: {fileID: 1577636586}
   - component: {fileID: 1577636588}
   - component: {fileID: 1577636587}
-  m_Layer: 9
+  m_Layer: 10
   m_Name: Junk_Ship_pCube27
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -46909,7 +47012,7 @@ GameObject:
   - component: {fileID: 1581225379}
   - component: {fileID: 1581225381}
   - component: {fileID: 1581225380}
-  m_Layer: 9
+  m_Layer: 10
   m_Name: Junk_Ship_polySurface31
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -47075,7 +47178,7 @@ GameObject:
   - component: {fileID: 1586240169}
   - component: {fileID: 1586240171}
   - component: {fileID: 1586240170}
-  m_Layer: 9
+  m_Layer: 10
   m_Name: Junk_Ship_pCube149
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -47158,7 +47261,7 @@ GameObject:
   - component: {fileID: 1587436072}
   - component: {fileID: 1587436074}
   - component: {fileID: 1587436073}
-  m_Layer: 9
+  m_Layer: 10
   m_Name: Junk_Ship_pCube126
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -47333,7 +47436,7 @@ GameObject:
   - component: {fileID: 1592589160}
   - component: {fileID: 1592589162}
   - component: {fileID: 1592589161}
-  m_Layer: 9
+  m_Layer: 10
   m_Name: Junk_Ship_pCube89
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -47416,7 +47519,7 @@ GameObject:
   - component: {fileID: 1593470019}
   - component: {fileID: 1593470021}
   - component: {fileID: 1593470020}
-  m_Layer: 9
+  m_Layer: 10
   m_Name: Junk_Ship_pCube12
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -47699,7 +47802,7 @@ GameObject:
   - component: {fileID: 1614640867}
   - component: {fileID: 1614640869}
   - component: {fileID: 1614640868}
-  m_Layer: 9
+  m_Layer: 10
   m_Name: Junk_Ship_polySurface35
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -47787,7 +47890,7 @@ GameObject:
   - component: {fileID: 1620718237}
   - component: {fileID: 1620718239}
   - component: {fileID: 1620718238}
-  m_Layer: 9
+  m_Layer: 10
   m_Name: Junk_Ship_pCube41
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -48253,7 +48356,7 @@ GameObject:
   - component: {fileID: 1629137670}
   - component: {fileID: 1629137672}
   - component: {fileID: 1629137671}
-  m_Layer: 9
+  m_Layer: 10
   m_Name: Junk_Ship_pCube102
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -48336,7 +48439,7 @@ GameObject:
   - component: {fileID: 1629982854}
   - component: {fileID: 1629982856}
   - component: {fileID: 1629982855}
-  m_Layer: 9
+  m_Layer: 10
   m_Name: Junk_Ship_polySurface33
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -48738,7 +48841,7 @@ GameObject:
   - component: {fileID: 1638499052}
   - component: {fileID: 1638499054}
   - component: {fileID: 1638499053}
-  m_Layer: 9
+  m_Layer: 10
   m_Name: Junk_Ship_pCube40
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -48987,7 +49090,7 @@ GameObject:
   - component: {fileID: 1641579268}
   - component: {fileID: 1641579270}
   - component: {fileID: 1641579269}
-  m_Layer: 9
+  m_Layer: 10
   m_Name: Junk_Ship_pCube11
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -49482,7 +49585,7 @@ GameObject:
   - component: {fileID: 1657963959}
   - component: {fileID: 1657963961}
   - component: {fileID: 1657963960}
-  m_Layer: 9
+  m_Layer: 10
   m_Name: Junk_Ship_pCube173
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -49738,7 +49841,7 @@ GameObject:
   serializedVersion: 6
   m_Component:
   - component: {fileID: 1667623980}
-  m_Layer: 9
+  m_Layer: 10
   m_Name: Junk_Ship_polySurface7
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -49772,7 +49875,7 @@ GameObject:
   - component: {fileID: 1668027514}
   - component: {fileID: 1668027516}
   - component: {fileID: 1668027515}
-  m_Layer: 9
+  m_Layer: 10
   m_Name: Junk_Ship_pCube151
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -49856,7 +49959,7 @@ GameObject:
   - component: {fileID: 1668291764}
   - component: {fileID: 1668291766}
   - component: {fileID: 1668291765}
-  m_Layer: 9
+  m_Layer: 10
   m_Name: Junk_Ship_pCube34
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -50027,7 +50130,7 @@ GameObject:
   - component: {fileID: 1675231716}
   - component: {fileID: 1675231718}
   - component: {fileID: 1675231717}
-  m_Layer: 9
+  m_Layer: 10
   m_Name: Junk_Ship_polySurface130
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -50314,7 +50417,7 @@ GameObject:
   serializedVersion: 6
   m_Component:
   - component: {fileID: 1689214798}
-  m_Layer: 9
+  m_Layer: 10
   m_Name: Junk_Ship_transform10
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -50511,7 +50614,7 @@ GameObject:
   serializedVersion: 6
   m_Component:
   - component: {fileID: 1696662486}
-  m_Layer: 9
+  m_Layer: 10
   m_Name: Junk_Ship_pCube99
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -50843,7 +50946,7 @@ GameObject:
   serializedVersion: 6
   m_Component:
   - component: {fileID: 1709373484}
-  m_Layer: 9
+  m_Layer: 10
   m_Name: Junk_Ship_transform17
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -51138,7 +51241,7 @@ GameObject:
   serializedVersion: 6
   m_Component:
   - component: {fileID: 1728279409}
-  m_Layer: 9
+  m_Layer: 10
   m_Name: Junk_Ship_pCube98
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -51170,7 +51273,7 @@ GameObject:
   serializedVersion: 6
   m_Component:
   - component: {fileID: 1731968871}
-  m_Layer: 9
+  m_Layer: 10
   m_Name: Junk_Ship_pCube114
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -51537,8 +51640,8 @@ MonoBehaviour:
   - {fileID: 1733589712}
   - {fileID: 1982572555}
   bounds:
-    m_Center: {x: -2712.5, y: 300, z: 751}
-    m_Extent: {x: 1246.5, y: 300, z: 1749}
+    m_Center: {x: -1716, y: 291.76187, z: 2250}
+    m_Extent: {x: 250, y: 300, z: 250}
   filterShader: {fileID: 4800000, guid: 0f44df78e3d64d9cb2616cac3d84cb77, type: 3}
 --- !u!4 &1740313372
 Transform:
@@ -51566,7 +51669,7 @@ GameObject:
   - component: {fileID: 1740522276}
   - component: {fileID: 1740522278}
   - component: {fileID: 1740522277}
-  m_Layer: 9
+  m_Layer: 10
   m_Name: Junk_Ship_pCube175
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -51649,7 +51752,7 @@ GameObject:
   - component: {fileID: 1744466263}
   - component: {fileID: 1744466265}
   - component: {fileID: 1744466264}
-  m_Layer: 9
+  m_Layer: 10
   m_Name: Junk_Ship_polySurface86
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -52078,7 +52181,7 @@ GameObject:
   - component: {fileID: 1770302979}
   - component: {fileID: 1770302981}
   - component: {fileID: 1770302980}
-  m_Layer: 9
+  m_Layer: 10
   m_Name: Junk_Ship_pCube147
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -52253,7 +52356,7 @@ GameObject:
   - component: {fileID: 1773367598}
   - component: {fileID: 1773367600}
   - component: {fileID: 1773367599}
-  m_Layer: 9
+  m_Layer: 10
   m_Name: Junk_Ship_polySurface125
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -52334,7 +52437,7 @@ PrefabInstance:
     m_Modifications:
     - target: {fileID: -8679921383154817045, guid: 57cc248691864184a9f22622595a4399, type: 3}
       propertyPath: m_RootOrder
-      value: 5
+      value: 4
       objectReference: {fileID: 0}
     - target: {fileID: -8679921383154817045, guid: 57cc248691864184a9f22622595a4399, type: 3}
       propertyPath: m_LocalScale.x
@@ -52350,7 +52453,7 @@ PrefabInstance:
       objectReference: {fileID: 0}
     - target: {fileID: -8679921383154817045, guid: 57cc248691864184a9f22622595a4399, type: 3}
       propertyPath: m_LocalPosition.x
-      value: -2743.1
+      value: -2351.2
       objectReference: {fileID: 0}
     - target: {fileID: -8679921383154817045, guid: 57cc248691864184a9f22622595a4399, type: 3}
       propertyPath: m_LocalPosition.y
@@ -52358,7 +52461,7 @@ PrefabInstance:
       objectReference: {fileID: 0}
     - target: {fileID: -8679921383154817045, guid: 57cc248691864184a9f22622595a4399, type: 3}
       propertyPath: m_LocalPosition.z
-      value: -881.7
+      value: -761
       objectReference: {fileID: 0}
     - target: {fileID: -8679921383154817045, guid: 57cc248691864184a9f22622595a4399, type: 3}
       propertyPath: m_LocalRotation.w
@@ -52400,6 +52503,10 @@ PrefabInstance:
       propertyPath: m_IsActive
       value: 0
       objectReference: {fileID: 0}
+    - target: {fileID: -3214406637314252186, guid: 57cc248691864184a9f22622595a4399, type: 3}
+      propertyPath: m_Layer
+      value: 10
+      objectReference: {fileID: 0}
     - target: {fileID: -3080767628626043222, guid: 57cc248691864184a9f22622595a4399, type: 3}
       propertyPath: m_IsActive
       value: 0
@@ -52410,7 +52517,7 @@ PrefabInstance:
       objectReference: {fileID: 0}
     - target: {fileID: 919132149155446097, guid: 57cc248691864184a9f22622595a4399, type: 3}
       propertyPath: m_IsActive
-      value: 0
+      value: 1
       objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: 57cc248691864184a9f22622595a4399, type: 3}
@@ -52634,7 +52741,7 @@ GameObject:
   - component: {fileID: 1783144687}
   - component: {fileID: 1783144689}
   - component: {fileID: 1783144688}
-  m_Layer: 9
+  m_Layer: 10
   m_Name: Junk_Ship_pCube148
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -52717,7 +52824,7 @@ GameObject:
   - component: {fileID: 1783235094}
   - component: {fileID: 1783235096}
   - component: {fileID: 1783235095}
-  m_Layer: 9
+  m_Layer: 10
   m_Name: Junk_Ship_pCube67
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -53321,7 +53428,7 @@ GameObject:
   - component: {fileID: 1807502434}
   - component: {fileID: 1807502436}
   - component: {fileID: 1807502435}
-  m_Layer: 9
+  m_Layer: 10
   m_Name: Junk_Ship_pCube171
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -53680,7 +53787,7 @@ GameObject:
   - component: {fileID: 1823181470}
   - component: {fileID: 1823181472}
   - component: {fileID: 1823181471}
-  m_Layer: 9
+  m_Layer: 10
   m_Name: Junk_Ship_pCube64
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -53761,7 +53868,7 @@ GameObject:
   serializedVersion: 6
   m_Component:
   - component: {fileID: 1825349699}
-  m_Layer: 9
+  m_Layer: 10
   m_Name: Junk_Ship_transform14
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -53794,7 +53901,7 @@ GameObject:
   - component: {fileID: 1834213580}
   - component: {fileID: 1834213582}
   - component: {fileID: 1834213581}
-  m_Layer: 9
+  m_Layer: 10
   m_Name: Junk_Ship_polySurface132
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -53929,7 +54036,7 @@ GameObject:
   - component: {fileID: 1840743162}
   - component: {fileID: 1840743164}
   - component: {fileID: 1840743163}
-  m_Layer: 9
+  m_Layer: 10
   m_Name: Junk_Ship_polySurface137
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -54438,7 +54545,7 @@ GameObject:
   serializedVersion: 6
   m_Component:
   - component: {fileID: 1850681751}
-  m_Layer: 9
+  m_Layer: 10
   m_Name: Junk_Ship_pCube100
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -54586,7 +54693,7 @@ GameObject:
   - component: {fileID: 1854128488}
   - component: {fileID: 1854128490}
   - component: {fileID: 1854128489}
-  m_Layer: 9
+  m_Layer: 10
   m_Name: Junk_Ship_pCube7
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -54747,7 +54854,7 @@ GameObject:
   - component: {fileID: 1857682985}
   - component: {fileID: 1857682987}
   - component: {fileID: 1857682986}
-  m_Layer: 9
+  m_Layer: 10
   m_Name: Junk_Ship_pCube130
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -55253,7 +55360,7 @@ GameObject:
   serializedVersion: 6
   m_Component:
   - component: {fileID: 1868183206}
-  m_Layer: 9
+  m_Layer: 10
   m_Name: Junk_Ship_polySurface20
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -55385,7 +55492,7 @@ GameObject:
   - component: {fileID: 1887866762}
   - component: {fileID: 1887866764}
   - component: {fileID: 1887866763}
-  m_Layer: 9
+  m_Layer: 10
   m_Name: Junk_Ship_pCube174
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -55549,7 +55656,7 @@ GameObject:
   serializedVersion: 6
   m_Component:
   - component: {fileID: 1889003374}
-  m_Layer: 9
+  m_Layer: 10
   m_Name: Junk_Ship_transform13
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -55860,7 +55967,7 @@ GameObject:
   - component: {fileID: 1899284381}
   - component: {fileID: 1899284383}
   - component: {fileID: 1899284382}
-  m_Layer: 9
+  m_Layer: 10
   m_Name: Junk_Ship_pCube19
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -55974,7 +56081,7 @@ Transform:
   m_ConstrainProportionsScale: 0
   m_Children: []
   m_Father: {fileID: 0}
-  m_RootOrder: 8
+  m_RootOrder: 7
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
 --- !u!1 &1905595323
 GameObject:
@@ -56185,7 +56292,7 @@ GameObject:
   - component: {fileID: 1915211907}
   - component: {fileID: 1915211909}
   - component: {fileID: 1915211908}
-  m_Layer: 9
+  m_Layer: 10
   m_Name: Junk_Ship_pCube61
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -56515,7 +56622,7 @@ GameObject:
   - component: {fileID: 1929719154}
   - component: {fileID: 1929719156}
   - component: {fileID: 1929719155}
-  m_Layer: 9
+  m_Layer: 10
   m_Name: Junk_Ship_polySurface120
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -56681,7 +56788,7 @@ GameObject:
   - component: {fileID: 1944462013}
   - component: {fileID: 1944462015}
   - component: {fileID: 1944462014}
-  m_Layer: 9
+  m_Layer: 10
   m_Name: Junk_Ship_pCube145
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -56764,7 +56871,7 @@ GameObject:
   - component: {fileID: 1946040558}
   - component: {fileID: 1946040560}
   - component: {fileID: 1946040559}
-  m_Layer: 9
+  m_Layer: 10
   m_Name: Junk_Ship_polySurface28
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -57005,6 +57112,39 @@ Transform:
   m_CorrespondingSourceObject: {fileID: -8679921383154817045, guid: 4c1909695f170254cb55f5f5e9e2f346, type: 3}
   m_PrefabInstance: {fileID: 1947653875}
   m_PrefabAsset: {fileID: 0}
+--- !u!1 &1951092431
+GameObject:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  serializedVersion: 6
+  m_Component:
+  - component: {fileID: 1951092432}
+  m_Layer: 0
+  m_Name: LightGroup
+  m_TagString: Untagged
+  m_Icon: {fileID: 0}
+  m_NavMeshLayer: 0
+  m_StaticEditorFlags: 0
+  m_IsActive: 1
+--- !u!4 &1951092432
+Transform:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1951092431}
+  m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
+  m_LocalPosition: {x: 0, y: 3, z: 0}
+  m_LocalScale: {x: 1, y: 1, z: 1}
+  m_ConstrainProportionsScale: 0
+  m_Children:
+  - {fileID: 705507995}
+  - {fileID: 1167335703}
+  m_Father: {fileID: 0}
+  m_RootOrder: 0
+  m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
 --- !u!1001 &1951197264
 PrefabInstance:
   m_ObjectHideFlags: 0
@@ -57283,7 +57423,7 @@ GameObject:
   serializedVersion: 6
   m_Component:
   - component: {fileID: 1964607300}
-  m_Layer: 9
+  m_Layer: 10
   m_Name: Junk_Ship_transform4
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -57316,7 +57456,7 @@ GameObject:
   - component: {fileID: 1968415477}
   - component: {fileID: 1968415479}
   - component: {fileID: 1968415478}
-  m_Layer: 9
+  m_Layer: 10
   m_Name: Junk_Ship_pCube21
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -57901,7 +58041,7 @@ GameObject:
   - component: {fileID: 1980480256}
   - component: {fileID: 1980480258}
   - component: {fileID: 1980480257}
-  m_Layer: 9
+  m_Layer: 10
   m_Name: Junk_Ship_polySurface73
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -60088,7 +60228,7 @@ GameObject:
   - component: {fileID: 2009196568}
   - component: {fileID: 2009196570}
   - component: {fileID: 2009196569}
-  m_Layer: 9
+  m_Layer: 10
   m_Name: Junk_Ship_polySurface26
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -60596,7 +60736,7 @@ GameObject:
   - component: {fileID: 2034062135}
   - component: {fileID: 2034062137}
   - component: {fileID: 2034062136}
-  m_Layer: 9
+  m_Layer: 10
   m_Name: Junk_Ship_pCube48
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -60679,7 +60819,7 @@ GameObject:
   - component: {fileID: 2034765291}
   - component: {fileID: 2034765293}
   - component: {fileID: 2034765292}
-  m_Layer: 9
+  m_Layer: 10
   m_Name: Junk_Ship_pCube97
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -61118,7 +61258,7 @@ GameObject:
   - component: {fileID: 2044182679}
   - component: {fileID: 2044182681}
   - component: {fileID: 2044182680}
-  m_Layer: 9
+  m_Layer: 10
   m_Name: Junk_Ship_pCube22
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -61553,7 +61693,7 @@ GameObject:
   - component: {fileID: 2047234848}
   - component: {fileID: 2047234850}
   - component: {fileID: 2047234849}
-  m_Layer: 9
+  m_Layer: 10
   m_Name: Junk_Ship_polySurface23
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -61714,7 +61854,7 @@ GameObject:
   - component: {fileID: 2060280070}
   - component: {fileID: 2060280072}
   - component: {fileID: 2060280071}
-  m_Layer: 9
+  m_Layer: 10
   m_Name: Junk_Ship_pCube16
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -61968,7 +62108,7 @@ GameObject:
   - component: {fileID: 2067567059}
   - component: {fileID: 2067567061}
   - component: {fileID: 2067567060}
-  m_Layer: 9
+  m_Layer: 10
   m_Name: Junk_Ship_polySurface75
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -62821,7 +62961,7 @@ GameObject:
   - component: {fileID: 2114895833}
   - component: {fileID: 2114895835}
   - component: {fileID: 2114895834}
-  m_Layer: 9
+  m_Layer: 10
   m_Name: Junk_Ship_pCube172
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -62909,7 +63049,7 @@ GameObject:
   - component: {fileID: 2116727037}
   - component: {fileID: 2116727039}
   - component: {fileID: 2116727038}
-  m_Layer: 9
+  m_Layer: 10
   m_Name: Junk_Ship_pCube10
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -63075,7 +63215,7 @@ GameObject:
   - component: {fileID: 2122425384}
   - component: {fileID: 2122425386}
   - component: {fileID: 2122425385}
-  m_Layer: 9
+  m_Layer: 10
   m_Name: Junk_Ship_pCube108
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -63187,7 +63327,7 @@ MeshRenderer:
   m_PrefabInstance: {fileID: 0}
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 2125471984}
-  m_Enabled: 1
+  m_Enabled: 0
   m_CastShadows: 1
   m_ReceiveShadows: 1
   m_DynamicOccludee: 1
@@ -63512,7 +63652,7 @@ GameObject:
   serializedVersion: 6
   m_Component:
   - component: {fileID: 2132405616}
-  m_Layer: 9
+  m_Layer: 10
   m_Name: Junk_Ship_transform18
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -63711,7 +63851,7 @@ GameObject:
   - component: {fileID: 2136781564}
   - component: {fileID: 2136781566}
   - component: {fileID: 2136781565}
-  m_Layer: 9
+  m_Layer: 10
   m_Name: Junk_Ship_pCube37
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -64128,7 +64268,7 @@ GameObject:
   - component: {fileID: 2141745594}
   - component: {fileID: 2141745596}
   - component: {fileID: 2141745595}
-  m_Layer: 9
+  m_Layer: 10
   m_Name: Junk_Ship_pCube133
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -64475,7 +64615,7 @@ GameObject:
   - component: {fileID: 2146935632}
   - component: {fileID: 2146935634}
   - component: {fileID: 2146935633}
-  m_Layer: 9
+  m_Layer: 10
   m_Name: Junk_Ship_pCube127
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -64558,7 +64698,7 @@ GameObject:
   - component: {fileID: 2147294567}
   - component: {fileID: 2147294569}
   - component: {fileID: 2147294568}
-  m_Layer: 9
+  m_Layer: 10
   m_Name: Junk_Ship_pCube140
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -64644,7 +64784,7 @@ Transform:
   m_Children:
   - {fileID: 505693249687909169}
   m_Father: {fileID: 0}
-  m_RootOrder: 7
+  m_RootOrder: 6
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
 --- !u!23 &301185757495634855
 MeshRenderer:
@@ -67571,7 +67711,7 @@ PrefabInstance:
       objectReference: {fileID: 0}
     - target: {fileID: 2045541454948878295, guid: 2183ab59391b5c345b1d7983e8547fb1, type: 3}
       propertyPath: m_RootOrder
-      value: 9
+      value: 8
       objectReference: {fileID: 0}
     - target: {fileID: 2045541454948878295, guid: 2183ab59391b5c345b1d7983e8547fb1, type: 3}
       propertyPath: m_LocalPosition.x
@@ -67869,7 +68009,7 @@ Transform:
   m_PrefabInstance: {fileID: 0}
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 7788241936449500312}
-  m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
+  m_LocalRotation: {x: -0, y: -0, z: -0, w: 1}
   m_LocalPosition: {x: -2726, y: 20, z: -836}
   m_LocalScale: {x: 1, y: 1, z: 1}
   m_ConstrainProportionsScale: 0
@@ -67878,7 +68018,7 @@ Transform:
   - {fileID: 2453856417023998994}
   - {fileID: 7155480034908259370}
   m_Father: {fileID: 0}
-  m_RootOrder: 1
+  m_RootOrder: 9
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
 --- !u!33 &3813908814597053068
 MeshFilter:
