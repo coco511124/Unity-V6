@@ -208,6 +208,101 @@ PrefabInstance:
       objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: eded051879df4c147b9010199d240258, type: 3}
+--- !u!1 &6682140
+GameObject:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  serializedVersion: 6
+  m_Component:
+  - component: {fileID: 6682142}
+  - component: {fileID: 6682141}
+  m_Layer: 0
+  m_Name: GameviewEncoder
+  m_TagString: Untagged
+  m_Icon: {fileID: 0}
+  m_NavMeshLayer: 0
+  m_StaticEditorFlags: 0
+  m_IsActive: 1
+--- !u!114 &6682141
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 6682140}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 5a9483c7a45cc456b85c2f3db18182e4, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  CaptureMode: 0
+  Resize: 2
+  MainCam: {fileID: 0}
+  RenderCam: {fileID: 61377820}
+  Resolution: {x: 512, y: 288}
+  MatchScreenAspect: 1
+  FastMode: 1
+  AsyncMode: 0
+  GZipMode: 0
+  PanoramaMode: 0
+  Quality: 40
+  ChromaSubsampling: 2
+  StreamFPS: 20
+  ignoreSimilarTexture: 1
+  similarByteSizeThreshold: 8
+  EnableAsyncGPUReadback: 1
+  CapturedTexture: {fileID: 0}
+  MatPano: {fileID: 1346917681}
+  MatFMDesktop: {fileID: 2134018525}
+  MatColorAdjustment: {fileID: 1306891249}
+  ColorReductionLevel: 0
+  mat_source: {fileID: 551795707}
+  CubemapResolution: 1024
+  FMDesktopRotation: 0
+  FMDesktopResolution: {x: 0, y: 0}
+  FMDesktopFlipX: 0
+  FMDesktopFlipY: 0
+  FMDesktopRangeX: 1
+  FMDesktopRangeY: 1
+  FMDesktopOffsetX: 0
+  FMDesktopOffsetY: 0
+  FMDesktopMonitorID: 0
+  FMDesktopMonitorCount: 0
+  FMDesktopCorrectRotation: 1
+  OnDataByteReadyEvent:
+    m_PersistentCalls:
+      m_Calls:
+      - m_Target: {fileID: 1833500833}
+        m_TargetAssemblyTypeName: FMNetworkManager, Assembly-CSharp
+        m_MethodName: SendToServer
+        m_Mode: 0
+        m_Arguments:
+          m_ObjectArgument: {fileID: 0}
+          m_ObjectArgumentAssemblyTypeName: UnityEngine.Object, UnityEngine
+          m_IntArgument: 0
+          m_FloatArgument: 0
+          m_StringArgument: 
+          m_BoolArgument: 0
+        m_CallState: 2
+  label: 1001
+  dataLength: 0
+--- !u!4 &6682142
+Transform:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 6682140}
+  m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
+  m_LocalPosition: {x: 1644.5876, y: -148.38129, z: -353.6189}
+  m_LocalScale: {x: 1, y: 1, z: 1}
+  m_ConstrainProportionsScale: 0
+  m_Children: []
+  m_Father: {fileID: 0}
+  m_RootOrder: 9
+  m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
 --- !u!1 &36291473 stripped
 GameObject:
   m_CorrespondingSourceObject: {fileID: 919132149155446097, guid: 0fe5392e385681742aa0c6f45338ac25, type: 3}
@@ -798,6 +893,22 @@ PrefabInstance:
 --- !u!4 &61377818 stripped
 Transform:
   m_CorrespondingSourceObject: {fileID: 603234773213026852, guid: 0aad1d0e0ae0375428c2e54837999c50, type: 3}
+  m_PrefabInstance: {fileID: 61377817}
+  m_PrefabAsset: {fileID: 0}
+--- !u!114 &61377819 stripped
+MonoBehaviour:
+  m_CorrespondingSourceObject: {fileID: 6625791950780654100, guid: 0aad1d0e0ae0375428c2e54837999c50, type: 3}
+  m_PrefabInstance: {fileID: 61377817}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: ccff86f64aa28134398e2d24ac092620, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+--- !u!20 &61377820 stripped
+Camera:
+  m_CorrespondingSourceObject: {fileID: 6625791950652622116, guid: 0aad1d0e0ae0375428c2e54837999c50, type: 3}
   m_PrefabInstance: {fileID: 61377817}
   m_PrefabAsset: {fileID: 0}
 --- !u!1001 &69509449
@@ -4651,6 +4762,34 @@ PrefabInstance:
       objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: eded051879df4c147b9010199d240258, type: 3}
+--- !u!21 &551795707
+Material:
+  serializedVersion: 8
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_Name: Unlit/Texture
+  m_Shader: {fileID: 10752, guid: 0000000000000000f000000000000000, type: 0}
+  m_ValidKeywords: []
+  m_InvalidKeywords: []
+  m_LightmapFlags: 4
+  m_EnableInstancingVariants: 0
+  m_DoubleSidedGI: 0
+  m_CustomRenderQueue: -1
+  stringTagMap: {}
+  disabledShaderPasses: []
+  m_SavedProperties:
+    serializedVersion: 3
+    m_TexEnvs:
+    - _MainTex:
+        m_Texture: {fileID: 0}
+        m_Scale: {x: 1, y: 1}
+        m_Offset: {x: 0, y: 0}
+    m_Ints: []
+    m_Floats: []
+    m_Colors: []
+  m_BuildTextureStacks: []
 --- !u!1001 &562681338
 PrefabInstance:
   m_ObjectHideFlags: 0
@@ -10106,6 +10245,35 @@ BoxCollider:
   serializedVersion: 2
   m_Size: {x: 2, y: 2, z: 2}
   m_Center: {x: -0.000000044703484, y: -0.000000044703484, z: 0.00000023841858}
+--- !u!21 &1306891249
+Material:
+  serializedVersion: 8
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_Name: Hidden/FMETPColorAdjustment
+  m_Shader: {fileID: 4800000, guid: 8efd175de28eb49ddbf9cbf8155d61ba, type: 3}
+  m_ValidKeywords: []
+  m_InvalidKeywords: []
+  m_LightmapFlags: 4
+  m_EnableInstancingVariants: 0
+  m_DoubleSidedGI: 0
+  m_CustomRenderQueue: -1
+  stringTagMap: {}
+  disabledShaderPasses: []
+  m_SavedProperties:
+    serializedVersion: 3
+    m_TexEnvs:
+    - _MainTex:
+        m_Texture: {fileID: 0}
+        m_Scale: {x: 1, y: 1}
+        m_Offset: {x: 0, y: 0}
+    m_Ints: []
+    m_Floats:
+    - _Brightness: 1
+    m_Colors: []
+  m_BuildTextureStacks: []
 --- !u!1001 &1324522114
 PrefabInstance:
   m_ObjectHideFlags: 0
@@ -10214,6 +10382,35 @@ BoxCollider:
   serializedVersion: 2
   m_Size: {x: 2, y: 2, z: 2}
   m_Center: {x: 0, y: -0.000000044703484, z: 0}
+--- !u!21 &1346917681
+Material:
+  serializedVersion: 8
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_Name: Hidden/FMCubemapToEquirect
+  m_Shader: {fileID: 4800000, guid: d9cdde4a4997d467b99c1360420f5ce1, type: 3}
+  m_ValidKeywords: []
+  m_InvalidKeywords: []
+  m_LightmapFlags: 4
+  m_EnableInstancingVariants: 0
+  m_DoubleSidedGI: 0
+  m_CustomRenderQueue: -1
+  stringTagMap: {}
+  disabledShaderPasses: []
+  m_SavedProperties:
+    serializedVersion: 3
+    m_TexEnvs:
+    - _MainTex:
+        m_Texture: {fileID: 0}
+        m_Scale: {x: 1, y: 1}
+        m_Offset: {x: 0, y: 0}
+    m_Ints: []
+    m_Floats:
+    - _Brightness: 1
+    m_Colors: []
+  m_BuildTextureStacks: []
 --- !u!1001 &1355541161
 PrefabInstance:
   m_ObjectHideFlags: 0
@@ -13708,6 +13905,93 @@ BoxCollider:
   serializedVersion: 2
   m_Size: {x: 2, y: 2, z: 2}
   m_Center: {x: 0, y: -0.000000044703484, z: 0.00000023841858}
+--- !u!1 &1833500832
+GameObject:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  serializedVersion: 6
+  m_Component:
+  - component: {fileID: 1833500834}
+  - component: {fileID: 1833500833}
+  m_Layer: 0
+  m_Name: NetworkManager
+  m_TagString: Untagged
+  m_Icon: {fileID: 0}
+  m_NavMeshLayer: 0
+  m_StaticEditorFlags: 0
+  m_IsActive: 1
+--- !u!114 &1833500833
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1833500832}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 2f68ecff929c04b31832e383f4dfe4fd, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  AutoInit: 1
+  Initialised: 0
+  NetworkType: 1
+  Server: {fileID: 0}
+  Client: {fileID: 0}
+  ServerSettings:
+    ServerListenPort: 3333
+    UseAsyncListener: 0
+    UseMainThreadSender: 1
+    ConnectionCount: 0
+  ClientSettings:
+    ClientListenPort: 3334
+    UseMainThreadSender: 1
+    AutoNetworkDiscovery: 1
+    ServerIP: 
+    IsConnected: 0
+  DebugStatus: 1
+  ShowLog: 1
+  Status: 
+  UIStatus: {fileID: 0}
+  OnReceivedByteDataEvent:
+    m_PersistentCalls:
+      m_Calls: []
+  OnReceivedStringDataEvent:
+    m_PersistentCalls:
+      m_Calls:
+      - m_Target: {fileID: 61377819}
+        m_TargetAssemblyTypeName: react, Assembly-CSharp
+        m_MethodName: Action_ProcessStringData
+        m_Mode: 0
+        m_Arguments:
+          m_ObjectArgument: {fileID: 0}
+          m_ObjectArgumentAssemblyTypeName: UnityEngine.Object, UnityEngine
+          m_IntArgument: 0
+          m_FloatArgument: 0
+          m_StringArgument: 
+          m_BoolArgument: 0
+        m_CallState: 2
+  GetRawReceivedData:
+    m_PersistentCalls:
+      m_Calls: []
+  NetworkObjects: []
+  SyncFPS: 20
+--- !u!4 &1833500834
+Transform:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1833500832}
+  m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
+  m_LocalPosition: {x: 1644.5876, y: -148.38129, z: -353.6189}
+  m_LocalScale: {x: 1, y: 1, z: 1}
+  m_ConstrainProportionsScale: 0
+  m_Children: []
+  m_Father: {fileID: 0}
+  m_RootOrder: 8
+  m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
 --- !u!1001 &1849072746
 PrefabInstance:
   m_ObjectHideFlags: 0
@@ -15821,6 +16105,42 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 5f7201a12d95ffc409449d95f23cf332, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
+--- !u!21 &2134018525
+Material:
+  serializedVersion: 8
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_Name: Hidden/FMDesktopMask
+  m_Shader: {fileID: 4800000, guid: 3f3411c65647b4a39844b0c92562d822, type: 3}
+  m_ValidKeywords: []
+  m_InvalidKeywords: []
+  m_LightmapFlags: 4
+  m_EnableInstancingVariants: 0
+  m_DoubleSidedGI: 0
+  m_CustomRenderQueue: -1
+  stringTagMap: {}
+  disabledShaderPasses: []
+  m_SavedProperties:
+    serializedVersion: 3
+    m_TexEnvs:
+    - _MainTex:
+        m_Texture: {fileID: 0}
+        m_Scale: {x: 1, y: 1}
+        m_Offset: {x: 0, y: 0}
+    m_Ints: []
+    m_Floats:
+    - _Brightness: 1
+    - _FlipX: 0
+    - _FlipY: 0
+    - _OffsetX: 1
+    - _OffsetY: 1
+    - _RangeX: 1
+    - _RangeY: 1
+    - _RotationAngle: 1
+    m_Colors: []
+  m_BuildTextureStacks: []
 --- !u!4 &2135208076 stripped
 Transform:
   m_CorrespondingSourceObject: {fileID: 4279449019447086, guid: eded051879df4c147b9010199d240258, type: 3}
