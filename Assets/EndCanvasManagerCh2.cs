@@ -48,7 +48,7 @@ public class EndCanvasManagerCh2 : MonoBehaviour
         if (Input.GetKeyDown(KeyCode.S))
         {
             Debug.Log("press s");
-            filename = "playerdatach2.json";
+            //filename = "playerdatach2.json";
             ShowEndCanvas();
         }
     }

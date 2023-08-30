@@ -5,7 +5,7 @@ using System;
 using System.IO;
 
 [System.Serializable]
-public class SaveSystemCh2 : MonoBehaviour
+public class SaveSystemCh3 : MonoBehaviour
 {
     //public List<PlayerDataCh2> pldataCh2= new List<PlayerDataCh2>();
     public List<PlayerDataCh2> pldataCh2;
@@ -21,52 +21,28 @@ public class SaveSystemCh2 : MonoBehaviour
     {
         pldataCh2 = FileHandler.ReadFromJSON<PlayerDataCh2>(filename);
 
-        FILENAME = Application.dataPath + "/playerdatach2.csv";
+        FILENAME = Application.dataPath + "/playerdatach3.csv";
     }
     public void Save()
     {
         pldataCh2.Add(new PlayerDataCh2(playerName, DateTime.Now.ToString(), type) { playerName = playerName, playerTime = DateTime.Now.ToString(), playerActionType = type });
         FileHandler.SaveToJSON<PlayerDataCh2>(pldataCh2, filename);
     }
-    public void PickNorth()
+    public void WrongCubeSouth()
     {
-        type = "選擇北線尾";
+        type = "錯誤路線";
         Save();
         WriteToCsv(FILENAME, pldataCh2);
     }
-    public void PickYuan() 
+    public void WrongCubeCastle()
     {
-        type = "選擇大員";
+        type = "普羅民遮城";
         Save();
         WriteToCsv(FILENAME, pldataCh2);
     }
-    public void PickRight()
+    public void CorrectCube()
     {
-        type = "選擇正確答案";
-        Save();
-        WriteToCsv(FILENAME, pldataCh2);
-    }
-    public void PickRice()
-    {
-        type = "撿取糯米漿";
-        Save();
-        WriteToCsv(FILENAME, pldataCh2);
-    }
-    public void PickShell()
-    {
-        type = "撿取蚵殼灰";
-        Save();
-        WriteToCsv(FILENAME, pldataCh2);
-    }
-    public void PickBrick()
-    {
-        type = "撿取紅磚石";
-        Save();
-        WriteToCsv(FILENAME, pldataCh2);
-    }
-    public void PickSugar()
-    {
-        type = "撿取糖水";
+        type = "熱蘭遮城";
         Save();
         WriteToCsv(FILENAME, pldataCh2);
     }

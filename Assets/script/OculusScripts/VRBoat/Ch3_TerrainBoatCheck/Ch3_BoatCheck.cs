@@ -16,9 +16,13 @@ public class Ch3_BoatCheck : MonoBehaviour
     float timemax = 2;
     float currentime = 0;
 
+    SaveSystemCh3 saveSystemCh3;
+    public GameObject pl;
+
     private void Start()
     {
         stopCollider = false;
+        saveSystemCh3 = pl.GetComponent<SaveSystemCh3>();
     }
 
     private void OnTriggerEnter(Collider other)
@@ -31,8 +35,23 @@ public class Ch3_BoatCheck : MonoBehaviour
                 ControllBool.CanControll = false;               
                 Debug.Log("¸I¨ì²î");
                 stopCollider = true;
-            }            
+            }
+            if (this.gameObject.name == "wrong_cube_south")
+            {
+                Debug.Log("south");
+                saveSystemCh3.WrongCubeSouth();
+            }
+            else if (this.gameObject.name == "wrong_cube_castle")
+            {
+                saveSystemCh3.WrongCubeCastle();
+            }
+            else if(this.gameObject.name == "Correct_cube")
+            {
+                saveSystemCh3.CorrectCube();
+                
+            }
         }
+        
     }
 
     private void Update()

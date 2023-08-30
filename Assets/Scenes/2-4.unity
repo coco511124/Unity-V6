@@ -6462,6 +6462,10 @@ PrefabInstance:
       propertyPath: m_AnchoredPosition.y
       value: 0
       objectReference: {fileID: 0}
+    - target: {fileID: 8561962398079390561, guid: 4044ab012cbca7d44a1393a09b5086ce, type: 3}
+      propertyPath: m_Text
+      value: "\u7D93\u904E\u4E86\u90ED\u61F7\u4E00\u4E8B\u4EF6\u7684\u6D17\u79AE\uFF0C\u8377\u862D\u4EBA\u6536\u96C6\u4E86\u5404\u7A2E\u7576\u5730\u539F\u6599\uFF0C\u7D42\u65BC\u5EFA\u9020\u51FA\u4E86\u666E\u7F85\u6C11\u906E\u57CE\u3002"
+      objectReference: {fileID: 0}
     - target: {fileID: 8561962398204620075, guid: 4044ab012cbca7d44a1393a09b5086ce, type: 3}
       propertyPath: m_AnchorMax.y
       value: 0
@@ -6676,7 +6680,7 @@ PrefabInstance:
       objectReference: {fileID: 0}
     - target: {fileID: 8561962399335364913, guid: 4044ab012cbca7d44a1393a09b5086ce, type: 3}
       propertyPath: m_AnchoredPosition.x
-      value: -0.002300622
+      value: -0.00084487663
       objectReference: {fileID: 0}
     - target: {fileID: 8561962399596246380, guid: 4044ab012cbca7d44a1393a09b5086ce, type: 3}
       propertyPath: m_AnchorMax.x
@@ -11362,7 +11366,7 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   PL: {fileID: 1121121817}
   endCanvas: {fileID: 1203129107}
-  filename: 
+  filename: playerdatach2.json
   log: {fileID: 2116120056}
 --- !u!4 &1417157250
 Transform:
