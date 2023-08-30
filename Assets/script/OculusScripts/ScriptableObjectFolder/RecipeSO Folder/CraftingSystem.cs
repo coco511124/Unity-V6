@@ -4,6 +4,7 @@ using TMPro;
 using UnityEngine;
 using UnityEngine.UI;
 using System;
+using UnityEngine.SceneManagement;
 
 [System.Serializable]
 public class CraftingSystem : MonoBehaviour
@@ -20,7 +21,7 @@ public class CraftingSystem : MonoBehaviour
 
     [SerializeField] string type;
     public GameObject table;
-    
+    int index;
 
     private void Awake()
     {
@@ -36,7 +37,7 @@ public class CraftingSystem : MonoBehaviour
         }
         else
         {
-            int index = craftingRecipeSOList.IndexOf(craftingRecipeSO); //取得目前list的index
+            index = craftingRecipeSOList.IndexOf(craftingRecipeSO); //取得目前list的index
             index = (index + 1) % craftingRecipeSOList.Count;
             craftingRecipeSO = craftingRecipeSOList[index];
             recipeContentText.text = recipeContent[index].ToString();
@@ -84,6 +85,10 @@ public class CraftingSystem : MonoBehaviour
         {
             table.GetComponent<SaveSystemCh2>().type = "合成失敗";
             table.GetComponent<SaveSystemCh2>().Save();
+        }
+        if(index == 1)
+        {
+            SceneManager.LoadScene("2-4");
         }
     }
     private void Update()
