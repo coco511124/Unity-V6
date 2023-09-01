@@ -1351,7 +1351,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   pldataCh2: []
-  filename: PlayerDataCh2.json
+  filename: playerdatach2.json
   playerName: "\u5C0F\u6797"
   type: 
   playerDataCh2:

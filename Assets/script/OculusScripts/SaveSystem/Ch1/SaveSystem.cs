@@ -23,9 +23,12 @@ public class SaveSystem : MonoBehaviour
     [SerializeField] public static int numstatic;
     [SerializeField] private int numprivate;
 
+    string FILENAME;
+
     private void Start()
     {
         pldata = FileHandler.ReadFromJSON<PlayerData>(filename);
+        FILENAME = Application.dataPath + "/playerdatach1.csv";
     }
 
     private void OnTriggerEnter(Collider other)
@@ -33,51 +36,50 @@ public class SaveSystem : MonoBehaviour
         if (other.gameObject.tag == "huai")
         {
             type = "和郭懷一說話";
-            
-            pldata.Add(new PlayerData(playerName, DateTime.Now.ToString(), type, pickupTimes));
-            FileHandler.SaveToJSON<PlayerData>(pldata, filename);
+
+            Save();
+            WriteToCsv(FILENAME, pldata);
         }
         else if (other.gameObject.tag == "people")
         {
             type = "和黑色荷蘭人說話";
-            
-            pldata.Add(new PlayerData(playerName, DateTime.Now.ToString(), type, pickupTimes));
-            FileHandler.SaveToJSON<PlayerData>(pldata, filename);
+
+            Save();
+            WriteToCsv(FILENAME, pldata);
         }
         else if (other.gameObject.tag == "green_stranger")
         {
             type = "和綠色陌生人說話";
 
-            pldata.Add(new PlayerData(playerName, DateTime.Now.ToString(), type, pickupTimes));                  
-            FileHandler.SaveToJSON<PlayerData>(pldata, filename);
+            Save();
+            WriteToCsv(FILENAME, pldata);
         }
         else if (other.gameObject.tag == "pink_stranger")
         {
             type = "和粉色陌生人說話";
-
-            pldata.Add(new PlayerData(playerName, DateTime.Now.ToString(), type, pickupTimes));
-            FileHandler.SaveToJSON<PlayerData>(pldata, filename);
+            Save();
+            WriteToCsv(FILENAME, pldata);
         }
         else if (other.gameObject.tag == "blue_stranger")
         {
             type = "和藍色陌生人說話";
 
-            pldata.Add(new PlayerData(playerName, DateTime.Now.ToString(), type, pickupTimes));
-            FileHandler.SaveToJSON<PlayerData>(pldata, filename);
+            Save();
+            WriteToCsv(FILENAME, pldata);
         }
         else if (other.gameObject.tag == "red_stranger")
         {
             type = "和紅色陌生人說話";
 
-            pldata.Add(new PlayerData(playerName, DateTime.Now.ToString(), type, pickupTimes));
-            FileHandler.SaveToJSON<PlayerData>(pldata, filename);
+            Save();
+            WriteToCsv(FILENAME, pldata);
         }
         else if (other.gameObject.tag == "thing")
         {
             type = "碰到驚嘆號";
 
-            pldata.Add(new PlayerData(playerName, DateTime.Now.ToString(), type, pickupTimes));
-            FileHandler.SaveToJSON<PlayerData>(pldata, filename);
+            Save();
+            WriteToCsv(FILENAME, pldata);
         }
 
 
@@ -86,11 +88,14 @@ public class SaveSystem : MonoBehaviour
     public void PaperSelect()
     {
         type = "拾取文件";
-
+        Save();
+        
+    }
+    public void Save()
+    {
         pldata.Add(new PlayerData(playerName, DateTime.Now.ToString(), type, pickupTimes));
         FileHandler.SaveToJSON<PlayerData>(pldata, filename);
     }
-
 
 
     //流程一
@@ -129,6 +134,23 @@ public class SaveSystem : MonoBehaviour
         Debug.Log(numprivate);
 
         //流程四的關掉布林閥值放到這裡也OK，也就是 change = false;這行。
+    }
+    public void WriteToCsv(string FILENAME, List<PlayerData> pldata)
+    {
+        using (var dataFile = new StreamWriter(FILENAME))
+        {
+            dataFile.WriteLine(returnDataRowName());
+            foreach (var playerData in pldata)
+            {
+                dataFile.WriteLine($"{playerData.playerName}, {playerData.playerTime}, {playerData.playerActionType}, {playerData.playerPickSugar}");
+            }
+            dataFile.Close();
+        }
+        Debug.Log(FILENAME);
+    }
+    string returnDataRowName()
+    {
+        return "Name, Time, ActionType";
     }
 
 }
