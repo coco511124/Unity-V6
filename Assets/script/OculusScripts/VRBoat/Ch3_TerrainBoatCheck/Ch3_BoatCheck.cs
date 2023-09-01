@@ -17,12 +17,14 @@ public class Ch3_BoatCheck : MonoBehaviour
     float currentime = 0;
 
     SaveSystemCh3 saveSystemCh3;
-    public GameObject pl;
+    EndCanvasManagerCh2 endCanvasManager;
+    public GameObject pl, end;
 
     private void Start()
     {
         stopCollider = false;
         saveSystemCh3 = pl.GetComponent<SaveSystemCh3>();
+        endCanvasManager = end.GetComponent<EndCanvasManagerCh2>();
     }
 
     private void OnTriggerEnter(Collider other)
@@ -48,6 +50,7 @@ public class Ch3_BoatCheck : MonoBehaviour
             else if(this.gameObject.name == "Correct_cube")
             {
                 saveSystemCh3.CorrectCube();
+                endCanvasManager.ShowEndCanvas();
                 
             }
         }

@@ -93,7 +93,7 @@ GameObject:
   - component: {fileID: 8561962398018922975}
   - component: {fileID: 8561962398018922960}
   m_Layer: 5
-  m_Name: Button (Legacy) (2)
+  m_Name: BackToLobbyButton
   m_TagString: Untagged
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
@@ -344,7 +344,7 @@ GameObject:
   - component: {fileID: 8561962398204620073}
   - component: {fileID: 8561962398204620074}
   m_Layer: 5
-  m_Name: Button (Legacy)
+  m_Name: RestartButton
   m_TagString: Untagged
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
@@ -1304,7 +1304,7 @@ RectTransform:
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
   m_AnchorMin: {x: 0, y: 1}
   m_AnchorMax: {x: 1, y: 1}
-  m_AnchoredPosition: {x: -0.0016843944, y: 0}
+  m_AnchoredPosition: {x: -0.00090690184, y: 0}
   m_SizeDelta: {x: 0, y: 0}
   m_Pivot: {x: 0, y: 1}
 --- !u!114 &8561962399335364912

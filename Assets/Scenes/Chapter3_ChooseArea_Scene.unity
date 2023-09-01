@@ -94091,6 +94091,10 @@ PrefabInstance:
       propertyPath: m_LocalRotation.z
       value: 0
       objectReference: {fileID: 0}
+    - target: {fileID: 1675249711676077612, guid: 04d3b91eea2566144aa8397c4e287e25, type: 3}
+      propertyPath: far clip plane
+      value: 5000
+      objectReference: {fileID: 0}
     - target: {fileID: 3752206843768846417, guid: 04d3b91eea2566144aa8397c4e287e25, type: 3}
       propertyPath: m_Text
       value: "3.\u5C0B\u627E\u4F55\u658C"
