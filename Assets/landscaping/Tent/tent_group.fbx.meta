@@ -3,7 +3,47 @@ guid: b299f1217f827de47811b61293f46d0c
 ModelImporter:
   serializedVersion: 21300
   internalIDToNameTable: []
-  externalObjects: {}
+  externalObjects:
+  - first:
+      type: UnityEngine:Material
+      assembly: UnityEngine.CoreModule
+      name: box
+    second: {fileID: 2100000, guid: 64078d29bcdfd4e4ca58a3a77df1355a, type: 2}
+  - first:
+      type: UnityEngine:Material
+      assembly: UnityEngine.CoreModule
+      name: brokenbrown
+    second: {fileID: 2100000, guid: 64078d29bcdfd4e4ca58a3a77df1355a, type: 2}
+  - first:
+      type: UnityEngine:Material
+      assembly: UnityEngine.CoreModule
+      name: brokenbrown_2
+    second: {fileID: 2100000, guid: 2d5fb67ab139f7b4a901f350e8fac697, type: 2}
+  - first:
+      type: UnityEngine:Material
+      assembly: UnityEngine.CoreModule
+      name: lambert1
+    second: {fileID: 2100000, guid: a6f4c87b9d9e09c44b9f51c80f332987, type: 2}
+  - first:
+      type: UnityEngine:Material
+      assembly: UnityEngine.CoreModule
+      name: rice_yellow
+    second: {fileID: 2100000, guid: a6f4c87b9d9e09c44b9f51c80f332987, type: 2}
+  - first:
+      type: UnityEngine:Material
+      assembly: UnityEngine.CoreModule
+      name: rock
+    second: {fileID: 2100000, guid: 64078d29bcdfd4e4ca58a3a77df1355a, type: 2}
+  - first:
+      type: UnityEngine:Material
+      assembly: UnityEngine.CoreModule
+      name: rope
+    second: {fileID: 2100000, guid: 2d5fb67ab139f7b4a901f350e8fac697, type: 2}
+  - first:
+      type: UnityEngine:Material
+      assembly: UnityEngine.CoreModule
+      name: shield_brown
+    second: {fileID: 2100000, guid: 51c929806b1be4941a2b728eae3ebb9d, type: 2}
   materials:
     materialImportMode: 2
     materialName: 0
