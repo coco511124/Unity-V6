@@ -3497,7 +3497,7 @@ GameObject:
   serializedVersion: 6
   m_Component:
   - component: {fileID: 336841974}
-  - component: {fileID: 336841973}
+  - component: {fileID: 336841975}
   m_Layer: 0
   m_Name: SceneManager
   m_TagString: Untagged
@@ -3505,18 +3505,6 @@ GameObject:
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
   m_IsActive: 1
---- !u!114 &336841973
-MonoBehaviour:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 336841972}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: d0c2439c9f7123f4eac7171aaecfae1e, type: 3}
-  m_Name: 
-  m_EditorClassIdentifier: 
 --- !u!4 &336841974
 Transform:
   m_ObjectHideFlags: 0
@@ -3532,6 +3520,18 @@ Transform:
   m_Father: {fileID: 0}
   m_RootOrder: 11
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
+--- !u!114 &336841975
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 336841972}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: d0c2439c9f7123f4eac7171aaecfae1e, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
 --- !u!1001 &351795394
 PrefabInstance:
   m_ObjectHideFlags: 0
@@ -6434,7 +6434,7 @@ PrefabInstance:
     - target: {fileID: 8561962398018922960, guid: 4044ab012cbca7d44a1393a09b5086ce, type: 3}
       propertyPath: m_OnClick.m_PersistentCalls.m_Calls.Array.data[0].m_Target
       value: 
-      objectReference: {fileID: 336841973}
+      objectReference: {fileID: 0}
     - target: {fileID: 8561962398018922960, guid: 4044ab012cbca7d44a1393a09b5086ce, type: 3}
       propertyPath: m_OnClick.m_PersistentCalls.m_Calls.Array.data[0].m_MethodName
       value: BackToLobby
@@ -6510,10 +6510,14 @@ PrefabInstance:
     - target: {fileID: 8561962398204620074, guid: 4044ab012cbca7d44a1393a09b5086ce, type: 3}
       propertyPath: m_OnClick.m_PersistentCalls.m_Calls.Array.data[0].m_Target
       value: 
-      objectReference: {fileID: 336841973}
+      objectReference: {fileID: 1417157249}
     - target: {fileID: 8561962398204620074, guid: 4044ab012cbca7d44a1393a09b5086ce, type: 3}
       propertyPath: m_OnClick.m_PersistentCalls.m_Calls.Array.data[0].m_MethodName
-      value: RestartScene
+      value: Restart
+      objectReference: {fileID: 0}
+    - target: {fileID: 8561962398204620074, guid: 4044ab012cbca7d44a1393a09b5086ce, type: 3}
+      propertyPath: m_OnClick.m_PersistentCalls.m_Calls.Array.data[0].m_TargetAssemblyTypeName
+      value: EndCanvasManagerCh2, Assembly-CSharp
       objectReference: {fileID: 0}
     - target: {fileID: 8561962398204620075, guid: 4044ab012cbca7d44a1393a09b5086ce, type: 3}
       propertyPath: m_AnchorMax.y
@@ -6741,7 +6745,7 @@ PrefabInstance:
       objectReference: {fileID: 0}
     - target: {fileID: 8561962399335364913, guid: 4044ab012cbca7d44a1393a09b5086ce, type: 3}
       propertyPath: m_AnchoredPosition.x
-      value: 0.0026266067
+      value: -0.00085566763
       objectReference: {fileID: 0}
     - target: {fileID: 8561962399335364913, guid: 4044ab012cbca7d44a1393a09b5086ce, type: 3}
       propertyPath: m_AnchoredPosition.y
@@ -14472,7 +14476,7 @@ MonoBehaviour:
     ConnectionCount: 0
   ClientSettings:
     ClientListenPort: 3334
-    UseMainThreadSender: 1
+    UseMainThreadSender: 0
     AutoNetworkDiscovery: 1
     ServerIP: 
     IsConnected: 0

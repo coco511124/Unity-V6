@@ -2,6 +2,7 @@ using System.Collections;
 using System.Collections.Generic;
 using TMPro;
 using UnityEngine;
+using UnityEngine.SceneManagement;
 using UnityEngine.UI;
 
 public class EndCanvasManagerCh2 : MonoBehaviour
@@ -51,5 +52,9 @@ public class EndCanvasManagerCh2 : MonoBehaviour
             //filename = "playerdatach2.json";
             ShowEndCanvas();
         }
+    }
+    public void Restart()
+    {
+        SceneManager.LoadScene("2-1");
     }
 }

@@ -1995,7 +1995,7 @@ MonoBehaviour:
   CaptureMode: 0
   Resize: 2
   MainCam: {fileID: 0}
-  RenderCam: {fileID: 0}
+  RenderCam: {fileID: 1790614922}
   Resolution: {x: 512, y: 288}
   MatchScreenAspect: 1
   FastMode: 1
@@ -7763,6 +7763,22 @@ PrefabInstance:
     - {fileID: 5329817457986099352, guid: 0aad1d0e0ae0375428c2e54837999c50, type: 3}
     - {fileID: 5329817457986099354, guid: 0aad1d0e0ae0375428c2e54837999c50, type: 3}
   m_SourcePrefab: {fileID: 100100000, guid: 0aad1d0e0ae0375428c2e54837999c50, type: 3}
+--- !u!114 &1790614921 stripped
+MonoBehaviour:
+  m_CorrespondingSourceObject: {fileID: 6625791950780654100, guid: 0aad1d0e0ae0375428c2e54837999c50, type: 3}
+  m_PrefabInstance: {fileID: 1790614920}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: ccff86f64aa28134398e2d24ac092620, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+--- !u!20 &1790614922 stripped
+Camera:
+  m_CorrespondingSourceObject: {fileID: 6625791950652622116, guid: 0aad1d0e0ae0375428c2e54837999c50, type: 3}
+  m_PrefabInstance: {fileID: 1790614920}
+  m_PrefabAsset: {fileID: 0}
 --- !u!1001 &1796012754
 PrefabInstance:
   m_ObjectHideFlags: 0
@@ -7919,7 +7935,7 @@ MonoBehaviour:
   OnReceivedStringDataEvent:
     m_PersistentCalls:
       m_Calls:
-      - m_Target: {fileID: 0}
+      - m_Target: {fileID: 1790614921}
         m_TargetAssemblyTypeName: react, Assembly-CSharp
         m_MethodName: Action_ProcessStringData
         m_Mode: 0
