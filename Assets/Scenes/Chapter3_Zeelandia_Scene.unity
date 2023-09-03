@@ -13963,11 +13963,13 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   player: {fileID: 560147536}
-  endPanel: {fileID: 1100104191}
+  endPanel: {fileID: 1863869326}
   ControllBool: {fileID: 388843853}
   PlayerExit: {fileID: 1290487862}
   pl: {fileID: 254101747}
   end: {fileID: 663500800}
+  filename: playerdatach3.json
+  log: {fileID: 2133998506}
 --- !u!65 &458664670
 BoxCollider:
   m_ObjectHideFlags: 0
@@ -19945,6 +19947,8 @@ MonoBehaviour:
   PlayerExit: {fileID: 1290487862}
   pl: {fileID: 254101747}
   end: {fileID: 663500800}
+  filename: playerdatach3.json
+  log: {fileID: 2133998506}
 --- !u!65 &625636554
 BoxCollider:
   m_ObjectHideFlags: 0
@@ -67482,11 +67486,13 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   player: {fileID: 560147536}
-  endPanel: {fileID: 1042556583}
+  endPanel: {fileID: 1863869326}
   ControllBool: {fileID: 388843853}
   PlayerExit: {fileID: 1290487862}
   pl: {fileID: 254101747}
   end: {fileID: 663500800}
+  filename: playerdatach3.json
+  log: {fileID: 2133998506}
 --- !u!1001 &2127816076
 PrefabInstance:
   m_ObjectHideFlags: 0
@@ -67837,7 +67843,7 @@ RectTransform:
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
   m_AnchorMin: {x: 0, y: 1}
   m_AnchorMax: {x: 1, y: 1}
-  m_AnchoredPosition: {x: -0.04992486, y: 0.0042814543}
+  m_AnchoredPosition: {x: -0.051850494, y: 0.0042814543}
   m_SizeDelta: {x: 0, y: 300}
   m_Pivot: {x: 0, y: 1}
 --- !u!1001 &2136099327
@@ -77328,6 +77334,10 @@ PrefabInstance:
       propertyPath: m_InteractionManager
       value: 
       objectReference: {fileID: 2453856417575390879}
+    - target: {fileID: 3752206844141418446, guid: 04d3b91eea2566144aa8397c4e287e25, type: 3}
+      propertyPath: m_Layer
+      value: 8
+      objectReference: {fileID: 0}
     - target: {fileID: 3752206844489334871, guid: 04d3b91eea2566144aa8397c4e287e25, type: 3}
       propertyPath: m_Enabled
       value: 0

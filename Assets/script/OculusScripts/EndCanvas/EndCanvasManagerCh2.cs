@@ -27,12 +27,15 @@ public class EndCanvasManagerCh2 : MonoBehaviour
         endCanvas.transform.rotation = Quaternion.LookRotation(x, Vector3.up);
 
         pldata2 = FileHandler.ReadFromJSON<PlayerDataCh2>(filename);
-        if (pldata2.Count > 10)
+
+        if (pldata2.Count >= 10)
         {
             foreach (var item in pldata2.GetRange(pldata2.Count - 10, 10))
             {
                 log.text += item.playerName + " " + item.playerTime + " " + item.playerActionType + "\n";
+                
             }
+           
         }
         else
         {
@@ -50,7 +53,7 @@ public class EndCanvasManagerCh2 : MonoBehaviour
         {
             Debug.Log("press s");
             //filename = "playerdatach2.json";
-            ShowEndCanvas();
+            //ShowEndCanvas();
         }
     }
     public void Restart()

@@ -80,16 +80,17 @@ public class CraftingSystem : MonoBehaviour
             }
             table.GetComponent<SaveSystemCh2>().type = "合成成功";
             table.GetComponent<SaveSystemCh2>().Save();
+            if (index == 1)
+            {
+                SceneManager.LoadScene("2-4");
+            }
         }
         else
         {
             table.GetComponent<SaveSystemCh2>().type = "合成失敗";
             table.GetComponent<SaveSystemCh2>().Save();
         }
-        if(index == 1)
-        {
-            SceneManager.LoadScene("2-4");
-        }
+        
     }
     private void Update()
     {
