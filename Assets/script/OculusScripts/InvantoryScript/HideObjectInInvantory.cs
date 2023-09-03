@@ -40,7 +40,8 @@ public class HideObjectInInvantory : MonoBehaviour
     {
         if (setGameObject != null)
         {
-            //setGameObject.GetComponentInChildren<MeshRenderer>().enabled = false;
+            setGameObject.GetComponentInChildren<MeshRenderer>().enabled = false;
+
             List<Transform> children = GetChildren(setGameObject.transform, true);
             foreach (Transform child in children)
             {
@@ -71,7 +72,8 @@ public class HideObjectInInvantory : MonoBehaviour
         else
         {
             //GetComponentInChildren
-            //setGameObject.GetComponentInChildren<MeshRenderer>().enabled = true;
+            setGameObject.GetComponentInChildren<MeshRenderer>().enabled = true;
+
             List<Transform> children = GetChildren(setGameObject.transform, true);
             foreach (Transform child in children)
             {
