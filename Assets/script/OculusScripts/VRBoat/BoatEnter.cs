@@ -26,7 +26,7 @@ public class BoatEnter : MonoBehaviour
         seatRotation = boatDestination.transform.rotation;
         seatPosition = boatDestination.transform.position;
 
-        if(playerIsInTheCube == true && B_Button.action.WasPerformedThisFrame())
+        if((playerIsInTheCube == true && B_Button.action.WasPerformedThisFrame()) || Input.GetKey(KeyCode.G))
         {
            
             playerController.transform.position = seatPosition; //  set position of player

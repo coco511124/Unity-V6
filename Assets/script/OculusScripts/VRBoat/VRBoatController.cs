@@ -19,7 +19,7 @@ public class VRBoatController : MonoBehaviour
     public float turnInput;    // STEP 5
     public float steering = 80f;  //STEP 11
     float rotate, currentRotate; //STEP 11
-
+    [SerializeField] bool handOn = false;
 
 
     [Header("Power")]
@@ -76,6 +76,8 @@ public class VRBoatController : MonoBehaviour
         rotate = (steering * direction) * amount;   // STEP 11
     }
 
+   
+
     private void FixedUpdate()
     {
         //compute vectors
@@ -88,18 +90,20 @@ public class VRBoatController : MonoBehaviour
         if (CanControll == true)
         {
             //Steering
+            //Debug.LogWarning(Vector3.Lerp(transform.eulerAngles, new Vector3(0, transform.eulerAngles.y + currentRotate, 0), Time.deltaTime * 5f));            
             transform.eulerAngles = Vector3.Lerp(transform.eulerAngles, new Vector3(0, transform.eulerAngles.y + currentRotate, 0), Time.deltaTime * 5f);    //STEP 13 finish
-            
+            //transform.eulerAngles = new Vector3(0, transform.eulerAngles.y, 0);
+
             if (Input.GetKey(KeyCode.W) || speedValue > 0.3)
             {
                 PhysicsHelper.ApplyForceToReachVelocity(boatRigidbody, forward * MaxSpeed, Power);
                 Debug.Log("«e¶i");
             }
-
+            
             if (Input.GetKey(KeyCode.S) || breakValue > 0.3)
             {
                 PhysicsHelper.ApplyForceToReachVelocity(boatRigidbody, forward * -MaxSpeed, Power);
-            }
-        }                          
+            }            
+        }                         
     }
 }

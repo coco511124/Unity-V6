@@ -47,7 +47,7 @@ public class WaterFloat : MonoBehaviour
     }
 
     // Update is called once per frame
-    void Update()
+    void FixedUpdate()
     {
         //default water surface  預設的水面值
         var newWaterLine = 0f;
