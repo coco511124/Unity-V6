@@ -19,11 +19,12 @@ public class EndCanvasManager : MonoBehaviour
     }
     private void Update()
     {
-        if (checkOpen)
+        if (checkOpen || Input.GetKeyDown(KeyCode.S))
         {
             ShowEndCanvas();
             checkOpen = false;
         }
+        
     }
     public static void EndCanvas()
     {
