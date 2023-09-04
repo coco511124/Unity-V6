@@ -8,7 +8,7 @@ using UnityEngine.UI;
 public class EndCanvasManagerCh2 : MonoBehaviour
 {
     public GameObject PL, endCanvas;
-    List<PlayerDataCh2> pldata2 = new List<PlayerDataCh2>();
+    List<PlayerDataCh2> pldata2 ;
 
     public string filename;
     public Text log;
@@ -16,6 +16,7 @@ public class EndCanvasManagerCh2 : MonoBehaviour
     private void Start()
     {
         //filename = GetComponent<SaveSystemCh2>().filename.ToString();
+        //pldata2 = FileHandler.ReadFromJSON<PlayerDataCh2>(filename);
     }
     public void ShowEndCanvas()
     {
@@ -59,5 +60,26 @@ public class EndCanvasManagerCh2 : MonoBehaviour
     public void Restart()
     {
         SceneManager.LoadScene("2-1");
+    }
+    public void ReadFile()
+    {
+        pldata2 = FileHandler.ReadFromJSON<PlayerDataCh2>(filename);
+
+        if (pldata2.Count >= 10)
+        {
+            foreach (var item in pldata2.GetRange(pldata2.Count - 10, 10))
+            {
+                log.text += item.playerName + " " + item.playerTime + " " + item.playerActionType + "\n";
+
+            }
+
+        }
+        else
+        {
+            foreach (var item in pldata2)
+            {
+                log.text += item.playerName + " " + item.playerTime + " " + item.playerActionType + "\n";
+            }
+        }
     }
 }
