@@ -38,48 +38,48 @@ public class SaveSystem : MonoBehaviour
             type = "和郭懷一說話";
 
             Save();
-            WriteToCsv(FILENAME, pldata);
+            
         }
         else if (other.gameObject.tag == "people")
         {
             type = "和黑色荷蘭人說話";
 
             Save();
-            WriteToCsv(FILENAME, pldata);
+            
         }
         else if (other.gameObject.tag == "green_stranger")
         {
             type = "和綠色陌生人說話";
 
             Save();
-            WriteToCsv(FILENAME, pldata);
+            
         }
         else if (other.gameObject.tag == "pink_stranger")
         {
             type = "和粉色陌生人說話";
             Save();
-            WriteToCsv(FILENAME, pldata);
+            
         }
         else if (other.gameObject.tag == "blue_stranger")
         {
             type = "和藍色陌生人說話";
 
             Save();
-            WriteToCsv(FILENAME, pldata);
+            
         }
         else if (other.gameObject.tag == "red_stranger")
         {
             type = "和紅色陌生人說話";
 
             Save();
-            WriteToCsv(FILENAME, pldata);
+            
         }
         else if (other.gameObject.tag == "thing")
         {
             type = "碰到驚嘆號";
 
             Save();
-            WriteToCsv(FILENAME, pldata);
+            
         }
 
 
@@ -95,6 +95,7 @@ public class SaveSystem : MonoBehaviour
     {
         pldata.Add(new PlayerData(playerName, DateTime.Now.ToString(), type, pickupTimes));
         FileHandler.SaveToJSON<PlayerData>(pldata, filename);
+        WriteToCsv(FILENAME, pldata);
     }
 
 
@@ -131,13 +132,14 @@ public class SaveSystem : MonoBehaviour
 
         pldata.Add(new PlayerData(playerName, DateTime.Now.ToString(), type, numprivate));
         FileHandler.SaveToJSON<PlayerData>(pldata, filename);
+        WriteToCsv(FILENAME, pldata);
         Debug.Log(numprivate);
 
         //流程四的關掉布林閥值放到這裡也OK，也就是 change = false;這行。
     }
     public void WriteToCsv(string FILENAME, List<PlayerData> pldata)
     {
-        using (var dataFile = new StreamWriter(FILENAME))
+        using (var dataFile = new StreamWriter(FILENAME, false, System.Text.Encoding.UTF8))
         {
             dataFile.WriteLine(returnDataRowName());
             foreach (var playerData in pldata)

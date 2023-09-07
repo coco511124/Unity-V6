@@ -27,6 +27,7 @@ public class SaveSystemCh2 : MonoBehaviour
     {
         pldataCh2.Add(new PlayerDataCh2(playerName, DateTime.Now.ToString(), type) { playerName = playerName, playerTime = DateTime.Now.ToString(), playerActionType = type });
         FileHandler.SaveToJSON<PlayerDataCh2>(pldataCh2, filename);
+        WriteToCsv(FILENAME, pldataCh2);
     }
     public void PickNorth()
     {
@@ -72,7 +73,7 @@ public class SaveSystemCh2 : MonoBehaviour
     }
     public void WriteToCsv(string FILENAME, List<PlayerDataCh2> pldata2)
     {
-        using (var dataFile = new StreamWriter(FILENAME))
+        using (var dataFile = new StreamWriter(FILENAME, false, System.Text.Encoding.UTF8))
         {
             dataFile.WriteLine(returnDataRowName());
             foreach (var playerDataCh2 in pldata2)
