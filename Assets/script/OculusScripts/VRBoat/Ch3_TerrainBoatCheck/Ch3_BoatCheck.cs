@@ -65,26 +65,6 @@ public class Ch3_BoatCheck : MonoBehaviour
 
     private void Update()
     {
-        //if (stopCollider)
-        //{
-        //    if (currentime < timemax)
-        //    {
-        //        currentime += Time.deltaTime;
-        //    }
-        //    else
-        //    {
-        //        PlayerExit.BackPosition();
-        //        endCanvasManager.ReadFile();
-        //        showCanvas();
-        //        return;
-
-
-        //    }
-        //    return;
-        //}
-    }
-    private void LateUpdate()
-    {
         if (stopCollider)
         {
             if (currentime < timemax)
@@ -96,13 +76,28 @@ public class Ch3_BoatCheck : MonoBehaviour
                 PlayerExit.BackPosition();
                 //endCanvasManager.ReadFile();
                 showCanvas();
-                this.enabled = false;
-
-
+                stopCollider = false;
             }
-           
+
         }
     }
+    //private void LateUpdate()
+    //{
+    //    if (stopCollider)
+    //    {
+    //        if (currentime < timemax)
+    //        {
+    //            currentime += Time.deltaTime;
+    //        }
+    //        else
+    //        {
+    //            PlayerExit.BackPosition();
+    //            //endCanvasManager.ReadFile();
+    //            showCanvas();
+    //            this.enabled = false;
+    //        }
+    //    }
+    //}
 
     private void showCanvas()
     {
