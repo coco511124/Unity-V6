@@ -61438,6 +61438,10 @@ PrefabInstance:
   m_Modification:
     m_TransformParent: {fileID: 2534728904783530159}
     m_Modifications:
+    - target: {fileID: 3671434057355691979, guid: d7fd384cfcc5da74cb08d9a18718423d, type: 3}
+      propertyPath: orthographic size
+      value: 30
+      objectReference: {fileID: 0}
     - target: {fileID: 3671434057579882456, guid: d7fd384cfcc5da74cb08d9a18718423d, type: 3}
       propertyPath: targetToFollow
       value: 

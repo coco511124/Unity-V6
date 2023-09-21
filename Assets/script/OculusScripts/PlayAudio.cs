@@ -15,4 +15,11 @@ public class PlayAudio : MonoBehaviour
             taskAudio.Play();
         }
     }
+    private void OnTriggerExit(Collider other)
+    {
+        if(other.gameObject.name =="XR Origin")
+        {
+            taskAudio.Stop();
+        }
+    }
 }
