@@ -21,4 +21,6 @@ public class AllSceneManager : MonoBehaviour
     {
         SceneManager.LoadScene("Chapter3_Zeelandia_Scene");
     }
+
+    
 }

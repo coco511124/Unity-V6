@@ -20,7 +20,7 @@ public class CraftingSystem : MonoBehaviour
     public TMP_Text recipeContentText;
 
     [SerializeField] string type;
-    public GameObject table;
+    public GameObject table, portal;
     int index;
 
     private void Awake()
@@ -83,6 +83,7 @@ public class CraftingSystem : MonoBehaviour
             if (index == 1)
             {
                 SceneManager.LoadScene("2-4");
+                portal.SetActive(true);
             }
         }
         else

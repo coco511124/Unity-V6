@@ -25,51 +25,52 @@ public class SaveSystemCh2 : MonoBehaviour
     }
     public void Save()
     {
-        pldataCh2.Add(new PlayerDataCh2(playerName, DateTime.Now.ToString(), type) { playerName = playerName, playerTime = DateTime.Now.ToString(), playerActionType = type });
+        //pldataCh2.Add(new PlayerDataCh2(playerName, DateTime.Now.ToString(), type) { playerName = playerName, playerTime = DateTime.Now.ToString(), playerActionType = type });
+        pldataCh2.Add(new PlayerDataCh2(playerName, DateTime.Now.ToString(), type));
         FileHandler.SaveToJSON<PlayerDataCh2>(pldataCh2, filename);
-        WriteToCsv(FILENAME, pldataCh2);
+        //WriteToCsv(FILENAME, pldataCh2);
     }
     public void PickNorth()
     {
         type = "選擇北線尾";
         Save();
-        WriteToCsv(FILENAME, pldataCh2);
+        
     }
     public void PickYuan() 
     {
         type = "選擇大員";
         Save();
-        WriteToCsv(FILENAME, pldataCh2);
+        
     }
     public void PickRight()
     {
         type = "選擇正確答案";
         Save();
-        WriteToCsv(FILENAME, pldataCh2);
+        
     }
     public void PickRice()
     {
         type = "撿取糯米漿";
         Save();
-        WriteToCsv(FILENAME, pldataCh2);
+        
     }
     public void PickShell()
     {
         type = "撿取蚵殼灰";
         Save();
-        WriteToCsv(FILENAME, pldataCh2);
+        
     }
     public void PickBrick()
     {
         type = "撿取紅磚石";
         Save();
-        WriteToCsv(FILENAME, pldataCh2);
+        
     }
     public void PickSugar()
     {
         type = "撿取糖水";
         Save();
-        WriteToCsv(FILENAME, pldataCh2);
+        
     }
     public void WriteToCsv(string FILENAME, List<PlayerDataCh2> pldata2)
     {
