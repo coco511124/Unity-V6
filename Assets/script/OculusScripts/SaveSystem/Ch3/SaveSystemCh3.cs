@@ -21,7 +21,7 @@ public class SaveSystemCh3 : MonoBehaviour
     {
         pldataCh2 = FileHandler.ReadFromJSON<PlayerDataCh2>(filename);
 
-        FILENAME = Application.dataPath + "/playerdatach3.csv";
+        FILENAME = Application.persistentDataPath+ "/playerdatach3.csv";
     }
     public void Save()
     {

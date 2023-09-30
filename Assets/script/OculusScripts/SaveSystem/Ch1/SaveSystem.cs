@@ -28,7 +28,7 @@ public class SaveSystem : MonoBehaviour
     private void Start()
     {
         pldata = FileHandler.ReadFromJSON<PlayerData>(filename);
-        FILENAME = Application.dataPath + "/playerdatach1.csv";
+        FILENAME = Application.persistentDataPath + "/playerdatach1.csv";
     }
 
     private void OnTriggerEnter(Collider other)
