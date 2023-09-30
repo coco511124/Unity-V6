@@ -21,14 +21,14 @@ public class SaveSystemCh2 : MonoBehaviour
     {
         pldataCh2 = FileHandler.ReadFromJSON<PlayerDataCh2>(filename);
 
-        FILENAME = Application.dataPath + "/playerdatach2.csv";
+        FILENAME = Application.persistentDataPath + "/playerdatach2.csv";
     }
     public void Save()
     {
-        //pldataCh2.Add(new PlayerDataCh2(playerName, DateTime.Now.ToString(), type) { playerName = playerName, playerTime = DateTime.Now.ToString(), playerActionType = type });
-        pldataCh2.Add(new PlayerDataCh2(playerName, DateTime.Now.ToString(), type));
+        pldataCh2.Add(new PlayerDataCh2(playerName, DateTime.Now.ToString(), type) { playerName = playerName, playerTime = DateTime.Now.ToString(), playerActionType = type });
+        //pldataCh2.Add(new PlayerDataCh2(playerName, DateTime.Now.ToString(), type));
         FileHandler.SaveToJSON<PlayerDataCh2>(pldataCh2, filename);
-        //WriteToCsv(FILENAME, pldataCh2);
+        WriteToCsv(FILENAME, pldataCh2);
     }
     public void PickNorth()
     {

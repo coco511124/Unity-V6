@@ -83,7 +83,7 @@ public class CraftingSystem : MonoBehaviour
             if (index == 1)
             {
                 SceneManager.LoadScene("2-4");
-                portal.SetActive(true);
+                //portal.SetActive(true);
             }
         }
         else
