@@ -56307,6 +56307,7 @@ MonoBehaviour:
   recipeContentText: {fileID: 0}
   type: 
   table: {fileID: 0}
+  portal: {fileID: 0}
 --- !u!65 &2131880873
 BoxCollider:
   m_ObjectHideFlags: 0
