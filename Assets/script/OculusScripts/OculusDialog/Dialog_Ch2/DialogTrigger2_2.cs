@@ -35,11 +35,13 @@ public class DialogTrigger2_2 : MonoBehaviour
         else if (other.gameObject.tag == "TalkedToA")
         {
             Debug.Log("talked");
+            ObjectTag.GetComponent<RandomPathTrolling>().SetWalkFalse();
             dialogueBox.SetActive(true) ;
             StartDialogue2();
         }
         else if (other.gameObject.tag == "Player")
         {
+            ObjectTag.GetComponent<RandomPathTrolling>().SetWalkFalse();
             dialogueBox.SetActive(true);
             StartDialogue1();
         }
@@ -50,8 +52,8 @@ public class DialogTrigger2_2 : MonoBehaviour
         //³]§PÂ_±ø¥ó
         //©I¥sNPC_animate
         dialogueBox.SetActive(false);
-        //ObjectTag.GetComponent<RandomPathTrolling>().SetWalkTrue();
-        //ObjectTag.GetComponent<NPC_animate>().BackAnimate();
+        ObjectTag.GetComponent<RandomPathTrolling>().SetWalkTrue();
+        ObjectTag.GetComponent<NPC_animate>().BackAnimate();
     }
 }
 

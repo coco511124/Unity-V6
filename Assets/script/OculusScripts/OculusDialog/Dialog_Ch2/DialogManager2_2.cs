@@ -12,7 +12,7 @@ public class DialogManager2_2 : MonoBehaviour
     public GameObject DB, XrOrigin, map;//, endPanel;
     //public UnityEngine.UI.Text Mission1, Mission3, Mission4, Mission5;
     //public GameObject porTal;
-
+    public GameObject CallObjectAnimatorOrCallMethodOrCheckTag;  //這欄位放各個對話窗所屬的NPC
 
     public AudioSource typingSound;
 
@@ -27,7 +27,7 @@ public class DialogManager2_2 : MonoBehaviour
     {
         Debug.Log("here");
         typingSound.Play();
-        //CallObjectAnimatorOrCallMethodOrCheckTag.GetComponent<NPC_animate>().ChangeAnimate(); //呼叫指定物件改成對話中動畫的方法
+        CallObjectAnimatorOrCallMethodOrCheckTag.GetComponent<NPC_animate>().ChangeAnimate(); //呼叫指定物件改成對話中動畫的方法
         currentActors = actors;
         currentMessages = messages;
         activeMessage = 0;
@@ -63,8 +63,8 @@ public class DialogManager2_2 : MonoBehaviour
         //任務2完成訊息，執行在掛載在甘蔗上的PickUp腳本
         else
         {
-            //CallObjectAnimatorOrCallMethodOrCheckTag.GetComponent<NPC_animate>().BackAnimate(); //呼叫指定物件改回待機動畫的方法
-            //CallObjectAnimatorOrCallMethodOrCheckTag.GetComponent<RandomPathTrolling>().SetWalkTrue(); //呼叫RandomPathTrolling腳本的方法，允許NPC移動
+            CallObjectAnimatorOrCallMethodOrCheckTag.GetComponent<NPC_animate>().BackAnimate(); //呼叫指定物件改回待機動畫的方法
+            CallObjectAnimatorOrCallMethodOrCheckTag.GetComponent<RandomPathTrolling>().SetWalkTrue(); //呼叫RandomPathTrolling腳本的方法，允許NPC移動
 
             DB.SetActive(false);
             if (XrOrigin.tag == "TalkedToA")
