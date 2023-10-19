@@ -62670,6 +62670,10 @@ PrefabInstance:
       propertyPath: m_AnchoredPosition.y
       value: 0
       objectReference: {fileID: 0}
+    - target: {fileID: 4369990017532670639, guid: 0aad1d0e0ae0375428c2e54837999c50, type: 3}
+      propertyPath: m_Text
+      value: "1.\u8A8D\u8B58\u6297\u8377\u7684\u80CC\u666F(\u524D\u5F80\u9EC3\u8272\u9A5A\u5606\u865F)\r\n"
+      objectReference: {fileID: 0}
     - target: {fileID: 4369990017564955758, guid: 0aad1d0e0ae0375428c2e54837999c50, type: 3}
       propertyPath: m_AnchorMax.y
       value: 0
@@ -62693,6 +62697,10 @@ PrefabInstance:
     - target: {fileID: 4369990017564955758, guid: 0aad1d0e0ae0375428c2e54837999c50, type: 3}
       propertyPath: m_AnchoredPosition.y
       value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 4369990017734363745, guid: 0aad1d0e0ae0375428c2e54837999c50, type: 3}
+      propertyPath: m_Text
+      value: "5.\u8377\u862D\u5982\u4F55\u6CBB\u7406\u8207\u8655\u7F6E\u53CD\u6297\u6C11\u773E(\u627E\u85CD\u8272\u8863\u670D\u8377\u862D\u4EBA\u7684\u5C0D\u8A71)\r"
       objectReference: {fileID: 0}
     - target: {fileID: 4369990017735815610, guid: 0aad1d0e0ae0375428c2e54837999c50, type: 3}
       propertyPath: m_AnchorMax.x
@@ -62734,6 +62742,14 @@ PrefabInstance:
       propertyPath: sugarTable
       value: 
       objectReference: {fileID: 77055390}
+    - target: {fileID: 4369990017847555352, guid: 0aad1d0e0ae0375428c2e54837999c50, type: 3}
+      propertyPath: m_Text
+      value: "2.\u4E86\u89E3\u8377\u862D\u958B\u58BE\u53F0\u7063\u7684\u898F\u5283(\u5C0B\u627E\u7518\u8517)\r"
+      objectReference: {fileID: 0}
+    - target: {fileID: 4369990018068663552, guid: 0aad1d0e0ae0375428c2e54837999c50, type: 3}
+      propertyPath: m_Text
+      value: "3.\u8517\u7CD6\u662F\u8377\u862D\u4EBA\u91CD\u8981\u7684\u7D93\u6FDF\u4F86\u6E90(\u627E\u5230\u8377\u862D\u4EBA\u4E26\u7E73\u4EA4\u7518\u8517)"
+      objectReference: {fileID: 0}
     - target: {fileID: 4369990018125710427, guid: 0aad1d0e0ae0375428c2e54837999c50, type: 3}
       propertyPath: m_AnchorMax.y
       value: 0
@@ -62885,6 +62901,10 @@ PrefabInstance:
     - target: {fileID: 4369990019030753704, guid: 0aad1d0e0ae0375428c2e54837999c50, type: 3}
       propertyPath: m_AnchoredPosition.y
       value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 4369990019244713435, guid: 0aad1d0e0ae0375428c2e54837999c50, type: 3}
+      propertyPath: m_Text
+      value: "4.\u8A8D\u8B58\u90ED\u61F7\u4E00\u64D4\u4EFB\u4F7F\u7BC0\u7684\u539F\u7531\u3001\u90ED\u61F7\u4E00\u6297\u8377\u862D\u7684\u6210\u56E0(\u7372\u5F97\u6587\u4EF6)\r"
       objectReference: {fileID: 0}
     - target: {fileID: 4369990019283190152, guid: 0aad1d0e0ae0375428c2e54837999c50, type: 3}
       propertyPath: m_AnchorMax.y

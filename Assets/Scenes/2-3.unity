@@ -11205,7 +11205,7 @@ MonoBehaviour:
   m_faceColor:
     serializedVersion: 2
     rgba: 4294967295
-  m_fontSize: 70.1
+  m_fontSize: 65.15
   m_fontSizeBase: 36
   m_fontWeight: 400
   m_enableAutoSizing: 1
@@ -21070,7 +21070,7 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   message2_3:
   - actorId: 0
-    message: "\u627E\u500B\u86B5\u6BBC\u7070"
+    message: "\u4F60\u5982\u679C\u8981\u627E\u86B5\u6BBC\u7070\u7684\u8A71\uFF0C\u53BB\u6D77\u908A\u6703\u770B\u5230\u4E00\u5C0F\u5806\u7684\u86B5\u6BBC\u7070\u4E18\uFF0C\u65C1\u908A\u61C9\u8A72\u6709\u86B5\u6BBC\u7070\u80FD\u5920\u62FE\u53D6\u3002"
   actor2_3:
   - name: "\u85CD\u8272\u8863\u670D\u7684\u7537\u5B50"
   dialog: {fileID: 2003219464}

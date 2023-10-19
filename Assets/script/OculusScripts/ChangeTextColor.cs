@@ -1,4 +1,4 @@
-using System.Collections;
+ï»¿using System.Collections;
 using System.Collections.Generic;
 using UnityEngine;
 using UnityEngine.UI;
@@ -17,10 +17,10 @@ public class ChangeTextColor : MonoBehaviour
         changeColor();
     }
     
-    public void changeColor()                                   //³z¹LSugarTableªºEnent³qª¾quest2§ïÅÜÃC¦â
+    public void changeColor()                                   //é€éSugarTableçš„Enenté€šçŸ¥quest2æ”¹è®Šé¡è‰²
     {
         Text text = GetComponent<Text>();
-        text.text = "<color=green>2.´M§ä¥Ì½©</color>";
+        text.text = "<color=green>2.äº†è§£è·è˜­é–‹å¢¾å°ç£çš„è¦åŠƒ(å°‹æ‰¾ç”˜è”—) âœ“</color>";
     }
     
 }
