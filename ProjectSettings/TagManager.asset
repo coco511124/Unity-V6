@@ -27,6 +27,17 @@ TagManager:
   - PlayerWithShou
   - PlayerWithZenTwice
   - Ground
+  - afterlin
+  - paperover
+  - onetimeOBJ
+  - findfu
+  - lin
+  - paper2
+  - paper5
+  - paper3
+  - paper1
+  - fu
+  - paper4
   layers:
   - Default
   - TransparentFX
@@ -40,7 +51,7 @@ TagManager:
   - DeckSteer
   - non_Static
   - minimap
-  - 
+  - Player
   - 
   - 
   - 
