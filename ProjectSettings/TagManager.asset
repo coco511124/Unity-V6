@@ -38,6 +38,7 @@ TagManager:
   - paper1
   - fu
   - paper4
+  - pick
   layers:
   - Default
   - TransparentFX

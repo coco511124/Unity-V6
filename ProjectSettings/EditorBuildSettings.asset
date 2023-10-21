@@ -29,6 +29,9 @@ EditorBuildSettings:
   - enabled: 1
     path: Assets/Scenes/Chapter3_Zeelandia_Scene.unity
     guid: d0f3d2c2ffcac894d9ae9dc30335fa6a
+  - enabled: 1
+    path: Assets/Scenes/scenes4.unity
+    guid: 1e9b69b93a6594945938c0b1202530b8
   m_configObjects:
     Unity.XR.Oculus.Settings: {fileID: 11400000, guid: 8fcef4efe3bfa9c4c8b9767fb5f13158, type: 2}
     com.unity.xr.management.loader_settings: {fileID: 11400000, guid: 52eaff09f0dca8a4390df7813e677ffe, type: 2}
