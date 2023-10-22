@@ -12,7 +12,7 @@ public class DialogManager4 : MonoBehaviour
     public GameObject DB, XR;//, endPanel;
     //public UnityEngine.UI.Text Mission1,Mission2, Mission3, Mission4, Mission5;未來再處理這邊
 
-    public GameObject portal;
+    public GameObject portal, toLinPortal;
 
 
 
@@ -63,9 +63,13 @@ public class DialogManager4 : MonoBehaviour
         else
         {
             DB.SetActive(false);
-            if (XR.gameObject.tag == "Player")
+            if (XR.gameObject.CompareTag("Player"))
             {
                 portal.SetActive(true);
+            }
+            else if (XR.gameObject.CompareTag("pick"))
+            {
+                toLinPortal.SetActive(true);
             }
         }
     }

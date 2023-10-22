@@ -10,6 +10,7 @@ public class PickPaper : MonoBehaviour
     public void PickUpTimes()
     {
         count++;
+        
         if (count == 5)
         {
             portal.SetActive(true);

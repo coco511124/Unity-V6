@@ -31,10 +31,14 @@ public class DialogTrigger_Ch4 : MonoBehaviour
     }
 
     void OnTriggerEnter(Collider other)
-    {   
-        if(other !=null)
+    {
+        if (other.gameObject.CompareTag("Player"))
         {
             StartDialogue1();
+        }
+        else
+        {
+            StartDialogue2();
         }
         
     }
