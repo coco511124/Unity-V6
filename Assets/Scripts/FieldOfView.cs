@@ -9,7 +9,7 @@ public class FieldOfView : MonoBehaviour
     [Range(0, 360)]
     public float angle;
 
-    public GameObject playerRef;
+    public GameObject playerRef, xrOrigin, originFuf, finalFuf;
 
     public LayerMask targetMask;
     public LayerMask obstructionMask;
@@ -50,6 +50,7 @@ public class FieldOfView : MonoBehaviour
                 {
                     canSeePlayer = true;
                     Debug.Log("偵測到了，任務失敗!!");
+                    xrOrigin.transform.position = new Vector3((float)-108.8, 0, (float)18.8);
                 }
                 else
                 {
@@ -61,5 +62,16 @@ public class FieldOfView : MonoBehaviour
         }
         else if (canSeePlayer)
             canSeePlayer = false;
+    }
+    private void OnTriggerEnter(Collider other)
+    {
+        if(other.gameObject.name == "Stick")
+        {
+            xrOrigin.transform.position = new Vector3((float)-108.8, 0, (float)18.8);
+            originFuf.SetActive(false);
+            finalFuf.SetActive(true);
+            Debug.Log("hit");
+            xrOrigin.gameObject.tag = "hit";
+        }
     }
 }

@@ -36,7 +36,11 @@ public class DialogTrigger_Ch4 : MonoBehaviour
         {
             StartDialogue1();
         }
-        else
+        else if(other.gameObject.CompareTag("pick"))
+        {
+            StartDialogue2();
+        }
+        else if (other.gameObject.CompareTag("hit"))
         {
             StartDialogue2();
         }

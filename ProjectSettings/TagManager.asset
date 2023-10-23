@@ -39,6 +39,7 @@ TagManager:
   - fu
   - paper4
   - pick
+  - hit
   layers:
   - Default
   - TransparentFX
