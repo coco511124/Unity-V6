@@ -40,7 +40,7 @@ public class DialogTrigger_Ch4 : MonoBehaviour
         {
             StartDialogue2();
         }
-        else if (other.gameObject.CompareTag("hit"))
+        else if (other.gameObject.CompareTag("hit")||other.gameObject.CompareTag("gotolin"))
         {
             StartDialogue2();
         }

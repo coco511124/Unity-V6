@@ -67,9 +67,10 @@ public class DialogManager4 : MonoBehaviour
             {
                 portal.SetActive(true);
             }
-            else if (XR.gameObject.CompareTag("pick"))
+            else if (XR.gameObject.CompareTag("pick")||XR.gameObject.CompareTag("gotolin"))
             {
                 toLinPortal.SetActive(true);
+                XR.gameObject.tag = "gotolin";
             }
             else if (XR.gameObject.CompareTag("hit"))
             {

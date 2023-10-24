@@ -1,6 +1,7 @@
 using System;
 using System.Collections;
 using System.Collections.Generic;
+using TMPro;
 using UnityEngine;
 
 public class FieldOfView : MonoBehaviour
@@ -9,7 +10,8 @@ public class FieldOfView : MonoBehaviour
     [Range(0, 360)]
     public float angle;
 
-    public GameObject playerRef, xrOrigin, originFuf, finalFuf;
+    public GameObject playerRef, xrOrigin, originFuf, finalFuf, taskPanel;
+    public TMP_Text taskText;
 
     public LayerMask targetMask;
     public LayerMask obstructionMask;
@@ -51,6 +53,11 @@ public class FieldOfView : MonoBehaviour
                     canSeePlayer = true;
                     Debug.Log("偵測到了，任務失敗!!");
                     xrOrigin.transform.position = new Vector3((float)-108.8, 0, (float)18.8);
+                    taskPanel.SetActive(true);
+                    this.GetComponent<NPCwalk>().enabled = false;
+                    this.GetComponent<RandomAgent>().enabled = false;
+                    //this.gameObject.transform.position = new Vector3(-113, 0, 185);
+                    taskText.text = "任務失敗，請重新捕捉林爽文";
                 }
                 else
                 {
@@ -72,6 +79,12 @@ public class FieldOfView : MonoBehaviour
             finalFuf.SetActive(true);
             Debug.Log("hit");
             xrOrigin.gameObject.tag = "hit";
+            taskPanel.SetActive(true);
+            taskText.text = "任務成功，請跟福康安進行對話";
         }
+    }
+    public void CloseTaskPanel()
+    {
+        taskPanel.SetActive(false);
     }
 }
