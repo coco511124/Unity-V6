@@ -7,15 +7,14 @@ using UnityEngine.SceneManagement;
 public class Ch5Changescene : MonoBehaviour
 {
 
-    public string[] sceneName;
-    public int index = 0;
+    public string sceneName;
+    
 
     private void OnTriggerEnter(Collider other)
     {
-        index++;
-        SceneManager.LoadScene(sceneName[index]);
-        Debug.Log(index);
-        this.gameObject.SetActive(false);
+        
+        SceneManager.LoadScene(sceneName);
+        
     }
 
 }

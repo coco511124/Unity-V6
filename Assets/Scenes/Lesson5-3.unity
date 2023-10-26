@@ -2415,6 +2415,10 @@ PrefabInstance:
   m_Modification:
     m_TransformParent: {fileID: 0}
     m_Modifications:
+    - target: {fileID: 8876780547233874196, guid: c32c853e205a40f4bbc81a33de7e6acd, type: 3}
+      propertyPath: m_Radius
+      value: 1.2
+      objectReference: {fileID: 0}
     - target: {fileID: 8876780547233874198, guid: c32c853e205a40f4bbc81a33de7e6acd, type: 3}
       propertyPath: m_Name
       value: Portal
@@ -2483,12 +2487,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: f2efd9429e22c8c49b39b241537ebbd7, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  sceneName:
-  - Lesson5-1
-  - Lesson5-2
-  - Lesson5-3
-  - Lesson5-4
-  index: 0
+  sceneName: Lesson5-4
 --- !u!1 &120539993
 GameObject:
   m_ObjectHideFlags: 0
@@ -10637,7 +10636,7 @@ MeshRenderer:
   m_RenderingLayerMask: 1
   m_RendererPriority: 0
   m_Materials:
-  - {fileID: 2100000, guid: f252bb09d752e164991382386b245a4a, type: 2}
+  - {fileID: 5561349426305759274, guid: bc6691fe22a92ef4a92b07cce8b3c819, type: 3}
   m_StaticBatchInfo:
     firstSubMesh: 0
     subMeshCount: 0
@@ -16483,7 +16482,7 @@ MeshRenderer:
   m_PrefabInstance: {fileID: 0}
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 1187898322}
-  m_Enabled: 1
+  m_Enabled: 0
   m_CastShadows: 1
   m_ReceiveShadows: 1
   m_DynamicOccludee: 1
@@ -18087,7 +18086,6 @@ GameObject:
   - component: {fileID: 1314919217}
   - component: {fileID: 1314919216}
   - component: {fileID: 1314919215}
-  - component: {fileID: 1314919214}
   m_Layer: 8
   m_Name: blueman
   m_TagString: NPC1
@@ -18095,23 +18093,6 @@ GameObject:
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
   m_IsActive: 1
---- !u!114 &1314919214
-MonoBehaviour:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 1314919213}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: 96361fcec31116245ac9851a1a5f5e39, type: 3}
-  m_Name: 
-  m_EditorClassIdentifier: 
-  talkUI: {fileID: 0}
-  textfile: {fileID: 4900000, guid: d23fdaaa990f6b1409fe0b6d979704f4, type: 3}
-  something_open: []
-  something_close: []
-  mission_text: {fileID: 0}
 --- !u!65 &1314919215
 BoxCollider:
   m_ObjectHideFlags: 0
@@ -18132,7 +18113,7 @@ MonoBehaviour:
   m_PrefabInstance: {fileID: 0}
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 1314919213}
-  m_Enabled: 1
+  m_Enabled: 0
   m_EditorHideFlags: 0
   m_Script: {fileID: 11500000, guid: 3bf8c4d54a6c47a4dbf74416f430b05f, type: 3}
   m_Name: 
@@ -20108,7 +20089,7 @@ GameObject:
   - component: {fileID: 1427011162}
   m_Layer: 0
   m_Name: Terrain
-  m_TagString: Untagged
+  m_TagString: Ground
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 2147483647
@@ -21737,7 +21718,7 @@ MeshRenderer:
   m_PrefabInstance: {fileID: 0}
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 1550673419}
-  m_Enabled: 1
+  m_Enabled: 0
   m_CastShadows: 1
   m_ReceiveShadows: 1
   m_DynamicOccludee: 1
@@ -24111,7 +24092,7 @@ MeshRenderer:
   m_RenderingLayerMask: 1
   m_RendererPriority: 0
   m_Materials:
-  - {fileID: 2100000, guid: f252bb09d752e164991382386b245a4a, type: 2}
+  - {fileID: 5561349426305759274, guid: bc6691fe22a92ef4a92b07cce8b3c819, type: 3}
   m_StaticBatchInfo:
     firstSubMesh: 0
     subMeshCount: 0
@@ -29175,10 +29156,6 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 630721400117dae4eba517c24bc1eca0, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  anim: {fileID: 2079385677}
-  people: {fileID: 2079385672}
-  navman: {fileID: 1314919213}
-  Player: {fileID: 0}
 --- !u!1 &2080737810
 GameObject:
   m_ObjectHideFlags: 0
