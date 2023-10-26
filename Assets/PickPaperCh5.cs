@@ -7,6 +7,11 @@ public class PickPaperCh5 : MonoBehaviour
     public int times = 0;
     public GameObject endCanvas;
 
+    private void Start()
+    {
+        times = 0;
+    }
+
     public void PickPaperTimesCh5()
     {
         times++;
