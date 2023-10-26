@@ -1,5 +1,6 @@
 using System.Collections;
 using System.Collections.Generic;
+using Unity.VisualScripting;
 using UnityEngine;
 using UnityEngine.SceneManagement;
 
@@ -13,6 +14,8 @@ public class Ch5Changescene : MonoBehaviour
     {
         index++;
         SceneManager.LoadScene(sceneName[index]);
+        Debug.Log(index);
+        this.gameObject.SetActive(false);
     }
 
 }
