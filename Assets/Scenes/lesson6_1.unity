@@ -134,7 +134,7 @@ GameObject:
   - component: {fileID: 18675990}
   - component: {fileID: 18675992}
   - component: {fileID: 18675991}
-  m_Layer: 0
+  m_Layer: 6
   m_Name: p2_3
   m_TagString: paper2
   m_Icon: {fileID: 0}
@@ -267,7 +267,7 @@ GameObject:
   - component: {fileID: 82764508}
   - component: {fileID: 82764507}
   - component: {fileID: 82764506}
-  m_Layer: 0
+  m_Layer: 6
   m_Name: paper5
   m_TagString: Sugar
   m_Icon: {fileID: 0}
@@ -349,7 +349,7 @@ MonoBehaviour:
     serializedVersion: 2
     m_Bits: 4294967295
   m_InteractionLayers:
-    m_Bits: 1
+    m_Bits: 9
   m_DistanceCalculationMode: 1
   m_SelectMode: 0
   m_CustomReticle: {fileID: 0}
@@ -1119,6 +1119,7 @@ GameObject:
   - component: {fileID: 219436201}
   - component: {fileID: 219436200}
   - component: {fileID: 219436199}
+  - component: {fileID: 219436203}
   m_Layer: 0
   m_Name: Go_in (2)
   m_TagString: Untagged
@@ -1204,6 +1205,19 @@ Transform:
   m_Father: {fileID: 0}
   m_RootOrder: 20
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
+--- !u!114 &219436203
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 219436197}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: f2efd9429e22c8c49b39b241537ebbd7, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  sceneName: lesson6_2_temple1
 --- !u!1 &220049349
 GameObject:
   m_ObjectHideFlags: 0
@@ -1215,7 +1229,7 @@ GameObject:
   - component: {fileID: 220049350}
   - component: {fileID: 220049352}
   - component: {fileID: 220049351}
-  m_Layer: 0
+  m_Layer: 6
   m_Name: p2_1
   m_TagString: paper2
   m_Icon: {fileID: 0}
@@ -1970,7 +1984,7 @@ GameObject:
   - component: {fileID: 291724561}
   - component: {fileID: 291724563}
   - component: {fileID: 291724562}
-  m_Layer: 0
+  m_Layer: 6
   m_Name: p5_3
   m_TagString: paper5
   m_Icon: {fileID: 0}
@@ -2201,7 +2215,7 @@ Transform:
   m_ConstrainProportionsScale: 0
   m_Children: []
   m_Father: {fileID: 0}
-  m_RootOrder: 21
+  m_RootOrder: 22
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
 --- !u!1 &313943393
 GameObject:
@@ -2217,7 +2231,7 @@ GameObject:
   - component: {fileID: 313943398}
   - component: {fileID: 313943397}
   - component: {fileID: 313943396}
-  m_Layer: 0
+  m_Layer: 6
   m_Name: paper3
   m_TagString: Sugar
   m_Icon: {fileID: 0}
@@ -2299,7 +2313,7 @@ MonoBehaviour:
     serializedVersion: 2
     m_Bits: 4294967295
   m_InteractionLayers:
-    m_Bits: 1
+    m_Bits: 9
   m_DistanceCalculationMode: 1
   m_SelectMode: 0
   m_CustomReticle: {fileID: 0}
@@ -2620,7 +2634,7 @@ GameObject:
   - component: {fileID: 394262059}
   - component: {fileID: 394262061}
   - component: {fileID: 394262060}
-  m_Layer: 0
+  m_Layer: 6
   m_Name: p3_2
   m_TagString: paper3
   m_Icon: {fileID: 0}
@@ -4290,7 +4304,7 @@ GameObject:
   - component: {fileID: 722124700}
   - component: {fileID: 722124702}
   - component: {fileID: 722124701}
-  m_Layer: 0
+  m_Layer: 6
   m_Name: p5_1
   m_TagString: paper5
   m_Icon: {fileID: 0}
@@ -5537,7 +5551,7 @@ GameObject:
   - component: {fileID: 1017911708}
   - component: {fileID: 1017911710}
   - component: {fileID: 1017911709}
-  m_Layer: 0
+  m_Layer: 6
   m_Name: p4_2
   m_TagString: paper4
   m_Icon: {fileID: 0}
@@ -6067,7 +6081,7 @@ GameObject:
   - component: {fileID: 1118085107}
   - component: {fileID: 1118085109}
   - component: {fileID: 1118085108}
-  m_Layer: 0
+  m_Layer: 6
   m_Name: p4_1
   m_TagString: paper4
   m_Icon: {fileID: 0}
@@ -6590,6 +6604,24 @@ PrefabInstance:
     m_RemovedComponents:
     - {fileID: 8876780547233874200, guid: c32c853e205a40f4bbc81a33de7e6acd, type: 3}
   m_SourcePrefab: {fileID: 100100000, guid: c32c853e205a40f4bbc81a33de7e6acd, type: 3}
+--- !u!1 &1266666331 stripped
+GameObject:
+  m_CorrespondingSourceObject: {fileID: 8876780547233874198, guid: c32c853e205a40f4bbc81a33de7e6acd, type: 3}
+  m_PrefabInstance: {fileID: 1266666330}
+  m_PrefabAsset: {fileID: 0}
+--- !u!114 &1266666332
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1266666331}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: f2efd9429e22c8c49b39b241537ebbd7, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  sceneName: lesson6_2_temple1
 --- !u!1 &1268606922
 GameObject:
   m_ObjectHideFlags: 0
@@ -6684,7 +6716,7 @@ GameObject:
   - component: {fileID: 1271090697}
   - component: {fileID: 1271090699}
   - component: {fileID: 1271090698}
-  m_Layer: 0
+  m_Layer: 6
   m_Name: p3_3
   m_TagString: paper3
   m_Icon: {fileID: 0}
@@ -6850,7 +6882,7 @@ GameObject:
   - component: {fileID: 1310997718}
   - component: {fileID: 1310997720}
   - component: {fileID: 1310997719}
-  m_Layer: 0
+  m_Layer: 6
   m_Name: p5_2
   m_TagString: paper5
   m_Icon: {fileID: 0}
@@ -6936,7 +6968,7 @@ GameObject:
   - component: {fileID: 1350458913}
   - component: {fileID: 1350458912}
   - component: {fileID: 1350458911}
-  m_Layer: 0
+  m_Layer: 6
   m_Name: paper2
   m_TagString: Sugar
   m_Icon: {fileID: 0}
@@ -7018,7 +7050,7 @@ MonoBehaviour:
     serializedVersion: 2
     m_Bits: 4294967295
   m_InteractionLayers:
-    m_Bits: 1
+    m_Bits: 9
   m_DistanceCalculationMode: 1
   m_SelectMode: 0
   m_CustomReticle: {fileID: 0}
@@ -7416,7 +7448,7 @@ GameObject:
   - component: {fileID: 1392596411}
   - component: {fileID: 1392596413}
   - component: {fileID: 1392596412}
-  m_Layer: 0
+  m_Layer: 6
   m_Name: p4_3
   m_TagString: paper4
   m_Icon: {fileID: 0}
@@ -7661,7 +7693,7 @@ GameObject:
   - component: {fileID: 1476462716}
   - component: {fileID: 1476462715}
   - component: {fileID: 1476462714}
-  m_Layer: 0
+  m_Layer: 6
   m_Name: paper4
   m_TagString: Sugar
   m_Icon: {fileID: 0}
@@ -7743,7 +7775,7 @@ MonoBehaviour:
     serializedVersion: 2
     m_Bits: 4294967295
   m_InteractionLayers:
-    m_Bits: 1
+    m_Bits: 9
   m_DistanceCalculationMode: 1
   m_SelectMode: 0
   m_CustomReticle: {fileID: 0}
@@ -9564,7 +9596,7 @@ GameObject:
   - component: {fileID: 1765446075}
   - component: {fileID: 1765446077}
   - component: {fileID: 1765446076}
-  m_Layer: 0
+  m_Layer: 6
   m_Name: p2_2
   m_TagString: paper2
   m_Icon: {fileID: 0}
@@ -10270,7 +10302,7 @@ GameObject:
   - component: {fileID: 1900191801}
   - component: {fileID: 1900191803}
   - component: {fileID: 1900191802}
-  m_Layer: 0
+  m_Layer: 6
   m_Name: p3_1
   m_TagString: paper3
   m_Icon: {fileID: 0}
@@ -28120,7 +28152,7 @@ GameObject:
   - component: {fileID: 779169520201264340}
   - component: {fileID: 7656859698154803394}
   - component: {fileID: 8324487687760794392}
-  m_Layer: 0
+  m_Layer: 6
   m_Name: p1_1
   m_TagString: paper1
   m_Icon: {fileID: 0}
@@ -29779,7 +29811,7 @@ GameObject:
   - component: {fileID: 6899860868542643606}
   - component: {fileID: 6899860868542643605}
   - component: {fileID: 6899860868542643604}
-  m_Layer: 0
+  m_Layer: 6
   m_Name: paper1
   m_TagString: Sugar
   m_Icon: {fileID: 0}
@@ -30552,7 +30584,7 @@ MonoBehaviour:
     serializedVersion: 2
     m_Bits: 4294967295
   m_InteractionLayers:
-    m_Bits: 1
+    m_Bits: 9
   m_DistanceCalculationMode: 1
   m_SelectMode: 0
   m_CustomReticle: {fileID: 0}
@@ -31473,7 +31505,7 @@ GameObject:
   - component: {fileID: 5796716891933718544}
   - component: {fileID: 4792826748554053184}
   - component: {fileID: 7581211069514036604}
-  m_Layer: 0
+  m_Layer: 6
   m_Name: p1_2
   m_TagString: paper1
   m_Icon: {fileID: 0}
@@ -38780,7 +38812,7 @@ GameObject:
   - component: {fileID: 7421131487453589735}
   - component: {fileID: 3343582068754722539}
   - component: {fileID: 2602814580184177161}
-  m_Layer: 0
+  m_Layer: 6
   m_Name: p1_3
   m_TagString: paper1
   m_Icon: {fileID: 0}
