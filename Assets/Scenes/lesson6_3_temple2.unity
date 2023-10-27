@@ -8539,7 +8539,7 @@ GameObject:
   serializedVersion: 6
   m_Component:
   - component: {fileID: 611774126}
-  m_Layer: 0
+  m_Layer: 7
   m_Name: sign
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -18105,7 +18105,7 @@ MonoBehaviour:
   AsyncMode: 0
   GZipMode: 0
   PanoramaMode: 0
-  Quality: 40
+  Quality: 10
   ChromaSubsampling: 2
   StreamFPS: 20
   ignoreSimilarTexture: 1
@@ -18135,7 +18135,7 @@ MonoBehaviour:
       - m_Target: {fileID: 1257800939}
         m_TargetAssemblyTypeName: FMNetworkManager, Assembly-CSharp
         m_MethodName: SendToServer
-        m_Mode: 5
+        m_Mode: 0
         m_Arguments:
           m_ObjectArgument: {fileID: 0}
           m_ObjectArgumentAssemblyTypeName: UnityEngine.Object, UnityEngine
@@ -26738,7 +26738,7 @@ GameObject:
   - component: {fileID: 1677595438}
   - component: {fileID: 1677595437}
   - component: {fileID: 1677595436}
-  m_Layer: 0
+  m_Layer: 7
   m_Name: Cube (1)
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -34940,7 +34940,7 @@ GameObject:
   - component: {fileID: 2111718335}
   - component: {fileID: 2111718334}
   - component: {fileID: 2111718333}
-  m_Layer: 0
+  m_Layer: 7
   m_Name: Cube
   m_TagString: Untagged
   m_Icon: {fileID: 0}
