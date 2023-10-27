@@ -4,15 +4,16 @@ using UnityEngine;
 
 public class PickObject : MonoBehaviour
 {
-    // Start is called before the first frame update
-    void Start()
-    {
-        
-    }
+    public GameObject portal;
 
-    // Update is called once per frame
-    void Update()
+    public int times = 0;
+
+    public void PickObj()
     {
-        
+        times++;
+        if (times >= 2)
+        {
+            portal.SetActive(true);
+        }
     }
 }

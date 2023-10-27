@@ -3672,6 +3672,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: d0c2439c9f7123f4eac7171aaecfae1e, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
+  differentScene: Lesson5-1
 --- !u!4 &1234574057
 Transform:
   m_ObjectHideFlags: 0
@@ -5144,7 +5145,7 @@ PrefabInstance:
       objectReference: {fileID: 1234574056}
     - target: {fileID: 8561962398204620074, guid: 4044ab012cbca7d44a1393a09b5086ce, type: 3}
       propertyPath: m_OnClick.m_PersistentCalls.m_Calls.Array.data[0].m_MethodName
-      value: RestartScene
+      value: RestartDifferentScene
       objectReference: {fileID: 0}
     - target: {fileID: 8561962398204620075, guid: 4044ab012cbca7d44a1393a09b5086ce, type: 3}
       propertyPath: m_AnchorMax.y

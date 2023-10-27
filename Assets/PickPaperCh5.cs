@@ -17,9 +17,9 @@ public class PickPaperCh5 : MonoBehaviour
         times++;
         if (times >= 5)
         {
-            
-            endCanvas.GetComponent<EndCanvasManagerCh2>().ShowEndCanvas();
             endCanvas.SetActive(true);
+            endCanvas.GetComponent<EndCanvasManagerCh2>().ShowEndCanvas();
+            
         }
     }
 }

@@ -784,9 +784,9 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   PL: {fileID: 0}
-  endCanvas: {fileID: 0}
+  endCanvas: {fileID: 8561962398541191712}
   filename: 
-  log: {fileID: 0}
+  log: {fileID: 8561962399335364927}
 --- !u!1 &8561962398546133542
 GameObject:
   m_ObjectHideFlags: 0
