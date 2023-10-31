@@ -1622,6 +1622,7 @@ GameObject:
   m_Component:
   - component: {fileID: 82764504}
   - component: {fileID: 82764505}
+  - component: {fileID: 82764510}
   - component: {fileID: 82764507}
   - component: {fileID: 82764506}
   - component: {fileID: 82764508}
@@ -1662,8 +1663,8 @@ BoxCollider:
   m_IsTrigger: 0
   m_Enabled: 1
   serializedVersion: 2
-  m_Size: {x: 0.08025866, y: 0.008066263, z: 0.18100496}
-  m_Center: {x: -0.0010559835, y: 0.0035582718, z: -0.027473154}
+  m_Size: {x: 0.080258645, y: 0.008066263, z: 0.12618959}
+  m_Center: {x: -0.0010559942, y: 0.0035582718, z: -0.00006557574}
 --- !u!114 &82764506
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -1682,7 +1683,7 @@ MonoBehaviour:
     serializedVersion: 2
     m_Bits: 4294967295
   m_InteractionLayers:
-    m_Bits: 9
+    m_Bits: 1
   m_DistanceCalculationMode: 1
   m_SelectMode: 0
   m_CustomReticle: {fileID: 0}
@@ -1755,13 +1756,13 @@ MonoBehaviour:
       m_Calls: []
   m_AttachTransform: {fileID: 0}
   m_SecondaryAttachTransform: {fileID: 0}
-  m_UseDynamicAttach: 0
+  m_UseDynamicAttach: 1
   m_MatchAttachPosition: 1
   m_MatchAttachRotation: 1
   m_SnapToColliderVolume: 1
   m_ReinitializeDynamicAttachEverySingleGrab: 1
   m_AttachEaseInTime: 0.15
-  m_MovementType: 2
+  m_MovementType: 0
   m_VelocityDamping: 1
   m_VelocityScale: 1
   m_AngularVelocityDamping: 1
@@ -1814,7 +1815,7 @@ Rigidbody:
   m_IsKinematic: 0
   m_Interpolate: 0
   m_Constraints: 0
-  m_CollisionDetection: 0
+  m_CollisionDetection: 1
 --- !u!114 &82764508
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -1841,6 +1842,19 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   SOinfo: {fileID: 11400000, guid: 04d5b4b7d6dae594889371f0e0322459, type: 2}
+--- !u!65 &82764510
+BoxCollider:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 82764503}
+  m_Material: {fileID: 0}
+  m_IsTrigger: 1
+  m_Enabled: 1
+  serializedVersion: 2
+  m_Size: {x: 0.08066263, y: 0.008066263, z: 0.14}
+  m_Center: {x: 0, y: 0, z: 0}
 --- !u!1 &88732243
 GameObject:
   m_ObjectHideFlags: 0
@@ -4993,6 +5007,7 @@ GameObject:
   m_Component:
   - component: {fileID: 313943394}
   - component: {fileID: 313943395}
+  - component: {fileID: 313943400}
   - component: {fileID: 313943397}
   - component: {fileID: 313943396}
   - component: {fileID: 313943398}
@@ -5033,8 +5048,8 @@ BoxCollider:
   m_IsTrigger: 0
   m_Enabled: 1
   serializedVersion: 2
-  m_Size: {x: 0.08025866, y: 0.008066263, z: 0.18100496}
-  m_Center: {x: -0.0010559835, y: 0.0035582718, z: -0.027473154}
+  m_Size: {x: 0.08025866, y: 0.008066263, z: 0.12358541}
+  m_Center: {x: -0.0010559815, y: 0.0035582718, z: 0.0012366665}
 --- !u!114 &313943396
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -5053,7 +5068,7 @@ MonoBehaviour:
     serializedVersion: 2
     m_Bits: 4294967295
   m_InteractionLayers:
-    m_Bits: 9
+    m_Bits: 1
   m_DistanceCalculationMode: 1
   m_SelectMode: 0
   m_CustomReticle: {fileID: 0}
@@ -5126,13 +5141,13 @@ MonoBehaviour:
       m_Calls: []
   m_AttachTransform: {fileID: 0}
   m_SecondaryAttachTransform: {fileID: 0}
-  m_UseDynamicAttach: 0
+  m_UseDynamicAttach: 1
   m_MatchAttachPosition: 1
   m_MatchAttachRotation: 1
   m_SnapToColliderVolume: 1
   m_ReinitializeDynamicAttachEverySingleGrab: 1
   m_AttachEaseInTime: 0.15
-  m_MovementType: 2
+  m_MovementType: 0
   m_VelocityDamping: 1
   m_VelocityScale: 1
   m_AngularVelocityDamping: 1
@@ -5185,7 +5200,7 @@ Rigidbody:
   m_IsKinematic: 0
   m_Interpolate: 0
   m_Constraints: 0
-  m_CollisionDetection: 0
+  m_CollisionDetection: 1
 --- !u!114 &313943398
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -5212,6 +5227,19 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   SOinfo: {fileID: 11400000, guid: aa59ac43cf6a5b24380954d29dd079aa, type: 2}
+--- !u!65 &313943400
+BoxCollider:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 313943393}
+  m_Material: {fileID: 0}
+  m_IsTrigger: 1
+  m_Enabled: 1
+  serializedVersion: 2
+  m_Size: {x: 0.08066263, y: 0.008066263, z: 0.14}
+  m_Center: {x: 0, y: 0, z: 0}
 --- !u!1 &326034485
 GameObject:
   m_ObjectHideFlags: 0
@@ -19660,6 +19688,7 @@ GameObject:
   m_Component:
   - component: {fileID: 1350458909}
   - component: {fileID: 1350458910}
+  - component: {fileID: 1350458915}
   - component: {fileID: 1350458912}
   - component: {fileID: 1350458911}
   - component: {fileID: 1350458913}
@@ -19700,8 +19729,8 @@ BoxCollider:
   m_IsTrigger: 0
   m_Enabled: 1
   serializedVersion: 2
-  m_Size: {x: 0.08025866, y: 0.008066263, z: 0.18100496}
-  m_Center: {x: -0.0010559835, y: 0.0035582718, z: -0.027473154}
+  m_Size: {x: 0.080258645, y: 0.008066263, z: 0.13088727}
+  m_Center: {x: -0.0010559814, y: 0.0035582718, z: -0.0024143413}
 --- !u!114 &1350458911
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -19720,7 +19749,7 @@ MonoBehaviour:
     serializedVersion: 2
     m_Bits: 4294967295
   m_InteractionLayers:
-    m_Bits: 9
+    m_Bits: 1
   m_DistanceCalculationMode: 1
   m_SelectMode: 0
   m_CustomReticle: {fileID: 0}
@@ -19793,13 +19822,13 @@ MonoBehaviour:
       m_Calls: []
   m_AttachTransform: {fileID: 0}
   m_SecondaryAttachTransform: {fileID: 0}
-  m_UseDynamicAttach: 0
+  m_UseDynamicAttach: 1
   m_MatchAttachPosition: 1
   m_MatchAttachRotation: 1
   m_SnapToColliderVolume: 1
   m_ReinitializeDynamicAttachEverySingleGrab: 1
   m_AttachEaseInTime: 0.15
-  m_MovementType: 2
+  m_MovementType: 0
   m_VelocityDamping: 1
   m_VelocityScale: 1
   m_AngularVelocityDamping: 1
@@ -19852,7 +19881,7 @@ Rigidbody:
   m_IsKinematic: 0
   m_Interpolate: 0
   m_Constraints: 0
-  m_CollisionDetection: 0
+  m_CollisionDetection: 1
 --- !u!114 &1350458913
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -19879,6 +19908,19 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   SOinfo: {fileID: 11400000, guid: 84eb9189f066ced4090aef774c8c5fe5, type: 2}
+--- !u!65 &1350458915
+BoxCollider:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1350458908}
+  m_Material: {fileID: 0}
+  m_IsTrigger: 1
+  m_Enabled: 1
+  serializedVersion: 2
+  m_Size: {x: 0.08066263, y: 0.008066263, z: 0.14}
+  m_Center: {x: 0, y: 0, z: 0}
 --- !u!1 &1351525183
 GameObject:
   m_ObjectHideFlags: 0
@@ -20473,6 +20515,7 @@ GameObject:
   - component: {fileID: 1388721899}
   - component: {fileID: 1388721898}
   - component: {fileID: 1388721897}
+  - component: {fileID: 1388721900}
   m_Layer: 0
   m_Name: Terrain
   m_TagString: Ground
@@ -20540,6 +20583,104 @@ Transform:
   m_Father: {fileID: 0}
   m_RootOrder: 19
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
+--- !u!114 &1388721900
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1388721896}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 38f6bf3d943ac7945842268c9ef1dca6, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  m_InteractionManager: {fileID: 876085347}
+  m_Colliders: []
+  m_InteractionLayerMask:
+    serializedVersion: 2
+    m_Bits: 4294967295
+  m_InteractionLayers:
+    m_Bits: 1
+  m_DistanceCalculationMode: 1
+  m_SelectMode: 1
+  m_CustomReticle: {fileID: 0}
+  m_AllowGazeInteraction: 0
+  m_AllowGazeSelect: 0
+  m_OverrideGazeTimeToSelect: 0
+  m_GazeTimeToSelect: 0.5
+  m_OverrideTimeToAutoDeselectGaze: 0
+  m_TimeToAutoDeselectGaze: 3
+  m_AllowGazeAssistance: 0
+  m_FirstHoverEntered:
+    m_PersistentCalls:
+      m_Calls: []
+  m_LastHoverExited:
+    m_PersistentCalls:
+      m_Calls: []
+  m_HoverEntered:
+    m_PersistentCalls:
+      m_Calls: []
+  m_HoverExited:
+    m_PersistentCalls:
+      m_Calls: []
+  m_FirstSelectEntered:
+    m_PersistentCalls:
+      m_Calls: []
+  m_LastSelectExited:
+    m_PersistentCalls:
+      m_Calls: []
+  m_SelectEntered:
+    m_PersistentCalls:
+      m_Calls: []
+  m_SelectExited:
+    m_PersistentCalls:
+      m_Calls: []
+  m_Activated:
+    m_PersistentCalls:
+      m_Calls: []
+  m_Deactivated:
+    m_PersistentCalls:
+      m_Calls: []
+  m_StartingHoverFilters: []
+  m_StartingSelectFilters: []
+  m_StartingInteractionStrengthFilters: []
+  m_OnFirstHoverEntered:
+    m_PersistentCalls:
+      m_Calls: []
+  m_OnLastHoverExited:
+    m_PersistentCalls:
+      m_Calls: []
+  m_OnHoverEntered:
+    m_PersistentCalls:
+      m_Calls: []
+  m_OnHoverExited:
+    m_PersistentCalls:
+      m_Calls: []
+  m_OnSelectEntered:
+    m_PersistentCalls:
+      m_Calls: []
+  m_OnSelectExited:
+    m_PersistentCalls:
+      m_Calls: []
+  m_OnSelectCanceled:
+    m_PersistentCalls:
+      m_Calls: []
+  m_OnActivate:
+    m_PersistentCalls:
+      m_Calls: []
+  m_OnDeactivate:
+    m_PersistentCalls:
+      m_Calls: []
+  m_TeleportationProvider: {fileID: 0}
+  m_MatchOrientation: 0
+  m_MatchDirectionalInput: 0
+  m_TeleportTrigger: 0
+  m_FilterSelectionByHitNormal: 0
+  m_UpNormalToleranceDegrees: 30
+  m_Teleporting:
+    m_PersistentCalls:
+      m_Calls: []
 --- !u!1 &1392596410
 GameObject:
   m_ObjectHideFlags: 0
@@ -21830,6 +21971,7 @@ GameObject:
   m_Component:
   - component: {fileID: 1476462712}
   - component: {fileID: 1476462713}
+  - component: {fileID: 1476462718}
   - component: {fileID: 1476462715}
   - component: {fileID: 1476462714}
   - component: {fileID: 1476462716}
@@ -21870,8 +22012,8 @@ BoxCollider:
   m_IsTrigger: 0
   m_Enabled: 1
   serializedVersion: 2
-  m_Size: {x: 0.08025866, y: 0.008066263, z: 0.18100496}
-  m_Center: {x: -0.0010559835, y: 0.0035582718, z: -0.027473154}
+  m_Size: {x: 0.08025866, y: 0.008066263, z: 0.12941557}
+  m_Center: {x: -0.0010559815, y: 0.0035582718, z: -0.0016783519}
 --- !u!114 &1476462714
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -21890,7 +22032,7 @@ MonoBehaviour:
     serializedVersion: 2
     m_Bits: 4294967295
   m_InteractionLayers:
-    m_Bits: 9
+    m_Bits: 1
   m_DistanceCalculationMode: 1
   m_SelectMode: 0
   m_CustomReticle: {fileID: 0}
@@ -21963,13 +22105,13 @@ MonoBehaviour:
       m_Calls: []
   m_AttachTransform: {fileID: 0}
   m_SecondaryAttachTransform: {fileID: 0}
-  m_UseDynamicAttach: 0
+  m_UseDynamicAttach: 1
   m_MatchAttachPosition: 1
   m_MatchAttachRotation: 1
   m_SnapToColliderVolume: 1
   m_ReinitializeDynamicAttachEverySingleGrab: 1
   m_AttachEaseInTime: 0.15
-  m_MovementType: 2
+  m_MovementType: 0
   m_VelocityDamping: 1
   m_VelocityScale: 1
   m_AngularVelocityDamping: 1
@@ -22022,7 +22164,7 @@ Rigidbody:
   m_IsKinematic: 0
   m_Interpolate: 0
   m_Constraints: 0
-  m_CollisionDetection: 0
+  m_CollisionDetection: 1
 --- !u!114 &1476462716
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -22049,6 +22191,19 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   SOinfo: {fileID: 11400000, guid: e8eb67892550ddc478331cf71ad4d27c, type: 2}
+--- !u!65 &1476462718
+BoxCollider:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1476462711}
+  m_Material: {fileID: 0}
+  m_IsTrigger: 1
+  m_Enabled: 1
+  serializedVersion: 2
+  m_Size: {x: 0.08066263, y: 0.008066263, z: 0.14}
+  m_Center: {x: 0, y: 0, z: 0}
 --- !u!1 &1486897127
 GameObject:
   m_ObjectHideFlags: 0
@@ -32322,6 +32477,7 @@ GameObject:
   m_Component:
   - component: {fileID: 6899860868542643602}
   - component: {fileID: 6899860868542643603}
+  - component: {fileID: 6899860868542643608}
   - component: {fileID: 6899860868542643605}
   - component: {fileID: 6899860868542643604}
   - component: {fileID: 6899860868542643606}
@@ -32362,8 +32518,8 @@ BoxCollider:
   m_IsTrigger: 0
   m_Enabled: 1
   serializedVersion: 2
-  m_Size: {x: 0.08025866, y: 0.008066263, z: 0.18100496}
-  m_Center: {x: -0.0010559835, y: 0.0035582718, z: -0.027473154}
+  m_Size: {x: 0.08025866, y: 0.008066263, z: 0.12617843}
+  m_Center: {x: -0.0010560496, y: 0.0035582718, z: -0.000059872866}
 --- !u!114 &6899860868542643604
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -32382,7 +32538,7 @@ MonoBehaviour:
     serializedVersion: 2
     m_Bits: 4294967295
   m_InteractionLayers:
-    m_Bits: 9
+    m_Bits: 1
   m_DistanceCalculationMode: 1
   m_SelectMode: 0
   m_CustomReticle: {fileID: 0}
@@ -32455,13 +32611,13 @@ MonoBehaviour:
       m_Calls: []
   m_AttachTransform: {fileID: 0}
   m_SecondaryAttachTransform: {fileID: 0}
-  m_UseDynamicAttach: 0
+  m_UseDynamicAttach: 1
   m_MatchAttachPosition: 1
   m_MatchAttachRotation: 1
   m_SnapToColliderVolume: 1
   m_ReinitializeDynamicAttachEverySingleGrab: 1
   m_AttachEaseInTime: 0.15
-  m_MovementType: 2
+  m_MovementType: 0
   m_VelocityDamping: 1
   m_VelocityScale: 1
   m_AngularVelocityDamping: 1
@@ -32514,7 +32670,7 @@ Rigidbody:
   m_IsKinematic: 0
   m_Interpolate: 0
   m_Constraints: 0
-  m_CollisionDetection: 0
+  m_CollisionDetection: 1
 --- !u!114 &6899860868542643606
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -32541,6 +32697,19 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   inCollider: 0
+--- !u!65 &6899860868542643608
+BoxCollider:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 6091939057031079720}
+  m_Material: {fileID: 0}
+  m_IsTrigger: 1
+  m_Enabled: 1
+  serializedVersion: 2
+  m_Size: {x: 0.08066263, y: 0.008066263, z: 0.14}
+  m_Center: {x: 0, y: 0, z: 0}
 --- !u!4 &6917330907170326436
 Transform:
   m_ObjectHideFlags: 0
