@@ -683,8 +683,8 @@ MonoBehaviour:
       m_Calls: []
   m_text: 
   m_isRightToLeft: 0
-  m_fontAsset: {fileID: 11400000, guid: 8f586378b4e144a9851e7b34d9b748ee, type: 2}
-  m_sharedMaterial: {fileID: 2180264, guid: 8f586378b4e144a9851e7b34d9b748ee, type: 2}
+  m_fontAsset: {fileID: 11400000, guid: 2fdf8d25888f2784d8c09679afd1cdb8, type: 2}
+  m_sharedMaterial: {fileID: 2859168854016993692, guid: 2fdf8d25888f2784d8c09679afd1cdb8, type: 2}
   m_fontSharedMaterials: []
   m_fontMaterial: {fileID: 0}
   m_fontMaterials: []
@@ -5217,6 +5217,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: d0c2439c9f7123f4eac7171aaecfae1e, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
+  differentScene: 
 --- !u!4 &519734879
 Transform:
   m_ObjectHideFlags: 0
@@ -9090,6 +9091,14 @@ PrefabInstance:
       propertyPath: m_AnchoredPosition.y
       value: 0
       objectReference: {fileID: 0}
+    - target: {fileID: 7523062421211930348, guid: 59ed4477651f5714f9e0cdf41f5e7a71, type: 3}
+      propertyPath: m_fontAsset
+      value: 
+      objectReference: {fileID: 11400000, guid: 2fdf8d25888f2784d8c09679afd1cdb8, type: 2}
+    - target: {fileID: 7523062421211930348, guid: 59ed4477651f5714f9e0cdf41f5e7a71, type: 3}
+      propertyPath: m_sharedMaterial
+      value: 
+      objectReference: {fileID: 2859168854016993692, guid: 2fdf8d25888f2784d8c09679afd1cdb8, type: 2}
     - target: {fileID: 7523062421361622578, guid: 59ed4477651f5714f9e0cdf41f5e7a71, type: 3}
       propertyPath: m_AnchorMax.y
       value: 0
@@ -9186,6 +9195,14 @@ PrefabInstance:
       propertyPath: m_AnchoredPosition.y
       value: 0
       objectReference: {fileID: 0}
+    - target: {fileID: 7523062421851880595, guid: 59ed4477651f5714f9e0cdf41f5e7a71, type: 3}
+      propertyPath: m_fontAsset
+      value: 
+      objectReference: {fileID: 11400000, guid: 2fdf8d25888f2784d8c09679afd1cdb8, type: 2}
+    - target: {fileID: 7523062421851880595, guid: 59ed4477651f5714f9e0cdf41f5e7a71, type: 3}
+      propertyPath: m_sharedMaterial
+      value: 
+      objectReference: {fileID: 2859168854016993692, guid: 2fdf8d25888f2784d8c09679afd1cdb8, type: 2}
     - target: {fileID: 7523062422048052320, guid: 59ed4477651f5714f9e0cdf41f5e7a71, type: 3}
       propertyPath: m_AnchorMax.y
       value: 0
@@ -10692,8 +10709,8 @@ MonoBehaviour:
       m_Calls: []
   m_text: New Text
   m_isRightToLeft: 0
-  m_fontAsset: {fileID: 11400000, guid: a2c7239941e515b48a56fff7582864e5, type: 2}
-  m_sharedMaterial: {fileID: 1903755619228524041, guid: a2c7239941e515b48a56fff7582864e5, type: 2}
+  m_fontAsset: {fileID: 11400000, guid: 2fdf8d25888f2784d8c09679afd1cdb8, type: 2}
+  m_sharedMaterial: {fileID: 2859168854016993692, guid: 2fdf8d25888f2784d8c09679afd1cdb8, type: 2}
   m_fontSharedMaterials: []
   m_fontMaterial: {fileID: 0}
   m_fontMaterials: []
@@ -11092,16 +11109,16 @@ PrefabInstance:
       objectReference: {fileID: 0}
     - target: {fileID: 4385746826808470086, guid: 7433bfa38cb778c4dafedec5857aedce, type: 3}
       propertyPath: m_fontSize
-      value: 6.15
+      value: 6.25
       objectReference: {fileID: 0}
     - target: {fileID: 4385746826808470086, guid: 7433bfa38cb778c4dafedec5857aedce, type: 3}
       propertyPath: m_fontAsset
       value: 
-      objectReference: {fileID: 11400000, guid: a2c7239941e515b48a56fff7582864e5, type: 2}
+      objectReference: {fileID: 11400000, guid: 2fdf8d25888f2784d8c09679afd1cdb8, type: 2}
     - target: {fileID: 4385746826808470086, guid: 7433bfa38cb778c4dafedec5857aedce, type: 3}
       propertyPath: m_sharedMaterial
       value: 
-      objectReference: {fileID: 1903755619228524041, guid: a2c7239941e515b48a56fff7582864e5, type: 2}
+      objectReference: {fileID: 2859168854016993692, guid: 2fdf8d25888f2784d8c09679afd1cdb8, type: 2}
     - target: {fileID: 4385746828152485618, guid: 7433bfa38cb778c4dafedec5857aedce, type: 3}
       propertyPath: m_Name
       value: TaskCanvas
@@ -16995,7 +17012,7 @@ GameObject:
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
-  m_IsActive: 1
+  m_IsActive: 0
 --- !u!224 &1859656558
 RectTransform:
   m_ObjectHideFlags: 0
