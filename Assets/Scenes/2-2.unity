@@ -449,6 +449,14 @@ PrefabInstance:
       propertyPath: m_OnClick.m_PersistentCalls.m_Calls.Array.data[0].m_TargetAssemblyTypeName
       value: MapDialog, Assembly-CSharp
       objectReference: {fileID: 0}
+    - target: {fileID: 3935138643889724673, guid: f6f4fed63460f884ea516524e1e825f2, type: 3}
+      propertyPath: m_fontAsset
+      value: 
+      objectReference: {fileID: 11400000, guid: 2fdf8d25888f2784d8c09679afd1cdb8, type: 2}
+    - target: {fileID: 3935138643889724673, guid: f6f4fed63460f884ea516524e1e825f2, type: 3}
+      propertyPath: m_hasFontAssetChanged
+      value: 1
+      objectReference: {fileID: 0}
     - target: {fileID: 3935138643908805447, guid: f6f4fed63460f884ea516524e1e825f2, type: 3}
       propertyPath: m_Name
       value: Dialog1
@@ -7275,10 +7283,10 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   messages_1:
   - actorId2_2: 0
-    meassage2_2: "\u9078\u5730\u5716"
+    meassage2_2: "\u8D64\u5D01\u9644\u8FD1\u7684\u571F\u5730\u9084\u6C92\u958B\u767C\u5B8C\u5168"
   messages_2:
   - actorId2_2: 0
-    meassage2_2: "\u9078\u5730\u5716"
+    meassage2_2: "\u8D64\u5D01\u9644\u8FD1\u7684\u571F\u5730\u9084\u6C92\u958B\u767C\u5B8C\u5168"
   actors:
   - name2_2: "\u7DA0\u8272\u8863\u670D\u7684\u7537\u5B50"
   dialogueBox: {fileID: 1694691041}
@@ -8084,10 +8092,10 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   messages_1:
   - actorId2_2: 0
-    meassage2_2: "\u9078\u5730\u5716"
+    meassage2_2: "\u7D05\u6BDB\u4EBA\u5011\u597D\u50CF\u8981\u8DDF\u6211\u5011\u539F\u4F4F\u6C11\u8CB7\u571F\u5730"
   messages_2:
   - actorId2_2: 0
-    meassage2_2: "\u9078\u5730\u5716"
+    meassage2_2: "\u7D05\u6BDB\u4EBA\u5011\u597D\u50CF\u8981\u8DDF\u6211\u5011\u539F\u4F4F\u6C11\u8CB7\u571F\u5730"
   actors:
   - name2_2: "\u7C89\u7D05\u8863\u670D\u7684\u7537\u5B50"
   dialogueBox: {fileID: 2113351457}
@@ -10524,10 +10532,10 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   messages_1:
   - actorId2_2: 0
-    meassage2_2: "\u9078\u5730\u5716"
+    meassage2_2: "\u71B1\u862D\u906E\u57CE\u7684\u571F\u5730\u90FD\u5229\u7528\u5B8C\u4E86"
   messages_2:
   - actorId2_2: 0
-    meassage2_2: "\u9078\u5730\u5716"
+    meassage2_2: "\u71B1\u862D\u906E\u57CE\u7684\u571F\u5730\u90FD\u5229\u7528\u5B8C\u4E86"
   actors:
   - name2_2: "\u7D05\u8272\u8863\u670D\u7684\u7537\u5B50"
   dialogueBox: {fileID: 2042764898}
@@ -15268,10 +15276,10 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   messages_1:
   - actorId2_2: 0
-    meassage2_2: "\u9078\u5730\u5716"
+    meassage2_2: "\u6700\u8FD1\u6211\u5728\u627E\u623F\u5B50"
   messages_2:
   - actorId2_2: 0
-    meassage2_2: "\u9078\u5730\u5716"
+    meassage2_2: "\u6700\u8FD1\u6211\u5728\u627E\u623F\u5B50"
   actors:
   - name2_2: "\u85CD\u8272\u8863\u670D\u7684\u7537\u5B50"
   dialogueBox: {fileID: 180078823}
