@@ -1,4 +1,4 @@
-using System.Collections;
+ï»¿using System.Collections;
 using System.Collections.Generic;
 using TMPro;
 using UnityEngine;
@@ -12,7 +12,7 @@ public class CraftingSystem : MonoBehaviour
     [SerializeField] private BoxCollider placeItemsAreaBoxCollider;
     [SerializeField] private List<CraftingRecipeSO> craftingRecipeSOList;
     [SerializeField] private Transform itemSpawnPoint;
-    //[SerializeField] private Transform vfxSpawnItem;³o­Ó¬O¯S®Ä
+    //[SerializeField] private Transform vfxSpawnItem;é€™å€‹æ˜¯ç‰¹æ•ˆ
 
     private CraftingRecipeSO craftingRecipeSO;
 
@@ -23,6 +23,8 @@ public class CraftingSystem : MonoBehaviour
     public GameObject table, portal;
     int index;
 
+    public UnityEngine.UI.Text Mission4;
+
     private void Awake()
     {
         NextRecipe();
@@ -31,13 +33,13 @@ public class CraftingSystem : MonoBehaviour
     {
         if (craftingRecipeSOList == null)
         {
-            craftingRecipeSO = craftingRecipeSOList[0]; //List±qÀY¶}©l
-            recipeContentText.text = recipeContent[0].ToString();//±Nlistªº¤º®eÂà´«¬°string¡A¦A¶Ç¨ìcanvas¤WªºrecipecontentText
+            craftingRecipeSO = craftingRecipeSOList[0]; //Listå¾é ­é–‹å§‹
+            recipeContentText.text = recipeContent[0].ToString();//å°‡listçš„å…§å®¹è½‰æ›ç‚ºstringï¼Œå†å‚³åˆ°canvasä¸Šçš„recipecontentText
             Debug.Log("Restart recipe list");
         }
         else
         {
-            index = craftingRecipeSOList.IndexOf(craftingRecipeSO); //¨ú±o¥Ø«elistªºindex
+            index = craftingRecipeSOList.IndexOf(craftingRecipeSO); //å–å¾—ç›®å‰listçš„index
             index = (index + 1) % craftingRecipeSOList.Count;
             craftingRecipeSO = craftingRecipeSOList[index];
             recipeContentText.text = recipeContent[index].ToString();
@@ -70,7 +72,7 @@ public class CraftingSystem : MonoBehaviour
 
         if (inputItemList.Count == 0)
         {
-            type = "¦X¦¨¦¨¥\";
+            type = "åˆæˆæˆåŠŸ";
             Debug.Log("yes");
             Transform spawnedItemTransform = Instantiate(craftingRecipeSO.outputItemSO.prefab.transform, itemSpawnPoint.position, itemSpawnPoint.rotation);
 
@@ -78,7 +80,8 @@ public class CraftingSystem : MonoBehaviour
             {
                 Destroy(consumeItemGameObject);
             }
-            table.GetComponent<SaveSystemCh2>().type = "¦X¦¨¦¨¥\";
+            Mission4.text = "<color=green>4.äº†è§£å“ªäº›çµ„åˆææ–™å¯ä»¥åˆæˆ(å°‡ææ–™åˆæˆ) âœ“</color>";
+            table.GetComponent<SaveSystemCh2>().type = "åˆæˆæˆåŠŸ";
             table.GetComponent<SaveSystemCh2>().Save();
             if (index == 1)
             {
@@ -88,14 +91,14 @@ public class CraftingSystem : MonoBehaviour
         }
         else
         {
-            table.GetComponent<SaveSystemCh2>().type = "¦X¦¨¥¢±Ñ";
+            table.GetComponent<SaveSystemCh2>().type = "åˆæˆå¤±æ•—";
             table.GetComponent<SaveSystemCh2>().Save();
         }
         
     }
     private void Update()
     {
-        if (Input.GetKeyDown(KeyCode.C))//´ú¸Õ¥Î
+        if (Input.GetKeyDown(KeyCode.C))//æ¸¬è©¦ç”¨
         {
             Craft();
         }

@@ -3242,6 +3242,39 @@ PrefabInstance:
       propertyPath: m_MoveSpeed
       value: 40
       objectReference: {fileID: 0}
+    - target: {fileID: 5418322430713984754, guid: 986ad8466bb1ae14abefbe7d69406616, type: 3}
+      propertyPath: m_Text
+      value: "4.\u4E86\u89E3\u54EA\u4E9B\u7D44\u5408\u6750\u6599\u53EF\u4EE5\u5408\u6210(\u5C07\u6750\u6599\u5408\u6210)"
+      objectReference: {fileID: 0}
+    - target: {fileID: 5418322431680306729, guid: 986ad8466bb1ae14abefbe7d69406616, type: 3}
+      propertyPath: m_Text
+      value: "3.\u8A8D\u8B58\u5404\u500B\u6750\u6599\u7684\u529F\u7528(\u627E\u539F\u4F4F\u6C11\u5C0D\u8A71\u6536\u96C6\u6750\u6599)"
+      objectReference: {fileID: 0}
+    - target: {fileID: 5418322432222044550, guid: 986ad8466bb1ae14abefbe7d69406616, type: 3}
+      propertyPath: m_Text
+      value: "1.\u8A8D\u8B58\u5EFA\u9020\u666E\u7F85\u6C11\u906E\u57CE\u7684\u80CC\u666F(\u524D\u5F80\u9A5A\u5606\u865F)
+        \u2713"
+      objectReference: {fileID: 0}
+    - target: {fileID: 5418322432222044550, guid: 986ad8466bb1ae14abefbe7d69406616, type: 3}
+      propertyPath: m_Color.b
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 5418322432222044550, guid: 986ad8466bb1ae14abefbe7d69406616, type: 3}
+      propertyPath: m_Color.g
+      value: 1
+      objectReference: {fileID: 0}
+    - target: {fileID: 5418322432222044550, guid: 986ad8466bb1ae14abefbe7d69406616, type: 3}
+      propertyPath: m_Color.r
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 5418322432423811400, guid: 986ad8466bb1ae14abefbe7d69406616, type: 3}
+      propertyPath: m_Text
+      value: "5.\u70BA\u8377\u862D\u4EBA\u9020\u51FA\u666E\u7F85\u6C11\u906E\u57CE(\u5EFA\u9020\u666E\u7F85\u6C11\u906E\u57CE)\r"
+      objectReference: {fileID: 0}
+    - target: {fileID: 5418322432537126449, guid: 986ad8466bb1ae14abefbe7d69406616, type: 3}
+      propertyPath: m_Text
+      value: "\u4E86\u89E3\u8377\u862D\u8CFC\u8CB7\u539F\u4F4F\u6C11\u571F\u5730\u7684\u4F4D\u7F6E(\u627E\u85CD\u8272\u539F\u4F4F\u6C11\u5C0D\u8A71)"
+      objectReference: {fileID: 0}
     - target: {fileID: 5418322432547802907, guid: 986ad8466bb1ae14abefbe7d69406616, type: 3}
       propertyPath: m_MaxRaycastDistance
       value: 100

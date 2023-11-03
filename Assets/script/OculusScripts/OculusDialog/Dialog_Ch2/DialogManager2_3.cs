@@ -1,5 +1,6 @@
-using System.Collections;
+ï»¿using System.Collections;
 using System.Collections.Generic;
+using System.Reflection;
 using UnityEngine;
 
 public class DialogManager2_3 : MonoBehaviour
@@ -8,10 +9,10 @@ public class DialogManager2_3 : MonoBehaviour
     public UnityEngine.UI.Text messageText;
     public RectTransform backgroundBox;
     public GameObject DB, XrOrigin;//, endPanel;
-    //public UnityEngine.UI.Text Mission1, Mission3, Mission4, Mission5;
+    public UnityEngine.UI.Text Mission3;
     //public GameObject porTal;
 
-    public GameObject CallObjectAnimatorOrCallMethodOrCheckTag;  //³oÄæ¦ì©ñ¦U­Ó¹ï¸Üµ¡©ÒÄİªºNPC
+    public GameObject CallObjectAnimatorOrCallMethodOrCheckTag;  //é€™æ¬„ä½æ”¾å„å€‹å°è©±çª—æ‰€å±¬çš„NPC
 
     public AudioSource typingSound;
 
@@ -26,7 +27,7 @@ public class DialogManager2_3 : MonoBehaviour
     {
         Debug.Log("here");
         typingSound.Play();
-        CallObjectAnimatorOrCallMethodOrCheckTag.GetComponent<NPC_animate>().ChangeAnimate(); //©I¥s«ü©wª«¥ó§ï¦¨¹ï¸Ü¤¤°Êµeªº¤èªk
+        CallObjectAnimatorOrCallMethodOrCheckTag.GetComponent<NPC_animate>().ChangeAnimate(); //å‘¼å«æŒ‡å®šç‰©ä»¶æ”¹æˆå°è©±ä¸­å‹•ç•«çš„æ–¹æ³•
         currentActors = actors;
         currentMessages = messages;
         activeMessage = 0;
@@ -59,14 +60,14 @@ public class DialogManager2_3 : MonoBehaviour
             typingSound.Play();
 
         }
-        //¥ô°È2§¹¦¨°T®§¡A°õ¦æ¦b±¾¸ü¦b¥Ì½©¤WªºPickUp¸}¥»
+        //ä»»å‹™2å®Œæˆè¨Šæ¯ï¼ŒåŸ·è¡Œåœ¨æ›è¼‰åœ¨ç”˜è”—ä¸Šçš„PickUpè…³æœ¬
         else
         {
-            CallObjectAnimatorOrCallMethodOrCheckTag.GetComponent<NPC_animate>().BackAnimate(); //©I¥s«ü©wª«¥ó§ï¦^«İ¾÷°Êµeªº¤èªk
-            CallObjectAnimatorOrCallMethodOrCheckTag.GetComponent<RandomPathTrolling>().SetWalkTrue(); //©I¥sRandomPathTrolling¸}¥»ªº¤èªk¡A¤¹³\NPC²¾°Ê
+            CallObjectAnimatorOrCallMethodOrCheckTag.GetComponent<NPC_animate>().BackAnimate(); //å‘¼å«æŒ‡å®šç‰©ä»¶æ”¹å›å¾…æ©Ÿå‹•ç•«çš„æ–¹æ³•
+            CallObjectAnimatorOrCallMethodOrCheckTag.GetComponent<RandomPathTrolling>().SetWalkTrue(); //å‘¼å«RandomPathTrollingè…³æœ¬çš„æ–¹æ³•ï¼Œå…è¨±NPCç§»å‹•
 
             DB.SetActive(false);
-        
+            Mission3.text = "<color=green>3.èªè­˜å„å€‹ææ–™çš„åŠŸç”¨(æ‰¾åŸä½æ°‘å°è©±æ”¶é›†ææ–™) âœ“</color>";
 
 
             //porTal.SetActive(true);
@@ -74,7 +75,7 @@ public class DialogManager2_3 : MonoBehaviour
             //if (PL.tag == "Player")
             //{
             //    DB.SetActive(false);
-            //    Mission1.text = "<color=green>1.«e©¹¶À¦âÅå¹Ä¸¹ ?</color>";
+            //    Mission1.text = "<color=green>1.å‰å¾€é»ƒè‰²é©šå˜†è™Ÿ ?</color>";
             //}
 
         }

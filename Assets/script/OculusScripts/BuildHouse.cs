@@ -1,5 +1,6 @@
-using System.Collections;
+﻿using System.Collections;
 using System.Collections.Generic;
+using System.Reflection;
 using UnityEngine;
 
 public class BuildHouse : MonoBehaviour
@@ -8,6 +9,9 @@ public class BuildHouse : MonoBehaviour
     public int index;
     public GameObject endCanvas, PL, buildCanvas;
     public EndCanvasManagerCh2 endCanvasManager;
+
+    public UnityEngine.UI.Text Mission5;
+
     public void Build()
     {
         houses[index].SetActive(true);
@@ -15,7 +19,8 @@ public class BuildHouse : MonoBehaviour
         if(index >= houses.Length)
         {
             endCanvasManager.ShowEndCanvas();
-            buildCanvas.SetActive(false);   
+            buildCanvas.SetActive(false);
+            Mission5.text = "<color=green>5.為荷蘭人造出普羅民遮城(建造普羅民遮城) ✓</color>";
         }
     }
     private void Start()

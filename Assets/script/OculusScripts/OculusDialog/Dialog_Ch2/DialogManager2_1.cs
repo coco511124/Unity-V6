@@ -1,4 +1,4 @@
-using System.Collections;
+ï»¿using System.Collections;
 using System.Collections.Generic;
 using UnityEngine;
 using UnityEngine.UI;
@@ -10,7 +10,7 @@ public class DialogManager2_1 : MonoBehaviour
     public UnityEngine.UI.Text messageText;
     public RectTransform backgroundBox;
     public GameObject DB;//, PL, endPanel;
-    //public UnityEngine.UI.Text Mission1, Mission3, Mission4, Mission5;
+    public UnityEngine.UI.Text Mission1;
     public GameObject porTal;
 
 
@@ -28,7 +28,7 @@ public class DialogManager2_1 : MonoBehaviour
     {
         Debug.Log("here");
         typingSound.Play();
-        //CallObjectAnimatorOrCallMethodOrCheckTag.GetComponent<NPC_animate>().ChangeAnimate(); //©I¥s«ü©wª«¥ó§ï¦¨¹ï¸Ü¤¤°Êµeªº¤èªk
+        //CallObjectAnimatorOrCallMethodOrCheckTag.GetComponent<NPC_animate>().ChangeAnimate(); //å‘¼å«æŒ‡å®šç‰©ä»¶æ”¹æˆå°è©±ä¸­å‹•ç•«çš„æ–¹æ³•
         currentActors = actors;
         currentMessages = messages;
         activeMessage = 0;
@@ -61,20 +61,17 @@ public class DialogManager2_1 : MonoBehaviour
             typingSound.Play();
 
         }
-        //¥ô°È2§¹¦¨°T®§¡A°õ¦æ¦b±¾¸ü¦b¥Ì½©¤WªºPickUp¸}¥»
+        //ä»»å‹™2å®Œæˆè¨Šæ¯ï¼ŒåŸ·è¡Œåœ¨æ›è¼‰åœ¨ç”˜è”—ä¸Šçš„PickUpè…³æœ¬
         else
         {
-            //CallObjectAnimatorOrCallMethodOrCheckTag.GetComponent<NPC_animate>().BackAnimate(); //©I¥s«ü©wª«¥ó§ï¦^«İ¾÷°Êµeªº¤èªk
-            //CallObjectAnimatorOrCallMethodOrCheckTag.GetComponent<RandomPathTrolling>().SetWalkTrue(); //©I¥sRandomPathTrolling¸}¥»ªº¤èªk¡A¤¹³\NPC²¾°Ê
+            //CallObjectAnimatorOrCallMethodOrCheckTag.GetComponent<NPC_animate>().BackAnimate(); //å‘¼å«æŒ‡å®šç‰©ä»¶æ”¹å›å¾…æ©Ÿå‹•ç•«çš„æ–¹æ³•
+            //CallObjectAnimatorOrCallMethodOrCheckTag.GetComponent<RandomPathTrolling>().SetWalkTrue(); //å‘¼å«RandomPathTrollingè…³æœ¬çš„æ–¹æ³•ï¼Œå…è¨±NPCç§»å‹•
 
             DB.SetActive(false);
             porTal.SetActive(true);
-
-            //if (PL.tag == "Player")
-            //{
-            //    DB.SetActive(false);
-            //    Mission1.text = "<color=green>1.«e©¹¶À¦âÅå¹Ä¸¹ ?</color>";
-            //}
+            DB.SetActive(false);
+            Mission1.text = "<color=green>1.èªè­˜å»ºé€ æ™®ç¾…æ°‘é®åŸçš„èƒŒæ™¯(å‰å¾€é©šå˜†è™Ÿ) âœ“</color>";
+            
         }
     }
 
