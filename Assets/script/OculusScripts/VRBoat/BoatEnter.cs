@@ -14,8 +14,8 @@ public class BoatEnter : MonoBehaviour
     Quaternion seatRotation; // rotation of player once in the car
     Vector3 seatPosition; //  position of player in the car
 
-    private bool playerIsInTheCube = false;
-
+    [SerializeField]private bool playerIsInTheCube = false;
+    [SerializeField] private BoatExit _boatExit;
     public InputActionProperty B_Button;
 
 
@@ -26,11 +26,12 @@ public class BoatEnter : MonoBehaviour
         seatRotation = boatDestination.transform.rotation;
         seatPosition = boatDestination.transform.position;
 
-        if((playerIsInTheCube == true && B_Button.action.WasPerformedThisFrame()) || Input.GetKey(KeyCode.G))
+        if((playerIsInTheCube == true && B_Button.action.WasPressedThisFrame()) || Input.GetKey(KeyCode.G))
         {
            
             playerController.transform.position = seatPosition; //  set position of player
             playerController.transform.rotation = seatRotation; //  set rotation of the player 
+            
 
             playerController.GetComponent<CharacterController>().enabled = false; //  disable character contoller
             playerController.GetComponent<LocomotionSystem>().enabled = false; //  disable LocomotionSystem
@@ -43,15 +44,17 @@ public class BoatEnter : MonoBehaviour
             playerController.transform.parent = boat.transform; //set player contoller parent from XRrig to the vehicle
 
             boat.GetComponentInChildren<BoatExit>().intheCar = true; // set bool on CarExit script to true
+            _boatExit.enabled = true; //±Ò¥ÎboatExit¸}¥»
             boat.GetComponent<VRBoatController>().CanControll = true; // set bool let player allow to controll boat
 
             gameObject.SetActive(false); //  disable the enter cube            
+            
         }
     }
 
     private void OnTriggerEnter(Collider other)
     {
-        if (other.tag == "Player")
+        if (other.CompareTag("Player"))
         {
             playerIsInTheCube = true;
 
@@ -60,7 +63,7 @@ public class BoatEnter : MonoBehaviour
 
     private void OnTriggerExit(Collider other)
     {
-        if (other.tag == "Player")
+        if (other.CompareTag("Player"))
         {
             playerIsInTheCube = false;
 
