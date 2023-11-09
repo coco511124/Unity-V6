@@ -7,6 +7,7 @@ using UnityEngine.UI;
 
 public class Ch3_BoatCheck : MonoBehaviour
 {
+    public GameObject BoatWaterFloat;
     public GameObject player;
     public Canvas endPanel;
     public VRBoatController ControllBool;
@@ -36,7 +37,7 @@ public class Ch3_BoatCheck : MonoBehaviour
     private void OnTriggerEnter(Collider other)
     {
         
-        if (other.tag == "Player")
+        if (other.CompareTag("Player"))
         {
             if(stopCollider == false)
             {
@@ -67,14 +68,18 @@ public class Ch3_BoatCheck : MonoBehaviour
     {
         if (stopCollider)
         {
-            if (currentime < timemax)
+            if (currentime < timemax) //當前秒數不到2秒時，就繼續讀秒
             {
                 currentime += Time.deltaTime;
             }
-            else
+            else //秒數2秒後，就讓玩家離開方向舵、打開單元總結畫面、把stopCollider布林值射為False
             {
                 PlayerExit.BackPosition();
                 //endCanvasManager.ReadFile();
+                if(BoatWaterFloat.GetComponent<WaterFloat>() == true)
+                {
+                    BoatWaterFloat.GetComponent<WaterFloat>().enabled = false;
+                }
                 showCanvas();
                 stopCollider = false;
             }

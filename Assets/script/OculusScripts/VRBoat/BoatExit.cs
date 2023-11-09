@@ -32,7 +32,7 @@ public class BoatExit : MonoBehaviour
     // Update is called once per frame
     void Update()
     {
-        if(intheCar == true && B_Button.action.WasPerformedThisFrame())
+        if(intheCar == true && B_Button.action.WasPressedThisFrame())
         {
             BackPosition();
         }
