@@ -51710,12 +51710,20 @@ PrefabInstance:
       value: 
       objectReference: {fileID: 2100000, guid: e2e31db779df1204bb546726ddae517f, type: 2}
     - target: {fileID: 4835949990771901207, guid: 000f0b031c5a5cf4d8c94c697c9b60bd, type: 3}
+      propertyPath: m_UseDynamicAttach
+      value: 1
+      objectReference: {fileID: 0}
+    - target: {fileID: 4835949990771901207, guid: 000f0b031c5a5cf4d8c94c697c9b60bd, type: 3}
       propertyPath: m_InteractionManager
       value: 
       objectReference: {fileID: 8453822172605002800}
     - target: {fileID: 4835949990771901207, guid: 000f0b031c5a5cf4d8c94c697c9b60bd, type: 3}
       propertyPath: m_SelectExited.m_PersistentCalls.m_Calls.Array.size
-      value: 2
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 4835949990771901207, guid: 000f0b031c5a5cf4d8c94c697c9b60bd, type: 3}
+      propertyPath: m_SelectEntered.m_PersistentCalls.m_Calls.Array.size
+      value: 0
       objectReference: {fileID: 0}
     - target: {fileID: 4835949990771901207, guid: 000f0b031c5a5cf4d8c94c697c9b60bd, type: 3}
       propertyPath: m_SelectExited.m_PersistentCalls.m_Calls.Array.data[0].m_Mode
@@ -51732,7 +51740,7 @@ PrefabInstance:
     - target: {fileID: 4835949990771901207, guid: 000f0b031c5a5cf4d8c94c697c9b60bd, type: 3}
       propertyPath: m_SelectExited.m_PersistentCalls.m_Calls.Array.data[0].m_Target
       value: 
-      objectReference: {fileID: 121729502}
+      objectReference: {fileID: 8453822172156957519}
     - target: {fileID: 4835949990771901207, guid: 000f0b031c5a5cf4d8c94c697c9b60bd, type: 3}
       propertyPath: m_SelectExited.m_PersistentCalls.m_Calls.Array.data[1].m_Target
       value: 
@@ -51747,7 +51755,7 @@ PrefabInstance:
       objectReference: {fileID: 0}
     - target: {fileID: 4835949990771901207, guid: 000f0b031c5a5cf4d8c94c697c9b60bd, type: 3}
       propertyPath: m_SelectExited.m_PersistentCalls.m_Calls.Array.data[0].m_MethodName
-      value: closeCanvas
+      value: PaperSelect
       objectReference: {fileID: 0}
     - target: {fileID: 4835949990771901207, guid: 000f0b031c5a5cf4d8c94c697c9b60bd, type: 3}
       propertyPath: m_SelectExited.m_PersistentCalls.m_Calls.Array.data[1].m_MethodName
@@ -51759,7 +51767,7 @@ PrefabInstance:
       objectReference: {fileID: 0}
     - target: {fileID: 4835949990771901207, guid: 000f0b031c5a5cf4d8c94c697c9b60bd, type: 3}
       propertyPath: m_SelectExited.m_PersistentCalls.m_Calls.Array.data[0].m_TargetAssemblyTypeName
-      value: HuaiPaperCanvas, Assembly-CSharp
+      value: SaveSystem, Assembly-CSharp
       objectReference: {fileID: 0}
     - target: {fileID: 4835949990771901207, guid: 000f0b031c5a5cf4d8c94c697c9b60bd, type: 3}
       propertyPath: m_SelectExited.m_PersistentCalls.m_Calls.Array.data[1].m_TargetAssemblyTypeName
@@ -60341,6 +60349,7 @@ MonoBehaviour:
   type: 
   table: {fileID: 0}
   portal: {fileID: 0}
+  Mission4: {fileID: 0}
 --- !u!65 &2131880873
 BoxCollider:
   m_ObjectHideFlags: 0
