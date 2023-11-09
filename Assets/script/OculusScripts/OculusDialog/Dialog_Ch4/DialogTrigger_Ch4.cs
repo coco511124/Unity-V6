@@ -32,19 +32,23 @@ public class DialogTrigger_Ch4 : MonoBehaviour
 
     void OnTriggerEnter(Collider other)
     {
-        if (other.gameObject.CompareTag("Player"))
+        if(other.gameObject.name == "XR Origin")
         {
-            StartDialogue1();
-        }
-        else if(other.gameObject.CompareTag("pick"))
-        {
-            StartDialogue2();
-        }
-        else if (other.gameObject.CompareTag("hit")||other.gameObject.CompareTag("gotolin"))
-        {
-            StartDialogue2();
+            if (other.gameObject.CompareTag("Player"))
+            {
+                StartDialogue1();
+            }
+            else if (other.gameObject.CompareTag("pick"))
+            {
+                StartDialogue2();
+            }
+            else if (other.gameObject.CompareTag("hit") || other.gameObject.CompareTag("gotolin"))
+            {
+                StartDialogue2();
+            }
         }
         
+        Debug.Log(other.gameObject.tag);
     }
     private void OnTriggerExit(Collider other)
     {
