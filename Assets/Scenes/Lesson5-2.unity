@@ -41357,7 +41357,7 @@ MonoBehaviour:
     m_HorizontalOverflow: 1
     m_VerticalOverflow: 0
     m_LineSpacing: 1
-  m_Text: "4.\u627E\u5230\u90ED\u61F7\u4E00\u5C0D\u8A71\u7372\u5F97\u6587\u4EF6"
+  m_Text: "4.\u4E86\u89E3\u6D77\u795E\u5EDF\u7684\u6B77\u53F2(\u6536\u96C6\u6587\u4EF6)"
 --- !u!114 &7523062420549796980
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -41453,7 +41453,7 @@ MonoBehaviour:
     m_HorizontalOverflow: 1
     m_VerticalOverflow: 0
     m_LineSpacing: 1
-  m_Text: "3.\u627E\u5230\u8377\u862D\u4EBA\u4E26\u7E73\u4EA4\u7518\u8517"
+  m_Text: "3.\u8A8D\u8B58\u5927\u58EB\u6BBF\u88E1\u7684\u53E4\u7269(\u653E\u56DE\u89C0\u97F3\u795E\u50CF)"
 --- !u!114 &7523062421156474025
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -41676,7 +41676,7 @@ MonoBehaviour:
     m_HorizontalOverflow: 1
     m_VerticalOverflow: 0
     m_LineSpacing: 1
-  m_Text: "1.\u524D\u5F80\u9EC3\u8272\u9A5A\u5606\u865F"
+  m_Text: "<color=green>\u2713 1.\u8A8D\u8B58\u672C\u55AE\u5143\u8981\u5E6B\u4FEE\u5FA9\u5927\u58EB\u6BBF\u3001\u6D77\u795E\u5EDF(\u524D\u5F80\u7D05\u8272\u5708\u5708)</color>"
 --- !u!114 &7523062421723468552
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -42635,7 +42635,7 @@ MonoBehaviour:
     m_HorizontalOverflow: 1
     m_VerticalOverflow: 0
     m_LineSpacing: 1
-  m_Text: "2.\u5C0B\u627E\u7518\u8517"
+  m_Text: "<color=green>\u2713 2.\u4E86\u89E3\u5927\u58EB\u6BBF\u7684\u6B77\u53F2(\u6536\u96C6\u6587\u4EF6)</color>"
 --- !u!114 &7523062421945914545
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -42902,7 +42902,7 @@ MonoBehaviour:
     m_HorizontalOverflow: 1
     m_VerticalOverflow: 0
     m_LineSpacing: 1
-  m_Text: "5.\u5C0B\u627E\u8377\u862D\u4EBA\u7E73\u56DE\u7D19\u672C"
+  m_Text: "5.\u8A8D\u8B58\u6D77\u795E\u5EDF\u88E1\u7684\u53E4\u7269(\u653E\u56DE\u56DB\u6D77\u9F8D\u738B\u5716\u50CF\u548C\u724C\u574A)"
 --- !u!114 &7523062422059101130
 MonoBehaviour:
   m_ObjectHideFlags: 0

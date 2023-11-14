@@ -54,7 +54,7 @@ public class DialogTrigger_Ch4 : MonoBehaviour
     {
         //³]§PÂ_±ø¥ó
         //©I¥sNPC_animate
-        dialogueBox.SetActive(false);
+        //dialogueBox.SetActive(false);
         //ObjectTag.GetComponent<RandomPathTrolling>().SetWalkTrue();
         //ObjectTag.GetComponent<NPC_animate>().BackAnimate();
     }
