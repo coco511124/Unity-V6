@@ -10,7 +10,7 @@ public class DialogManager4 : MonoBehaviour
     public UnityEngine.UI.Text messageText;
     public RectTransform backgroundBox;
     public GameObject DB, XR, endPanel;
-    //public UnityEngine.UI.Text Mission1,Mission2, Mission3, Mission4, Mission5;未來再處理這邊
+    //public UnityEngine.UI.Text Mission1,Mission2, Mission3, Mission4, Mission5;
 
     public GameObject portal, toLinPortal;
 
