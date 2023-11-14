@@ -20,7 +20,7 @@ public class ChangeTextColor : MonoBehaviour
     public void changeColor()                                   //透過SugarTable的Enent通知quest2改變顏色
     {
         Text text = GetComponent<Text>();
-        text.text = "<color=green>2.了解荷蘭開墾台灣的規劃(尋找甘蔗) ✓</color>";
+        text.text = "<color=green>✓ 2.了解荷蘭開墾台灣的規劃(尋找甘蔗)</color>";
     }
     
 }

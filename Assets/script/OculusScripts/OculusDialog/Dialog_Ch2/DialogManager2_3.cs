@@ -67,7 +67,7 @@ public class DialogManager2_3 : MonoBehaviour
             CallObjectAnimatorOrCallMethodOrCheckTag.GetComponent<RandomPathTrolling>().SetWalkTrue(); //呼叫RandomPathTrolling腳本的方法，允許NPC移動
 
             DB.SetActive(false);
-            Mission3.text = "<color=green>3.認識各個材料的功用(找原住民對話收集材料) ✓</color>";
+            Mission3.text = "<color=green>✓ 3.認識各個材料的功用(找原住民對話收集材料)</color>";
 
 
             //porTal.SetActive(true);

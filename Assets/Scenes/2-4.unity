@@ -656,8 +656,7 @@ PrefabInstance:
       objectReference: {fileID: 0}
     - target: {fileID: 4369990017532670639, guid: 0aad1d0e0ae0375428c2e54837999c50, type: 3}
       propertyPath: m_Text
-      value: "<color=green>1.\u8A8D\u8B58\u5EFA\u9020\u666E\u7F85\u6C11\u906E\u57CE\u7684\u80CC\u666F(\u524D\u5F80\u9A5A\u5606\u865F)
-        \u2713</color>"
+      value: "<color=green>\u2713 1.\u8A8D\u8B58\u5EFA\u9020\u666E\u7F85\u6C11\u906E\u57CE\u7684\u80CC\u666F(\u524D\u5F80\u9A5A\u5606\u865F)</color>"
       objectReference: {fileID: 0}
     - target: {fileID: 4369990017564955758, guid: 0aad1d0e0ae0375428c2e54837999c50, type: 3}
       propertyPath: m_AnchorMax.y
@@ -725,8 +724,7 @@ PrefabInstance:
       objectReference: {fileID: 0}
     - target: {fileID: 4369990017847555352, guid: 0aad1d0e0ae0375428c2e54837999c50, type: 3}
       propertyPath: m_Text
-      value: "<color=green>2.\u4E86\u89E3\u8377\u862D\u8CFC\u8CB7\u539F\u4F4F\u6C11\u571F\u5730\u7684\u4F4D\u7F6E(\u627E\u85CD\u8272\u539F\u4F4F\u6C11\u5C0D\u8A71)
-        \u2713</color>"
+      value: "<color=green>\u2713 2.\u4E86\u89E3\u8377\u862D\u8CFC\u8CB7\u539F\u4F4F\u6C11\u571F\u5730\u7684\u4F4D\u7F6E(\u627E\u85CD\u8272\u539F\u4F4F\u6C11\u5C0D\u8A71)</color>"
       objectReference: {fileID: 0}
     - target: {fileID: 4369990017861508148, guid: 0aad1d0e0ae0375428c2e54837999c50, type: 3}
       propertyPath: m_LineLength
@@ -734,8 +732,7 @@ PrefabInstance:
       objectReference: {fileID: 0}
     - target: {fileID: 4369990018068663552, guid: 0aad1d0e0ae0375428c2e54837999c50, type: 3}
       propertyPath: m_Text
-      value: "<color=green>3.\u8A8D\u8B58\u5404\u500B\u6750\u6599\u7684\u529F\u7528(\u627E\u539F\u4F4F\u6C11\u5C0D\u8A71\u6536\u96C6\u6750\u6599)
-        \u2713</color>"
+      value: "<color=green>\u2713 3.\u8A8D\u8B58\u5404\u500B\u6750\u6599\u7684\u529F\u7528(\u627E\u539F\u4F4F\u6C11\u5C0D\u8A71\u6536\u96C6\u6750\u6599)</color>"
       objectReference: {fileID: 0}
     - target: {fileID: 4369990018125710427, guid: 0aad1d0e0ae0375428c2e54837999c50, type: 3}
       propertyPath: m_AnchorMax.y
@@ -887,8 +884,7 @@ PrefabInstance:
       objectReference: {fileID: 0}
     - target: {fileID: 4369990019244713435, guid: 0aad1d0e0ae0375428c2e54837999c50, type: 3}
       propertyPath: m_Text
-      value: "<color=green>4.\u4E86\u89E3\u54EA\u4E9B\u7D44\u5408\u6750\u6599\u53EF\u4EE5\u5408\u6210(\u5C07\u6750\u6599\u5408\u6210)
-        \u2713</color>"
+      value: "<color=green>\u2713 4.\u4E86\u89E3\u54EA\u4E9B\u7D44\u5408\u6750\u6599\u53EF\u4EE5\u5408\u6210(\u5C07\u6750\u6599\u5408\u6210)</color>"
       objectReference: {fileID: 0}
     - target: {fileID: 4369990019283190152, guid: 0aad1d0e0ae0375428c2e54837999c50, type: 3}
       propertyPath: m_AnchorMax.y
@@ -6963,7 +6959,7 @@ PrefabInstance:
       objectReference: {fileID: 0}
     - target: {fileID: 8561962399335364913, guid: 4044ab012cbca7d44a1393a09b5086ce, type: 3}
       propertyPath: m_AnchoredPosition.x
-      value: -0.002859568
+      value: -0.0035967145
       objectReference: {fileID: 0}
     - target: {fileID: 8561962399335364913, guid: 4044ab012cbca7d44a1393a09b5086ce, type: 3}
       propertyPath: m_AnchoredPosition.y

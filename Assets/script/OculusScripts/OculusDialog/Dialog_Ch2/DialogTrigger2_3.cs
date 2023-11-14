@@ -30,7 +30,7 @@ public class DialogTrigger2_3 : MonoBehaviour
     {
         //³]§PÂ_±ø¥ó
         //©I¥sNPC_animate
-        dialog.SetActive(false);
+        //dialog.SetActive(false);
         ObjectTag.GetComponent<RandomPathTrolling>().SetWalkTrue();
         ObjectTag.GetComponent<NPC_animate>().BackAnimate();
     }

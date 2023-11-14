@@ -80,7 +80,7 @@ public class CraftingSystem : MonoBehaviour
             {
                 Destroy(consumeItemGameObject);
             }
-            Mission4.text = "<color=green>4.了解哪些組合材料可以合成(將材料合成) ✓</color>";
+            Mission4.text = "<color=green>✓ 4.了解哪些組合材料可以合成(將材料合成)</color>";
             table.GetComponent<SaveSystemCh2>().type = "合成成功";
             table.GetComponent<SaveSystemCh2>().Save();
             if (index == 1)

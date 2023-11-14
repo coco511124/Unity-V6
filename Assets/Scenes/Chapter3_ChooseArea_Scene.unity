@@ -82656,7 +82656,7 @@ MonoBehaviour:
   m_margin: {x: 0, y: 0, z: 0, w: 0}
   m_isUsingLegacyAnimationComponent: 0
   m_isVolumetricText: 0
-  m_hasFontAssetChanged: 1
+  m_hasFontAssetChanged: 0
   m_baseMaterial: {fileID: 0}
   m_maskOffset: {x: 0, y: 0, z: 0, w: 0}
 --- !u!222 &1966364566
@@ -92281,7 +92281,7 @@ PrefabInstance:
       objectReference: {fileID: 0}
     - target: {fileID: 3752206843768846417, guid: 04d3b91eea2566144aa8397c4e287e25, type: 3}
       propertyPath: m_Text
-      value: "3.\u8A8D\u8B58\u9032\u653B\u6C34\u9053\u548C\u57CE\u5821\u7684\u56F0\u96E3\u5EA6\u5DEE\u7570(\u5C0B\u627E\u4F55\u658C)"
+      value: "3.\u8A8D\u8B58\u9032\u653B\u6C34\u9053\u548C\u57CE\u5821\u7684\u56F0\u96E3\u5EA6\u5DEE\u7570(\u5C0B\u627E\u6C34\u624B)"
       objectReference: {fileID: 0}
     - target: {fileID: 3752206844141418444, guid: 04d3b91eea2566144aa8397c4e287e25, type: 3}
       propertyPath: m_InteractionManager
@@ -92293,7 +92293,7 @@ PrefabInstance:
       objectReference: {fileID: 0}
     - target: {fileID: 3752206844384427824, guid: 04d3b91eea2566144aa8397c4e287e25, type: 3}
       propertyPath: m_Text
-      value: "5.\u6E96\u5099\u51FA\u822A\u958B\u8239\u81F3\u53F0\u5357(\u627E\u4F55\u658C\u51FA\u822A)\r"
+      value: "5.\u6E96\u5099\u51FA\u822A\u958B\u8239\u81F3\u53F0\u5357(\u627E\u6C34\u624B\u51FA\u822A)\r"
       objectReference: {fileID: 0}
     - target: {fileID: 3752206844489334857, guid: 04d3b91eea2566144aa8397c4e287e25, type: 3}
       propertyPath: m_Text

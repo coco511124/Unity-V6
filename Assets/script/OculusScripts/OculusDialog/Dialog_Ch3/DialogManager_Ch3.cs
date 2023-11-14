@@ -69,14 +69,14 @@ public class DialogManager_Ch3 : MonoBehaviour
             {
                 DB.SetActive(false);
                 //spawnBool = true;
-                Mission1.text = "<color=green>1.前往驚嘆號 ✓</color>";
+                Mission1.text = "<color=green>✓ 1.前往驚嘆號</color>";
                 //Mission1.color = Color.green;
             }
             else if (PL.tag == "Player" && CallObjectAnimatorOrCallMethodOrCheckTag.tag == "zenhe")
             {      
                 DB.SetActive(false);
                 PL.tag = "PlayerWithZen";
-                Mission2.text = "<color=green>2.尋找鄭成功 ✓</color>";
+                Mission2.text = "<color=green>✓ 2.尋找鄭成功</color>";
                 
             }
             else if (PL.tag == "PlayerWithZen" && CallObjectAnimatorOrCallMethodOrCheckTag.tag == "shougun")
@@ -84,7 +84,7 @@ public class DialogManager_Ch3 : MonoBehaviour
                 //碰到的人如果是何斌的話，對話窗關閉+改變玩家的Tag+更新任務清單
                 DB.SetActive(false);
                 PL.tag = "PlayerWithShou";
-                Mission3.text = "<color=green>3.尋找何斌 ✓</color>";
+                Mission3.text = "<color=green>✓ 3.尋找水手</color>";
                 //CallObjectAnimatorOrCallMethodOrCheckTag.GetComponent<HuaiGivePaper>().SetPaperActive();
             }
             else if (PL.tag == "PlayerWithShou" && CallObjectAnimatorOrCallMethodOrCheckTag.tag == "zenhe")
@@ -92,14 +92,14 @@ public class DialogManager_Ch3 : MonoBehaviour
                 //碰到的人如果是荷蘭人B的話，對話窗關閉+更新任務清單+隔兩秒顯示出單元總結畫面
                 DB.SetActive(false);
                 PL.tag = "PlayerWithZenTwice";
-                Mission4.text = "<color=green>4.和鄭成功回報 ✓</color>";
+                Mission4.text = "<color=green>✓ 4.和鄭成功回報</color>";
                 //EndCanvasManager.EndCanvas();
             }
             else if (PL.tag == "PlayerWithZenTwice" && CallObjectAnimatorOrCallMethodOrCheckTag.tag == "shougun")
             {
                 //碰到的人如果是荷蘭人B的話，對話窗關閉+更新任務清單+隔兩秒顯示出單元總結畫面
                 DB.SetActive(false);                
-                Mission5.text = "<color=green>5.找何斌出航 ✓</color>";
+                Mission5.text = "<color=green>✓ 5.找水手出航</color>";
                 openShipCanvas?.Invoke();
                 //換場景到開船場景()
                 //EndCanvasManager.EndCanvas();

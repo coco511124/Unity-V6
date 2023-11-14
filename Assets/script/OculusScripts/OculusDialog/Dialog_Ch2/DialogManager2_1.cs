@@ -70,7 +70,7 @@ public class DialogManager2_1 : MonoBehaviour
             DB.SetActive(false);
             porTal.SetActive(true);
             DB.SetActive(false);
-            Mission1.text = "<color=green>1.認識建造普羅民遮城的背景(前往驚嘆號) ✓</color>";
+            Mission1.text = "<color=green>✓ 1.認識建造普羅民遮城的背景(前往驚嘆號)</color>";
             
         }
     }

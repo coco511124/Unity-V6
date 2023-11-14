@@ -65,7 +65,7 @@ public class DialogManager : MonoBehaviour
             {
                 DB.SetActive(false);
                 //spawnBool = true;
-                Mission1.text = "<color=green>1.認識抗荷的背景(前往黃色驚嘆號) ✓</color>";
+                Mission1.text = "<color=green>✓ 1.認識抗荷的背景(前往黃色驚嘆號)</color>";
                 //Mission1.color = Color.green;
             }
             else if (PL.tag == "PlayerWithSugar")
@@ -78,7 +78,7 @@ public class DialogManager : MonoBehaviour
                 {
                     DB.SetActive(false);
                     PL.tag = "PlayerWithNerthland_A";
-                    Mission3.text = "<color=green>3.蔗糖是荷蘭人重要的經濟來源(找到荷蘭人並繳交甘蔗) ✓</color>";
+                    Mission3.text = "<color=green>✓ 3.蔗糖是荷蘭人重要的經濟來源(找到荷蘭人並繳交甘蔗)</color>";
                 }
             }
             else if (PL.tag == "PlayerWithNerthland_A")
@@ -94,7 +94,7 @@ public class DialogManager : MonoBehaviour
                     //碰到的人如果是郭懷一的話，對話窗關閉+改變玩家的Tag+更新任務清單+顯示出文件
                     DB.SetActive(false);
                     PL.tag = "PlayerWithGou";
-                    Mission4.text = "<color=green>4.認識郭懷一擔任使節的原由、郭懷一抗荷蘭的成因(獲得文件) ✓</color>";
+                    Mission4.text = "<color=green>✓ 4.認識郭懷一擔任使節的原由、郭懷一抗荷蘭的成因(獲得文件)</color>";
                     CallObjectAnimatorOrCallMethodOrCheckTag.GetComponent<HuaiGivePaper>().SetPaperActive();
                 }
             }
@@ -109,7 +109,7 @@ public class DialogManager : MonoBehaviour
                 {
                     //碰到的人如果是荷蘭人B的話，對話窗關閉+更新任務清單+隔兩秒顯示出單元總結畫面
                     DB.SetActive(false);
-                    Mission5.text = "<color=green>5.荷蘭如何治理與處置反抗民眾(找藍色衣服荷蘭人的對話)\r\n ✓</color>";
+                    Mission5.text = "<color=green>✓ 5.荷蘭如何治理與處置反抗民眾(找藍色衣服荷蘭人的對話)\r\n</color>";
                     EndCanvasManager.EndCanvas();
                 }
             }

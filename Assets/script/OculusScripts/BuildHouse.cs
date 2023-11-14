@@ -20,7 +20,7 @@ public class BuildHouse : MonoBehaviour
         {
             endCanvasManager.ShowEndCanvas();
             buildCanvas.SetActive(false);
-            Mission5.text = "<color=green>5.為荷蘭人造出普羅民遮城(建造普羅民遮城) ✓</color>";
+            Mission5.text = "<color=green>✓ 5.為荷蘭人造出普羅民遮城(建造普羅民遮城)</color>";
         }
     }
     private void Start()
