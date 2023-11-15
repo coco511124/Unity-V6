@@ -21,11 +21,12 @@ public class CraftingSystem_Ch6 : MonoBehaviour
     public GameObject table, portal;
     int index;
 
-    public UnityEngine.UI.Text Mission4;
+    public UnityEngine.UI.Text Mission;
     [SerializeField] private string MissionContent;
     private int CraftCount;
     private bool First_close;
     private bool Second_close;
+    [SerializeField] private bool IsIn6_3;
 
     private void Awake()
     {
@@ -86,26 +87,35 @@ public class CraftingSystem_Ch6 : MonoBehaviour
             {
                 Destroy(consumeItemGameObject);
             }
-            Mission4.text = MissionContent;
+            
             //為了避免單元5、6，LOG到第2單元，XROrigin也需要把SaveSystemCh2腳本換掉
             //table.GetComponent<SaveSystemCh2>().type = "合成成功";
             //table.GetComponent<SaveSystemCh2>().Save();
 
+            if(IsIn6_3 == false)   //如果現在的場景不在6-3，就執行6-1的判斷
+            {
+                if (index == 0 && First_close == true)  //現在如果是合成魁星爺的話，就CraftCount++;
+                {
+                    CraftCount++;
+                    First_close = false;
+                }
+                if (index == 1 && Second_close == true) //現在如果是合成文昌閣門牌的話，就CraftCount++;
+                {
+                    CraftCount++;
+                    Second_close = false;
+                }
+                if (CraftCount == 2)  //當CraftCount是2的時候，就開啟傳送門和變換任務描述的顏色
+                {
+                    portal.SetActive(true);
+                    Mission.text = MissionContent;
+                }
+            }
+            else   //如果現在的場景是在6-3(在編輯器裡面勾起IsIn6_3這個布林值)，就直接執行6-3的程式碼，因為6-3目前只需要合成出1個物件，所以直接變換任務描述和顏色即可。
+            {
+                //portal.SetActive(true);
+                Mission.text = MissionContent;
+            }
             
-            if (index == 0 && First_close == true)
-            {
-                CraftCount ++;
-                First_close = false;
-            }
-            if(index == 1 && Second_close == true)
-            {
-                CraftCount++;
-                Second_close = false;
-            }
-            if(CraftCount == 2)
-            {
-                portal.SetActive(true);
-            }
         }
         else
         {

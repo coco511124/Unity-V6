@@ -15,12 +15,12 @@ GameObject:
   - component: {fileID: 3030194053697327258}
   - component: {fileID: 7844865305915513713}
   - component: {fileID: 5505120252048060709}
-  m_Layer: 7
+  m_Layer: 10
   m_Name: 6-3_ponhu_brand_output
   m_TagString: Untagged
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
-  m_StaticEditorFlags: 2147483647
+  m_StaticEditorFlags: 0
   m_IsActive: 1
 --- !u!4 &1419095538181860249
 Transform:
