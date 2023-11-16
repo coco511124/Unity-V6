@@ -33845,7 +33845,7 @@ GameObject:
   - component: {fileID: 7644204985602936298}
   - component: {fileID: 7644204985602936299}
   m_Layer: 5
-  m_Name: Button
+  m_Name: Craft_Button
   m_TagString: Untagged
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
@@ -33933,8 +33933,8 @@ MonoBehaviour:
   m_OnClick:
     m_PersistentCalls:
       m_Calls:
-      - m_Target: {fileID: 0}
-        m_TargetAssemblyTypeName: CraftingSystem, Assembly-CSharp
+      - m_Target: {fileID: 7644204987070158698}
+        m_TargetAssemblyTypeName: CraftingSystem_Ch6, Assembly-CSharp
         m_MethodName: Craft
         m_Mode: 1
         m_Arguments:
@@ -34558,8 +34558,8 @@ MonoBehaviour:
   m_OnClick:
     m_PersistentCalls:
       m_Calls:
-      - m_Target: {fileID: 0}
-        m_TargetAssemblyTypeName: CraftingSystem, Assembly-CSharp
+      - m_Target: {fileID: 7644204987070158698}
+        m_TargetAssemblyTypeName: CraftingSystem_Ch6, Assembly-CSharp
         m_MethodName: NextRecipe
         m_Mode: 1
         m_Arguments:
@@ -34604,7 +34604,7 @@ GameObject:
   - component: {fileID: 7644204985920653458}
   - component: {fileID: 7644204985920653459}
   m_Layer: 5
-  m_Name: Button
+  m_Name: NextRecipe_Button
   m_TagString: Untagged
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
