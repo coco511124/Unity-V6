@@ -9,12 +9,16 @@ public class ChangeScale : MonoBehaviour
 
     private bool allowToBack;
 
-    // Start is called before the first frame update
-    void Start()
+    void Awake()
     {
         Scale = NeedChangeObject.localScale;
         allowToBack = false;
     }
+    // Start is called before the first frame update
+    //void Awake()
+    //{
+       
+    //}
 
     public void ChangeObjectScale()
     {
