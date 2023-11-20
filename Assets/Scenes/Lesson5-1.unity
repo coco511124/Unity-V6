@@ -12166,6 +12166,14 @@ PrefabInstance:
       propertyPath: m_Text
       value: "5.\u8A8D\u8B58\u6D77\u795E\u5EDF\u88E1\u7684\u53E4\u7269(\u653E\u56DE\u56DB\u6D77\u9F8D\u738B\u5716\u50CF\u548C\u724C\u574A)"
       objectReference: {fileID: 0}
+    - target: {fileID: 7523062421047124872, guid: 59ed4477651f5714f9e0cdf41f5e7a71, type: 3}
+      propertyPath: m_UseForceGrab
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 7523062421047124872, guid: 59ed4477651f5714f9e0cdf41f5e7a71, type: 3}
+      propertyPath: m_AllowAnchorControl
+      value: 1
+      objectReference: {fileID: 0}
     - target: {fileID: 7523062421064344777, guid: 59ed4477651f5714f9e0cdf41f5e7a71, type: 3}
       propertyPath: m_AnchorMax.y
       value: 0
@@ -31684,7 +31692,7 @@ GameObject:
   - component: {fileID: 3173287436428984730}
   m_Layer: 10
   m_Name: PlaceArea
-  m_TagString: Untagged
+  m_TagString: Ground
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
