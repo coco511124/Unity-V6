@@ -1102,6 +1102,14 @@ PrefabInstance:
       propertyPath: m_Name
       value: PlayerWithInventoryMiniMap
       objectReference: {fileID: 0}
+    - target: {fileID: 6107474476086708533, guid: 59ed4477651f5714f9e0cdf41f5e7a71, type: 3}
+      propertyPath: FILENAME
+      value: playerdatach6.csv
+      objectReference: {fileID: 0}
+    - target: {fileID: 6107474476086708533, guid: 59ed4477651f5714f9e0cdf41f5e7a71, type: 3}
+      propertyPath: filename
+      value: playerdatach6.json
+      objectReference: {fileID: 0}
     - target: {fileID: 7286300961005433057, guid: 59ed4477651f5714f9e0cdf41f5e7a71, type: 3}
       propertyPath: m_AnchorMax.y
       value: 0
@@ -1537,6 +1545,17 @@ MonoBehaviour:
   m_Enabled: 1
   m_EditorHideFlags: 0
   m_Script: {fileID: 11500000, guid: 83e4e6cca11330d4088d729ab4fc9d9f, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+--- !u!114 &224386628 stripped
+MonoBehaviour:
+  m_CorrespondingSourceObject: {fileID: 6107474476086708533, guid: 59ed4477651f5714f9e0cdf41f5e7a71, type: 3}
+  m_PrefabInstance: {fileID: 224386624}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 123935377}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 59bb600de5f690d4a82200e1a1ed090e, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
 --- !u!1 &243989647
@@ -22980,6 +22999,34 @@ PrefabInstance:
       propertyPath: m_InteractionManager
       value: 
       objectReference: {fileID: 224386627}
+    - target: {fileID: 2041520929654607064, guid: a0237435615a2644bab370552932a1c0, type: 3}
+      propertyPath: m_SelectEntered.m_PersistentCalls.m_Calls.Array.size
+      value: 1
+      objectReference: {fileID: 0}
+    - target: {fileID: 2041520929654607064, guid: a0237435615a2644bab370552932a1c0, type: 3}
+      propertyPath: m_SelectEntered.m_PersistentCalls.m_Calls.Array.data[0].m_Mode
+      value: 1
+      objectReference: {fileID: 0}
+    - target: {fileID: 2041520929654607064, guid: a0237435615a2644bab370552932a1c0, type: 3}
+      propertyPath: m_SelectEntered.m_PersistentCalls.m_Calls.Array.data[0].m_Target
+      value: 
+      objectReference: {fileID: 224386628}
+    - target: {fileID: 2041520929654607064, guid: a0237435615a2644bab370552932a1c0, type: 3}
+      propertyPath: m_SelectEntered.m_PersistentCalls.m_Calls.Array.data[0].m_CallState
+      value: 2
+      objectReference: {fileID: 0}
+    - target: {fileID: 2041520929654607064, guid: a0237435615a2644bab370552932a1c0, type: 3}
+      propertyPath: m_SelectEntered.m_PersistentCalls.m_Calls.Array.data[0].m_MethodName
+      value: PickPaper
+      objectReference: {fileID: 0}
+    - target: {fileID: 2041520929654607064, guid: a0237435615a2644bab370552932a1c0, type: 3}
+      propertyPath: m_SelectEntered.m_PersistentCalls.m_Calls.Array.data[0].m_TargetAssemblyTypeName
+      value: SaveSystemCh2, Assembly-CSharp
+      objectReference: {fileID: 0}
+    - target: {fileID: 2041520929654607064, guid: a0237435615a2644bab370552932a1c0, type: 3}
+      propertyPath: m_SelectEntered.m_PersistentCalls.m_Calls.Array.data[0].m_Arguments.m_ObjectArgumentAssemblyTypeName
+      value: UnityEngine.Object, UnityEngine
+      objectReference: {fileID: 0}
     - target: {fileID: 2041520929654607065, guid: a0237435615a2644bab370552932a1c0, type: 3}
       propertyPath: m_CollisionDetection
       value: 1
@@ -25044,6 +25091,34 @@ PrefabInstance:
       propertyPath: m_InteractionManager
       value: 
       objectReference: {fileID: 224386627}
+    - target: {fileID: 3646451879437052410, guid: d7f940091ee3d00429bdb7f60bb3a75e, type: 3}
+      propertyPath: m_SelectEntered.m_PersistentCalls.m_Calls.Array.size
+      value: 1
+      objectReference: {fileID: 0}
+    - target: {fileID: 3646451879437052410, guid: d7f940091ee3d00429bdb7f60bb3a75e, type: 3}
+      propertyPath: m_SelectEntered.m_PersistentCalls.m_Calls.Array.data[0].m_Mode
+      value: 1
+      objectReference: {fileID: 0}
+    - target: {fileID: 3646451879437052410, guid: d7f940091ee3d00429bdb7f60bb3a75e, type: 3}
+      propertyPath: m_SelectEntered.m_PersistentCalls.m_Calls.Array.data[0].m_Target
+      value: 
+      objectReference: {fileID: 224386628}
+    - target: {fileID: 3646451879437052410, guid: d7f940091ee3d00429bdb7f60bb3a75e, type: 3}
+      propertyPath: m_SelectEntered.m_PersistentCalls.m_Calls.Array.data[0].m_CallState
+      value: 2
+      objectReference: {fileID: 0}
+    - target: {fileID: 3646451879437052410, guid: d7f940091ee3d00429bdb7f60bb3a75e, type: 3}
+      propertyPath: m_SelectEntered.m_PersistentCalls.m_Calls.Array.data[0].m_MethodName
+      value: PickPaper
+      objectReference: {fileID: 0}
+    - target: {fileID: 3646451879437052410, guid: d7f940091ee3d00429bdb7f60bb3a75e, type: 3}
+      propertyPath: m_SelectEntered.m_PersistentCalls.m_Calls.Array.data[0].m_TargetAssemblyTypeName
+      value: SaveSystemCh2, Assembly-CSharp
+      objectReference: {fileID: 0}
+    - target: {fileID: 3646451879437052410, guid: d7f940091ee3d00429bdb7f60bb3a75e, type: 3}
+      propertyPath: m_SelectEntered.m_PersistentCalls.m_Calls.Array.data[0].m_Arguments.m_ObjectArgumentAssemblyTypeName
+      value: UnityEngine.Object, UnityEngine
+      objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: d7f940091ee3d00429bdb7f60bb3a75e, type: 3}
 --- !u!1 &3673108493478142022
@@ -30137,6 +30212,34 @@ PrefabInstance:
       propertyPath: m_InteractionManager
       value: 
       objectReference: {fileID: 224386627}
+    - target: {fileID: 695050851383096148, guid: 33c79ecfdba740c42a6691f371df6563, type: 3}
+      propertyPath: m_SelectEntered.m_PersistentCalls.m_Calls.Array.size
+      value: 1
+      objectReference: {fileID: 0}
+    - target: {fileID: 695050851383096148, guid: 33c79ecfdba740c42a6691f371df6563, type: 3}
+      propertyPath: m_SelectEntered.m_PersistentCalls.m_Calls.Array.data[0].m_Mode
+      value: 1
+      objectReference: {fileID: 0}
+    - target: {fileID: 695050851383096148, guid: 33c79ecfdba740c42a6691f371df6563, type: 3}
+      propertyPath: m_SelectEntered.m_PersistentCalls.m_Calls.Array.data[0].m_Target
+      value: 
+      objectReference: {fileID: 224386628}
+    - target: {fileID: 695050851383096148, guid: 33c79ecfdba740c42a6691f371df6563, type: 3}
+      propertyPath: m_SelectEntered.m_PersistentCalls.m_Calls.Array.data[0].m_CallState
+      value: 2
+      objectReference: {fileID: 0}
+    - target: {fileID: 695050851383096148, guid: 33c79ecfdba740c42a6691f371df6563, type: 3}
+      propertyPath: m_SelectEntered.m_PersistentCalls.m_Calls.Array.data[0].m_MethodName
+      value: PickPaper
+      objectReference: {fileID: 0}
+    - target: {fileID: 695050851383096148, guid: 33c79ecfdba740c42a6691f371df6563, type: 3}
+      propertyPath: m_SelectEntered.m_PersistentCalls.m_Calls.Array.data[0].m_TargetAssemblyTypeName
+      value: SaveSystemCh2, Assembly-CSharp
+      objectReference: {fileID: 0}
+    - target: {fileID: 695050851383096148, guid: 33c79ecfdba740c42a6691f371df6563, type: 3}
+      propertyPath: m_SelectEntered.m_PersistentCalls.m_Calls.Array.data[0].m_Arguments.m_ObjectArgumentAssemblyTypeName
+      value: UnityEngine.Object, UnityEngine
+      objectReference: {fileID: 0}
     - target: {fileID: 695050851383096149, guid: 33c79ecfdba740c42a6691f371df6563, type: 3}
       propertyPath: m_CollisionDetection
       value: 1
@@ -33036,6 +33139,34 @@ PrefabInstance:
       propertyPath: m_InteractionManager
       value: 
       objectReference: {fileID: 224386627}
+    - target: {fileID: 8017631784162988577, guid: 5d4c8137a01bc8e4c9c2601d616dc8d3, type: 3}
+      propertyPath: m_SelectEntered.m_PersistentCalls.m_Calls.Array.size
+      value: 1
+      objectReference: {fileID: 0}
+    - target: {fileID: 8017631784162988577, guid: 5d4c8137a01bc8e4c9c2601d616dc8d3, type: 3}
+      propertyPath: m_SelectEntered.m_PersistentCalls.m_Calls.Array.data[0].m_Mode
+      value: 1
+      objectReference: {fileID: 0}
+    - target: {fileID: 8017631784162988577, guid: 5d4c8137a01bc8e4c9c2601d616dc8d3, type: 3}
+      propertyPath: m_SelectEntered.m_PersistentCalls.m_Calls.Array.data[0].m_Target
+      value: 
+      objectReference: {fileID: 224386628}
+    - target: {fileID: 8017631784162988577, guid: 5d4c8137a01bc8e4c9c2601d616dc8d3, type: 3}
+      propertyPath: m_SelectEntered.m_PersistentCalls.m_Calls.Array.data[0].m_CallState
+      value: 2
+      objectReference: {fileID: 0}
+    - target: {fileID: 8017631784162988577, guid: 5d4c8137a01bc8e4c9c2601d616dc8d3, type: 3}
+      propertyPath: m_SelectEntered.m_PersistentCalls.m_Calls.Array.data[0].m_MethodName
+      value: PickPaper
+      objectReference: {fileID: 0}
+    - target: {fileID: 8017631784162988577, guid: 5d4c8137a01bc8e4c9c2601d616dc8d3, type: 3}
+      propertyPath: m_SelectEntered.m_PersistentCalls.m_Calls.Array.data[0].m_TargetAssemblyTypeName
+      value: SaveSystemCh2, Assembly-CSharp
+      objectReference: {fileID: 0}
+    - target: {fileID: 8017631784162988577, guid: 5d4c8137a01bc8e4c9c2601d616dc8d3, type: 3}
+      propertyPath: m_SelectEntered.m_PersistentCalls.m_Calls.Array.data[0].m_Arguments.m_ObjectArgumentAssemblyTypeName
+      value: UnityEngine.Object, UnityEngine
+      objectReference: {fileID: 0}
     - target: {fileID: 8017631784162988581, guid: 5d4c8137a01bc8e4c9c2601d616dc8d3, type: 3}
       propertyPath: m_RootOrder
       value: 2
@@ -37475,6 +37606,34 @@ PrefabInstance:
       propertyPath: m_InteractionManager
       value: 
       objectReference: {fileID: 224386627}
+    - target: {fileID: 8643001367764560565, guid: 75223ed1529b2714a9150288480f724b, type: 3}
+      propertyPath: m_SelectEntered.m_PersistentCalls.m_Calls.Array.size
+      value: 1
+      objectReference: {fileID: 0}
+    - target: {fileID: 8643001367764560565, guid: 75223ed1529b2714a9150288480f724b, type: 3}
+      propertyPath: m_SelectEntered.m_PersistentCalls.m_Calls.Array.data[0].m_Mode
+      value: 1
+      objectReference: {fileID: 0}
+    - target: {fileID: 8643001367764560565, guid: 75223ed1529b2714a9150288480f724b, type: 3}
+      propertyPath: m_SelectEntered.m_PersistentCalls.m_Calls.Array.data[0].m_Target
+      value: 
+      objectReference: {fileID: 224386628}
+    - target: {fileID: 8643001367764560565, guid: 75223ed1529b2714a9150288480f724b, type: 3}
+      propertyPath: m_SelectEntered.m_PersistentCalls.m_Calls.Array.data[0].m_CallState
+      value: 2
+      objectReference: {fileID: 0}
+    - target: {fileID: 8643001367764560565, guid: 75223ed1529b2714a9150288480f724b, type: 3}
+      propertyPath: m_SelectEntered.m_PersistentCalls.m_Calls.Array.data[0].m_MethodName
+      value: PickPaper
+      objectReference: {fileID: 0}
+    - target: {fileID: 8643001367764560565, guid: 75223ed1529b2714a9150288480f724b, type: 3}
+      propertyPath: m_SelectEntered.m_PersistentCalls.m_Calls.Array.data[0].m_TargetAssemblyTypeName
+      value: SaveSystemCh2, Assembly-CSharp
+      objectReference: {fileID: 0}
+    - target: {fileID: 8643001367764560565, guid: 75223ed1529b2714a9150288480f724b, type: 3}
+      propertyPath: m_SelectEntered.m_PersistentCalls.m_Calls.Array.data[0].m_Arguments.m_ObjectArgumentAssemblyTypeName
+      value: UnityEngine.Object, UnityEngine
+      objectReference: {fileID: 0}
     - target: {fileID: 8643001367764560574, guid: 75223ed1529b2714a9150288480f724b, type: 3}
       propertyPath: m_Name
       value: paper4

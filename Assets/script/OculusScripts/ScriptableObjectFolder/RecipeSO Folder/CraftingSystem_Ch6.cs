@@ -89,8 +89,8 @@ public class CraftingSystem_Ch6 : MonoBehaviour
             }
             
             //為了避免單元5、6，LOG到第2單元，XROrigin也需要把SaveSystemCh2腳本換掉
-            //table.GetComponent<SaveSystemCh2>().type = "合成成功";
-            //table.GetComponent<SaveSystemCh2>().Save();
+            table.GetComponent<SaveSystemCh2>().type = "合成成功";
+            table.GetComponent<SaveSystemCh2>().Save();
 
             if(IsIn6_3 == false)   //如果現在的場景不在6-3，就執行6-1的判斷
             {
