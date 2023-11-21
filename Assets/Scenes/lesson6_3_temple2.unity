@@ -28084,6 +28084,14 @@ PrefabInstance:
       propertyPath: m_Name
       value: PlayerWithInventoryMiniMap
       objectReference: {fileID: 0}
+    - target: {fileID: 6107474476086708533, guid: 59ed4477651f5714f9e0cdf41f5e7a71, type: 3}
+      propertyPath: FILENAME
+      value: playerdatach6.csv
+      objectReference: {fileID: 0}
+    - target: {fileID: 6107474476086708533, guid: 59ed4477651f5714f9e0cdf41f5e7a71, type: 3}
+      propertyPath: filename
+      value: playerdatach6.json
+      objectReference: {fileID: 0}
     - target: {fileID: 7286300961005433057, guid: 59ed4477651f5714f9e0cdf41f5e7a71, type: 3}
       propertyPath: m_AnchorMax.y
       value: 0
@@ -28519,6 +28527,17 @@ MonoBehaviour:
   m_Enabled: 1
   m_EditorHideFlags: 0
   m_Script: {fileID: 11500000, guid: 83e4e6cca11330d4088d729ab4fc9d9f, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+--- !u!114 &1840513239 stripped
+MonoBehaviour:
+  m_CorrespondingSourceObject: {fileID: 6107474476086708533, guid: 59ed4477651f5714f9e0cdf41f5e7a71, type: 3}
+  m_PrefabInstance: {fileID: 1840513235}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 26600910}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 59bb600de5f690d4a82200e1a1ed090e, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
 --- !u!4 &1840513240 stripped
@@ -33500,9 +33519,37 @@ PrefabInstance:
       value: 
       objectReference: {fileID: 1840513238}
     - target: {fileID: 666864425315091363, guid: 4f9ff6ce99f07294896cfd62a36f1204, type: 3}
+      propertyPath: m_SelectEntered.m_PersistentCalls.m_Calls.Array.size
+      value: 1
+      objectReference: {fileID: 0}
+    - target: {fileID: 666864425315091363, guid: 4f9ff6ce99f07294896cfd62a36f1204, type: 3}
+      propertyPath: m_SelectEntered.m_PersistentCalls.m_Calls.Array.data[0].m_Mode
+      value: 1
+      objectReference: {fileID: 0}
+    - target: {fileID: 666864425315091363, guid: 4f9ff6ce99f07294896cfd62a36f1204, type: 3}
+      propertyPath: m_SelectEntered.m_PersistentCalls.m_Calls.Array.data[0].m_Target
+      value: 
+      objectReference: {fileID: 1840513239}
+    - target: {fileID: 666864425315091363, guid: 4f9ff6ce99f07294896cfd62a36f1204, type: 3}
+      propertyPath: m_SelectEntered.m_PersistentCalls.m_Calls.Array.data[0].m_CallState
+      value: 2
+      objectReference: {fileID: 0}
+    - target: {fileID: 666864425315091363, guid: 4f9ff6ce99f07294896cfd62a36f1204, type: 3}
+      propertyPath: m_SelectEntered.m_PersistentCalls.m_Calls.Array.data[0].m_MethodName
+      value: PickPaper
+      objectReference: {fileID: 0}
+    - target: {fileID: 666864425315091363, guid: 4f9ff6ce99f07294896cfd62a36f1204, type: 3}
       propertyPath: m_FirstSelectEntered.m_PersistentCalls.m_Calls.Array.data[0].m_Target
       value: 
       objectReference: {fileID: 1071265735}
+    - target: {fileID: 666864425315091363, guid: 4f9ff6ce99f07294896cfd62a36f1204, type: 3}
+      propertyPath: m_SelectEntered.m_PersistentCalls.m_Calls.Array.data[0].m_TargetAssemblyTypeName
+      value: SaveSystemCh2, Assembly-CSharp
+      objectReference: {fileID: 0}
+    - target: {fileID: 666864425315091363, guid: 4f9ff6ce99f07294896cfd62a36f1204, type: 3}
+      propertyPath: m_SelectEntered.m_PersistentCalls.m_Calls.Array.data[0].m_Arguments.m_ObjectArgumentAssemblyTypeName
+      value: UnityEngine.Object, UnityEngine
+      objectReference: {fileID: 0}
     - target: {fileID: 666864425315091365, guid: 4f9ff6ce99f07294896cfd62a36f1204, type: 3}
       propertyPath: m_RootOrder
       value: 2
@@ -33639,9 +33686,37 @@ PrefabInstance:
       value: 
       objectReference: {fileID: 1840513238}
     - target: {fileID: 2048306143015310007, guid: f98fcd98e7af7f4498c1891f5a2b6eae, type: 3}
+      propertyPath: m_SelectEntered.m_PersistentCalls.m_Calls.Array.size
+      value: 1
+      objectReference: {fileID: 0}
+    - target: {fileID: 2048306143015310007, guid: f98fcd98e7af7f4498c1891f5a2b6eae, type: 3}
+      propertyPath: m_SelectEntered.m_PersistentCalls.m_Calls.Array.data[0].m_Mode
+      value: 1
+      objectReference: {fileID: 0}
+    - target: {fileID: 2048306143015310007, guid: f98fcd98e7af7f4498c1891f5a2b6eae, type: 3}
+      propertyPath: m_SelectEntered.m_PersistentCalls.m_Calls.Array.data[0].m_Target
+      value: 
+      objectReference: {fileID: 1840513239}
+    - target: {fileID: 2048306143015310007, guid: f98fcd98e7af7f4498c1891f5a2b6eae, type: 3}
+      propertyPath: m_SelectEntered.m_PersistentCalls.m_Calls.Array.data[0].m_CallState
+      value: 2
+      objectReference: {fileID: 0}
+    - target: {fileID: 2048306143015310007, guid: f98fcd98e7af7f4498c1891f5a2b6eae, type: 3}
+      propertyPath: m_SelectEntered.m_PersistentCalls.m_Calls.Array.data[0].m_MethodName
+      value: PickPaper
+      objectReference: {fileID: 0}
+    - target: {fileID: 2048306143015310007, guid: f98fcd98e7af7f4498c1891f5a2b6eae, type: 3}
       propertyPath: m_FirstSelectEntered.m_PersistentCalls.m_Calls.Array.data[0].m_Target
       value: 
       objectReference: {fileID: 1071265735}
+    - target: {fileID: 2048306143015310007, guid: f98fcd98e7af7f4498c1891f5a2b6eae, type: 3}
+      propertyPath: m_SelectEntered.m_PersistentCalls.m_Calls.Array.data[0].m_TargetAssemblyTypeName
+      value: SaveSystemCh2, Assembly-CSharp
+      objectReference: {fileID: 0}
+    - target: {fileID: 2048306143015310007, guid: f98fcd98e7af7f4498c1891f5a2b6eae, type: 3}
+      propertyPath: m_SelectEntered.m_PersistentCalls.m_Calls.Array.data[0].m_Arguments.m_ObjectArgumentAssemblyTypeName
+      value: UnityEngine.Object, UnityEngine
+      objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: f98fcd98e7af7f4498c1891f5a2b6eae, type: 3}
 --- !u!4 &2244673577684251734
@@ -33829,9 +33904,37 @@ PrefabInstance:
       value: 
       objectReference: {fileID: 1840513238}
     - target: {fileID: 4920851932150198783, guid: 2e20e27408151254aa8d6936b2a5f725, type: 3}
+      propertyPath: m_SelectEntered.m_PersistentCalls.m_Calls.Array.size
+      value: 1
+      objectReference: {fileID: 0}
+    - target: {fileID: 4920851932150198783, guid: 2e20e27408151254aa8d6936b2a5f725, type: 3}
+      propertyPath: m_SelectEntered.m_PersistentCalls.m_Calls.Array.data[0].m_Mode
+      value: 1
+      objectReference: {fileID: 0}
+    - target: {fileID: 4920851932150198783, guid: 2e20e27408151254aa8d6936b2a5f725, type: 3}
+      propertyPath: m_SelectEntered.m_PersistentCalls.m_Calls.Array.data[0].m_Target
+      value: 
+      objectReference: {fileID: 1840513239}
+    - target: {fileID: 4920851932150198783, guid: 2e20e27408151254aa8d6936b2a5f725, type: 3}
+      propertyPath: m_SelectEntered.m_PersistentCalls.m_Calls.Array.data[0].m_CallState
+      value: 2
+      objectReference: {fileID: 0}
+    - target: {fileID: 4920851932150198783, guid: 2e20e27408151254aa8d6936b2a5f725, type: 3}
+      propertyPath: m_SelectEntered.m_PersistentCalls.m_Calls.Array.data[0].m_MethodName
+      value: PickPaper
+      objectReference: {fileID: 0}
+    - target: {fileID: 4920851932150198783, guid: 2e20e27408151254aa8d6936b2a5f725, type: 3}
       propertyPath: m_FirstSelectEntered.m_PersistentCalls.m_Calls.Array.data[0].m_Target
       value: 
       objectReference: {fileID: 1071265735}
+    - target: {fileID: 4920851932150198783, guid: 2e20e27408151254aa8d6936b2a5f725, type: 3}
+      propertyPath: m_SelectEntered.m_PersistentCalls.m_Calls.Array.data[0].m_TargetAssemblyTypeName
+      value: SaveSystemCh2, Assembly-CSharp
+      objectReference: {fileID: 0}
+    - target: {fileID: 4920851932150198783, guid: 2e20e27408151254aa8d6936b2a5f725, type: 3}
+      propertyPath: m_SelectEntered.m_PersistentCalls.m_Calls.Array.data[0].m_Arguments.m_ObjectArgumentAssemblyTypeName
+      value: UnityEngine.Object, UnityEngine
+      objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: 2e20e27408151254aa8d6936b2a5f725, type: 3}
 --- !u!1 &6701934119097355588
@@ -33878,9 +33981,37 @@ PrefabInstance:
       value: 
       objectReference: {fileID: 1840513238}
     - target: {fileID: 7064673872663706945, guid: ecd7538b9133e5641b49d0aafc7823f1, type: 3}
+      propertyPath: m_SelectEntered.m_PersistentCalls.m_Calls.Array.size
+      value: 1
+      objectReference: {fileID: 0}
+    - target: {fileID: 7064673872663706945, guid: ecd7538b9133e5641b49d0aafc7823f1, type: 3}
+      propertyPath: m_SelectEntered.m_PersistentCalls.m_Calls.Array.data[0].m_Mode
+      value: 1
+      objectReference: {fileID: 0}
+    - target: {fileID: 7064673872663706945, guid: ecd7538b9133e5641b49d0aafc7823f1, type: 3}
+      propertyPath: m_SelectEntered.m_PersistentCalls.m_Calls.Array.data[0].m_Target
+      value: 
+      objectReference: {fileID: 1840513239}
+    - target: {fileID: 7064673872663706945, guid: ecd7538b9133e5641b49d0aafc7823f1, type: 3}
+      propertyPath: m_SelectEntered.m_PersistentCalls.m_Calls.Array.data[0].m_CallState
+      value: 2
+      objectReference: {fileID: 0}
+    - target: {fileID: 7064673872663706945, guid: ecd7538b9133e5641b49d0aafc7823f1, type: 3}
+      propertyPath: m_SelectEntered.m_PersistentCalls.m_Calls.Array.data[0].m_MethodName
+      value: PickPaper
+      objectReference: {fileID: 0}
+    - target: {fileID: 7064673872663706945, guid: ecd7538b9133e5641b49d0aafc7823f1, type: 3}
       propertyPath: m_FirstSelectEntered.m_PersistentCalls.m_Calls.Array.data[0].m_Target
       value: 
       objectReference: {fileID: 1071265735}
+    - target: {fileID: 7064673872663706945, guid: ecd7538b9133e5641b49d0aafc7823f1, type: 3}
+      propertyPath: m_SelectEntered.m_PersistentCalls.m_Calls.Array.data[0].m_TargetAssemblyTypeName
+      value: SaveSystemCh2, Assembly-CSharp
+      objectReference: {fileID: 0}
+    - target: {fileID: 7064673872663706945, guid: ecd7538b9133e5641b49d0aafc7823f1, type: 3}
+      propertyPath: m_SelectEntered.m_PersistentCalls.m_Calls.Array.data[0].m_Arguments.m_ObjectArgumentAssemblyTypeName
+      value: UnityEngine.Object, UnityEngine
+      objectReference: {fileID: 0}
     - target: {fileID: 7064673872663706972, guid: ecd7538b9133e5641b49d0aafc7823f1, type: 3}
       propertyPath: m_Name
       value: 6-3_paper5
@@ -33987,9 +34118,37 @@ PrefabInstance:
       value: 
       objectReference: {fileID: 1840513238}
     - target: {fileID: 7240503779949330018, guid: 93f1340cf6225c74999328386e3f25f9, type: 3}
+      propertyPath: m_SelectEntered.m_PersistentCalls.m_Calls.Array.size
+      value: 1
+      objectReference: {fileID: 0}
+    - target: {fileID: 7240503779949330018, guid: 93f1340cf6225c74999328386e3f25f9, type: 3}
+      propertyPath: m_SelectEntered.m_PersistentCalls.m_Calls.Array.data[0].m_Mode
+      value: 1
+      objectReference: {fileID: 0}
+    - target: {fileID: 7240503779949330018, guid: 93f1340cf6225c74999328386e3f25f9, type: 3}
+      propertyPath: m_SelectEntered.m_PersistentCalls.m_Calls.Array.data[0].m_Target
+      value: 
+      objectReference: {fileID: 1840513239}
+    - target: {fileID: 7240503779949330018, guid: 93f1340cf6225c74999328386e3f25f9, type: 3}
+      propertyPath: m_SelectEntered.m_PersistentCalls.m_Calls.Array.data[0].m_CallState
+      value: 2
+      objectReference: {fileID: 0}
+    - target: {fileID: 7240503779949330018, guid: 93f1340cf6225c74999328386e3f25f9, type: 3}
+      propertyPath: m_SelectEntered.m_PersistentCalls.m_Calls.Array.data[0].m_MethodName
+      value: PickPaper
+      objectReference: {fileID: 0}
+    - target: {fileID: 7240503779949330018, guid: 93f1340cf6225c74999328386e3f25f9, type: 3}
       propertyPath: m_FirstSelectEntered.m_PersistentCalls.m_Calls.Array.data[0].m_Target
       value: 
       objectReference: {fileID: 1071265735}
+    - target: {fileID: 7240503779949330018, guid: 93f1340cf6225c74999328386e3f25f9, type: 3}
+      propertyPath: m_SelectEntered.m_PersistentCalls.m_Calls.Array.data[0].m_TargetAssemblyTypeName
+      value: SaveSystemCh2, Assembly-CSharp
+      objectReference: {fileID: 0}
+    - target: {fileID: 7240503779949330018, guid: 93f1340cf6225c74999328386e3f25f9, type: 3}
+      propertyPath: m_SelectEntered.m_PersistentCalls.m_Calls.Array.data[0].m_Arguments.m_ObjectArgumentAssemblyTypeName
+      value: UnityEngine.Object, UnityEngine
+      objectReference: {fileID: 0}
     - target: {fileID: 7240503779949330047, guid: 93f1340cf6225c74999328386e3f25f9, type: 3}
       propertyPath: m_Name
       value: 6-3_paper4

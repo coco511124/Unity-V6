@@ -15,62 +15,61 @@ public class SaveSystemCh2 : MonoBehaviour
     [SerializeField] public string type;
     [SerializeField] PlayerDataCh2 playerDataCh2;
 
-    string FILENAME;
+    string FILEPATH;
+    public string FILENAME;
 
     private void Start()
     {
         pldataCh2 = FileHandler.ReadFromJSON<PlayerDataCh2>(filename);
 
-        FILENAME = Application.persistentDataPath + "/playerdatach2.csv";
+        FILEPATH = Application.persistentDataPath + "/" + FILENAME;
     }
     public void Save()
     {
         pldataCh2.Add(new PlayerDataCh2(playerName, DateTime.Now.ToString(), type) { playerName = playerName, playerTime = DateTime.Now.ToString(), playerActionType = type });
         //pldataCh2.Add(new PlayerDataCh2(playerName, DateTime.Now.ToString(), type));
         FileHandler.SaveToJSON<PlayerDataCh2>(pldataCh2, filename);
-        WriteToCsv(FILENAME, pldataCh2);
+        WriteToCsv(FILEPATH, pldataCh2);
     }
     public void PickNorth()
     {
         type = "選擇北線尾";
-        Save();
-        
+        Save();        
     }
     public void PickYuan() 
     {
         type = "選擇大員";
-        Save();
-        
+        Save();        
     }
     public void PickRight()
     {
         type = "選擇正確答案";
-        Save();
-        
+        Save();        
     }
     public void PickRice()
     {
         type = "撿取糯米漿";
-        Save();
-        
+        Save();        
     }
     public void PickShell()
     {
         type = "撿取蚵殼灰";
-        Save();
-        
+        Save();        
     }
     public void PickBrick()
     {
         type = "撿取紅磚石";
-        Save();
-        
+        Save();        
     }
     public void PickSugar()
     {
         type = "撿取糖水";
+        Save();  
+    }
+    public void PickPaper()
+    {
+        type = "撿取文件";
         Save();
-        
     }
     public void WriteToCsv(string FILENAME, List<PlayerDataCh2> pldata2)
     {
@@ -93,8 +92,8 @@ public class SaveSystemCh2 : MonoBehaviour
     {
         if (Input.GetKeyDown(KeyCode.P))
         {
-            WriteToCsv(FILENAME, pldataCh2);
-            Debug.Log(FILENAME);
+            WriteToCsv(FILEPATH, pldataCh2);
+            Debug.Log(FILEPATH);
         }
     }
 
