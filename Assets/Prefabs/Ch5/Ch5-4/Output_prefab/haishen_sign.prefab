@@ -1,6 +1,6 @@
 %YAML 1.1
 %TAG !u! tag:unity3d.com,2011:
---- !u!1 &3850597716299470910
+--- !u!1 &531076203776417386
 GameObject:
   m_ObjectHideFlags: 0
   m_CorrespondingSourceObject: {fileID: 0}
@@ -8,51 +8,46 @@ GameObject:
   m_PrefabAsset: {fileID: 0}
   serializedVersion: 6
   m_Component:
-  - component: {fileID: 3850597716299470885}
-  - component: {fileID: 3850597716299470906}
-  - component: {fileID: 3850597716299470907}
-  - component: {fileID: 3850597716299470904}
-  - component: {fileID: 867233539633117636}
-  - component: {fileID: 2533604088942194201}
-  - component: {fileID: 8117834917951366096}
-  - component: {fileID: 585676030795376300}
-  m_Layer: 0
+  - component: {fileID: 2919596085468696915}
+  - component: {fileID: 4054351959931947020}
+  - component: {fileID: 7296198385997265204}
+  m_Layer: 6
   m_Name: haishen_sign
-  m_TagString: haishen_sign
+  m_TagString: Sugar
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
   m_IsActive: 1
---- !u!4 &3850597716299470885
+--- !u!4 &2919596085468696915
 Transform:
   m_ObjectHideFlags: 0
   m_CorrespondingSourceObject: {fileID: 0}
   m_PrefabInstance: {fileID: 0}
   m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 3850597716299470910}
-  m_LocalRotation: {x: -0, y: -0, z: -0, w: 1}
-  m_LocalPosition: {x: 3.69, y: 5.7, z: -0.09251232}
-  m_LocalScale: {x: 32.130142, y: 32.130142, z: 17.246496}
-  m_ConstrainProportionsScale: 0
+  m_GameObject: {fileID: 531076203776417386}
+  m_LocalRotation: {x: 0, y: -0.7071068, z: 0, w: 0.7071068}
+  m_LocalPosition: {x: 0, y: 0, z: 0}
+  m_LocalScale: {x: 6.426028, y: 6.42602, z: 3.449296}
+  m_ConstrainProportionsScale: 1
   m_Children: []
-  m_Father: {fileID: 0}
+  m_Father: {fileID: 3850597716299470885}
   m_RootOrder: 0
-  m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
---- !u!33 &3850597716299470906
+  m_LocalEulerAnglesHint: {x: 0, y: -90, z: 0}
+--- !u!33 &4054351959931947020
 MeshFilter:
   m_ObjectHideFlags: 0
   m_CorrespondingSourceObject: {fileID: 0}
   m_PrefabInstance: {fileID: 0}
   m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 3850597716299470910}
+  m_GameObject: {fileID: 531076203776417386}
   m_Mesh: {fileID: -485743578430441126, guid: 784ba5db675d0924eb785483982f314f, type: 3}
---- !u!23 &3850597716299470907
+--- !u!23 &7296198385997265204
 MeshRenderer:
   m_ObjectHideFlags: 0
   m_CorrespondingSourceObject: {fileID: 0}
   m_PrefabInstance: {fileID: 0}
   m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 3850597716299470910}
+  m_GameObject: {fileID: 531076203776417386}
   m_Enabled: 1
   m_CastShadows: 1
   m_ReceiveShadows: 1
@@ -88,6 +83,55 @@ MeshRenderer:
   m_SortingLayer: 0
   m_SortingOrder: 0
   m_AdditionalVertexStreams: {fileID: 0}
+--- !u!1 &3850597716299470910
+GameObject:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  serializedVersion: 6
+  m_Component:
+  - component: {fileID: 3850597716299470885}
+  - component: {fileID: 4294693810267870693}
+  - component: {fileID: 3850597716299470904}
+  - component: {fileID: 5054100582096893584}
+  - component: {fileID: 867233539633117636}
+  - component: {fileID: 2533604088942194201}
+  - component: {fileID: 8117834917951366096}
+  - component: {fileID: 585676030795376300}
+  - component: {fileID: 3369972399877906502}
+  - component: {fileID: 4885186617657678555}
+  m_Layer: 6
+  m_Name: haishen_sign
+  m_TagString: Sugar
+  m_Icon: {fileID: 0}
+  m_NavMeshLayer: 0
+  m_StaticEditorFlags: 0
+  m_IsActive: 1
+--- !u!4 &3850597716299470885
+Transform:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 3850597716299470910}
+  m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
+  m_LocalPosition: {x: 3.69, y: 5.7, z: -0.09251232}
+  m_LocalScale: {x: 1, y: 1, z: 1}
+  m_ConstrainProportionsScale: 0
+  m_Children:
+  - {fileID: 2919596085468696915}
+  m_Father: {fileID: 0}
+  m_RootOrder: 0
+  m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
+--- !u!33 &4294693810267870693
+MeshFilter:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 3850597716299470910}
+  m_Mesh: {fileID: -485743578430441126, guid: 784ba5db675d0924eb785483982f314f, type: 3}
 --- !u!65 &3850597716299470904
 BoxCollider:
   m_ObjectHideFlags: 0
@@ -99,8 +143,21 @@ BoxCollider:
   m_IsTrigger: 0
   m_Enabled: 1
   serializedVersion: 2
-  m_Size: {x: 0.029483473, y: 0.039772894, z: 0.26009774}
-  m_Center: {x: -0.009784533, y: 0.00009362321, z: 0.000000013824175}
+  m_Size: {x: 0.9114454, y: 0.28927898, z: 0.061511353}
+  m_Center: {x: -0.0051597357, y: 0.0026392937, z: 0.007637948}
+--- !u!135 &5054100582096893584
+SphereCollider:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 3850597716299470910}
+  m_Material: {fileID: 0}
+  m_IsTrigger: 1
+  m_Enabled: 1
+  serializedVersion: 2
+  m_Radius: 0.14342403
+  m_Center: {x: 0, y: -0.000066280365, z: 0}
 --- !u!54 &867233539633117636
 Rigidbody:
   m_ObjectHideFlags: 0
@@ -290,3 +347,29 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   SOinfo: {fileID: 11400000, guid: 9d849c6eaf4677541abb2f2157185d4b, type: 2}
+--- !u!114 &3369972399877906502
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 3850597716299470910}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 6d030102fcacb814887227defbe637ed, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  SOinfo: {fileID: 11400000, guid: c2c5eec9535efed40ae5ec36a025c603, type: 2}
+--- !u!114 &4885186617657678555
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 3850597716299470910}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: a34c651bb7249db40a6e7f08054113f0, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  inCollider: 0

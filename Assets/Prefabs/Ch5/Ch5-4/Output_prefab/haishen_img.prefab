@@ -12,12 +12,15 @@ GameObject:
   - component: {fileID: 280782270542501593}
   - component: {fileID: 280782270542501592}
   - component: {fileID: 280782270542501599}
+  - component: {fileID: 4918361610196214914}
   - component: {fileID: -5807302217662281359}
   - component: {fileID: 5656571782627027091}
   - component: {fileID: 4208173226243580411}
-  m_Layer: 0
+  - component: {fileID: -6261651501804697986}
+  - component: {fileID: -1983586000514829162}
+  m_Layer: 6
   m_Name: haishen_img
-  m_TagString: haishen_pic
+  m_TagString: Sugar
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
@@ -98,8 +101,21 @@ BoxCollider:
   m_IsTrigger: 0
   m_Enabled: 1
   serializedVersion: 2
-  m_Size: {x: 1, y: 5.972091, z: 0.8213315}
-  m_Center: {x: -0.000000001992757, y: 2.4860451, z: 0.08933473}
+  m_Size: {x: 0.9999999, y: 1.9883934, z: 1.0030937}
+  m_Center: {x: 7.753079e-11, y: 0.4941963, z: -0.0015454103}
+--- !u!135 &4918361610196214914
+SphereCollider:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 280782270542501598}
+  m_Material: {fileID: 0}
+  m_IsTrigger: 1
+  m_Enabled: 1
+  serializedVersion: 2
+  m_Radius: 0.21616495
+  m_Center: {x: -0.0019155107, y: -0.09959018, z: 0.0059773573}
 --- !u!54 &-5807302217662281359
 Rigidbody:
   m_ObjectHideFlags: 0
@@ -264,3 +280,29 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   SOinfo: {fileID: 11400000, guid: 8c1888f3b6f5b25448e0ab568f8a4148, type: 2}
+--- !u!114 &-6261651501804697986
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 280782270542501598}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 6d030102fcacb814887227defbe637ed, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  SOinfo: {fileID: 11400000, guid: febc26d08cdcf37428bf63910b10045d, type: 2}
+--- !u!114 &-1983586000514829162
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 280782270542501598}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: a34c651bb7249db40a6e7f08054113f0, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  inCollider: 0
