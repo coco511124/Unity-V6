@@ -71,6 +71,11 @@ public class SaveSystemCh2 : MonoBehaviour
         type = "撿取文件";
         Save();
     }
+    public void TalkToFuf()
+    {
+        type = "和福康安對話";
+        Save();
+    }
     public void WriteToCsv(string FILENAME, List<PlayerDataCh2> pldata2)
     {
         using (var dataFile = new StreamWriter(FILENAME, false, System.Text.Encoding.UTF8))

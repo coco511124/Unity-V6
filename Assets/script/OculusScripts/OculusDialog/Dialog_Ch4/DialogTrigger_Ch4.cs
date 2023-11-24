@@ -34,6 +34,7 @@ public class DialogTrigger_Ch4 : MonoBehaviour
     {
         if(other.gameObject.name == "XR Origin")
         {
+            other.GetComponent<SaveSystemCh2>().TalkToFuf();
             if (other.gameObject.CompareTag("Player"))
             {
                 StartDialogue1();
