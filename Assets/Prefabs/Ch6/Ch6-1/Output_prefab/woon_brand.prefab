@@ -16,8 +16,8 @@ GameObject:
   - component: {fileID: 905791170687795677}
   - component: {fileID: -4320289989678868413}
   - component: {fileID: 7816516296522433530}
-  - component: {fileID: 9185194903701095612}
   - component: {fileID: 7681494058418608935}
+  - component: {fileID: 3421573309966761362}
   m_Layer: 6
   m_Name: woon_brand
   m_TagString: Sugar
@@ -276,19 +276,6 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   NeedChangeObject: {fileID: 799596983000327728}
---- !u!114 &9185194903701095612
-MonoBehaviour:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 23482908400761994}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: a34c651bb7249db40a6e7f08054113f0, type: 3}
-  m_Name: 
-  m_EditorClassIdentifier: 
-  inCollider: 0
 --- !u!114 &7681494058418608935
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -302,6 +289,19 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   SOinfo: {fileID: 11400000, guid: 623e8fe8ec46f1543916f4fa124912e2, type: 2}
+--- !u!114 &3421573309966761362
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 23482908400761994}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: e9eb44b0acb383c46af5b47f5f7ae02e, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  inCollider: 0
 --- !u!1 &8806416606373020807
 GameObject:
   m_ObjectHideFlags: 0

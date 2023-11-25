@@ -4,6 +4,9 @@ using UnityEngine;
 
 public class PickObject : MonoBehaviour
 {
+    //¼o±ó¸}¥»
+
+
     public GameObject portal;
 
     public int times = 0;

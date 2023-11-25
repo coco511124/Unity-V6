@@ -100,7 +100,7 @@ GameObject:
   - component: {fileID: 8117834917951366096}
   - component: {fileID: 585676030795376300}
   - component: {fileID: 3369972399877906502}
-  - component: {fileID: 4885186617657678555}
+  - component: {fileID: -8503848579876033226}
   m_Layer: 6
   m_Name: haishen_sign
   m_TagString: Sugar
@@ -360,7 +360,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   SOinfo: {fileID: 11400000, guid: c2c5eec9535efed40ae5ec36a025c603, type: 2}
---- !u!114 &4885186617657678555
+--- !u!114 &-8503848579876033226
 MonoBehaviour:
   m_ObjectHideFlags: 0
   m_CorrespondingSourceObject: {fileID: 0}
@@ -369,7 +369,7 @@ MonoBehaviour:
   m_GameObject: {fileID: 3850597716299470910}
   m_Enabled: 1
   m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: a34c651bb7249db40a6e7f08054113f0, type: 3}
+  m_Script: {fileID: 11500000, guid: e9eb44b0acb383c46af5b47f5f7ae02e, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
   inCollider: 0

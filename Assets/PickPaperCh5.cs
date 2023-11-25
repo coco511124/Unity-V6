@@ -4,6 +4,8 @@ using UnityEngine;
 
 public class PickPaperCh5 : MonoBehaviour
 {
+    //¼o±ó¸}¥»
+
     public int times = 0;
     public GameObject endCanvas;
 

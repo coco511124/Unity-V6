@@ -86,9 +86,7 @@ public class CraftingSystem_Ch5 : MonoBehaviour
                 Destroy(consumeItemGameObject);
             }
 
-            //為了避免單元5、6，LOG到第2單元，XROrigin也需要把SaveSystemCh2腳本換掉
-            table.GetComponent<SaveSystemCh2>().type = "合成成功";
-            table.GetComponent<SaveSystemCh2>().Save();
+            
 
             if (IsIn5_1 == false)   //如果現在的場景不在5-1，就執行5-4的判斷
             {
@@ -113,6 +111,9 @@ public class CraftingSystem_Ch5 : MonoBehaviour
                 portal.SetActive(true);
                 Mission.text = MissionContent;
             }
+            //為了避免單元5、6，LOG到第2單元，XROrigin也需要把SaveSystemCh2腳本換掉
+            table.GetComponent<SaveSystemCh2>().type = "合成成功";
+            table.GetComponent<SaveSystemCh2>().Save();
 
         }
         else

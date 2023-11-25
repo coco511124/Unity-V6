@@ -14157,8 +14157,8 @@ GameObject:
   serializedVersion: 6
   m_Component:
   - component: {fileID: 1071265736}
-  - component: {fileID: 1071265735}
   - component: {fileID: 1071265737}
+  - component: {fileID: 1071265738}
   m_Layer: 0
   m_Name: SceneManager
   m_TagString: Untagged
@@ -14166,20 +14166,6 @@ GameObject:
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
   m_IsActive: 1
---- !u!114 &1071265735
-MonoBehaviour:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 1071265734}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: feb2f1f48f25dc34e8158cd160aebf9a, type: 3}
-  m_Name: 
-  m_EditorClassIdentifier: 
-  times: 0
-  endCanvas: {fileID: 1407927463}
 --- !u!4 &1071265736
 Transform:
   m_ObjectHideFlags: 0
@@ -14208,6 +14194,21 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   differentScene: lesson6_1
+--- !u!114 &1071265738
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1071265734}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: bd49b66e40bd00a46b06151326604f72, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  endCanvas: {fileID: 1407927463}
+  MissionContent: "<color=green>\u2713 5.\u8A8D\u8B58\u84EC\u58FA\u66F8\u9662\u88E1\u7684\u53E4\u7269(\u653E\u56DE\u84EC\u58FA\u66F8\u9662\u7684\u724C\u574A)</color>"
+  PlayerText: {fileID: 1253668249}
 --- !u!1 &1086581245
 GameObject:
   m_ObjectHideFlags: 0
@@ -17434,6 +17435,17 @@ BoxCollider:
   serializedVersion: 2
   m_Size: {x: 1.2, y: 1, z: 0.5}
   m_Center: {x: -0.5, y: 0, z: 0}
+--- !u!114 &1253668249 stripped
+MonoBehaviour:
+  m_CorrespondingSourceObject: {fileID: 7523062420889581019, guid: 59ed4477651f5714f9e0cdf41f5e7a71, type: 3}
+  m_PrefabInstance: {fileID: 1840513235}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 5f7201a12d95ffc409449d95f23cf332, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
 --- !u!1 &1256291520
 GameObject:
   m_ObjectHideFlags: 0
@@ -19305,7 +19317,7 @@ GameObject:
   - component: {fileID: 1372569438}
   - component: {fileID: 1372569439}
   m_Layer: 7
-  m_Name: god2
+  m_Name: god2_Socket
   m_TagString: Untagged
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
@@ -19407,10 +19419,58 @@ MonoBehaviour:
       m_Calls: []
   m_SelectEntered:
     m_PersistentCalls:
-      m_Calls: []
+      m_Calls:
+      - m_Target: {fileID: 1071265738}
+        m_TargetAssemblyTypeName: PositionCall_EndCanvas, Assembly-CSharp
+        m_MethodName: brand_True
+        m_Mode: 1
+        m_Arguments:
+          m_ObjectArgument: {fileID: 0}
+          m_ObjectArgumentAssemblyTypeName: UnityEngine.Object, UnityEngine
+          m_IntArgument: 0
+          m_FloatArgument: 0
+          m_StringArgument: 
+          m_BoolArgument: 0
+        m_CallState: 2
+      - m_Target: {fileID: 1071265738}
+        m_TargetAssemblyTypeName: PositionCall_EndCanvas, Assembly-CSharp
+        m_MethodName: Image_Statue_True
+        m_Mode: 1
+        m_Arguments:
+          m_ObjectArgument: {fileID: 0}
+          m_ObjectArgumentAssemblyTypeName: UnityEngine.Object, UnityEngine
+          m_IntArgument: 0
+          m_FloatArgument: 0
+          m_StringArgument: 
+          m_BoolArgument: 0
+        m_CallState: 2
   m_SelectExited:
     m_PersistentCalls:
-      m_Calls: []
+      m_Calls:
+      - m_Target: {fileID: 1071265738}
+        m_TargetAssemblyTypeName: PositionCall_EndCanvas, Assembly-CSharp
+        m_MethodName: brand_False
+        m_Mode: 1
+        m_Arguments:
+          m_ObjectArgument: {fileID: 0}
+          m_ObjectArgumentAssemblyTypeName: UnityEngine.Object, UnityEngine
+          m_IntArgument: 0
+          m_FloatArgument: 0
+          m_StringArgument: 
+          m_BoolArgument: 0
+        m_CallState: 2
+      - m_Target: {fileID: 1071265738}
+        m_TargetAssemblyTypeName: PositionCall_EndCanvas, Assembly-CSharp
+        m_MethodName: Image_Statue_False
+        m_Mode: 1
+        m_Arguments:
+          m_ObjectArgument: {fileID: 0}
+          m_ObjectArgumentAssemblyTypeName: UnityEngine.Object, UnityEngine
+          m_IntArgument: 0
+          m_FloatArgument: 0
+          m_StringArgument: 
+          m_BoolArgument: 0
+        m_CallState: 2
   m_StartingHoverFilters: []
   m_StartingSelectFilters: []
   m_OnHoverEntered:
@@ -25950,7 +26010,7 @@ GameObject:
   m_Component:
   - component: {fileID: 1703686239}
   m_Layer: 7
-  m_Name: ponhu
+  m_Name: ponhu_Position
   m_TagString: Untagged
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
@@ -33523,6 +33583,10 @@ PrefabInstance:
       value: 1
       objectReference: {fileID: 0}
     - target: {fileID: 666864425315091363, guid: 4f9ff6ce99f07294896cfd62a36f1204, type: 3}
+      propertyPath: m_FirstSelectEntered.m_PersistentCalls.m_Calls.Array.size
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 666864425315091363, guid: 4f9ff6ce99f07294896cfd62a36f1204, type: 3}
       propertyPath: m_SelectEntered.m_PersistentCalls.m_Calls.Array.data[0].m_Mode
       value: 1
       objectReference: {fileID: 0}
@@ -33541,7 +33605,7 @@ PrefabInstance:
     - target: {fileID: 666864425315091363, guid: 4f9ff6ce99f07294896cfd62a36f1204, type: 3}
       propertyPath: m_FirstSelectEntered.m_PersistentCalls.m_Calls.Array.data[0].m_Target
       value: 
-      objectReference: {fileID: 1071265735}
+      objectReference: {fileID: 0}
     - target: {fileID: 666864425315091363, guid: 4f9ff6ce99f07294896cfd62a36f1204, type: 3}
       propertyPath: m_SelectEntered.m_PersistentCalls.m_Calls.Array.data[0].m_TargetAssemblyTypeName
       value: SaveSystemCh2, Assembly-CSharp
@@ -33690,6 +33754,10 @@ PrefabInstance:
       value: 1
       objectReference: {fileID: 0}
     - target: {fileID: 2048306143015310007, guid: f98fcd98e7af7f4498c1891f5a2b6eae, type: 3}
+      propertyPath: m_FirstSelectEntered.m_PersistentCalls.m_Calls.Array.size
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 2048306143015310007, guid: f98fcd98e7af7f4498c1891f5a2b6eae, type: 3}
       propertyPath: m_SelectEntered.m_PersistentCalls.m_Calls.Array.data[0].m_Mode
       value: 1
       objectReference: {fileID: 0}
@@ -33708,7 +33776,7 @@ PrefabInstance:
     - target: {fileID: 2048306143015310007, guid: f98fcd98e7af7f4498c1891f5a2b6eae, type: 3}
       propertyPath: m_FirstSelectEntered.m_PersistentCalls.m_Calls.Array.data[0].m_Target
       value: 
-      objectReference: {fileID: 1071265735}
+      objectReference: {fileID: 0}
     - target: {fileID: 2048306143015310007, guid: f98fcd98e7af7f4498c1891f5a2b6eae, type: 3}
       propertyPath: m_SelectEntered.m_PersistentCalls.m_Calls.Array.data[0].m_TargetAssemblyTypeName
       value: SaveSystemCh2, Assembly-CSharp
@@ -33908,6 +33976,10 @@ PrefabInstance:
       value: 1
       objectReference: {fileID: 0}
     - target: {fileID: 4920851932150198783, guid: 2e20e27408151254aa8d6936b2a5f725, type: 3}
+      propertyPath: m_FirstSelectEntered.m_PersistentCalls.m_Calls.Array.size
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 4920851932150198783, guid: 2e20e27408151254aa8d6936b2a5f725, type: 3}
       propertyPath: m_SelectEntered.m_PersistentCalls.m_Calls.Array.data[0].m_Mode
       value: 1
       objectReference: {fileID: 0}
@@ -33926,7 +33998,7 @@ PrefabInstance:
     - target: {fileID: 4920851932150198783, guid: 2e20e27408151254aa8d6936b2a5f725, type: 3}
       propertyPath: m_FirstSelectEntered.m_PersistentCalls.m_Calls.Array.data[0].m_Target
       value: 
-      objectReference: {fileID: 1071265735}
+      objectReference: {fileID: 0}
     - target: {fileID: 4920851932150198783, guid: 2e20e27408151254aa8d6936b2a5f725, type: 3}
       propertyPath: m_SelectEntered.m_PersistentCalls.m_Calls.Array.data[0].m_TargetAssemblyTypeName
       value: SaveSystemCh2, Assembly-CSharp
@@ -33985,6 +34057,10 @@ PrefabInstance:
       value: 1
       objectReference: {fileID: 0}
     - target: {fileID: 7064673872663706945, guid: ecd7538b9133e5641b49d0aafc7823f1, type: 3}
+      propertyPath: m_FirstSelectEntered.m_PersistentCalls.m_Calls.Array.size
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 7064673872663706945, guid: ecd7538b9133e5641b49d0aafc7823f1, type: 3}
       propertyPath: m_SelectEntered.m_PersistentCalls.m_Calls.Array.data[0].m_Mode
       value: 1
       objectReference: {fileID: 0}
@@ -34003,7 +34079,7 @@ PrefabInstance:
     - target: {fileID: 7064673872663706945, guid: ecd7538b9133e5641b49d0aafc7823f1, type: 3}
       propertyPath: m_FirstSelectEntered.m_PersistentCalls.m_Calls.Array.data[0].m_Target
       value: 
-      objectReference: {fileID: 1071265735}
+      objectReference: {fileID: 0}
     - target: {fileID: 7064673872663706945, guid: ecd7538b9133e5641b49d0aafc7823f1, type: 3}
       propertyPath: m_SelectEntered.m_PersistentCalls.m_Calls.Array.data[0].m_TargetAssemblyTypeName
       value: SaveSystemCh2, Assembly-CSharp
@@ -34122,6 +34198,10 @@ PrefabInstance:
       value: 1
       objectReference: {fileID: 0}
     - target: {fileID: 7240503779949330018, guid: 93f1340cf6225c74999328386e3f25f9, type: 3}
+      propertyPath: m_FirstSelectEntered.m_PersistentCalls.m_Calls.Array.size
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 7240503779949330018, guid: 93f1340cf6225c74999328386e3f25f9, type: 3}
       propertyPath: m_SelectEntered.m_PersistentCalls.m_Calls.Array.data[0].m_Mode
       value: 1
       objectReference: {fileID: 0}
@@ -34140,7 +34220,7 @@ PrefabInstance:
     - target: {fileID: 7240503779949330018, guid: 93f1340cf6225c74999328386e3f25f9, type: 3}
       propertyPath: m_FirstSelectEntered.m_PersistentCalls.m_Calls.Array.data[0].m_Target
       value: 
-      objectReference: {fileID: 1071265735}
+      objectReference: {fileID: 0}
     - target: {fileID: 7240503779949330018, guid: 93f1340cf6225c74999328386e3f25f9, type: 3}
       propertyPath: m_SelectEntered.m_PersistentCalls.m_Calls.Array.data[0].m_TargetAssemblyTypeName
       value: SaveSystemCh2, Assembly-CSharp

@@ -346,9 +346,9 @@ GameObject:
   - component: {fileID: 5502407600750778402}
   - component: {fileID: 5314856067532695220}
   - component: {fileID: -2075502332183468373}
-  - component: {fileID: 3067670876233155269}
   - component: {fileID: 8368370679388493872}
   - component: {fileID: 7095899635677659390}
+  - component: {fileID: -13565584556860664}
   m_Layer: 6
   m_Name: kushin_peopkata_output
   m_TagString: Sugar
@@ -578,19 +578,6 @@ MonoBehaviour:
   m_StartingSingleGrabTransformers: []
   m_StartingMultipleGrabTransformers: []
   m_AddDefaultGrabTransformers: 1
---- !u!114 &3067670876233155269
-MonoBehaviour:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 7520302723792698513}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: a34c651bb7249db40a6e7f08054113f0, type: 3}
-  m_Name: 
-  m_EditorClassIdentifier: 
-  inCollider: 0
 --- !u!114 &8368370679388493872
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -617,6 +604,19 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   NeedChangeObject: {fileID: 6668416789352303387}
+--- !u!114 &-13565584556860664
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 7520302723792698513}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 921688cba493267468da449e7b66a81b, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  inCollider: 0
 --- !u!1 &9071175353437925810
 GameObject:
   m_ObjectHideFlags: 0

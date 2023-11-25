@@ -3,8 +3,9 @@ using System.Collections.Generic;
 using UnityEngine;
 using UnityEngine.XR.Interaction.Toolkit;
 
-public class DetectObject : MonoBehaviour
+public class DetectObject_ForBrand_Haishen_ : MonoBehaviour
 {
+    //此腳本給海神廟牌坊、文昌閣牌坊使用，不可給一般物件使用
     private XRGrabInteractable GameObject;
 
     string cache; //快取
@@ -29,10 +30,9 @@ public class DetectObject : MonoBehaviour
         //當物件離開地板
         if (other.gameObject.tag == "Ground")
         {
-            GameObject.interactionLayers = InteractionLayerMask.GetMask("Default", "Socket");//把GameObject的layer設為Default跟Socket
+            GameObject.interactionLayers = InteractionLayerMask.GetMask("Default", "Socket", "Brand");//把GameObject的layer設為Default跟Socket
             //this.tag = "Sugar";//如果離開terrain或建築物的底部就把自身的tag改成Sugar
             this.tag = cache;
         }
     }
-
 }
