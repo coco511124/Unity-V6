@@ -66840,6 +66840,10 @@ PrefabInstance:
       propertyPath: m_AnchoredPosition.y
       value: 0
       objectReference: {fileID: 0}
+    - target: {fileID: 4369990018570192135, guid: 0aad1d0e0ae0375428c2e54837999c50, type: 3}
+      propertyPath: m_InteractionLayers.m_Bits
+      value: 8
+      objectReference: {fileID: 0}
     - target: {fileID: 4369990018661261287, guid: 0aad1d0e0ae0375428c2e54837999c50, type: 3}
       propertyPath: m_AnchorMax.y
       value: 0
@@ -66911,6 +66915,10 @@ PrefabInstance:
     - target: {fileID: 4369990018865458138, guid: 0aad1d0e0ae0375428c2e54837999c50, type: 3}
       propertyPath: m_SizeDelta.y
       value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 4369990018921448123, guid: 0aad1d0e0ae0375428c2e54837999c50, type: 3}
+      propertyPath: m_InteractionLayers.m_Bits
+      value: 8
       objectReference: {fileID: 0}
     - target: {fileID: 4369990019030753622, guid: 0aad1d0e0ae0375428c2e54837999c50, type: 3}
       propertyPath: m_fontAsset
@@ -66948,6 +66956,10 @@ PrefabInstance:
       propertyPath: m_AnchoredPosition.y
       value: 0
       objectReference: {fileID: 0}
+    - target: {fileID: 4369990019232136255, guid: 0aad1d0e0ae0375428c2e54837999c50, type: 3}
+      propertyPath: m_InteractionLayers.m_Bits
+      value: 8
+      objectReference: {fileID: 0}
     - target: {fileID: 4369990019244713435, guid: 0aad1d0e0ae0375428c2e54837999c50, type: 3}
       propertyPath: m_Text
       value: "4.\u8A8D\u8B58\u90ED\u61F7\u4E00\u64D4\u4EFB\u4F7F\u7BC0\u7684\u539F\u7531\u3001\u90ED\u61F7\u4E00\u6297\u8377\u862D\u7684\u6210\u56E0(\u7372\u5F97\u6587\u4EF6)\r"
@@ -66975,6 +66987,10 @@ PrefabInstance:
     - target: {fileID: 4369990019283190152, guid: 0aad1d0e0ae0375428c2e54837999c50, type: 3}
       propertyPath: m_AnchoredPosition.y
       value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 4369990019379023806, guid: 0aad1d0e0ae0375428c2e54837999c50, type: 3}
+      propertyPath: m_InteractionLayers.m_Bits
+      value: 8
       objectReference: {fileID: 0}
     - target: {fileID: 5329817457986099352, guid: 0aad1d0e0ae0375428c2e54837999c50, type: 3}
       propertyPath: playerName
@@ -67107,6 +67123,10 @@ PrefabInstance:
     - target: {fileID: 6804677179604196595, guid: 0aad1d0e0ae0375428c2e54837999c50, type: 3}
       propertyPath: m_AnchoredPosition.y
       value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 6804677180079470869, guid: 0aad1d0e0ae0375428c2e54837999c50, type: 3}
+      propertyPath: m_InteractionLayers.m_Bits
+      value: 8
       objectReference: {fileID: 0}
     - target: {fileID: 6804677180189019897, guid: 0aad1d0e0ae0375428c2e54837999c50, type: 3}
       propertyPath: m_AnchorMax.y
