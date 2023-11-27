@@ -68,8 +68,8 @@ MonoBehaviour:
       m_Calls: []
   m_text: "\u55AE\u5143\u4EFB\u52D9\u8AAA\u660E\uFF1A\n\u73FE\u5728\u662F\u53F0\u70631640\u5E74\u4EE3\u7684\u8377\u6CBB\u6642\u671F\uFF0C\n\u8377\u862D\u4EBA\u7684\u9577\u5B98\u70BA\u4E86\u52D8\u67E5\u6F22\u4EBA\u7684\u60C5\u6CC1\n\uFF0C\u4EE5\u9632\u53DB\u4E82\uFF0C\u6240\u4EE5\u6D3E\u9063\u4F7F\u8005\u4E5F\u5C31\u662F\u73A9\u5BB6\u4F86\u52D8\u67E5\u60C5\u6CC1\u3002\u8ACB\u73A9\u5BB6\u5148\u5C0B\u627E\u9A5A\u5606\u865F\u4F86\u8A8D\u8B58\u7576\u524D\u6642\u7A7A\u80CC\u666F\u5427!\r\n"
   m_isRightToLeft: 0
-  m_fontAsset: {fileID: 11400000, guid: 9f921d5824f5668469df4d1085ac5b76, type: 2}
-  m_sharedMaterial: {fileID: -3079165446034315889, guid: 9f921d5824f5668469df4d1085ac5b76, type: 2}
+  m_fontAsset: {fileID: 11400000, guid: 2fdf8d25888f2784d8c09679afd1cdb8, type: 2}
+  m_sharedMaterial: {fileID: 2859168854016993692, guid: 2fdf8d25888f2784d8c09679afd1cdb8, type: 2}
   m_fontSharedMaterials: []
   m_fontMaterial: {fileID: 0}
   m_fontMaterials: []
@@ -93,7 +93,7 @@ MonoBehaviour:
   m_faceColor:
     serializedVersion: 2
     rgba: 4294967295
-  m_fontSize: 5.2
+  m_fontSize: 5.3
   m_fontSizeBase: 36
   m_fontWeight: 400
   m_enableAutoSizing: 1
