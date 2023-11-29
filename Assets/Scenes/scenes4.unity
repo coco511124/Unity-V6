@@ -20553,7 +20553,7 @@ MonoBehaviour:
   messageText: {fileID: 1823887303}
   backgroundBox: {fileID: 1823887302}
   DB: {fileID: 1823887305}
-  XrOrigin: {fileID: 935524865}
+  XrOrigin: {fileID: 1379666548}
   map: {fileID: 1379666548}
   CallObjectAnimatorOrCallMethodOrCheckTag: {fileID: 1465440069}
   typingSound: {fileID: 116045804}
@@ -24979,7 +24979,7 @@ MonoBehaviour:
   messageText: {fileID: 423032243116479734}
   backgroundBox: {fileID: 423032243116479733}
   DB: {fileID: 423032243116479736}
-  XrOrigin: {fileID: 935524865}
+  XrOrigin: {fileID: 1379666548}
   map: {fileID: 1379666548}
   CallObjectAnimatorOrCallMethodOrCheckTag: {fileID: 4631435369651910835}
   typingSound: {fileID: 116045804}
@@ -36285,7 +36285,7 @@ MonoBehaviour:
   messageText: {fileID: 7025380641680000386}
   backgroundBox: {fileID: 7025380641680000385}
   DB: {fileID: 7025380641680000388}
-  XrOrigin: {fileID: 935524865}
+  XrOrigin: {fileID: 1379666548}
   map: {fileID: 1379666548}
   CallObjectAnimatorOrCallMethodOrCheckTag: {fileID: 4848244195680696068}
   typingSound: {fileID: 116045804}
@@ -38592,7 +38592,7 @@ MonoBehaviour:
   messageText: {fileID: 8108163845129249891}
   backgroundBox: {fileID: 8108163845129249890}
   DB: {fileID: 8108163845129249893}
-  XrOrigin: {fileID: 935524865}
+  XrOrigin: {fileID: 1379666548}
   map: {fileID: 1379666548}
   CallObjectAnimatorOrCallMethodOrCheckTag: {fileID: 8891497334385075391}
   typingSound: {fileID: 116045804}
@@ -39811,7 +39811,7 @@ MonoBehaviour:
   messageText: {fileID: 8583376104567836187}
   backgroundBox: {fileID: 8583376104567836186}
   DB: {fileID: 8583376104567836189}
-  XrOrigin: {fileID: 935524865}
+  XrOrigin: {fileID: 1379666548}
   map: {fileID: 1379666548}
   CallObjectAnimatorOrCallMethodOrCheckTag: {fileID: 7214574074142286101}
   typingSound: {fileID: 116045804}
