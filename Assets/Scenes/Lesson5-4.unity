@@ -2701,7 +2701,11 @@ PrefabInstance:
     - target: {fileID: 4083341323080506461, guid: 4044ab012cbca7d44a1393a09b5086ce, type: 3}
       propertyPath: log
       value: 
-      objectReference: {fileID: 1648003269}
+      objectReference: {fileID: 2138348884}
+    - target: {fileID: 4083341323080506461, guid: 4044ab012cbca7d44a1393a09b5086ce, type: 3}
+      propertyPath: filename
+      value: playerdatach5.json
+      objectReference: {fileID: 0}
     - target: {fileID: 4083341323080506461, guid: 4044ab012cbca7d44a1393a09b5086ce, type: 3}
       propertyPath: endCanvas
       value: 
@@ -2997,17 +3001,6 @@ GameObject:
   m_CorrespondingSourceObject: {fileID: 8561962398541191712, guid: 4044ab012cbca7d44a1393a09b5086ce, type: 3}
   m_PrefabInstance: {fileID: 1648003267}
   m_PrefabAsset: {fileID: 0}
---- !u!114 &1648003269 stripped
-MonoBehaviour:
-  m_CorrespondingSourceObject: {fileID: 8561962398079390561, guid: 4044ab012cbca7d44a1393a09b5086ce, type: 3}
-  m_PrefabInstance: {fileID: 1648003267}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 0}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: 5f7201a12d95ffc409449d95f23cf332, type: 3}
-  m_Name: 
-  m_EditorClassIdentifier: 
 --- !u!224 &1648003270 stripped
 RectTransform:
   m_CorrespondingSourceObject: {fileID: 8561962398541191724, guid: 4044ab012cbca7d44a1393a09b5086ce, type: 3}
@@ -3489,6 +3482,17 @@ Light:
   m_UseViewFrustumForShadowCasterCull: 1
   m_ShadowRadius: 0
   m_ShadowAngle: 0
+--- !u!114 &2138348884 stripped
+MonoBehaviour:
+  m_CorrespondingSourceObject: {fileID: 8561962399335364927, guid: 4044ab012cbca7d44a1393a09b5086ce, type: 3}
+  m_PrefabInstance: {fileID: 1648003267}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 5f7201a12d95ffc409449d95f23cf332, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
 --- !u!23 &40420296486314895
 MeshRenderer:
   m_ObjectHideFlags: 0
@@ -20181,14 +20185,14 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   pldataCh2: []
-  filename: playerdatach5_4.json
+  filename: playerdatach5.json
   playerName: "\u5C0F\u6797"
   type: 
   playerDataCh2:
     playerName: 
     playerTime: 
     playerActionType: 
-  FILENAME: playerdatach5_4.csv
+  FILENAME: playerdatach5.csv
 --- !u!4 &6136337892000567623
 Transform:
   m_ObjectHideFlags: 0

@@ -20380,6 +20380,10 @@ PrefabInstance:
       value: 
       objectReference: {fileID: 1407927464}
     - target: {fileID: 4083341323080506461, guid: 4044ab012cbca7d44a1393a09b5086ce, type: 3}
+      propertyPath: filename
+      value: playerdatach6.json
+      objectReference: {fileID: 0}
+    - target: {fileID: 4083341323080506461, guid: 4044ab012cbca7d44a1393a09b5086ce, type: 3}
       propertyPath: endCanvas
       value: 
       objectReference: {fileID: 1407927463}

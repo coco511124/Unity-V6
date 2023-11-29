@@ -66993,6 +66993,10 @@ PrefabInstance:
       value: 8
       objectReference: {fileID: 0}
     - target: {fileID: 5329817457986099352, guid: 0aad1d0e0ae0375428c2e54837999c50, type: 3}
+      propertyPath: filename
+      value: playerdatach1.json
+      objectReference: {fileID: 0}
+    - target: {fileID: 5329817457986099352, guid: 0aad1d0e0ae0375428c2e54837999c50, type: 3}
       propertyPath: playerName
       value: "\u5C0F\u660E"
       objectReference: {fileID: 0}
