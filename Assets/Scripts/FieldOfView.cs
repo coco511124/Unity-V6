@@ -37,19 +37,23 @@ public class FieldOfView : MonoBehaviour
 
     private void FieldOfViewCheck()
     {
-        Collider[] rangeChecks = Physics.OverlapSphere(transform.position, radius, targetMask);
+        Collider[] rangeChecks = Physics.OverlapSphere(transform.position, radius, targetMask); //為林爽文設置一個OverlapSphere檢測是否有物件
+        //             OverlapSphere設置在林爽文的座標上、半徑可以在編輯器設定成50、OverlapSphere檢測目標的layer
 
-        if (rangeChecks.Length != 0)
+        if (rangeChecks.Length != 0)  //OverlapSphere裡面有東西的話
         {
-            Transform target = rangeChecks[0].transform;
-            Vector3 directionToTarget = (target.position - transform.position).normalized;
+            Transform target = rangeChecks[0].transform;  //就把那東西的transform賦予給target
+            Vector3 directionToTarget = (target.position - transform.position).normalized;  //將target的座標和林爽文的座標用normalized算出新的數值，賦予給directionToTarget
 
-            if (Vector3.Angle(transform.forward, directionToTarget) < angle / 2)
+            if (Vector3.Angle(transform.forward, directionToTarget) < angle / 2) //如果從林的面前座標到directionToTarget的座標，小於angle/2，也就是73度/2
             {
-                float distanceToTarget = Vector3.Distance(transform.position, target.position);
+                float distanceToTarget = Vector3.Distance(transform.position, target.position); //算出林爽文和玩家的距離，賦予給distanceToTarget
 
-                if (!Physics.Raycast(transform.position, directionToTarget, distanceToTarget, obstructionMask))
+                //射線起始位置設在林爽文座標、directionToTarget決定檢測方向、distanceToTarget決定檢測射線的最大距離、obstructionMask決定要忽略的layer物件
+                bool hit = Physics.Raycast(transform.position, directionToTarget, distanceToTarget, obstructionMask);
+                if (!hit) //當林爽文沒檢測到牆壁時hit = false，也就是檢測到玩家了。因此在if判斷式判斷如果!hit = !false = true的時候，就代表能執行下面的方法了。
                 {
+                    Debug.Log(hit);
                     canSeePlayer = true;
                     Debug.Log("偵測到了，任務失敗!!");
                     xrOrigin.transform.position = new Vector3((float)-108.8, 0, (float)18.8);
