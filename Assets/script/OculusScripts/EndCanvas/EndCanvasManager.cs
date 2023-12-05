@@ -11,7 +11,7 @@ public class EndCanvasManager : MonoBehaviour
     public Text logText;
     static bool checkOpen;
 
-    string filename = "playerdata.json";
+    string filename = "playerdatach1.json"; //12月5號修改，在playerdata後面多增加"ch1"，表示第一單元的資料
 
     private void Start()
     {

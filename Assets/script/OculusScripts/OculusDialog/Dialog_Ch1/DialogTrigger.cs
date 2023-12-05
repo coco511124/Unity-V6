@@ -21,12 +21,14 @@ public class DialogTrigger : MonoBehaviour
     }
 
     void StartDialogue1()
-    {   
+    {
+        dialogueBox.GetComponent<DialogManager>()._change_A_or_B_Sonud = true;
         dialogueBox.GetComponent<DialogManager>().openDialogue(messages_1, actors);
     }
 
     void StartDialogue2() 
-    {        
+    {
+        dialogueBox.GetComponent<DialogManager>()._change_A_or_B_Sonud = false;
         dialogueBox.GetComponent<DialogManager>().openDialogue(messages_2, actors);
     }
 
