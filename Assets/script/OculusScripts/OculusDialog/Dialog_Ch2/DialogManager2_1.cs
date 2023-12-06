@@ -14,7 +14,7 @@ public class DialogManager2_1 : MonoBehaviour
     public GameObject porTal;
 
 
-    public AudioSource typingSound;
+    public AudioSource [] typingSound;
 
     Message2_1[] currentMessages;
     Actor2_1[] currentActors;
@@ -27,11 +27,12 @@ public class DialogManager2_1 : MonoBehaviour
     public void openDialogue(Message2_1[] messages, Actor2_1[] actors)
     {
         Debug.Log("here");
-        typingSound.Play();
+        
         //CallObjectAnimatorOrCallMethodOrCheckTag.GetComponent<NPC_animate>().ChangeAnimate(); //呼叫指定物件改成對話中動畫的方法
         currentActors = actors;
         currentMessages = messages;
         activeMessage = 0;
+        typingSound[activeMessage].Play();
         //Debug.Log(activeMessage);
 
         Debug.Log("started conversation! loaded messages: " + messages.Length);
@@ -54,11 +55,12 @@ public class DialogManager2_1 : MonoBehaviour
 
     public void NextMessage()
     {
+        typingSound[activeMessage].Stop();
         activeMessage++;
         if (activeMessage < currentMessages.Length)
         {
             displayMessage();
-            typingSound.Play();
+            typingSound[activeMessage].Play();
 
         }
         //任務2完成訊息，執行在掛載在甘蔗上的PickUp腳本
@@ -70,7 +72,7 @@ public class DialogManager2_1 : MonoBehaviour
             DB.SetActive(false);
             porTal.SetActive(true);
             DB.SetActive(false);
-            Mission1.text = "<color=green>✓ 1.認識建造普羅民遮城的背景(前往驚嘆號)</color>";
+            Mission1.text = "<color=green>✓ 1.認識建造普羅民遮城的背景(前往竹簡)</color>";
             
         }
     }

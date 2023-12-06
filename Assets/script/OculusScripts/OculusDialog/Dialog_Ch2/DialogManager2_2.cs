@@ -14,7 +14,11 @@ public class DialogManager2_2 : MonoBehaviour
     //public GameObject porTal;
     public GameObject CallObjectAnimatorOrCallMethodOrCheckTag;  //這欄位放各個對話窗所屬的NPC
 
-    public AudioSource typingSound;
+    public AudioSource[] typingSound_A;
+    public AudioSource[] typingSound_B;
+    private AudioSource[] currentSoundList;
+    public bool _change_A_or_B_Sonud;   //true的話，執行A串列的語音；false的話，執行B串列的語音
+
 
     Message2_2_[] currentMessages;
     Actor2_2_[] currentActors;
@@ -25,12 +29,22 @@ public class DialogManager2_2 : MonoBehaviour
 
     public void openDialogue(Message2_2_[] messages, Actor2_2_[] actors)
     {
-        Debug.Log("here");
-        typingSound.Play();
+        Debug.Log("here");        
         CallObjectAnimatorOrCallMethodOrCheckTag.GetComponent<NPC_animate>().ChangeAnimate(); //呼叫指定物件改成對話中動畫的方法
         currentActors = actors;
         currentMessages = messages;
         activeMessage = 0;
+        activeMessage = 0;                  //每打開一次對話，就將活動訊息"activeMessage"設為0，
+        if (_change_A_or_B_Sonud == true)
+        {
+            currentSoundList = typingSound_A;           //當_change_A_or_B_Sonud為true，把A LIST的語音賦予給currentSoundList存起來
+            currentSoundList[activeMessage].Play();     //並且讓currentSoundList播放第activeMessage位的語音，也就是第0位的語音，因為activeMessage被設為0了
+        }
+        else
+        {
+            currentSoundList = typingSound_B;           //當_change_A_or_B_Sonud為true，把B LIST的語音賦予給currentSoundList存起來
+            currentSoundList[activeMessage].Play();     //並且讓currentSoundList播放第activeMessage位的語音，也就是第0位的語音，因為activeMessage被設為0了
+        }
         //Debug.Log(activeMessage);
 
         Debug.Log("started conversation! loaded messages: " + messages.Length);
@@ -53,11 +67,12 @@ public class DialogManager2_2 : MonoBehaviour
 
     public void NextMessage()
     {
+        currentSoundList[activeMessage].Stop();     //正在說的語句，因為按了下一句的按鈕，所以把當前語音切斷
         activeMessage++;
         if (activeMessage < currentMessages.Length)
         {
             displayMessage();
-            typingSound.Play();
+            currentSoundList[activeMessage].Play();
 
         }
         //任務2完成訊息，執行在掛載在甘蔗上的PickUp腳本

@@ -14,7 +14,7 @@ public class DialogManager2_3 : MonoBehaviour
 
     public GameObject CallObjectAnimatorOrCallMethodOrCheckTag;  //這欄位放各個對話窗所屬的NPC
 
-    public AudioSource typingSound;
+    public AudioSource[] _typingSound_23_24;
 
     Message2_3[] currentMessages;
     Actor2_3[] currentActors;
@@ -25,12 +25,12 @@ public class DialogManager2_3 : MonoBehaviour
 
     public void openDialogue(Message2_3[] messages, Actor2_3[] actors)
     {
-        Debug.Log("here");
-        typingSound.Play();
+        Debug.Log("here");        
         CallObjectAnimatorOrCallMethodOrCheckTag.GetComponent<NPC_animate>().ChangeAnimate(); //呼叫指定物件改成對話中動畫的方法
         currentActors = actors;
         currentMessages = messages;
         activeMessage = 0;
+        _typingSound_23_24[activeMessage].Play();
         //Debug.Log(activeMessage);
 
         Debug.Log("started conversation! loaded messages: " + messages.Length);
@@ -53,11 +53,12 @@ public class DialogManager2_3 : MonoBehaviour
 
     public void NextMessage()
     {
+        _typingSound_23_24[activeMessage].Stop();
         activeMessage++;
         if (activeMessage < currentMessages.Length)
         {
             displayMessage();
-            typingSound.Play();
+            _typingSound_23_24[activeMessage].Play();
 
         }
         //任務2完成訊息，執行在掛載在甘蔗上的PickUp腳本
