@@ -3,10 +3,13 @@ using System.Collections;
 using System.Collections.Generic;
 using Unity.VisualScripting;
 using UnityEngine;
+using UnityEngine.Events;
 using UnityEngine.UI;
 
 public class Ch3_BoatCheck : MonoBehaviour
 {
+    public UnityEvent PlayCanvasAudio;
+
     public GameObject BoatWaterFloat;
     public GameObject player;
     public Canvas endPanel;
@@ -131,6 +134,7 @@ public class Ch3_BoatCheck : MonoBehaviour
                 log.text += item.playerName + " " + item.playerTime + " " + item.playerActionType + "\n";
             }
         }
+        PlayCanvasAudio?.Invoke();
         endPanel.enabled = true;
         return;
     }
