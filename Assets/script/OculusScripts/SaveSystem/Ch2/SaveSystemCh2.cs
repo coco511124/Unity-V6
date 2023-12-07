@@ -31,6 +31,34 @@ public class SaveSystemCh2 : MonoBehaviour
         FileHandler.SaveToJSON<PlayerDataCh2>(pldataCh2, filename);
         WriteToCsv(FILEPATH, pldataCh2);
     }
+    private void OnTriggerEnter(Collider other)
+    {
+        if (other.gameObject.CompareTag("blue_stranger"))
+        {
+            type = "和藍色衣服男子對話";
+            Save();
+        }
+        else if (other.gameObject.CompareTag("red_stranger"))
+        {
+            type = "和紅色衣服男子對話";
+            Save();
+        }
+        else if (other.gameObject.CompareTag("green_stranger"))
+        {
+            type = "和綠色衣服男子甲對話";
+            Save();
+        }
+        else if (other.gameObject.CompareTag("green_stranger1"))
+        {
+            type = "和綠色衣服男子乙對話";
+            Save();
+        }
+        else if (other.gameObject.CompareTag("pink_stranger"))
+        {
+            type = "和粉紅衣服男子對話";
+            Save();
+        }
+    }
     public void PickNorth()
     {
         type = "選擇北線尾";

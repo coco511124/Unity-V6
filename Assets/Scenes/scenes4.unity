@@ -6137,7 +6137,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   player: {fileID: 294515224}
-  lin: {fileID: 0}
+  lin: {fileID: 1195029028}
   x: 0
   y: 0
   z: 0
@@ -17282,7 +17282,7 @@ GameObject:
   - component: {fileID: 1465440071}
   m_Layer: 10
   m_Name: greenman (1)
-  m_TagString: Untagged
+  m_TagString: green_stranger1
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
@@ -20580,7 +20580,9 @@ MonoBehaviour:
   XrOrigin: {fileID: 1379666548}
   map: {fileID: 1379666548}
   CallObjectAnimatorOrCallMethodOrCheckTag: {fileID: 1465440069}
-  typingSound: {fileID: 116045804}
+  typingSound_A: []
+  typingSound_B: []
+  _change_A_or_B_Sonud: 0
 --- !u!1001 &1833863553
 PrefabInstance:
   m_ObjectHideFlags: 0
@@ -23402,7 +23404,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   player: {fileID: 294515224}
-  lin: {fileID: 0}
+  lin: {fileID: 1195029028}
   x: 0
   y: 0
   z: 0
@@ -25006,7 +25008,9 @@ MonoBehaviour:
   XrOrigin: {fileID: 1379666548}
   map: {fileID: 1379666548}
   CallObjectAnimatorOrCallMethodOrCheckTag: {fileID: 4631435369651910835}
-  typingSound: {fileID: 116045804}
+  typingSound_A: []
+  typingSound_B: []
+  _change_A_or_B_Sonud: 0
 --- !u!1 &425257646861192010
 GameObject:
   m_ObjectHideFlags: 0
@@ -31307,7 +31311,7 @@ GameObject:
   - component: {fileID: 4631435369651910846}
   m_Layer: 10
   m_Name: blueman
-  m_TagString: Untagged
+  m_TagString: blue_stranger
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
@@ -32146,7 +32150,7 @@ GameObject:
   - component: {fileID: 4848244195680696078}
   m_Layer: 10
   m_Name: redman
-  m_TagString: Untagged
+  m_TagString: red_stranger
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
@@ -36312,7 +36316,9 @@ MonoBehaviour:
   XrOrigin: {fileID: 1379666548}
   map: {fileID: 1379666548}
   CallObjectAnimatorOrCallMethodOrCheckTag: {fileID: 4848244195680696068}
-  typingSound: {fileID: 116045804}
+  typingSound_A: []
+  typingSound_B: []
+  _change_A_or_B_Sonud: 0
 --- !u!1001 &7025380641680000384
 PrefabInstance:
   m_ObjectHideFlags: 0
@@ -37082,7 +37088,7 @@ GameObject:
   - component: {fileID: 7214574074142286097}
   m_Layer: 10
   m_Name: pinkman
-  m_TagString: Untagged
+  m_TagString: pink_stranger
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
@@ -38619,7 +38625,9 @@ MonoBehaviour:
   XrOrigin: {fileID: 1379666548}
   map: {fileID: 1379666548}
   CallObjectAnimatorOrCallMethodOrCheckTag: {fileID: 8891497334385075391}
-  typingSound: {fileID: 116045804}
+  typingSound_A: []
+  typingSound_B: []
+  _change_A_or_B_Sonud: 0
 --- !u!1001 &8108163845129249889
 PrefabInstance:
   m_ObjectHideFlags: 0
@@ -39838,7 +39846,9 @@ MonoBehaviour:
   XrOrigin: {fileID: 1379666548}
   map: {fileID: 1379666548}
   CallObjectAnimatorOrCallMethodOrCheckTag: {fileID: 7214574074142286101}
-  typingSound: {fileID: 116045804}
+  typingSound_A: []
+  typingSound_B: []
+  _change_A_or_B_Sonud: 0
 --- !u!4 &8585037868187427036
 Transform:
   m_ObjectHideFlags: 0
@@ -40972,7 +40982,7 @@ GameObject:
   - component: {fileID: 8891497334385075387}
   m_Layer: 10
   m_Name: greenman
-  m_TagString: Untagged
+  m_TagString: green_stranger
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0

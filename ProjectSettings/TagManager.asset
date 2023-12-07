@@ -41,6 +41,7 @@ TagManager:
   - pick
   - hit
   - gotolin
+  - green_stranger1
   layers:
   - Default
   - TransparentFX

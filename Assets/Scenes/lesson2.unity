@@ -26349,7 +26349,7 @@ PrefabInstance:
       objectReference: {fileID: 0}
     - target: {fileID: 1104650897981416956, guid: 8b3130fea9a320f4b9c2b84dd925f4e2, type: 3}
       propertyPath: m_TagString
-      value: pink_stranger
+      value: green_stranger1
       objectReference: {fileID: 0}
     - target: {fileID: 1104650897981416957, guid: 8b3130fea9a320f4b9c2b84dd925f4e2, type: 3}
       propertyPath: m_RootOrder
@@ -26493,7 +26493,7 @@ MonoBehaviour:
   - actorId: 0
     meassage: "\u8CA0\u8CAC\u6536\u53D6\u7518\u8517\u7684\u8377\u862D\u4EBA\uFF0C\u5C31\u662F\u90A3\u500B\u8EAB\u7A7F\u9ED1\u767D\u76F8\u9593\u8863\u670D\u7684\u91D1\u982D\u9AEE\u7537\u3002"
   actors:
-  - name: "\u8DEF\u4EBA\u620A"
+  - name: "\u7C89\u7D05\u8863\u670D\u7537\u5B50\u4E59"
   dialogueBox: {fileID: 97293999}
   typingSound: {fileID: 0}
   ObjectTag: {fileID: 672452877}
@@ -30271,7 +30271,7 @@ MonoBehaviour:
   - actorId: 0
     meassage: "\u90FD\u602A\u8EAB\u7A7F\u85CD\u8863\u670D\u7684\u8377\u862D\u9577\u5B98\uFF0C\u4ED6\u51FA\u4E86\u8A31\u591A\u5C0D\u6211\u5011\u5E73\u6C11\u4E0D\u5229\u7684\u653F\u7B56\u3002"
   actors:
-  - name: "\u8DEF\u4EBA\u4E59"
+  - name: "\u85CD\u8272\u8863\u670D\u7537\u5B50"
   dialogueBox: {fileID: 30621172}
   typingSound: {fileID: 0}
   ObjectTag: {fileID: 871318846}
@@ -37362,7 +37362,7 @@ MonoBehaviour:
   - actorId: 0
     meassage: "\u5982\u679C\u4F60\u8981\u627E\u7518\u8517\u7684\u8A71\uFF0C\u5C31\u7E5E\u5230\u89D2\u843D\u53BB\u90A3\u908A\u6709\u7518\u8517\u7530\u80FD\u62FF\u53D6\u7518\u8517\u3002"
   actors:
-  - name: "\u8DEF\u4EBA\u7532"
+  - name: "\u7DA0\u8272\u8863\u670D\u7537\u5B50"
   dialogueBox: {fileID: 238561052}
   typingSound: {fileID: 0}
   ObjectTag: {fileID: 1259084991}
@@ -42805,7 +42805,7 @@ MonoBehaviour:
   - actorId: 0
     meassage: "\u540C\u662F\u6F22\u4EBA\u7684\u7532\u5FC5\u4E39\u5148\u751F\u5982\u679C\u6C92\u51FA\u9322\u5E6B\u52A9\u6211\u5011\uFF0C\u771F\u7684\u4E0D\u77E5\u9053\u8A72\u5982\u4F55\u662F\u597D\u3002"
   actors:
-  - name: "\u8DEF\u4EBA\u4E19"
+  - name: "\u7C89\u7D05\u8863\u670D\u7537\u5B50\u7532"
   dialogueBox: {fileID: 1816338451}
   typingSound: {fileID: 0}
   ObjectTag: {fileID: 1574305752}
@@ -43301,7 +43301,7 @@ MonoBehaviour:
   - actorId: 0
     meassage: "\u5F8C\u4F86\u8ACB\u7532\u5FC5\u4E39\u5E6B\u5FD9\u624D\u53D6\u56DE\u8CA1\u7269\uFF0C\u9019\u9EDE\u61C9\u8A72\u6709\u7D00\u9304\u5728\u4ED6\u7684\u6587\u4EF6\u4E0A\u3002"
   actors:
-  - name: "\u8DEF\u4EBA\u4E01"
+  - name: "\u7D05\u8272\u8863\u670D\u7537\u5B50"
   dialogueBox: {fileID: 103293544}
   typingSound: {fileID: 0}
   ObjectTag: {fileID: 1613357960}

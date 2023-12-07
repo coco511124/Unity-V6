@@ -49,30 +49,37 @@ public class SaveSystem : MonoBehaviour
         }
         else if (other.gameObject.tag == "green_stranger")
         {
-            type = "和綠色陌生人說話";
+            type = "和綠色衣服男子對話";
 
             Save();
             
         }
         else if (other.gameObject.tag == "pink_stranger")
         {
-            type = "和粉色陌生人說話";
+            type = "和粉紅衣服男子甲對話";
             Save();
             
         }
         else if (other.gameObject.tag == "blue_stranger")
         {
-            type = "和藍色陌生人說話";
+            type = "和藍色衣服男子對話";
 
             Save();
             
         }
         else if (other.gameObject.tag == "red_stranger")
         {
-            type = "和紅色陌生人說話";
+            type = "和紅色衣服男子對話";
 
             Save();
             
+        }
+        else if (other.gameObject.tag == "green_stranger1")
+        {
+            type = "和粉紅衣服男子乙對話";
+
+            Save();
+
         }
         else if (other.gameObject.tag == "thing")
         {

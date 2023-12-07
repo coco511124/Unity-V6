@@ -19,7 +19,7 @@ public class CraftingSystem : MonoBehaviour
     public List<string> recipeContent;
     public TMP_Text recipeContentText;
 
-    [SerializeField] string type;
+    [SerializeField] string type; 
     public GameObject table, portal;
     int index;
 
