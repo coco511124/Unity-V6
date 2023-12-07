@@ -12,7 +12,10 @@ public class DialogManager_Ch3 : MonoBehaviour
     public UnityEngine.UI.Text Mission1, Mission2, Mission3, Mission4, Mission5;
     // Mission2放在蔗糖trigger的script裡面
 
-    public AudioSource typingSound;
+    public AudioSource[] typingSound_Ch3_A;
+    public AudioSource[] typingSound_Ch3_B;
+    private AudioSource[] currentSoundList;
+    public bool _change_A_or_B_Sonud;   //true的話，執行A串列的語音；false的話，執行B串列的語音
 
     MessageCh3[] currentMessages;
     ActorCh3[] currentActors;
@@ -26,11 +29,21 @@ public class DialogManager_Ch3 : MonoBehaviour
 
     public void openDialogue(MessageCh3[] messages, ActorCh3[] actors)
     {
-        typingSound.Play();
+        
         //CallObjectAnimatorOrCallMethodOrCheckTag.GetComponent<NPC_animate>().ChangeAnimate(); //呼叫指定物件改成對話中動畫的方法
         currentActors = actors;
         currentMessages = messages;
         activeMessage = 0;
+        if (_change_A_or_B_Sonud == true)
+        {
+            currentSoundList = typingSound_Ch3_A;           //當_change_A_or_B_Sonud為true，把A LIST的語音賦予給currentSoundList存起來
+            currentSoundList[activeMessage].Play();     //並且讓currentSoundList播放第activeMessage位的語音，也就是第0位的語音，因為activeMessage被設為0了
+        }
+        else
+        {
+            currentSoundList = typingSound_Ch3_B;           //當_change_A_or_B_Sonud為true，把B LIST的語音賦予給currentSoundList存起來
+            currentSoundList[activeMessage].Play();     //並且讓currentSoundList播放第activeMessage位的語音，也就是第0位的語音，因為activeMessage被設為0了
+        }        
         //Debug.Log(activeMessage);
 
         Debug.Log("started conversation! loaded messages: " + messages.Length);
@@ -53,11 +66,12 @@ public class DialogManager_Ch3 : MonoBehaviour
 
     public void NextMessage()
     {
+        currentSoundList[activeMessage].Stop();     //正在說的語句，因為按了下一句的按鈕，所以把當前語音切斷
         activeMessage++;
         if (activeMessage < currentMessages.Length)
         {
             displayMessage();
-            typingSound.Play();
+            currentSoundList[activeMessage].Play();
 
         }
         //任務2完成訊息，執行在掛載在甘蔗上的PickUp腳本
@@ -69,7 +83,7 @@ public class DialogManager_Ch3 : MonoBehaviour
             {
                 DB.SetActive(false);
                 //spawnBool = true;
-                Mission1.text = "<color=green>✓ 1.前往驚嘆號</color>";
+                Mission1.text = "<color=green>✓ 1.前往竹簡</color>";
                 //Mission1.color = Color.green;
             }
             else if (PL.tag == "Player" && CallObjectAnimatorOrCallMethodOrCheckTag.tag == "zenhe")
