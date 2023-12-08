@@ -22,11 +22,13 @@ public class DialogTrigger_Ch4 : MonoBehaviour
 
     void StartDialogue1()
     {
+        dialogCanvas.GetComponent<DialogManager4>()._change_A_or_B_Sonud = true;
         dialogCanvas.GetComponent<DialogManager4>().openDialogue(messages_1, actors);
     }
 
     void StartDialogue2()
     {
+        dialogCanvas.GetComponent<DialogManager4>()._change_A_or_B_Sonud = false;
         dialogCanvas.GetComponent<DialogManager4>().openDialogue(messages_2, actors);
     }
 
