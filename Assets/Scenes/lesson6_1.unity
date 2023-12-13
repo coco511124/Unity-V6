@@ -11940,7 +11940,7 @@ Transform:
   m_GameObject: {fileID: 293047419942919712}
   m_LocalRotation: {x: -0, y: 1, z: -0, w: 0}
   m_LocalPosition: {x: -12.58, y: 0, z: -3.03}
-  m_LocalScale: {x: 7, y: 7, z: 7}
+  m_LocalScale: {x: 6.4000006, y: 6.4000006, z: 6.4000006}
   m_ConstrainProportionsScale: 1
   m_Children:
   - {fileID: 293047418407469415}
@@ -22975,7 +22975,7 @@ PrefabInstance:
       objectReference: {fileID: 0}
     - target: {fileID: 3935138643908805451, guid: f6f4fed63460f884ea516524e1e825f2, type: 3}
       propertyPath: m_AnchoredPosition.y
-      value: 0.36911294
+      value: 0.4
       objectReference: {fileID: 0}
     - target: {fileID: 3935138643908805451, guid: f6f4fed63460f884ea516524e1e825f2, type: 3}
       propertyPath: m_LocalEulerAnglesHint.x
@@ -24976,7 +24976,7 @@ PrefabInstance:
       objectReference: {fileID: 0}
     - target: {fileID: 3935138643908805451, guid: f6f4fed63460f884ea516524e1e825f2, type: 3}
       propertyPath: m_AnchoredPosition.y
-      value: 0.36911294
+      value: 0.4
       objectReference: {fileID: 0}
     - target: {fileID: 3935138643908805451, guid: f6f4fed63460f884ea516524e1e825f2, type: 3}
       propertyPath: m_LocalEulerAnglesHint.x
@@ -32340,7 +32340,7 @@ PrefabInstance:
       objectReference: {fileID: 0}
     - target: {fileID: 3935138643908805451, guid: f6f4fed63460f884ea516524e1e825f2, type: 3}
       propertyPath: m_AnchoredPosition.y
-      value: 0.36911294
+      value: 0.4
       objectReference: {fileID: 0}
     - target: {fileID: 3935138643908805451, guid: f6f4fed63460f884ea516524e1e825f2, type: 3}
       propertyPath: m_LocalEulerAnglesHint.x
@@ -33966,7 +33966,7 @@ Transform:
   m_GameObject: {fileID: 4548178090100111639}
   m_LocalRotation: {x: -0, y: 1, z: -0, w: 0}
   m_LocalPosition: {x: 2.24, y: 0, z: -1.37}
-  m_LocalScale: {x: 7, y: 7, z: 7}
+  m_LocalScale: {x: 6.4000006, y: 6.4000006, z: 6.4000006}
   m_ConstrainProportionsScale: 1
   m_Children:
   - {fileID: 4548178090641628053}
@@ -38746,7 +38746,7 @@ Transform:
   m_GameObject: {fileID: 5783543567782580625}
   m_LocalRotation: {x: -0, y: 1, z: -0, w: 0}
   m_LocalPosition: {x: -3.84, y: 0, z: 3.03}
-  m_LocalScale: {x: 7, y: 7, z: 7}
+  m_LocalScale: {x: 6.4000006, y: 6.4000006, z: 6.4000006}
   m_ConstrainProportionsScale: 1
   m_Children:
   - {fileID: 5783543566093534258}
