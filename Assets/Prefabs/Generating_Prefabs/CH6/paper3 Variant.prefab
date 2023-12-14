@@ -49,15 +49,15 @@ PrefabInstance:
       objectReference: {fileID: 0}
     - target: {fileID: 8017631784162988581, guid: 5d4c8137a01bc8e4c9c2601d616dc8d3, type: 3}
       propertyPath: m_LocalPosition.x
-      value: 170.17
+      value: 0
       objectReference: {fileID: 0}
     - target: {fileID: 8017631784162988581, guid: 5d4c8137a01bc8e4c9c2601d616dc8d3, type: 3}
       propertyPath: m_LocalPosition.y
-      value: -13.63
+      value: 0
       objectReference: {fileID: 0}
     - target: {fileID: 8017631784162988581, guid: 5d4c8137a01bc8e4c9c2601d616dc8d3, type: 3}
       propertyPath: m_LocalPosition.z
-      value: -7.59
+      value: 0
       objectReference: {fileID: 0}
     - target: {fileID: 8017631784162988581, guid: 5d4c8137a01bc8e4c9c2601d616dc8d3, type: 3}
       propertyPath: m_LocalRotation.w
@@ -89,7 +89,7 @@ PrefabInstance:
       objectReference: {fileID: 0}
     - target: {fileID: 8017631784162988582, guid: 5d4c8137a01bc8e4c9c2601d616dc8d3, type: 3}
       propertyPath: m_Name
-      value: paper3
+      value: paper3 Variant
       objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: 5d4c8137a01bc8e4c9c2601d616dc8d3, type: 3}

@@ -9,7 +9,7 @@ PrefabInstance:
     m_Modifications:
     - target: {fileID: 6325908344119266484, guid: 7ce52272bab684d49a3d073315730f2d, type: 3}
       propertyPath: m_Name
-      value: 5-1_paper2
+      value: 5-1_paper2 Variant
       objectReference: {fileID: 0}
     - target: {fileID: 6325908344119266485, guid: 7ce52272bab684d49a3d073315730f2d, type: 3}
       propertyPath: m_RootOrder
@@ -17,15 +17,15 @@ PrefabInstance:
       objectReference: {fileID: 0}
     - target: {fileID: 6325908344119266485, guid: 7ce52272bab684d49a3d073315730f2d, type: 3}
       propertyPath: m_LocalPosition.x
-      value: 154.4
+      value: 0
       objectReference: {fileID: 0}
     - target: {fileID: 6325908344119266485, guid: 7ce52272bab684d49a3d073315730f2d, type: 3}
       propertyPath: m_LocalPosition.y
-      value: 0.05
+      value: 0
       objectReference: {fileID: 0}
     - target: {fileID: 6325908344119266485, guid: 7ce52272bab684d49a3d073315730f2d, type: 3}
       propertyPath: m_LocalPosition.z
-      value: 73.74
+      value: 0
       objectReference: {fileID: 0}
     - target: {fileID: 6325908344119266485, guid: 7ce52272bab684d49a3d073315730f2d, type: 3}
       propertyPath: m_LocalRotation.w

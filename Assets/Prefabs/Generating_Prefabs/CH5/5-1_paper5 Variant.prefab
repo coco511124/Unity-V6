@@ -13,15 +13,15 @@ PrefabInstance:
       objectReference: {fileID: 0}
     - target: {fileID: 5232195511416460613, guid: d39b73b0f9138134a92536c0bfa5fdb1, type: 3}
       propertyPath: m_LocalPosition.x
-      value: 158.65
+      value: 0
       objectReference: {fileID: 0}
     - target: {fileID: 5232195511416460613, guid: d39b73b0f9138134a92536c0bfa5fdb1, type: 3}
       propertyPath: m_LocalPosition.y
-      value: 0.05
+      value: 0
       objectReference: {fileID: 0}
     - target: {fileID: 5232195511416460613, guid: d39b73b0f9138134a92536c0bfa5fdb1, type: 3}
       propertyPath: m_LocalPosition.z
-      value: 82.77
+      value: 0
       objectReference: {fileID: 0}
     - target: {fileID: 5232195511416460613, guid: d39b73b0f9138134a92536c0bfa5fdb1, type: 3}
       propertyPath: m_LocalRotation.w
@@ -101,7 +101,7 @@ PrefabInstance:
       objectReference: {fileID: 0}
     - target: {fileID: 5232195511416460618, guid: d39b73b0f9138134a92536c0bfa5fdb1, type: 3}
       propertyPath: m_Name
-      value: 5-1_paper5
+      value: 5-1_paper5 Variant
       objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: d39b73b0f9138134a92536c0bfa5fdb1, type: 3}

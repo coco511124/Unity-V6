@@ -13,15 +13,15 @@ PrefabInstance:
       objectReference: {fileID: 0}
     - target: {fileID: 3646451879437052358, guid: d7f940091ee3d00429bdb7f60bb3a75e, type: 3}
       propertyPath: m_LocalPosition.x
-      value: 172.63
+      value: 0
       objectReference: {fileID: 0}
     - target: {fileID: 3646451879437052358, guid: d7f940091ee3d00429bdb7f60bb3a75e, type: 3}
       propertyPath: m_LocalPosition.y
-      value: -13.74
+      value: 0
       objectReference: {fileID: 0}
     - target: {fileID: 3646451879437052358, guid: d7f940091ee3d00429bdb7f60bb3a75e, type: 3}
       propertyPath: m_LocalPosition.z
-      value: -8.2
+      value: 0
       objectReference: {fileID: 0}
     - target: {fileID: 3646451879437052358, guid: d7f940091ee3d00429bdb7f60bb3a75e, type: 3}
       propertyPath: m_LocalRotation.w
@@ -53,7 +53,7 @@ PrefabInstance:
       objectReference: {fileID: 0}
     - target: {fileID: 3646451879437052359, guid: d7f940091ee3d00429bdb7f60bb3a75e, type: 3}
       propertyPath: m_Name
-      value: paper2
+      value: paper2 Variant
       objectReference: {fileID: 0}
     - target: {fileID: 3646451879437052409, guid: d7f940091ee3d00429bdb7f60bb3a75e, type: 3}
       propertyPath: m_CollisionDetection

@@ -49,7 +49,7 @@ PrefabInstance:
       objectReference: {fileID: 0}
     - target: {fileID: 7064673872663706972, guid: ecd7538b9133e5641b49d0aafc7823f1, type: 3}
       propertyPath: m_Name
-      value: 6-3_paper5
+      value: 6-3_paper5 Variant
       objectReference: {fileID: 0}
     - target: {fileID: 7064673872663706975, guid: ecd7538b9133e5641b49d0aafc7823f1, type: 3}
       propertyPath: m_RootOrder
@@ -57,15 +57,15 @@ PrefabInstance:
       objectReference: {fileID: 0}
     - target: {fileID: 7064673872663706975, guid: ecd7538b9133e5641b49d0aafc7823f1, type: 3}
       propertyPath: m_LocalPosition.x
-      value: -29.75
+      value: 0
       objectReference: {fileID: 0}
     - target: {fileID: 7064673872663706975, guid: ecd7538b9133e5641b49d0aafc7823f1, type: 3}
       propertyPath: m_LocalPosition.y
-      value: 0.09
+      value: 0
       objectReference: {fileID: 0}
     - target: {fileID: 7064673872663706975, guid: ecd7538b9133e5641b49d0aafc7823f1, type: 3}
       propertyPath: m_LocalPosition.z
-      value: 0.785
+      value: 0
       objectReference: {fileID: 0}
     - target: {fileID: 7064673872663706975, guid: ecd7538b9133e5641b49d0aafc7823f1, type: 3}
       propertyPath: m_LocalRotation.w
