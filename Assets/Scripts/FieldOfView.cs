@@ -76,7 +76,7 @@ public class FieldOfView : MonoBehaviour
     }
     private void OnTriggerEnter(Collider other)
     {
-        if(other.gameObject.name == "Stick")
+        if(other.gameObject.name == "Stick" || other.gameObject.name == "Stick(Clone)")
         {
             xrOrigin.transform.position = new Vector3((float)-108.8, 0, (float)18.8);
             originFuf.SetActive(false);

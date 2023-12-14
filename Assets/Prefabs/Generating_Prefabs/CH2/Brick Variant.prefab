@@ -53,27 +53,27 @@ PrefabInstance:
       objectReference: {fileID: 0}
     - target: {fileID: 6870556081696790326, guid: d3a10361270ce6448b6351b14341fa8b, type: 3}
       propertyPath: m_LocalScale.x
-      value: 5
+      value: 0.5
       objectReference: {fileID: 0}
     - target: {fileID: 6870556081696790326, guid: d3a10361270ce6448b6351b14341fa8b, type: 3}
       propertyPath: m_LocalScale.y
-      value: 2
+      value: 0.2
       objectReference: {fileID: 0}
     - target: {fileID: 6870556081696790326, guid: d3a10361270ce6448b6351b14341fa8b, type: 3}
       propertyPath: m_LocalScale.z
-      value: 2
+      value: 0.2
       objectReference: {fileID: 0}
     - target: {fileID: 6870556081696790326, guid: d3a10361270ce6448b6351b14341fa8b, type: 3}
       propertyPath: m_LocalPosition.x
-      value: -31.6
+      value: 0
       objectReference: {fileID: 0}
     - target: {fileID: 6870556081696790326, guid: d3a10361270ce6448b6351b14341fa8b, type: 3}
       propertyPath: m_LocalPosition.y
-      value: -111.6
+      value: 0
       objectReference: {fileID: 0}
     - target: {fileID: 6870556081696790326, guid: d3a10361270ce6448b6351b14341fa8b, type: 3}
       propertyPath: m_LocalPosition.z
-      value: 48
+      value: 0
       objectReference: {fileID: 0}
     - target: {fileID: 6870556081696790326, guid: d3a10361270ce6448b6351b14341fa8b, type: 3}
       propertyPath: m_LocalRotation.w
@@ -109,7 +109,7 @@ PrefabInstance:
       objectReference: {fileID: 0}
     - target: {fileID: 7570752545529541245, guid: d3a10361270ce6448b6351b14341fa8b, type: 3}
       propertyPath: m_Name
-      value: Brick
+      value: Brick Variant
       objectReference: {fileID: 0}
     - target: {fileID: 7570752545529541245, guid: d3a10361270ce6448b6351b14341fa8b, type: 3}
       propertyPath: m_Layer

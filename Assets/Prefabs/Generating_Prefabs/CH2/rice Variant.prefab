@@ -13,7 +13,7 @@ PrefabInstance:
       objectReference: {fileID: 0}
     - target: {fileID: 4735240293401081530, guid: d6b7f0e111ae29549a4aeee000a167ca, type: 3}
       propertyPath: m_Name
-      value: rice
+      value: rice Variant
       objectReference: {fileID: 0}
     - target: {fileID: 4735240293401081530, guid: d6b7f0e111ae29549a4aeee000a167ca, type: 3}
       propertyPath: m_Layer
@@ -33,27 +33,27 @@ PrefabInstance:
       objectReference: {fileID: 0}
     - target: {fileID: 5403513996378237952, guid: d6b7f0e111ae29549a4aeee000a167ca, type: 3}
       propertyPath: m_LocalScale.x
-      value: 50
+      value: 5
       objectReference: {fileID: 0}
     - target: {fileID: 5403513996378237952, guid: d6b7f0e111ae29549a4aeee000a167ca, type: 3}
       propertyPath: m_LocalScale.y
-      value: 50
+      value: 5
       objectReference: {fileID: 0}
     - target: {fileID: 5403513996378237952, guid: d6b7f0e111ae29549a4aeee000a167ca, type: 3}
       propertyPath: m_LocalScale.z
-      value: 50
+      value: 5
       objectReference: {fileID: 0}
     - target: {fileID: 5403513996378237952, guid: d6b7f0e111ae29549a4aeee000a167ca, type: 3}
       propertyPath: m_LocalPosition.x
-      value: -308.2
+      value: 0
       objectReference: {fileID: 0}
     - target: {fileID: 5403513996378237952, guid: d6b7f0e111ae29549a4aeee000a167ca, type: 3}
       propertyPath: m_LocalPosition.y
-      value: -22.5
+      value: 0
       objectReference: {fileID: 0}
     - target: {fileID: 5403513996378237952, guid: d6b7f0e111ae29549a4aeee000a167ca, type: 3}
       propertyPath: m_LocalPosition.z
-      value: 619.5
+      value: 0
       objectReference: {fileID: 0}
     - target: {fileID: 5403513996378237952, guid: d6b7f0e111ae29549a4aeee000a167ca, type: 3}
       propertyPath: m_LocalRotation.w
