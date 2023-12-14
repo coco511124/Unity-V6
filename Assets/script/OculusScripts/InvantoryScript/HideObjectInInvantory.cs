@@ -19,6 +19,9 @@ public class HideObjectInInvantory : MonoBehaviour
     public GameObject ParentObject;
     private GameObject setGameObject;
 
+    private bool DetectObjectInCollider;
+    private bool DetectObject_ForImage_StatueInCollider;
+    private bool DetectObject_ForBrand_Haishen_InCollider;
 
     // Start is called before the first frame update
     void Start()
@@ -61,16 +64,27 @@ public class HideObjectInInvantory : MonoBehaviour
             return;
         }
     }
+    
 
     private void CallOpen_callOpenMeshRenderer(object sender, System.EventArgs e)
     {
-        if (setGameObject == null || setGameObject.GetComponent<DetectObject>().inCollider == true)
-        {
-            Debug.Log("開啟時setGameObject是空值");
+        //Debug.Log(setGameObject.GetComponent<DetectObject>().inCollider);
+        //如果掛載物件符合以下條件
+        //1. null
+        //2. DetectObject腳本的inCollider為true
+        //3. DetectObject_ForImage_Statue腳本的inCollider為true
+        //4. DetectObject_ForBrand_Haishen_腳本的inCollider為true
+        getDetectObjectbool(setGameObject);                          //傳入setGameObject給方法做判斷，看bool值是true還是false
+        getDetectObject_ForImage_Statuebool(setGameObject);
+        getDetectObject_ForBrand_Haishen_bool(setGameObject);
+        if (setGameObject == null || DetectObjectInCollider == true || DetectObject_ForImage_StatueInCollider == true || DetectObject_ForBrand_Haishen_InCollider == true)
+        {           
+            //Debug.Log("開啟時setGameObject是空值");
             return;
         }
         else
         {
+            Debug.Log(setGameObject.GetComponent<DetectObject>());   //會回報NULL
             //GetComponentInChildren
             setGameObject.GetComponentInChildren<MeshRenderer>().enabled = true;
 
@@ -87,6 +101,60 @@ public class HideObjectInInvantory : MonoBehaviour
                 }
             }
             Debug.Log("渲染開起來了");
+        }
+    }
+    private void getDetectObjectbool(GameObject setGameObject)                        //判斷各個物件有沒有在碰撞體裡面，在裡面的話就回傳true
+    {
+        if (setGameObject != null && setGameObject.GetComponent<DetectObject>())
+        {
+            if (setGameObject.GetComponent<DetectObject>().inCollider == true)
+            {
+                DetectObjectInCollider = true;
+            }
+            else
+            {
+                DetectObjectInCollider = false;
+            }
+        }
+        else
+        {
+            DetectObjectInCollider = false;
+        }
+    }
+    private void getDetectObject_ForImage_Statuebool(GameObject setGameObject)         //判斷各個物件有沒有在碰撞體裡面，在裡面的話就回傳true
+    {
+        if (setGameObject != null && setGameObject.GetComponent<DetectObject_ForImage_Statue>())
+        {
+            if (setGameObject.GetComponent<DetectObject_ForImage_Statue>().inCollider == true)
+            {
+                DetectObject_ForImage_StatueInCollider = true;
+            }
+            else
+            {
+                DetectObject_ForImage_StatueInCollider = false;
+            }
+        }
+        else
+        {
+            DetectObject_ForImage_StatueInCollider = false;
+        }
+    }
+    private void getDetectObject_ForBrand_Haishen_bool(GameObject setGameObject)        //判斷各個物件有沒有在碰撞體裡面，在裡面的話就回傳true
+    {
+        if (setGameObject != null && setGameObject.GetComponent<DetectObject_ForBrand_Haishen_>())
+        {
+            if (setGameObject.GetComponent<DetectObject_ForBrand_Haishen_>().inCollider == true)
+            {
+                DetectObject_ForBrand_Haishen_InCollider = true;
+            }
+            else
+            {
+                DetectObject_ForBrand_Haishen_InCollider = false;
+            }
+        }
+        else
+        {
+            DetectObject_ForBrand_Haishen_InCollider = false;
         }
     }
 

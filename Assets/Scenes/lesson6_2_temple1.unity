@@ -2967,7 +2967,7 @@ PrefabInstance:
       objectReference: {fileID: 0}
     - target: {fileID: 6107474476086708533, guid: 59ed4477651f5714f9e0cdf41f5e7a71, type: 3}
       propertyPath: FILENAME
-      value: playerdatach6.json
+      value: playerdatach6.csv
       objectReference: {fileID: 0}
     - target: {fileID: 6107474476086708533, guid: 59ed4477651f5714f9e0cdf41f5e7a71, type: 3}
       propertyPath: filename

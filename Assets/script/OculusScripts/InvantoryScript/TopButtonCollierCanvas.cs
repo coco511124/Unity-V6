@@ -14,11 +14,45 @@ public class TopButtonCollierCanvas : MonoBehaviour
             {
                 other.gameObject.GetComponent<DetectObject>().inCollider = true;
             }
-            
+            if (other.gameObject.GetComponent<DetectObject_ForBrand_Haishen_>() == true)
+            {
+                other.gameObject.GetComponent<DetectObject_ForBrand_Haishen_>().inCollider = true;
+            }
+            if (other.gameObject.GetComponent<DetectObject_ForImage_Statue>() == true)
+            {
+                other.gameObject.GetComponent<DetectObject_ForImage_Statue>().inCollider = true;
+            }
+
+            List<Transform> childrens = GetChildren(other.gameObject.transform, true);
+            foreach (Transform child in childrens)
+            {
+                if (child.GetComponent<SkinnedMeshRenderer>() == true)
+                {
+                    child.GetComponent<SkinnedMeshRenderer>().enabled = false;
+                }                
+                else
+                {
+                    continue;
+                }                
+            }
+
+            List<Transform> childrenss = GetChildren(other.gameObject.transform, true);
+            foreach (Transform child in childrenss)
+            {
+                if (child.GetComponent<MeshRenderer>() == true)
+                {
+                    child.GetComponent<MeshRenderer>().enabled = false;
+                }
+                else
+                {
+                    continue;
+                }
+            }
+
             if (other.gameObject.GetComponent<MeshRenderer>() == true)
             {
                 other.gameObject.GetComponent<MeshRenderer>().enabled = false;
-            }
+            }            
             else
             {
                 List<Transform> children = GetChildren(other.gameObject.transform, true);
@@ -31,6 +65,11 @@ public class TopButtonCollierCanvas : MonoBehaviour
                         if (child.GetComponent<Canvas>() == true)
                         {
                             child.GetComponent<Canvas>().enabled = false;
+
+                            if(child.GetComponent<SkinnedMeshRenderer>() == true)
+                            {
+                                child.GetComponent<SkinnedMeshRenderer>().enabled = false;
+                            }
                         }
                     }
                     else
@@ -54,6 +93,40 @@ public class TopButtonCollierCanvas : MonoBehaviour
             {
                 other.gameObject.GetComponent<DetectObject>().inCollider = false;
             }
+            if (other.gameObject.GetComponent<DetectObject_ForBrand_Haishen_>() == true)
+            {
+                other.gameObject.GetComponent<DetectObject_ForBrand_Haishen_>().inCollider = false;
+            }
+            if (other.gameObject.GetComponent<DetectObject_ForImage_Statue>() == true)
+            {
+                other.gameObject.GetComponent<DetectObject_ForImage_Statue>().inCollider = false;
+            }
+
+            List<Transform> childrens = GetChildren(other.gameObject.transform, true);
+            foreach (Transform child in childrens)
+            {
+                if (child.GetComponent<SkinnedMeshRenderer>() == true)
+                {
+                    child.GetComponent<SkinnedMeshRenderer>().enabled = true;
+                }
+                else
+                {
+                    continue;
+                }
+            }
+
+            List<Transform> childrenss = GetChildren(other.gameObject.transform, true);
+            foreach (Transform child in childrenss)
+            {
+                if (child.GetComponent<MeshRenderer>() == true)
+                {
+                    child.GetComponent<MeshRenderer>().enabled = true;
+                }
+                else
+                {
+                    continue;
+                }
+            }
 
             if (other.gameObject.GetComponent<MeshRenderer>() == true)
             {
@@ -71,6 +144,11 @@ public class TopButtonCollierCanvas : MonoBehaviour
                         if (child.GetComponent<Canvas>() == true)
                         {
                             child.GetComponent<Canvas>().enabled = true;
+
+                            if (child.GetComponent<SkinnedMeshRenderer>() == true)
+                            {
+                                child.GetComponent<SkinnedMeshRenderer>().enabled = true;
+                            }
                         }
                     }
                     else

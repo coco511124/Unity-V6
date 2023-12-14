@@ -39,7 +39,7 @@ public class InventoryCanvas : MonoBehaviour
             {
                 callCloseMeshRenderer?.Invoke(this, EventArgs.Empty);
                 invantoryCanvas.GetComponent<Canvas>().enabled = false;
-                invantoryCanvas.transform.position = head.position + new Vector3(head.up.x, 0, head.up.z).normalized * spawnDistance;   //讓canvas移動到玩家身後
+                invantoryCanvas.transform.position = head.position + new Vector3(head.up.x, 0, head.up.z).normalized * 10;   //讓canvas移動到玩家身後
 
             }
 
