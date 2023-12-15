@@ -10,7 +10,7 @@ public class FieldOfView : MonoBehaviour
     [Range(0, 360)]
     public float angle;
 
-    public GameObject playerRef, xrOrigin, originFuf, finalFuf, taskPanel;
+    public GameObject playerRef, xrOrigin, originFuf, finalFuf, taskPanel, lin, toLin;
     public TMP_Text taskText;
 
     public LayerMask targetMask;
@@ -58,10 +58,13 @@ public class FieldOfView : MonoBehaviour
                     Debug.Log("偵測到了，任務失敗!!");
                     xrOrigin.transform.position = new Vector3((float)-108.8, 0, (float)18.8);
                     taskPanel.SetActive(true);
-                    this.GetComponent<NPCwalk>().enabled = false;
-                    this.GetComponent<RandomAgent>().enabled = false;
+                    toLin.SetActive(true);
+                    
                     //this.gameObject.transform.position = new Vector3(-113, 0, 185);
                     taskText.text = "任務失敗，請重新捕捉林爽文";
+                    lin.GetComponent<NPCwalk>().enabled = false;
+                    lin.GetComponent<RandomAgent>().enabled = false;
+                    lin.GetComponent<FieldOfView>().enabled = false;   
                 }
                 else
                 {

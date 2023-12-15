@@ -19,10 +19,13 @@ public class Teleport : MonoBehaviour
     }
     private void OnTriggerEnter(Collider other)
     {
-        if (other.gameObject.CompareTag("gotolin"))
+        if (player.CompareTag("gotolin"))
         {
+            
             lin.GetComponent<RandomAgent>().enabled = true;
             lin.GetComponent<NPCwalk>().enabled = true;
+            lin.GetComponent<FieldOfView>().enabled = true;
+            Debug.Log("±Ò°Ê");
         }
         player.transform.position = new Vector3(x, y, z);
         this.gameObject.SetActive(false);
