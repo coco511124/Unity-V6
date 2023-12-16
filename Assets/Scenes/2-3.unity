@@ -32012,6 +32012,14 @@ PrefabInstance:
       propertyPath: m_Text
       value: "5.\u70BA\u8377\u862D\u4EBA\u9020\u51FA\u666E\u7F85\u6C11\u906E\u57CE(\u5EFA\u9020\u666E\u7F85\u6C11\u906E\u57CE)"
       objectReference: {fileID: 0}
+    - target: {fileID: 7523062421047124872, guid: 59ed4477651f5714f9e0cdf41f5e7a71, type: 3}
+      propertyPath: m_UseForceGrab
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 7523062421047124872, guid: 59ed4477651f5714f9e0cdf41f5e7a71, type: 3}
+      propertyPath: m_AllowAnchorControl
+      value: 1
+      objectReference: {fileID: 0}
     - target: {fileID: 7523062421064344776, guid: 59ed4477651f5714f9e0cdf41f5e7a71, type: 3}
       propertyPath: m_Sprite
       value: 
