@@ -20148,7 +20148,7 @@ GameObject:
   - component: {fileID: 1465440071}
   m_Layer: 10
   m_Name: greenman (1)
-  m_TagString: green_stranger1
+  m_TagString: greengirl
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
@@ -20241,7 +20241,7 @@ MonoBehaviour:
   - actorId2_2: 0
     meassage2_2: "\u5982\u679C\u60F3\u5F9E\u843D\u8173\u8655\u8D70\u56DE\u57CE\u93AE\u7684\u8A71\uFF0C\u9700\u8981\u671D\u843D\u8173\u8655\u623F\u5B50\u7684\u5C0D\u9762\u5C71\u5761\u8D70\u904E\u53BB\u3002"
   actors:
-  - name2_2: "\u7DA0\u8272\u8863\u670D\u7684\u7537\u5B50\u4E59"
+  - name2_2: "\u7DA0\u8272\u8863\u670D\u7684\u5973\u5B50"
   dialogueBox: {fileID: 1823887306}
   ObjectTag: {fileID: 1465440069}
 --- !u!65 &1465440075
@@ -37653,7 +37653,7 @@ MonoBehaviour:
     meassage2_2: "\u6700\u8FD1\u6E05\u671D\u7684\u5927\u4EBA\u4F86\u53F0\u7063\u4E86\uFF0C\u807D\u8AAA\u7AD9\u5728\u8857\u9053\u65C1\u7A7F\u8457\u4E00\u8EAB\u85CD\u8272\u91D1\u9F8D\u7684\u8863\u670D\uFF0C     
       \u597D\u5A01\u98A8\u3002 "
   actors:
-  - name2_2: "\u85CD\u8272\u8863\u670D\u7684\u7537\u5B50"
+  - name2_2: "\u85CD\u8272\u8863\u670D\u7684\u5973\u5B50"
   dialogueBox: {fileID: 423032243116479737}
   ObjectTag: {fileID: 4631435369651910835}
 --- !u!65 &4631435369651910833
@@ -37685,7 +37685,7 @@ GameObject:
   - component: {fileID: 4631435369651910846}
   m_Layer: 10
   m_Name: blueman
-  m_TagString: blue_stranger
+  m_TagString: bluegirl
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
@@ -38593,7 +38593,7 @@ GameObject:
   - component: {fileID: 4848244195680696078}
   m_Layer: 10
   m_Name: redman
-  m_TagString: red_stranger
+  m_TagString: redgirl
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
@@ -38635,7 +38635,7 @@ MonoBehaviour:
   - actorId2_2: 0
     meassage2_2: "\u4EE5\u524D\u6709\u89AA\u773C\u770B\u904E\u6797\u723D\u6587\uFF0C\u4ED6\u90FD\u7A7F\u8457\u7070\u8272\u8863\u670D\u3002\u4E0D\u904E\u81EA\u5F9E\u88AB\u6E05\u671D\u7684\u8ECD\u968A\u653B\u64CA\u4E4B\u5F8C\uFF0C\u6211\u5C31\u6C92\u518D\u898B\u904E\u4ED6\u4E86\u3002"
   actors:
-  - name2_2: "\u7D05\u8272\u8863\u670D\u7684\u7537\u5B50"
+  - name2_2: "\u7D05\u8272\u8863\u670D\u7684\u5973\u5B50"
   dialogueBox: {fileID: 7025380641680000389}
   ObjectTag: {fileID: 4848244195680696068}
 --- !u!65 &4848244195680696077
@@ -48913,7 +48913,7 @@ MonoBehaviour:
   - actorId2_2: 0
     meassage2_2: "\u5728\u798F\u5EB7\u5B89\u5927\u4EBA\u6240\u5728\u7684\u4F4D\u7F6E\u9644\u8FD1\uFF0C\u6709\u4E00\u6247\u9580\u80FD\u5920\u901A\u5230\u8D77\u7FA9\u6587\u4EF6\u7684\u843D\u8173\u8655\u3002"
   actors:
-  - name2_2: "\u7DA0\u8272\u8863\u670D\u7684\u7537\u5B50\u7532"
+  - name2_2: "\u7DA0\u8272\u8863\u670D\u7684\u7537\u5B50"
   dialogueBox: {fileID: 8108163845129249894}
   ObjectTag: {fileID: 8891497334385075391}
 --- !u!195 &8891497334385075386
