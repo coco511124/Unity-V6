@@ -37,13 +37,13 @@ public class SaveSystemCh3 : MonoBehaviour
     }
     public void WrongCubeCastle()
     {
-        type = "´¶Ã¹¥Á¾B«°";
+        type = "¼öÄõ¾B«°";
         Save();
         
     }
     public void CorrectCube()
     {
-        type = "¼öÄõ¾B«°";
+        type = "´¶Ã¹¥Á¾B«°";
         Save();
         
     }
