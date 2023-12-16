@@ -71432,7 +71432,7 @@ PrefabInstance:
       objectReference: {fileID: 0}
     - target: {fileID: 4369990017532670639, guid: 0aad1d0e0ae0375428c2e54837999c50, type: 3}
       propertyPath: m_Text
-      value: "1.\u8A8D\u8B58\u6297\u8377\u7684\u80CC\u666F(\u524D\u5F80\u9EC3\u8272\u9A5A\u5606\u865F)\r\n"
+      value: "1.\u8A8D\u8B58\u6297\u8377\u7684\u80CC\u666F(\u524D\u5F80\u7AF9\u7C21)\r\n"
       objectReference: {fileID: 0}
     - target: {fileID: 4369990017564955757, guid: 0aad1d0e0ae0375428c2e54837999c50, type: 3}
       propertyPath: m_Sprite
