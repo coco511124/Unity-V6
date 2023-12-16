@@ -40227,7 +40227,7 @@ GameObject:
   - component: {fileID: 4346870791164957515}
   m_Layer: 10
   m_Name: greenman
-  m_TagString: green_stranger
+  m_TagString: greengirl
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
@@ -42853,7 +42853,7 @@ GameObject:
   - component: {fileID: 6504954964759213699}
   m_Layer: 10
   m_Name: redman
-  m_TagString: red_stranger
+  m_TagString: redgirl
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0

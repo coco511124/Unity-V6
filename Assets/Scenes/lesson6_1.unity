@@ -12709,7 +12709,7 @@ GameObject:
   - component: {fileID: 293047419942919716}
   m_Layer: 10
   m_Name: pinkman
-  m_TagString: pink_stranger
+  m_TagString: pinkgirl
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
@@ -34805,7 +34805,7 @@ GameObject:
   - component: {fileID: 4548178090100111635}
   m_Layer: 10
   m_Name: greenman
-  m_TagString: green_stranger
+  m_TagString: greengirl
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
@@ -40218,7 +40218,7 @@ GameObject:
   - component: {fileID: 5783543567782580636}
   m_Layer: 10
   m_Name: blueman
-  m_TagString: blue_stranger
+  m_TagString: bluegirl
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0

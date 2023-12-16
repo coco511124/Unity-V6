@@ -31764,6 +31764,10 @@ PrefabInstance:
       propertyPath: m_LocalEulerAnglesHint.z
       value: 0
       objectReference: {fileID: 0}
+    - target: {fileID: 2104670934833440555, guid: 59ed4477651f5714f9e0cdf41f5e7a71, type: 3}
+      propertyPath: m_MoveSpeed
+      value: 7
+      objectReference: {fileID: 0}
     - target: {fileID: 5993717982916786778, guid: 59ed4477651f5714f9e0cdf41f5e7a71, type: 3}
       propertyPath: m_Name
       value: PlayerWithInventoryMiniMap

@@ -58,6 +58,28 @@ public class SaveSystemCh2 : MonoBehaviour
             type = "和粉紅衣服男子對話";
             Save();
         }
+        else if (other.gameObject.CompareTag("pinkgirl"))
+        {
+            type = "和粉紅衣服女子對話";
+            Save();
+        }
+        else if (other.gameObject.CompareTag("bluegirl"))
+        {
+            type = "和藍色衣服女子對話";
+            Save();
+        }
+        else if (other.gameObject.CompareTag("greengirl"))
+        {
+            type = "和綠色衣服女子對話";
+            Save();
+        }
+        else if (other.gameObject.CompareTag("redgirl"))
+        {
+            type = "和紅色衣服女子對話";
+            Save();
+        }
+      
+
     }
     public void PickNorth()
     {

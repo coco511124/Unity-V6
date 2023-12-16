@@ -42,6 +42,13 @@ TagManager:
   - hit
   - gotolin
   - green_stranger1
+  - circle2
+  - circle
+  - main_statue
+  - pinkgirl
+  - bluegirl
+  - greengirl
+  - redgirl
   layers:
   - Default
   - TransparentFX
