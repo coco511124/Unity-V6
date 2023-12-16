@@ -3803,7 +3803,7 @@ PrefabInstance:
       objectReference: {fileID: 0}
     - target: {fileID: 5418322432222044550, guid: 986ad8466bb1ae14abefbe7d69406616, type: 3}
       propertyPath: m_Text
-      value: "\u2713 1.\u8A8D\u8B58\u5EFA\u9020\u666E\u7F85\u6C11\u906E\u57CE\u7684\u80CC\u666F(\u524D\u5F80\u9A5A\u5606\u865F)"
+      value: "\u2713 1.\u8A8D\u8B58\u5EFA\u9020\u666E\u7F85\u6C11\u906E\u57CE\u7684\u80CC\u666F(\u524D\u5F80\u7AF9\u7C21)"
       objectReference: {fileID: 0}
     - target: {fileID: 5418322432222044550, guid: 986ad8466bb1ae14abefbe7d69406616, type: 3}
       propertyPath: m_Color.b

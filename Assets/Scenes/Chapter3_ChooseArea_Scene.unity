@@ -97018,7 +97018,7 @@ PrefabInstance:
       objectReference: {fileID: 5789604250825188382}
     - target: {fileID: 3752206844317419518, guid: 04d3b91eea2566144aa8397c4e287e25, type: 3}
       propertyPath: m_Text
-      value: "1.\u4ECB\u7D39\u912D\u6210\u529F\u9A45\u8377\u7684\u80CC\u666F(\u524D\u5F80\u9A5A\u5606\u865F)\r"
+      value: "1.\u4ECB\u7D39\u912D\u6210\u529F\u9A45\u8377\u7684\u80CC\u666F(\u524D\u5F80\u7AF9\u7C21)\r"
       objectReference: {fileID: 0}
     - target: {fileID: 3752206844384427824, guid: 04d3b91eea2566144aa8397c4e287e25, type: 3}
       propertyPath: m_Text

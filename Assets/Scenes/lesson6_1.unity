@@ -3080,6 +3080,17 @@ BoxCollider:
   serializedVersion: 2
   m_Size: {x: 1.2, y: 1, z: 0.5}
   m_Center: {x: -0.5, y: 0, z: 0}
+--- !u!114 &518651030 stripped
+MonoBehaviour:
+  m_CorrespondingSourceObject: {fileID: 7523062420687834389, guid: 59ed4477651f5714f9e0cdf41f5e7a71, type: 3}
+  m_PrefabInstance: {fileID: 224386624}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 5f7201a12d95ffc409449d95f23cf332, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
 --- !u!1 &522120377
 GameObject:
   m_ObjectHideFlags: 0
@@ -9725,6 +9736,7 @@ GameObject:
   - component: {fileID: 1738516137}
   - component: {fileID: 1738516141}
   - component: {fileID: 1738516142}
+  - component: {fileID: 1738516143}
   m_Layer: 7
   m_Name: Circle
   m_TagString: circle
@@ -9840,6 +9852,19 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   taskAudio: {fileID: 1326992343}
+--- !u!114 &1738516143
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1738516136}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 20a2ac45ddf3ff24aa6f97a11424fecf, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  Mission1: {fileID: 518651030}
 --- !u!1 &1742581510
 GameObject:
   m_ObjectHideFlags: 0

@@ -3205,7 +3205,7 @@ PrefabInstance:
       objectReference: {fileID: 0}
     - target: {fileID: 8561962398079390561, guid: 4044ab012cbca7d44a1393a09b5086ce, type: 3}
       propertyPath: m_Text
-      value: "\u606D\u559C\u73A9\u5BB6\u5B8C\u6210\u4EFB\u52D9\uFF0C\u4F60\u653E\u56DE\u56DB\u6D77\u9F8D\u738B\u5716\u50CF\u3001\u6D77\u795E\u5EDF\u724C\u574A\uFF0C\u8B93\u5927\u58EB\u6BBF\u8B8A\u5F97\u66F4\u5B8C\u6574\u4E86\u3002"
+      value: "\u606D\u559C\u73A9\u5BB6\u5B8C\u6210\u4EFB\u52D9\uFF0C\u4F60\u653E\u56DE\u89C0\u97F3\u50CF\u3001\u56DB\u6D77\u9F8D\u738B\u5716\u50CF\u3001\u6D77\u795E\u5EDF\u724C\u574A\uFF0C\u8B93\u5927\u58EB\u6BBF\u548C\u6D77\u795E\u5EDF\u8B8A\u5F97\u66F4\u5B8C\u6574\u4E86\u3002"
       objectReference: {fileID: 0}
     - target: {fileID: 8561962398204620074, guid: 4044ab012cbca7d44a1393a09b5086ce, type: 3}
       propertyPath: m_OnClick.m_PersistentCalls.m_Calls.Array.data[0].m_Target
