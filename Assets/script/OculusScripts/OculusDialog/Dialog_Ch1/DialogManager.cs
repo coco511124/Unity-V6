@@ -80,7 +80,7 @@ public class DialogManager : MonoBehaviour
             {
                 DB.SetActive(false);
                 //spawnBool = true;
-                Mission1.text = "<color=green>✓ 1.認識抗荷的背景(前往黃色驚嘆號)</color>";
+                Mission1.text = "<color=green>✓ 1.認識抗荷的背景(前往竹簡)</color>";
                 //Mission1.color = Color.green;
             }
             else if (PL.tag == "PlayerWithSugar")
