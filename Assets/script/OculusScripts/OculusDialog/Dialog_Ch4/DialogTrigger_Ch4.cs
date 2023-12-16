@@ -1,8 +1,9 @@
-using System.Collections;
+﻿using System.Collections;
 using System.Collections.Generic;
 using UnityEngine;
 using TMPro;
 using UnityEngine.AI;
+using UnityEngine.UI;
 
 public class DialogTrigger_Ch4 : MonoBehaviour
 {
@@ -10,6 +11,7 @@ public class DialogTrigger_Ch4 : MonoBehaviour
     public Actor4[] actors;
     public GameObject dialogueBox, dialogCanvas;
     public AudioSource typingSound;
+    [SerializeField] private Text Missoon2, Missoon4, Missoon5;
 
 
 
@@ -39,14 +41,17 @@ public class DialogTrigger_Ch4 : MonoBehaviour
             //other.GetComponent<SaveSystemCh2>().TalkToFuf();
             if (other.gameObject.CompareTag("Player"))
             {
+                Missoon2.text = "<color=green>✓ 2.尋找福康安</color>";
                 StartDialogue1();
             }
             else if (other.gameObject.CompareTag("pick"))
             {
+                Missoon4.text = "<color=green>✓ 4.和福康安回報</color>";
                 StartDialogue2();
             }
             else if (other.gameObject.CompareTag("hit") || other.gameObject.CompareTag("gotolin"))
             {
+                Missoon5.text = "<color=green>✓ 5.尋找林爽文</color>";
                 StartDialogue2();
             }
         }
@@ -55,8 +60,8 @@ public class DialogTrigger_Ch4 : MonoBehaviour
     }
     private void OnTriggerExit(Collider other)
     {
-        //�]�P�_����
-        //�I�sNPC_animate
+        //設判斷條件
+        //呼叫NPC_animate
         //dialogueBox.SetActive(false);
         //ObjectTag.GetComponent<RandomPathTrolling>().SetWalkTrue();
         //ObjectTag.GetComponent<NPC_animate>().BackAnimate();
