@@ -28,14 +28,14 @@ public class DialogTrigger_Ch3 : MonoBehaviour
     void OnTriggerEnter(Collider other)
     {
         //初始狀態碰到驚嘆號
-        if (other.gameObject.tag == "Player" && ObjectTag.tag == "thing")
+        if ((other.gameObject.CompareTag("Player") && ObjectTag.CompareTag("thing")) || (other.gameObject.CompareTag("PlayerWithZen") && ObjectTag.CompareTag("thing")))
         {
             Debug.Log("碰到驚嘆號");
             dialogueBox.SetActive(true);
             StartDialogue1();
         }
         //第一次跟鄭成功對話的話
-        else if (other.gameObject.tag == "Player" && ObjectTag.tag == "zenhe")
+        else if (other.gameObject.CompareTag("Player") && ObjectTag.CompareTag("zenhe"))
         {
             Debug.Log("第一次跟鄭成功對話");
             dialogueBox.SetActive(true);
@@ -43,7 +43,7 @@ public class DialogTrigger_Ch3 : MonoBehaviour
             //ObjectTag.GetComponent<RandomPathTrolling>().SetWalkFalse(); //呼叫RandomPathTrolling腳本的方法，停止NPC移動
         }
         //玩家的tag還在初始階段時，碰到各個角色時
-        else if (other.gameObject.tag == "Player")
+        else if (other.gameObject.CompareTag("Player"))
         {
             Debug.Log("沒拿蔗糖碰到荷蘭人、或是碰到路人");
             //dialogueBox.SetActive(true);
@@ -51,7 +51,7 @@ public class DialogTrigger_Ch3 : MonoBehaviour
             //ObjectTag.GetComponent<RandomPathTrolling>().SetWalkFalse(); //呼叫RandomPathTrolling腳本的方法，停止NPC移動
         }
         //第一次跟何斌對話的話
-        else if (other.gameObject.tag == "PlayerWithZen" && ObjectTag.tag == "shougun")
+        else if (other.gameObject.CompareTag("PlayerWithZen") && ObjectTag.CompareTag("shougun"))
         {
             Debug.Log("第一次跟何斌對話");
             dialogueBox.SetActive(true);
@@ -59,7 +59,7 @@ public class DialogTrigger_Ch3 : MonoBehaviour
             //ObjectTag.GetComponent<RandomPathTrolling>().SetWalkFalse(); //呼叫RandomPathTrolling腳本的方法，停止NPC移動
         }
         //第二次跟鄭成功對話的話
-        else if (other.gameObject.tag == "PlayerWithShou" && ObjectTag.tag == "zenhe")
+        else if (other.gameObject.CompareTag("PlayerWithShou") && ObjectTag.CompareTag("zenhe"))
         {
             Debug.Log("第二次跟鄭成功對話");
             dialogueBox.SetActive(true);
@@ -67,7 +67,7 @@ public class DialogTrigger_Ch3 : MonoBehaviour
             //ObjectTag.GetComponent<RandomPathTrolling>().SetWalkFalse(); //呼叫RandomPathTrolling腳本的方法，停止NPC移動
         }
         //第二次跟何斌對話的話
-        else if (other.gameObject.tag == "PlayerWithZenTwice" && ObjectTag.tag == "shougun")
+        else if (other.gameObject.CompareTag("PlayerWithZenTwice") && ObjectTag.CompareTag("shougun"))
         {
             Debug.Log("第二次跟何斌對話");
             dialogueBox.SetActive(true);

@@ -65,8 +65,13 @@ public class DialogManager_Ch3 : MonoBehaviour
     }
 
     public void NextMessage()
-    {
+    {      
         currentSoundList[activeMessage].Stop();     //正在說的語句，因為按了下一句的按鈕，所以把當前語音切斷
+
+        
+        
+        
+        
         activeMessage++;
         if (activeMessage < currentMessages.Length)
         {
@@ -79,7 +84,7 @@ public class DialogManager_Ch3 : MonoBehaviour
         {
             //CallObjectAnimatorOrCallMethodOrCheckTag.GetComponent<NPC_animate>().BackAnimate(); //呼叫指定物件改回待機動畫的方法
             //CallObjectAnimatorOrCallMethodOrCheckTag.GetComponent<RandomPathTrolling>().SetWalkTrue(); //呼叫RandomPathTrolling腳本的方法，允許NPC移動
-            if (PL.tag == "Player" && CallObjectAnimatorOrCallMethodOrCheckTag.tag == "thing")
+            if ((PL.tag == "Player" && CallObjectAnimatorOrCallMethodOrCheckTag.tag == "thing") || (PL.tag == "PlayerWithZen" && CallObjectAnimatorOrCallMethodOrCheckTag.tag == "thing"))
             {
                 DB.SetActive(false);
                 //spawnBool = true;
@@ -117,7 +122,7 @@ public class DialogManager_Ch3 : MonoBehaviour
                 openShipCanvas?.Invoke();
                 //換場景到開船場景()
                 //EndCanvasManager.EndCanvas();
-            }
+            }            
         }
     }
     
