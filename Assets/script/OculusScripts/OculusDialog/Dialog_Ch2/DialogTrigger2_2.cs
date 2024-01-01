@@ -29,19 +29,30 @@ public class DialogTrigger2_2 : MonoBehaviour
 
     void OnTriggerEnter(Collider other)
     {
-        if (other.gameObject.tag == "Player" && this.gameObject.name == "Aboriginal_white_rig")
+        if (other.gameObject.CompareTag("Player") && this.gameObject.name == "Aboriginal_white_rig")
         {
             return;
-        }
-        
-        else if (other.gameObject.tag == "TalkedToA")
+        }        
+        else if (other.gameObject.CompareTag("TalkedToA"))
         {
             Debug.Log("talked");
             ObjectTag.GetComponent<RandomPathTrolling>().SetWalkFalse();
             dialogueBox.SetActive(true) ;
             StartDialogue2();
         }
-        else if (other.gameObject.tag == "Player")
+        else if (other.gameObject.CompareTag("Player"))
+        {
+            ObjectTag.GetComponent<RandomPathTrolling>().SetWalkFalse();
+            dialogueBox.SetActive(true);
+            StartDialogue1();
+        }
+        else if (other.gameObject.CompareTag("hit"))
+        {
+            ObjectTag.GetComponent<RandomPathTrolling>().SetWalkFalse();
+            dialogueBox.SetActive(true);
+            StartDialogue1();
+        }
+        else if (other.gameObject.CompareTag("pick") || other.gameObject.CompareTag("gotolin"))
         {
             ObjectTag.GetComponent<RandomPathTrolling>().SetWalkFalse();
             dialogueBox.SetActive(true);
