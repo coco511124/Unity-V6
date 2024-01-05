@@ -10,11 +10,13 @@ public class HideObjectInInvantory : MonoBehaviour
     public Image artStuff;
     public TMP_Text titleText;
     public TMP_Text descriptionText;
+    static public int indexObjectsAudio;
 
     //佔存的欄位
     private Sprite artStuff_Cache;
     private string titleText_Cache;
     private string descriptionText_Cache;
+    private int indexObjectsAudio_Cache;
 
     public GameObject ParentObject;
     private GameObject setGameObject;
@@ -166,6 +168,7 @@ public class HideObjectInInvantory : MonoBehaviour
             artStuff_Cache = null;
             titleText_Cache = null;
             descriptionText_Cache = null;
+            indexObjectsAudio_Cache = 0;
         }
     }
 
@@ -183,17 +186,19 @@ public class HideObjectInInvantory : MonoBehaviour
             Sprite artSprite = localSOinfo.artWork; //setGameObject.GetComponent<Image>().sprite;
             string artTitle = localSOinfo.title;    //setGameObject.GetComponent<TMP_Text>().text;
             string artDescription = localSOinfo.description;  //setGameObject.GetComponent<TMP_Text>().text;
-            getSpriteDescription(artSprite, artTitle, artDescription);
+            int indexObjectLocal = localSOinfo.indexObject;
+            getSpriteDescription(artSprite, artTitle, artDescription, indexObjectLocal);
         }
     }
 
-    public void getSpriteDescription(Sprite image, string title, string description)
+    public void getSpriteDescription(Sprite image, string title, string description, int index) //再加個int index
     {
         //抓取到的甘蔗或是郭懷一文件的圖片(sprite)、標題(text)和描述(text)
         //再放到暫存區Cache
         artStuff_Cache = image;
         titleText_Cache = title;
         descriptionText_Cache = description;
+        indexObjectsAudio_Cache = index;
     }
 
 
@@ -205,6 +210,7 @@ public class HideObjectInInvantory : MonoBehaviour
         artStuff.sprite = artStuff_Cache;
         titleText.text = titleText_Cache;
         descriptionText.text = descriptionText_Cache;
+        indexObjectsAudio = indexObjectsAudio_Cache;
     }
     List<Transform> GetChildren(Transform parent, bool recursive)
     {
