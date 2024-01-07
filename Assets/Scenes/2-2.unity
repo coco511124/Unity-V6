@@ -1429,6 +1429,11 @@ Transform:
   m_Father: {fileID: 2033494069}
   m_RootOrder: 2
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
+--- !u!1 &342915358 stripped
+GameObject:
+  m_CorrespondingSourceObject: {fileID: 3671434057355691982, guid: d7fd384cfcc5da74cb08d9a18718423d, type: 3}
+  m_PrefabInstance: {fileID: 145217230}
+  m_PrefabAsset: {fileID: 0}
 --- !u!1 &377581873 stripped
 GameObject:
   m_CorrespondingSourceObject: {fileID: -7583997235865507665, guid: 08f9b36905b89b64f927095b35b97432, type: 3}
@@ -1646,6 +1651,14 @@ PrefabInstance:
   m_Modification:
     m_TransformParent: {fileID: 5014969820958778522}
     m_Modifications:
+    - target: {fileID: 6153719516003397994, guid: 5ca74c7b19aa2bc429489847c8b46992, type: 3}
+      propertyPath: xrOrigin
+      value: 
+      objectReference: {fileID: 1503861564}
+    - target: {fileID: 6153719516003397994, guid: 5ca74c7b19aa2bc429489847c8b46992, type: 3}
+      propertyPath: playerCamera
+      value: 
+      objectReference: {fileID: 342915358}
     - target: {fileID: 8027286202377919268, guid: 5ca74c7b19aa2bc429489847c8b46992, type: 3}
       propertyPath: m_Name
       value: MinimapSymbol
@@ -1724,6 +1737,14 @@ PrefabInstance:
   m_Modification:
     m_TransformParent: {fileID: 1369402089936961553}
     m_Modifications:
+    - target: {fileID: 6153719516003397994, guid: 5ca74c7b19aa2bc429489847c8b46992, type: 3}
+      propertyPath: xrOrigin
+      value: 
+      objectReference: {fileID: 1503861564}
+    - target: {fileID: 6153719516003397994, guid: 5ca74c7b19aa2bc429489847c8b46992, type: 3}
+      propertyPath: playerCamera
+      value: 
+      objectReference: {fileID: 342915358}
     - target: {fileID: 8027286202377919268, guid: 5ca74c7b19aa2bc429489847c8b46992, type: 3}
       propertyPath: m_Name
       value: MinimapSymbol
@@ -3213,6 +3234,14 @@ PrefabInstance:
   m_Modification:
     m_TransformParent: {fileID: 1870556637}
     m_Modifications:
+    - target: {fileID: 6153719516003397994, guid: 5ca74c7b19aa2bc429489847c8b46992, type: 3}
+      propertyPath: xrOrigin
+      value: 
+      objectReference: {fileID: 1503861564}
+    - target: {fileID: 6153719516003397994, guid: 5ca74c7b19aa2bc429489847c8b46992, type: 3}
+      propertyPath: playerCamera
+      value: 
+      objectReference: {fileID: 342915358}
     - target: {fileID: 8027286202377919268, guid: 5ca74c7b19aa2bc429489847c8b46992, type: 3}
       propertyPath: m_Name
       value: MinimapSymbol
@@ -4125,7 +4154,7 @@ PrefabInstance:
       objectReference: {fileID: 0}
     - target: {fileID: 5418322432537126449, guid: 986ad8466bb1ae14abefbe7d69406616, type: 3}
       propertyPath: m_Text
-      value: "\u4E86\u89E3\u8377\u862D\u8CFC\u8CB7\u539F\u4F4F\u6C11\u571F\u5730\u7684\u4F4D\u7F6E(\u627E\u85CD\u8272\u539F\u4F4F\u6C11\u5C0D\u8A71)"
+      value: "2.\u4E86\u89E3\u8377\u862D\u8CFC\u8CB7\u539F\u4F4F\u6C11\u571F\u5730\u7684\u4F4D\u7F6E(\u627E\u85CD\u8272\u539F\u4F4F\u6C11\u5C0D\u8A71)"
       objectReference: {fileID: 0}
     - target: {fileID: 5418322432547802907, guid: 986ad8466bb1ae14abefbe7d69406616, type: 3}
       propertyPath: m_MaxRaycastDistance
@@ -4155,6 +4184,7 @@ PrefabInstance:
     - {fileID: 4495645703024298931, guid: 986ad8466bb1ae14abefbe7d69406616, type: 3}
     - {fileID: 5418322432537126447, guid: 986ad8466bb1ae14abefbe7d69406616, type: 3}
     - {fileID: 4495645703024298929, guid: 986ad8466bb1ae14abefbe7d69406616, type: 3}
+    - {fileID: 1557618123792161387, guid: 986ad8466bb1ae14abefbe7d69406616, type: 3}
   m_SourcePrefab: {fileID: 100100000, guid: 986ad8466bb1ae14abefbe7d69406616, type: 3}
 --- !u!4 &1503861563 stripped
 Transform:
@@ -4198,6 +4228,36 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 5f7201a12d95ffc409449d95f23cf332, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
+--- !u!1 &1527242648 stripped
+GameObject:
+  m_CorrespondingSourceObject: {fileID: 5418322432537126450, guid: 986ad8466bb1ae14abefbe7d69406616, type: 3}
+  m_PrefabInstance: {fileID: 1503861562}
+  m_PrefabAsset: {fileID: 0}
+--- !u!114 &1527242651 stripped
+MonoBehaviour:
+  m_CorrespondingSourceObject: {fileID: 5418322432537126449, guid: 986ad8466bb1ae14abefbe7d69406616, type: 3}
+  m_PrefabInstance: {fileID: 1503861562}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1527242648}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 5f7201a12d95ffc409449d95f23cf332, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+--- !u!114 &1527242653
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1527242648}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: e1e307e6477e29b4fb83d3c4614e39d8, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  mission2: {fileID: 1527242651}
+  xrOrigin: {fileID: 1503861564}
 --- !u!1 &1543821957
 GameObject:
   m_ObjectHideFlags: 0
@@ -4269,6 +4329,14 @@ PrefabInstance:
   m_Modification:
     m_TransformParent: {fileID: 2465516357578376395}
     m_Modifications:
+    - target: {fileID: 6153719516003397994, guid: 5ca74c7b19aa2bc429489847c8b46992, type: 3}
+      propertyPath: xrOrigin
+      value: 
+      objectReference: {fileID: 1503861564}
+    - target: {fileID: 6153719516003397994, guid: 5ca74c7b19aa2bc429489847c8b46992, type: 3}
+      propertyPath: playerCamera
+      value: 
+      objectReference: {fileID: 342915358}
     - target: {fileID: 8027286202377919268, guid: 5ca74c7b19aa2bc429489847c8b46992, type: 3}
       propertyPath: m_Name
       value: MinimapSymbol
@@ -4347,6 +4415,14 @@ PrefabInstance:
   m_Modification:
     m_TransformParent: {fileID: 9072085}
     m_Modifications:
+    - target: {fileID: 6153719516003397994, guid: 5ca74c7b19aa2bc429489847c8b46992, type: 3}
+      propertyPath: xrOrigin
+      value: 
+      objectReference: {fileID: 1503861564}
+    - target: {fileID: 6153719516003397994, guid: 5ca74c7b19aa2bc429489847c8b46992, type: 3}
+      propertyPath: playerCamera
+      value: 
+      objectReference: {fileID: 342915358}
     - target: {fileID: 8027286202377919268, guid: 5ca74c7b19aa2bc429489847c8b46992, type: 3}
       propertyPath: m_Name
       value: MinimapSymbol
@@ -4561,6 +4637,14 @@ PrefabInstance:
   m_Modification:
     m_TransformParent: {fileID: 855980496251792899}
     m_Modifications:
+    - target: {fileID: 6153719516003397994, guid: 5ca74c7b19aa2bc429489847c8b46992, type: 3}
+      propertyPath: xrOrigin
+      value: 
+      objectReference: {fileID: 1503861564}
+    - target: {fileID: 6153719516003397994, guid: 5ca74c7b19aa2bc429489847c8b46992, type: 3}
+      propertyPath: playerCamera
+      value: 
+      objectReference: {fileID: 342915358}
     - target: {fileID: 8027286202377919268, guid: 5ca74c7b19aa2bc429489847c8b46992, type: 3}
       propertyPath: m_Name
       value: MinimapSymbol

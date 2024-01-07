@@ -198,6 +198,10 @@ PrefabInstance:
   m_Modification:
     m_TransformParent: {fileID: 1738516140}
     m_Modifications:
+    - target: {fileID: 6153719516003397994, guid: 5ca74c7b19aa2bc429489847c8b46992, type: 3}
+      propertyPath: m_Enabled
+      value: 0
+      objectReference: {fileID: 0}
     - target: {fileID: 8027286202377919268, guid: 5ca74c7b19aa2bc429489847c8b46992, type: 3}
       propertyPath: m_Name
       value: MinimapSymbol
@@ -1156,6 +1160,10 @@ PrefabInstance:
   m_Modification:
     m_TransformParent: {fileID: 0}
     m_Modifications:
+    - target: {fileID: 118356821507329912, guid: 59ed4477651f5714f9e0cdf41f5e7a71, type: 3}
+      propertyPath: m_Enabled
+      value: 0
+      objectReference: {fileID: 0}
     - target: {fileID: 564189162058016107, guid: 59ed4477651f5714f9e0cdf41f5e7a71, type: 3}
       propertyPath: m_AnchorMax.y
       value: 0
@@ -2278,6 +2286,10 @@ PrefabInstance:
   m_Modification:
     m_TransformParent: {fileID: 1476462712}
     m_Modifications:
+    - target: {fileID: 6153719516003397994, guid: 5ca74c7b19aa2bc429489847c8b46992, type: 3}
+      propertyPath: m_Enabled
+      value: 0
+      objectReference: {fileID: 0}
     - target: {fileID: 8027286202377919268, guid: 5ca74c7b19aa2bc429489847c8b46992, type: 3}
       propertyPath: m_Name
       value: MinimapSymbol
@@ -2339,6 +2351,10 @@ PrefabInstance:
   m_Modification:
     m_TransformParent: {fileID: 0}
     m_Modifications:
+    - target: {fileID: 1856042450687110512, guid: 82d4413ae0b2b7b41ac9d61e632152b2, type: 3}
+      propertyPath: m_Enabled
+      value: 0
+      objectReference: {fileID: 0}
     - target: {fileID: 5523554500595432248, guid: 82d4413ae0b2b7b41ac9d61e632152b2, type: 3}
       propertyPath: messages_1.Array.size
       value: 3
@@ -3036,6 +3052,10 @@ PrefabInstance:
   m_Modification:
     m_TransformParent: {fileID: 1350458909}
     m_Modifications:
+    - target: {fileID: 6153719516003397994, guid: 5ca74c7b19aa2bc429489847c8b46992, type: 3}
+      propertyPath: m_Enabled
+      value: 0
+      objectReference: {fileID: 0}
     - target: {fileID: 8027286202377919268, guid: 5ca74c7b19aa2bc429489847c8b46992, type: 3}
       propertyPath: m_Name
       value: MinimapSymbol
@@ -5193,6 +5213,10 @@ PrefabInstance:
   m_Modification:
     m_TransformParent: {fileID: 313943394}
     m_Modifications:
+    - target: {fileID: 6153719516003397994, guid: 5ca74c7b19aa2bc429489847c8b46992, type: 3}
+      propertyPath: m_Enabled
+      value: 0
+      objectReference: {fileID: 0}
     - target: {fileID: 8027286202377919268, guid: 5ca74c7b19aa2bc429489847c8b46992, type: 3}
       propertyPath: m_Name
       value: MinimapSymbol
@@ -6462,6 +6486,10 @@ PrefabInstance:
   m_Modification:
     m_TransformParent: {fileID: 82764504}
     m_Modifications:
+    - target: {fileID: 6153719516003397994, guid: 5ca74c7b19aa2bc429489847c8b46992, type: 3}
+      propertyPath: m_Enabled
+      value: 0
+      objectReference: {fileID: 0}
     - target: {fileID: 8027286202377919268, guid: 5ca74c7b19aa2bc429489847c8b46992, type: 3}
       propertyPath: m_Name
       value: MinimapSymbol
@@ -6701,6 +6729,10 @@ PrefabInstance:
   m_Modification:
     m_TransformParent: {fileID: 293047419942919713}
     m_Modifications:
+    - target: {fileID: 6153719516003397994, guid: 5ca74c7b19aa2bc429489847c8b46992, type: 3}
+      propertyPath: m_Enabled
+      value: 0
+      objectReference: {fileID: 0}
     - target: {fileID: 8027286202377919268, guid: 5ca74c7b19aa2bc429489847c8b46992, type: 3}
       propertyPath: m_Name
       value: MinimapSymbol
@@ -8402,6 +8434,10 @@ PrefabInstance:
   m_Modification:
     m_TransformParent: {fileID: 6899860868542643602}
     m_Modifications:
+    - target: {fileID: 6153719516003397994, guid: 5ca74c7b19aa2bc429489847c8b46992, type: 3}
+      propertyPath: m_Enabled
+      value: 0
+      objectReference: {fileID: 0}
     - target: {fileID: 8027286202377919268, guid: 5ca74c7b19aa2bc429489847c8b46992, type: 3}
       propertyPath: m_Name
       value: MinimapSymbol
@@ -9729,6 +9765,10 @@ PrefabInstance:
   m_Modification:
     m_TransformParent: {fileID: 5783543567782580654}
     m_Modifications:
+    - target: {fileID: 6153719516003397994, guid: 5ca74c7b19aa2bc429489847c8b46992, type: 3}
+      propertyPath: m_Enabled
+      value: 0
+      objectReference: {fileID: 0}
     - target: {fileID: 8027286202377919268, guid: 5ca74c7b19aa2bc429489847c8b46992, type: 3}
       propertyPath: m_Name
       value: MinimapSymbol
@@ -12775,6 +12815,10 @@ PrefabInstance:
   m_Modification:
     m_TransformParent: {fileID: 4548178090100111638}
     m_Modifications:
+    - target: {fileID: 6153719516003397994, guid: 5ca74c7b19aa2bc429489847c8b46992, type: 3}
+      propertyPath: m_Enabled
+      value: 0
+      objectReference: {fileID: 0}
     - target: {fileID: 8027286202377919268, guid: 5ca74c7b19aa2bc429489847c8b46992, type: 3}
       propertyPath: m_Name
       value: MinimapSymbol

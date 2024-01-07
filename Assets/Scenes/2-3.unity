@@ -4001,6 +4001,14 @@ PrefabInstance:
   m_Modification:
     m_TransformParent: {fileID: 4128512124110349194}
     m_Modifications:
+    - target: {fileID: 6153719516003397994, guid: 5ca74c7b19aa2bc429489847c8b46992, type: 3}
+      propertyPath: xrOrigin
+      value: 
+      objectReference: {fileID: 603234774986524591}
+    - target: {fileID: 6153719516003397994, guid: 5ca74c7b19aa2bc429489847c8b46992, type: 3}
+      propertyPath: playerCamera
+      value: 
+      objectReference: {fileID: 6107474475744453174}
     - target: {fileID: 8027286202377919268, guid: 5ca74c7b19aa2bc429489847c8b46992, type: 3}
       propertyPath: m_Name
       value: MinimapSymbol
@@ -4622,6 +4630,14 @@ PrefabInstance:
   m_Modification:
     m_TransformParent: {fileID: 2433224848340022616}
     m_Modifications:
+    - target: {fileID: 6153719516003397994, guid: 5ca74c7b19aa2bc429489847c8b46992, type: 3}
+      propertyPath: xrOrigin
+      value: 
+      objectReference: {fileID: 603234774986524591}
+    - target: {fileID: 6153719516003397994, guid: 5ca74c7b19aa2bc429489847c8b46992, type: 3}
+      propertyPath: playerCamera
+      value: 
+      objectReference: {fileID: 6107474475744453174}
     - target: {fileID: 8027286202377919268, guid: 5ca74c7b19aa2bc429489847c8b46992, type: 3}
       propertyPath: m_Name
       value: MinimapSymbol
@@ -5475,6 +5491,14 @@ PrefabInstance:
   m_Modification:
     m_TransformParent: {fileID: 2008070679171453207}
     m_Modifications:
+    - target: {fileID: 6153719516003397994, guid: 5ca74c7b19aa2bc429489847c8b46992, type: 3}
+      propertyPath: xrOrigin
+      value: 
+      objectReference: {fileID: 603234774986524591}
+    - target: {fileID: 6153719516003397994, guid: 5ca74c7b19aa2bc429489847c8b46992, type: 3}
+      propertyPath: playerCamera
+      value: 
+      objectReference: {fileID: 6107474475744453174}
     - target: {fileID: 8027286202377919268, guid: 5ca74c7b19aa2bc429489847c8b46992, type: 3}
       propertyPath: m_Name
       value: MinimapSymbol
@@ -5862,6 +5886,14 @@ PrefabInstance:
   m_Modification:
     m_TransformParent: {fileID: 1514155814068055211}
     m_Modifications:
+    - target: {fileID: 6153719516003397994, guid: 5ca74c7b19aa2bc429489847c8b46992, type: 3}
+      propertyPath: xrOrigin
+      value: 
+      objectReference: {fileID: 603234774986524591}
+    - target: {fileID: 6153719516003397994, guid: 5ca74c7b19aa2bc429489847c8b46992, type: 3}
+      propertyPath: playerCamera
+      value: 
+      objectReference: {fileID: 6107474475744453174}
     - target: {fileID: 8027286202377919268, guid: 5ca74c7b19aa2bc429489847c8b46992, type: 3}
       propertyPath: m_Name
       value: MinimapSymbol
@@ -6382,6 +6414,14 @@ PrefabInstance:
   m_Modification:
     m_TransformParent: {fileID: 543450652263411540}
     m_Modifications:
+    - target: {fileID: 6153719516003397994, guid: 5ca74c7b19aa2bc429489847c8b46992, type: 3}
+      propertyPath: xrOrigin
+      value: 
+      objectReference: {fileID: 603234774986524591}
+    - target: {fileID: 6153719516003397994, guid: 5ca74c7b19aa2bc429489847c8b46992, type: 3}
+      propertyPath: playerCamera
+      value: 
+      objectReference: {fileID: 6107474475744453174}
     - target: {fileID: 8027286202377919268, guid: 5ca74c7b19aa2bc429489847c8b46992, type: 3}
       propertyPath: m_Name
       value: MinimapSymbol
@@ -8319,6 +8359,14 @@ PrefabInstance:
   m_Modification:
     m_TransformParent: {fileID: 2114167331}
     m_Modifications:
+    - target: {fileID: 6153719516003397994, guid: 5ca74c7b19aa2bc429489847c8b46992, type: 3}
+      propertyPath: xrOrigin
+      value: 
+      objectReference: {fileID: 603234774986524591}
+    - target: {fileID: 6153719516003397994, guid: 5ca74c7b19aa2bc429489847c8b46992, type: 3}
+      propertyPath: playerCamera
+      value: 
+      objectReference: {fileID: 6107474475744453174}
     - target: {fileID: 8027286202377919268, guid: 5ca74c7b19aa2bc429489847c8b46992, type: 3}
       propertyPath: m_Name
       value: MinimapSymbol
@@ -8392,6 +8440,14 @@ PrefabInstance:
   m_Modification:
     m_TransformParent: {fileID: 241374921}
     m_Modifications:
+    - target: {fileID: 6153719516003397994, guid: 5ca74c7b19aa2bc429489847c8b46992, type: 3}
+      propertyPath: xrOrigin
+      value: 
+      objectReference: {fileID: 603234774986524591}
+    - target: {fileID: 6153719516003397994, guid: 5ca74c7b19aa2bc429489847c8b46992, type: 3}
+      propertyPath: playerCamera
+      value: 
+      objectReference: {fileID: 6107474475744453174}
     - target: {fileID: 8027286202377919268, guid: 5ca74c7b19aa2bc429489847c8b46992, type: 3}
       propertyPath: m_Name
       value: MinimapSymbol
@@ -8678,6 +8734,14 @@ PrefabInstance:
   m_Modification:
     m_TransformParent: {fileID: 325790723}
     m_Modifications:
+    - target: {fileID: 6153719516003397994, guid: 5ca74c7b19aa2bc429489847c8b46992, type: 3}
+      propertyPath: xrOrigin
+      value: 
+      objectReference: {fileID: 603234774986524591}
+    - target: {fileID: 6153719516003397994, guid: 5ca74c7b19aa2bc429489847c8b46992, type: 3}
+      propertyPath: playerCamera
+      value: 
+      objectReference: {fileID: 6107474475744453174}
     - target: {fileID: 8027286202377919268, guid: 5ca74c7b19aa2bc429489847c8b46992, type: 3}
       propertyPath: m_Name
       value: MinimapSymbol
@@ -10490,6 +10554,14 @@ PrefabInstance:
   m_Modification:
     m_TransformParent: {fileID: 145656852}
     m_Modifications:
+    - target: {fileID: 6153719516003397994, guid: 5ca74c7b19aa2bc429489847c8b46992, type: 3}
+      propertyPath: xrOrigin
+      value: 
+      objectReference: {fileID: 603234774986524591}
+    - target: {fileID: 6153719516003397994, guid: 5ca74c7b19aa2bc429489847c8b46992, type: 3}
+      propertyPath: playerCamera
+      value: 
+      objectReference: {fileID: 6107474475744453174}
     - target: {fileID: 8027286202377919268, guid: 5ca74c7b19aa2bc429489847c8b46992, type: 3}
       propertyPath: m_Name
       value: MinimapSymbol
@@ -33335,7 +33407,8 @@ PrefabInstance:
       propertyPath: m_SizeDelta.y
       value: 0
       objectReference: {fileID: 0}
-    m_RemovedComponents: []
+    m_RemovedComponents:
+    - {fileID: 118356821507329912, guid: 59ed4477651f5714f9e0cdf41f5e7a71, type: 3}
   m_SourcePrefab: {fileID: 100100000, guid: 59ed4477651f5714f9e0cdf41f5e7a71, type: 3}
 --- !u!114 &6107474475744453171 stripped
 MonoBehaviour:
@@ -33362,6 +33435,11 @@ MonoBehaviour:
 --- !u!224 &6107474475744453173 stripped
 RectTransform:
   m_CorrespondingSourceObject: {fileID: 7523062421211930130, guid: 59ed4477651f5714f9e0cdf41f5e7a71, type: 3}
+  m_PrefabInstance: {fileID: 6107474475744453170}
+  m_PrefabAsset: {fileID: 0}
+--- !u!1 &6107474475744453174 stripped
+GameObject:
+  m_CorrespondingSourceObject: {fileID: 7363832341667538403, guid: 59ed4477651f5714f9e0cdf41f5e7a71, type: 3}
   m_PrefabInstance: {fileID: 6107474475744453170}
   m_PrefabAsset: {fileID: 0}
 --- !u!1 &6107537080954749831
