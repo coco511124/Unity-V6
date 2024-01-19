@@ -14,4 +14,9 @@ public class CircleChangeQuestText_CH4 : MonoBehaviour
             Mission1.text = "<color=green>✓ 1.前往藍色光圈</color>";
         }
     }
+
+    public void Guai()
+    {
+        Mission1.text = "<color=green>✓ 3.認識大士殿裡的古物(放回觀音神像)</color>";
+    }
 }
