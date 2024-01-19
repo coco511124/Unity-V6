@@ -12502,6 +12502,14 @@ PrefabInstance:
   m_Modification:
     m_TransformParent: {fileID: 865757676}
     m_Modifications:
+    - target: {fileID: 6153719516003397994, guid: 5ca74c7b19aa2bc429489847c8b46992, type: 3}
+      propertyPath: xrOrigin
+      value: 
+      objectReference: {fileID: 935524865}
+    - target: {fileID: 6153719516003397994, guid: 5ca74c7b19aa2bc429489847c8b46992, type: 3}
+      propertyPath: playerCamera
+      value: 
+      objectReference: {fileID: 1535459758}
     - target: {fileID: 8027286202377919268, guid: 5ca74c7b19aa2bc429489847c8b46992, type: 3}
       propertyPath: m_Name
       value: MinimapSymbol
@@ -21987,6 +21995,11 @@ MonoBehaviour:
   m_Teleporting:
     m_PersistentCalls:
       m_Calls: []
+--- !u!1 &1535459758 stripped
+GameObject:
+  m_CorrespondingSourceObject: {fileID: 5425258564805672129, guid: 59ed4477651f5714f9e0cdf41f5e7a71, type: 3}
+  m_PrefabInstance: {fileID: 935524863}
+  m_PrefabAsset: {fileID: 0}
 --- !u!1001 &1542418520
 PrefabInstance:
   m_ObjectHideFlags: 0
