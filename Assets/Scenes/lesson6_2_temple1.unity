@@ -3302,6 +3302,10 @@ PrefabInstance:
       propertyPath: near clip plane
       value: 0.01
       objectReference: {fileID: 0}
+    - target: {fileID: 5425258564805672135, guid: 59ed4477651f5714f9e0cdf41f5e7a71, type: 3}
+      propertyPath: m_CullingMask.m_Bits
+      value: 10231
+      objectReference: {fileID: 0}
     - target: {fileID: 5993717982916786778, guid: 59ed4477651f5714f9e0cdf41f5e7a71, type: 3}
       propertyPath: m_Name
       value: PlayerWithInventoryMiniMap

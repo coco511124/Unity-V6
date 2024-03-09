@@ -15838,7 +15838,7 @@ GameObject:
   - component: {fileID: 82810480}
   - component: {fileID: 82810479}
   - component: {fileID: 82810478}
-  m_Layer: 0
+  m_Layer: 7
   m_Name: Ground01 (1)
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -16022,6 +16022,11 @@ MeshFilter:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 82810476}
   m_Mesh: {fileID: 10209, guid: 0000000000000000e000000000000000, type: 0}
+--- !u!224 &84404863 stripped
+RectTransform:
+  m_CorrespondingSourceObject: {fileID: 4369990019030753704, guid: 0aad1d0e0ae0375428c2e54837999c50, type: 3}
+  m_PrefabInstance: {fileID: 4369990018980334551}
+  m_PrefabAsset: {fileID: 0}
 --- !u!1 &87320939
 GameObject:
   m_ObjectHideFlags: 0
@@ -23132,7 +23137,7 @@ GameObject:
   serializedVersion: 6
   m_Component:
   - component: {fileID: 499225371}
-  m_Layer: 0
+  m_Layer: 7
   m_Name: plane
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -26016,7 +26021,7 @@ GameObject:
   - component: {fileID: 684585275}
   - component: {fileID: 684585274}
   - component: {fileID: 684585277}
-  m_Layer: 0
+  m_Layer: 7
   m_Name: Ground01
   m_TagString: Ground
   m_Icon: {fileID: 0}
@@ -40221,7 +40226,7 @@ GameObject:
   - component: {fileID: 1518571873}
   - component: {fileID: 1518571875}
   - component: {fileID: 1518571874}
-  m_Layer: 0
+  m_Layer: 7
   m_Name: Terrain
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -55903,7 +55908,7 @@ RectTransform:
   m_ConstrainProportionsScale: 0
   m_Children:
   - {fileID: 1681174827}
-  m_Father: {fileID: 4369990018980334552}
+  m_Father: {fileID: 84404863}
   m_RootOrder: 0
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
   m_AnchorMin: {x: 0.5, y: 0.5}
@@ -58741,7 +58746,7 @@ GameObject:
   - component: {fileID: 2013184173}
   - component: {fileID: 2013184172}
   - component: {fileID: 2013184180}
-  m_Layer: 0
+  m_Layer: 7
   m_Name: PlaneLimit
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -72414,7 +72419,7 @@ PrefabInstance:
       objectReference: {fileID: 0}
     - target: {fileID: 2272198256246834045, guid: 0aad1d0e0ae0375428c2e54837999c50, type: 3}
       propertyPath: m_CullingMask.m_Bits
-      value: 2039
+      value: 10231
       objectReference: {fileID: 0}
     - target: {fileID: 3592816643278200145, guid: 0aad1d0e0ae0375428c2e54837999c50, type: 3}
       propertyPath: m_AnchorMax.y
@@ -72768,6 +72773,10 @@ PrefabInstance:
       propertyPath: m_InteractionLayers.m_Bits
       value: 8
       objectReference: {fileID: 0}
+    - target: {fileID: 4369990018985416376, guid: 0aad1d0e0ae0375428c2e54837999c50, type: 3}
+      propertyPath: m_Size
+      value: 0.3673469
+      objectReference: {fileID: 0}
     - target: {fileID: 4369990019030753622, guid: 0aad1d0e0ae0375428c2e54837999c50, type: 3}
       propertyPath: m_text
       value: 
@@ -73074,11 +73083,6 @@ PrefabInstance:
       objectReference: {fileID: 21300000, guid: 33cfdedd4b7253747ae1062b92a48ba0, type: 3}
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: 0aad1d0e0ae0375428c2e54837999c50, type: 3}
---- !u!224 &4369990018980334552 stripped
-RectTransform:
-  m_CorrespondingSourceObject: {fileID: 4369990019030753704, guid: 0aad1d0e0ae0375428c2e54837999c50, type: 3}
-  m_PrefabInstance: {fileID: 4369990018980334551}
-  m_PrefabAsset: {fileID: 0}
 --- !u!4 &4375749166334847219
 Transform:
   m_ObjectHideFlags: 0
@@ -74678,6 +74682,10 @@ PrefabInstance:
   m_Modification:
     m_TransformParent: {fileID: 682300939}
     m_Modifications:
+    - target: {fileID: 5200215365913464010, guid: a05b49ed477f5cc408c277a7e57126b7, type: 3}
+      propertyPath: layerName.m_Bits
+      value: 64
+      objectReference: {fileID: 0}
     - target: {fileID: 5590388912824811377, guid: a05b49ed477f5cc408c277a7e57126b7, type: 3}
       propertyPath: m_InteractionManager
       value: 

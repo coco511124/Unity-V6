@@ -13534,7 +13534,7 @@ GameObject:
   - component: {fileID: 973986147}
   - component: {fileID: 973986146}
   - component: {fileID: 973986149}
-  m_Layer: 0
+  m_Layer: 7
   m_Name: Terrain
   m_TagString: Ground
   m_Icon: {fileID: 0}
@@ -29697,6 +29697,10 @@ PrefabInstance:
     - target: {fileID: 1094957273563829188, guid: 59ed4477651f5714f9e0cdf41f5e7a71, type: 3}
       propertyPath: m_LocalEulerAnglesHint.z
       value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 5425258564805672135, guid: 59ed4477651f5714f9e0cdf41f5e7a71, type: 3}
+      propertyPath: m_CullingMask.m_Bits
+      value: 10231
       objectReference: {fileID: 0}
     - target: {fileID: 5993717982916786778, guid: 59ed4477651f5714f9e0cdf41f5e7a71, type: 3}
       propertyPath: m_Name

@@ -1948,7 +1948,7 @@ GameObject:
   - component: {fileID: 153273841}
   - component: {fileID: 153273843}
   - component: {fileID: 153273842}
-  m_Layer: 0
+  m_Layer: 7
   m_Name: Terrain
   m_TagString: Ground
   m_Icon: {fileID: 0}
@@ -11720,7 +11720,7 @@ GameObject:
   - component: {fileID: 712684480}
   - component: {fileID: 712684479}
   - component: {fileID: 712684478}
-  m_Layer: 0
+  m_Layer: 7
   m_Name: block
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -14349,6 +14349,10 @@ PrefabInstance:
     - target: {fileID: 4297768750214833463, guid: 59ed4477651f5714f9e0cdf41f5e7a71, type: 3}
       propertyPath: m_LocalScale.z
       value: 0.7
+      objectReference: {fileID: 0}
+    - target: {fileID: 5425258564805672135, guid: 59ed4477651f5714f9e0cdf41f5e7a71, type: 3}
+      propertyPath: m_CullingMask.m_Bits
+      value: 10231
       objectReference: {fileID: 0}
     - target: {fileID: 5993717982916786778, guid: 59ed4477651f5714f9e0cdf41f5e7a71, type: 3}
       propertyPath: m_Name
