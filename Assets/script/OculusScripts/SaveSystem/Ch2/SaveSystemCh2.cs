@@ -20,6 +20,7 @@ public class SaveSystemCh2 : MonoBehaviour
 
     private void Start()
     {
+        playerName = KeepData.loginName;
         pldataCh2 = FileHandler.ReadFromJSON<PlayerDataCh2>(filename);
 
         FILEPATH = Application.persistentDataPath + "/" + FILENAME;

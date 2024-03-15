@@ -2,13 +2,19 @@ using System.Collections;
 using System.Collections.Generic;
 using UnityEngine;
 using UnityEngine.SceneManagement;
+using UnityEditor;
 
 public class ChangeScene : MonoBehaviour
 {
     public GameObject[] scenes;
     public int index = 0;
 
-    
+    public void QuitGame()
+    {
+        Application.Quit();
+        EditorApplication.isPlaying = false;
+    }
+
     public void ChangeToChapterOne()
     {
     SceneManager.LoadScene("lesson2");

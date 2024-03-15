@@ -13,6 +13,8 @@ public class SaveSystem : MonoBehaviour
 {
     public List<PlayerData> pldata; //= new List<PlayerData>();
     [SerializeField] public string playerName;
+    LoginScript loginText;
+    
     [SerializeField] public PlayerData player;
     [SerializeField] string type;
     [SerializeField] public static int pickupTimes;
@@ -27,6 +29,7 @@ public class SaveSystem : MonoBehaviour
 
     private void Start()
     {
+        playerName = KeepData.loginName;
         pldata = FileHandler.ReadFromJSON<PlayerData>(filename);
         FILENAME = Application.persistentDataPath + "/playerdatach1.csv";
     }
