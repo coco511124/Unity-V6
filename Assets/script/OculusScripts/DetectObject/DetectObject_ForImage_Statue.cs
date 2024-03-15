@@ -10,6 +10,20 @@ public class DetectObject_ForImage_Statue : MonoBehaviour
 
     string cache; //快取
     public bool inCollider;
+
+    //用來存放指定的Layer，以及自身的Layer
+    private int LayerOnly_0_5_8_layer;
+    private int LayerSelf;
+
+    private void Awake()
+    {
+        //gameObject.layer uses only integers, but we can turn a layer name into a layer integer using LayerMask.NameToLayer()
+        LayerOnly_0_5_8_layer = LayerMask.NameToLayer("Only_0_5_8_layer");
+        LayerSelf = LayerMask.NameToLayer("ObjectNoTouchPlayer");
+
+
+    }
+
     private void Start()
     {
         GameObject = GetComponent<XRGrabInteractable>();
@@ -18,6 +32,13 @@ public class DetectObject_ForImage_Statue : MonoBehaviour
     }
     private void OnTriggerEnter(Collider other)
     {
+
+        if (other.gameObject.name == "Border")
+        {
+            gameObject.layer = LayerOnly_0_5_8_layer;
+            Debug.Log("Current layer: " + gameObject.layer);
+        }
+
         //當地板碰到物件
         if (other.gameObject.tag == "Ground")
         {
@@ -27,6 +48,13 @@ public class DetectObject_ForImage_Statue : MonoBehaviour
     }
     private void OnTriggerExit(Collider other)
     {
+
+        if (other.gameObject.name == "Border")
+        {
+            gameObject.layer = LayerSelf;
+            Debug.Log("Current layer: " + gameObject.layer);
+        }
+
         //當物件離開地板
         if (other.gameObject.tag == "Ground")
         {
