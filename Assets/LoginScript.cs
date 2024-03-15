@@ -8,22 +8,19 @@ using UnityEngine.UI;
 public class LoginScript : MonoBehaviour
 {
     
-    SaveSystem saveSystem;
-    SaveSystemCh2 saveSystemCh2;
-    SaveSystemCh3 saveSystemCh3;
     [SerializeField] public TMP_Text text, text2;
 
-    public string name;
+    public string PlName;
 
     public TMP_Text welcomeText;
     
     public void Login()
     {
-        name = text.text + text2.text;
-        KeepData.loginName = name;
+        PlName = text.text + text2.text;
+        KeepData.loginName = PlName;
 
-        welcomeText.text = name + "，登入成功！";
-        Debug.Log(name);
+        welcomeText.text = PlName + "，登入成功！";
+        Debug.Log(PlName);
 
     }
 }

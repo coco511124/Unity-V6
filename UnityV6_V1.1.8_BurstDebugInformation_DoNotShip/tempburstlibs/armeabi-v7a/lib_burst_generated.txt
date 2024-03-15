@@ -1,4 +1,4 @@
-Library: C:\GithubProject\Unity-V6\Temp\StagingArea\tempburstlibs\armeabi-v7a\lib_burst_generated
+Library: C:\Users\User\Documents\GitHub\Unity-V6\Temp\StagingArea\tempburstlibs\armeabi-v7a\lib_burst_generated
 --platform=Android
 --backend=burst-llvm-14
 --target=ARMV7A_NEON32
@@ -101,6 +101,11 @@ Library: C:\GithubProject\Unity-V6\Temp\StagingArea\tempburstlibs\armeabi-v7a\li
 --compilation-defines=NET_STANDARD_2_1
 --compilation-defines=NETSTANDARD
 --compilation-defines=NETSTANDARD2_1
+--compilation-defines=DEVELOPMENT_BUILD
+--compilation-defines=ENABLE_PROFILER
+--compilation-defines=DEBUG
+--compilation-defines=TRACE
+--compilation-defines=UNITY_ASSERTIONS
 --compilation-defines=ENABLE_CUSTOM_RENDER_TEXTURE
 --compilation-defines=ENABLE_DIRECTOR
 --compilation-defines=ENABLE_LOCALIZATION
@@ -154,8 +159,9 @@ Library: C:\GithubProject\Unity-V6\Temp\StagingArea\tempburstlibs\armeabi-v7a\li
 --compilation-defines=UNITY_ANALYTICS
 --compilation-defines=XR_HANDS
 --generate-link-xml=Temp\burst.link.xml
---temp-folder=C:\GithubProject\Unity-V6\Temp\Burst
---output=C:\GithubProject\Unity-V6\Temp\StagingArea\tempburstlibs\armeabi-v7a\lib_burst_generated
+--temp-folder=C:\Users\User\Documents\GitHub\Unity-V6\Temp\Burst
+--debug=Full
+--output=C:\Users\User\Documents\GitHub\Unity-V6\Temp\StagingArea\tempburstlibs\armeabi-v7a\lib_burst_generated
 --pdb-search-paths=Temp/ManagedSymbols/
 --pdb-search-paths=Temp/ManagedSymbols/
 
